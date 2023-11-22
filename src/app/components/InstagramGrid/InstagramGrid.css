@@ -1,0 +1,23 @@
+.instagram-grid-section{
+    background: #F2EBE4;
+}
+
+.instagram-grid-section_title{
+    color: #A0222C;
+    font-size: 24.049px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.5%; /* 26.093px */
+    text-transform: uppercase;
+}
+
+@media (min-width:768px) {
+    .instagram-grid-section_title{
+        color: #A0222C;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 108.5%; /* 36.89px */
+        text-transform: uppercase;
+    } 
+}
