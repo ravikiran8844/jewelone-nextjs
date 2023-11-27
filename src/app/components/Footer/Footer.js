@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-5 col-lg-4 mb-4 text-center text-md-start">
-            <div style={{ maxWidth: "400px" }}>
+            <div style={{ maxWidth: "400px", margin:'auto' }}>
               <div className="mb-4">
                 <Image
                   className="img-fluid"

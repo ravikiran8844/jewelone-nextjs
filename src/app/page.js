@@ -5,6 +5,7 @@ import { MainBanner } from './components/MainBanner/MainBanner'
 import HomeSection2 from './components/Home/HomeSection2'
 import HomeSection4 from './components/Home/HomeSection4'
 import HomeSection5 from './components/Home/HomeSection5'
+import HomeSection3 from './components/Home/HomeSection3'
 
 
 export const metadata = {
@@ -18,6 +19,7 @@ export default function Home() {
    <div>
     <MainBanner/>
     <HomeSection2/>
+    <HomeSection3/>
     <HomeSection4/>
     <HomeSection5/>
     <InstagramGrid/>

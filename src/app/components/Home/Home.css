@@ -266,6 +266,8 @@
     font-weight: 400;
     line-height: 130%;
     text-decoration-line: underline;
+    border: none !important;
+    background-color: transparent !important;
   }
   
   .home-section-3 .splide__arrows {
@@ -415,9 +417,7 @@
     #b1b1b1 100.01%
   );
 }
-.home-section5_wrapper {
-  background-image: url("/home-section5-bg.webp");
-}
+
 
 .home-section5 video {
   border-radius: 20px;

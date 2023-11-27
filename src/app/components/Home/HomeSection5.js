@@ -1,5 +1,6 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
+import Image from 'next/image'
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./Home.css";
 
@@ -18,7 +19,7 @@ const HomeSection5 = () => {
 
   return (
     <section className="home-section5">
-      <div className="home-section5_wrapper">
+      <div className="home-section5_wrapper" style={{backgroundImage: 'url("/home-section5-bg.webp")'}}>
         <div className="container py-5">
           <div className="col-12">
             <div className="mb-4 text-md-center">
@@ -32,7 +33,6 @@ const HomeSection5 = () => {
                  gap: '1rem',
                  pagination: false,
                  fixedWidth: 110,
-                 fixedHeight: 70,
                  cover: true,
                  focus: 'center',
                  isNavigation: true,
@@ -42,7 +42,7 @@ const HomeSection5 = () => {
             <div className="card">
                       <div className="card-body">
                         <div>
-                          <img
+                          <Image
                             className="img-fluid"
                             width={139}
                             height={64}
@@ -59,7 +59,7 @@ const HomeSection5 = () => {
             <div className="card">
                       <div className="card-body">
                         <div>
-                          <img
+                          <Image
                             className="img-fluid"
                             width={139}
                             height={64}

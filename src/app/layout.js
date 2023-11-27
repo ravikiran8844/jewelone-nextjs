@@ -1,4 +1,4 @@
-import { Inter } from 'next/font/google'
+import { Inter, Poppins } from 'next/font/google'
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 const inter = Inter({ subsets: ['latin'], display: 'swap',variable: '--font-inter', }) 
+const poppins = Poppins({ subsets: ['latin'],   weight: ['400', '500'],display: 'swap',variable: '--font-poppins', }) 
+
 
 
 export const metadata = {
@@ -16,7 +18,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${poppins.className}`}>
         <Navbar/>
         {children}
         <Footer/>

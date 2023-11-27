@@ -35,31 +35,31 @@ export const InstagramGrid = () => {
                   } }>
              
              <SplideSlide>
-              <a target='__blank' href='https://www.instagram.com/'>
+              <a target='__blank' href='https://instagram.com/jewelone_in/'>
               <Image loading='lazy' width={316} height={316} src="/instagram1.webp" alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
-              <a target='__blank' href='https://www.instagram.com/'>
+              <a target='__blank' href='https://instagram.com/jewelone_in/'>
               <Image loading='lazy' width={316} height={316} src="/instagram2.webp"  alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
-              <a target='__blank' href='https://www.instagram.com/'>
+              <a target='__blank' href='https://instagram.com/jewelone_in/'>
               <Image loading='lazy' width={316} height={316} src="/instagram3.webp" alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
-              <a target='__blank' href='https://www.instagram.com/'>
+              <a target='__blank' href='https://instagram.com/jewelone_in/'>
               <Image loading='lazy' width={316} height={316} src="/instagram4.webp" alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
-              <a target='__blank' href='https://www.instagram.com/'>
+              <a target='__blank' href='https://instagram.com/jewelone_in/'>
               <Image loading='lazy' width={316} height={316} src="/instagram5.webp"  alt='instagram banner'/>
               </a>
 
