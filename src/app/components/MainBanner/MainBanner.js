@@ -30,6 +30,7 @@ export const MainBanner = () => {
                     src="/home-mobile-banner1.webp"
                     height={671}
                     width={1920}
+                    fetchPriority='high'
                 />
                 </picture>
 
@@ -51,6 +52,7 @@ export const MainBanner = () => {
                     src="/home-mobile-banner1.webp"
                     height={671}
                     width={1920}
+                    fetchPriority='high'
                 />
                 </picture>
 
@@ -72,6 +74,8 @@ export const MainBanner = () => {
                     src="/home-mobile-banner1.webp"
                     height={671}
                     width={1920}
+                    fetchPriority='high'
+
                 />
                 </picture>
 

@@ -13,6 +13,7 @@ const Navbar = () => {
             width="223"
             height="57"
             alt="Site Logo"
+            priority
           />
         </Link>
         <button

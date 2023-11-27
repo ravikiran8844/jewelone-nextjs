@@ -6,7 +6,7 @@
  .navbar-nav .main-menu-link {
     white-space: nowrap; /* Prevent menu items from wrapping to the next line */
     color: #2D2D2D;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -49,7 +49,7 @@
 .header-today-rate-section_label-title{
     color: #6B6A6A;
 text-align: right;
-font-family: Inter;
+font-family: var(--font-inter);
 font-size: 14.965px;
 font-style: normal;
 font-weight: 500;
@@ -59,7 +59,7 @@ letter-spacing: 0.299px;
 .header-today-rate-section_label-text{
     color: #6B6A6A;
 text-align: right;
-font-family: Inter;
+font-family: var(--font-inter);
 font-size: 14.965px;
 font-style: normal;
 font-weight: 500;
@@ -92,7 +92,7 @@ letter-spacing: 0.299px;
     transform: translate(-50%, -50%);
     color: #6D3602;
     text-align: center;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 16.105px;
     font-style: normal;
     font-weight: 800;
@@ -116,7 +116,7 @@ letter-spacing: 0.299px;
 .header-today-rate-section_gold-item-text{
     color: #6D3602;
     text-align: center;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 12.526px;
     font-style: normal;
     font-weight: 500;
@@ -154,7 +154,7 @@ border-radius: 8px;
     transform: translate(-50%, -50%);
     color: #000000;
     text-align: center;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 16.105px;
     font-style: normal;
     font-weight: 800;
@@ -178,7 +178,7 @@ border-radius: 8px;
 .header-today-rate-section_silver-item-text{
     color: #000000;
     text-align: center;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 12.526px;
     font-style: normal;
     font-weight: 500;

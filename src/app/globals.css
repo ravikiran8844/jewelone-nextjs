@@ -1,5 +1,6 @@
 body{
   background: #F8F8FB;
+  font-family: var(--font-inter);
 }
 .container{
   margin: auto;

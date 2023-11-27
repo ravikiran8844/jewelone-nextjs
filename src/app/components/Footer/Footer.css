@@ -4,7 +4,7 @@
 }
 .footer-section_text{
     color: #FFF;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -13,7 +13,7 @@
 
 .footer-section_links_label{
     color: #F7C676;
-font-family: Inter;
+font-family: var(--font-inter);
 font-size: 16px;
 font-style: normal;
 font-weight: 500;
@@ -21,7 +21,7 @@ line-height: 140%; /* 22.4px */
 }
 .footer-section ul li{
     color: #FFF;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 12px;
 font-style: normal;
 font-weight: 500;
@@ -61,7 +61,7 @@ line-height: 205%; /* 24.6px */
 
             .newsletter-form-input-group input {
                 color: #C0676F !important;
-                font-family: Inter;
+                font-family: var(--font-inter);
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
@@ -72,7 +72,7 @@ line-height: 205%; /* 24.6px */
             }
             .newsletter-form-input-group input::placeholder{
                 color: #C0676F !important;
-                font-family: Inter;
+                font-family: var(--font-inter);
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 400;
@@ -83,7 +83,7 @@ line-height: 205%; /* 24.6px */
 
     .footer-section_text{
         color: #FFF;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -92,7 +92,7 @@ line-height: 205%; /* 24.6px */
     
     .footer-section_links_label{
         color: #F7C676;
-        font-family: Inter;
+        font-family: var(--font-inter);
         font-size: 20px;
         font-style: normal;
         font-weight: 500;
@@ -100,7 +100,7 @@ line-height: 205%; /* 24.6px */
     }
     .footer-section ul li{
         color: #FFF;
-        font-family: Inter;
+        font-family: var(--font-inter);
         font-size: 18px;
         font-style: normal;
         font-weight: 400;

@@ -6,7 +6,7 @@
 .home-section2_text{
     color: #6D6D6D;
 text-align: center;
-font-family: Inter;
+font-family: var(--font-inter);
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -17,7 +17,7 @@ letter-spacing: 0.28px;
 .home-section2_mb-title{
     color: #2D2D2D;
     text-align: center;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -26,7 +26,7 @@ letter-spacing: 0.28px;
 .home-section2_mb-text{
     color: #6D6D6D;
     text-align: center;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -36,7 +36,7 @@ letter-spacing: 0.28px;
 
 .home-section2_mb-link{
     color: #A0222C;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -58,7 +58,7 @@ letter-spacing: 0.28px;
 .home-section2-mobile-slider_text{
     color: #6D6D6D;
     text-align: center;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -107,7 +107,7 @@ letter-spacing: 0.28px;
     .home-section2_grid-item--title{
         color: #2D2D2D;
         text-align: center;
-        font-family: Inter;
+        font-family: var(--font-inter);
         font-size: 28px;
         font-style: normal;
         font-weight: 700;
@@ -116,7 +116,7 @@ letter-spacing: 0.28px;
     .home-section2_grid-item--text{
         color: #A0222C;
         text-align: center;
-        font-family: Inter;
+        font-family: var(--font-inter);
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
@@ -131,7 +131,7 @@ letter-spacing: 0.28px;
     .home-section2_grid-item--title{
         color: #2D2D2D;
         text-align: center;
-        font-family: Inter;
+        font-family: var(--font-inter);
         font-size: 32px;
         font-style: normal;
         font-weight: 700;
@@ -140,7 +140,7 @@ letter-spacing: 0.28px;
     .home-section2_grid-item--text{
         color: #A0222C;
         text-align: center;
-        font-family: Inter;
+        font-family: var(--font-inter);
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -161,7 +161,7 @@ letter-spacing: 0.28px;
 
 .home-section-3_caption{
     color: #FDD27C;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -171,7 +171,7 @@ letter-spacing: 0.28px;
 .home-section-3_title
 {
     color: #FFF;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -181,7 +181,7 @@ letter-spacing: 0.28px;
 @media (min-width:768px) {
     .home-section-3_caption{
         color: #FDD27C;
-        font-family: Inter;
+        font-family: var(--font-inter);
         font-size: 20px;
         font-style: normal;
         font-weight: 400;
@@ -191,7 +191,7 @@ letter-spacing: 0.28px;
     .home-section-3_title
     {
         color: #FFF;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 40px;
     font-style: normal;
     font-weight: 600;
@@ -219,7 +219,7 @@ max-width: 450px;
 }
 .home-section-3-slide-item-title{
     color: #FFF;
-font-family: Inter;
+font-family: var(--font-inter);
 font-size: 24px;
 font-style: normal;
 font-weight: 500;
@@ -229,7 +229,7 @@ letter-spacing: 0.64px;
 }
 .home-section-3-slide-item-text{
     color: #FFF;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -237,7 +237,7 @@ letter-spacing: 0.64px;
 }
 .home-section-3-slide-item-link{
     color: #F9CF41;
-font-family: Inter;
+font-family: var(--font-inter);
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
@@ -309,7 +309,7 @@ background: #F9CF41;
 }
 .home-section4_app-links-title{
     color: #2D2D2D;
-    font-family: Inter;
+    font-family: var(--font-inter);
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -342,7 +342,7 @@ background: #F9CF41;
     }
     .home-section4_app-links-title{
         color: #2D2D2D;
-        font-family: Inter;
+        font-family: var(--font-inter);
         font-size: 16px;
         font-style: normal;
         font-weight: 600;
@@ -363,7 +363,7 @@ background: #F9CF41;
     }
     .home-section4_app-links-title{
         color: #2D2D2D;
-        font-family: Inter;
+        font-family: var(--font-inter);
         font-size: 18px;
         font-style: normal;
         font-weight: 600;
