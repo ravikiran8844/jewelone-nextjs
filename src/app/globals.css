@@ -11,7 +11,10 @@ body{
   }
 }
 
-
+picture img{
+  max-width: 100%;
+  height: auto;
+}
 .bg-red{
   background: #9F212C;
 }
