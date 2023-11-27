@@ -2,6 +2,8 @@
 
 import React from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
+import Image from 'next/image'
+
 import '@splidejs/react-splide/css';
 import "./Home.css";
 
@@ -171,7 +173,7 @@ const HomeSection2 = () => {
         <div className="d-none d-md-block">
           <div className="col-12 text-center mb-5">
             <div className="mb-4">
-              <img
+              <Image
                 className="img-fluid"
                 width={280}
                 height={56}

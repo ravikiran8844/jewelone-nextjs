@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 
 const HomeSection4 = () => {
   return (
@@ -10,7 +11,7 @@ const HomeSection4 = () => {
         type="image/webp"
         media="(max-width: 650px)"
       />
-      <img
+      <Image
         width={1920}
         height={680}
         src="/swarna-sakthi-large.webp"
@@ -24,7 +25,7 @@ const HomeSection4 = () => {
         </div>
         <div>
           <a href="">
-            <img
+            <Image
               width={146}
               height={43}
               className="img-fluid"
@@ -33,7 +34,7 @@ const HomeSection4 = () => {
             />
           </a>
           <a href="">
-            <img
+            <Image
               width={146}
               height={43}
               className="img-fluid"

@@ -1,5 +1,7 @@
 import React from "react";
 import Link from "next/link";
+import Image from 'next/image'
+
 import "./Footer.css";
 
 const Footer = () => {
@@ -10,12 +12,12 @@ const Footer = () => {
           <div className="col-12 col-md-5 col-lg-4 mb-4 text-center text-md-start">
             <div style={{ maxWidth: "400px" }}>
               <div className="mb-4">
-                <img
+                <Image
                   className="img-fluid"
                   width="180"
                   height="140"
                   src="/footer-logo.webp"
-                  alt=""
+                  alt="logo"
                 />
               </div>
               <div className="footer-section_text mb-4">
@@ -162,23 +164,23 @@ const Footer = () => {
                 <div className="d-flex gap-2">
                   <div>
                     <Link href="">
-                      <img
+                      <Image
                         className="img-fluid"
                         width="160"
                         height="50"
                         src="/app-store.webp"
-                        alt=""
+                        alt="logo"
                       />
                     </Link>
                   </div>
                   <div>
                     <Link href="">
-                      <img
+                      <Image
                         className="img-fluid"
                         width="160"
                         height="50"
                         src="/google-play.webp"
-                        alt=""
+                        alt="logo"
                       />
                     </Link>
                   </div>

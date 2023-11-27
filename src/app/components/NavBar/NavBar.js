@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image'
 import './NavBar.css'
 import Link from 'next/link';
 
@@ -7,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
       <div className="container d-flex align-items-center">
         <Link className="navbar-brand" href="/">
-          <img
+          <Image
             src="/jewelone-logo.webp"
             width="223"
             height="57"
