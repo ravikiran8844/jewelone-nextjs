@@ -15,6 +15,7 @@ export const MainBanner = () => {
                     type: 'loop',
                     autoplay: true,
                     interval: 4000,
+                    autoHeight:true,
                   } }>
               
               <SplideSlide>
@@ -24,7 +25,7 @@ export const MainBanner = () => {
                     type="image/webp"
                     media="(min-width: 760px)"
                 />
-                <Image
+                <img
                     alt="Image X alt"
                     src="/home-mobile-banner1.webp"
                     height={671}
