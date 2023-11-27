@@ -86,7 +86,7 @@ const HomeSection5 = () => {
             <SplideSlide>
             <div className="row">
                       <div className="col-12 col-md-6">
-                        <video controls="">
+                        <video controls>
                           <source
                             src="https://jd.brightbridgeinfotech.com/wp-content/uploads/2023/11/video-testimonial1.mp4"
                             type="video/mp4"
@@ -116,7 +116,7 @@ const HomeSection5 = () => {
             <SplideSlide>
             <div className="row">
                       <div className="col-12 col-md-6">
-                        <video controls="">
+                        <video controls>
                           <source
                             src="https://jd.brightbridgeinfotech.com/wp-content/uploads/2023/11/video-testimonial2.mp4"
                             type="video/mp4"
