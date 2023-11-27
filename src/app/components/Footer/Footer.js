@@ -163,7 +163,7 @@ const Footer = () => {
                 </div>
                 <div className="d-flex gap-2">
                   <div>
-                    <Link href="">
+                  <a target="__blank" href="https://apps.apple.com/in/app/jewelone/id1507128724">
                       <Image
                         className="img-fluid"
                         width="160"
@@ -171,10 +171,10 @@ const Footer = () => {
                         src="/app-store.webp"
                         alt="logo"
                       />
-                    </Link>
+                    </a>
                   </div>
                   <div>
-                    <Link href="">
+                    <a target="__blank" href="https://play.google.com/store/apps/details?id=com.jewelone.winchit&hl=en&gl=US">
                       <Image
                         className="img-fluid"
                         width="160"
@@ -182,7 +182,7 @@ const Footer = () => {
                         src="/google-play.webp"
                         alt="logo"
                       />
-                    </Link>
+                    </a>
                   </div>
                 </div>
               </div>

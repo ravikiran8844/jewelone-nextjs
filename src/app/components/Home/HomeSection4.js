@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import "./Home.css";
 
 const HomeSection4 = () => {
   return (
@@ -24,7 +25,7 @@ const HomeSection4 = () => {
           Download Swarna Sakthi App
         </div>
         <div>
-          <a href="">
+        <a target="__blank" href="https://play.google.com/store/apps/details?id=com.jewelone.winchit&hl=en&gl=US">
             <Image
               width={146}
               height={43}
@@ -33,7 +34,7 @@ const HomeSection4 = () => {
               alt="google play"
             />
           </a>
-          <a href="">
+          <a target="__blank" href="https://apps.apple.com/in/app/jewelone/id1507128724">
             <Image
               width={146}
               height={43}

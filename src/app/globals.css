@@ -12,6 +12,9 @@ body{
   }
 }
 
+main{
+  min-height: 70vh;
+}
 picture img{
   max-width: 100%;
   height: auto;

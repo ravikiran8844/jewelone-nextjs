@@ -1,7 +1,11 @@
-import React from 'react';
-import Image from 'next/image'
-import './NavBar.css'
-import Link from 'next/link';
+"use client"
+
+import React from "react";
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+
+import Image from "next/image";
+import "./NavBar.css";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -57,42 +61,30 @@ const Navbar = () => {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-center m-auto">
               <li className="nav-item">
-                <Link
-                  href=""
-                  className="main-menu-link nav-link"
-                >
+                <Link href="/our-story" className="main-menu-link nav-link">
                   Our story
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  href=""
-                  className="main-menu-link nav-link"
-                >
+                <Link href="/swarna-sakthi" className="main-menu-link nav-link">
                   Swarna Sakthi
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
-                  href=""
+                  href="/experience-center"
                   className="main-menu-link nav-link"
                 >
                   Experience Center
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  href=""
-                  className="main-menu-link nav-link"
-                >
+                <Link href="/stores" className="main-menu-link nav-link">
                   Stores
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  href=""
-                  className="main-menu-link nav-link"
-                >
+                <Link href="/contact-us" className="main-menu-link nav-link">
                   Contact Us
                 </Link>
               </li>
@@ -105,6 +97,91 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+
+        <ul className="navbar-nav justify-content-end ms-auto">
+          <div className="d-flex justify-content-end align-items-center header-today-rate-section">
+            <div className="me-2 header-today-rate-card_content">
+              <div className="header-today-rate-section_label-title">
+                Today’s Rate:
+              </div>
+              <div className="header-today-rate-section_label-text">
+                06th October 2023
+              </div>
+            </div>
+
+
+
+
+              <Splide options={{ type: 'fade',
+                    rewind: true,
+
+                      arrows: false,
+                      autoplay: true,
+                      interval: 4000,
+                      pagination: false,}}>
+                <SplideSlide>
+                <div className="header-today-rate-section_gold">
+                      <div className="header-today-rate-section_gold-item d-flex justify-content-between align-items-center p-3">
+                        <div>
+                          <div className="header-today-rate-section_gold-item-title">
+                            ₹5,650/-
+                          </div>
+                          <div className="header-today-rate-section_gold-item-text">
+                            per gram
+                          </div>
+                        </div>
+                        <div>
+                          <div className="header-today-rate-section_gold-item-title">
+                            ₹45,200/-
+                          </div>
+                          <div className="header-today-rate-section_gold-item-text">
+                            per sovereign
+                          </div>
+                        </div>
+                      </div>
+                      <div className="header-today-rate-section_gold-overlay px-2">
+                        22 karat
+                      </div>
+                    </div>
+                </SplideSlide>
+                <SplideSlide>
+                <div className="header-today-rate-section_silver">
+                      <div className="header-today-rate-section_silver-item d-flex justify-content-between align-items-center p-3">
+                        <div>
+                          <div className="header-today-rate-section_silver-item-title">
+                            ₹77.70/-
+                          </div>
+                          <div className="header-today-rate-section_silver-item-text">
+                            per gram
+                          </div>
+                        </div>
+                        <div>
+                          <div className="header-today-rate-section_silver-item-title">
+                            ₹77,700/-
+                          </div>
+                          <div className="header-today-rate-section_silver-item-text">
+                            per kg
+                          </div>
+                        </div>
+                      </div>
+                      <div className="header-today-rate-section_silver-overlay px-2">
+                        silver
+                      </div>
+                    </div>
+                </SplideSlide>
+              </Splide>
+
+
+
+        
+
+
+
+
+
+
+          </div>
+        </ul>
       </div>
     </nav>
   );

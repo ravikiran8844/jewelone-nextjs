@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
 import React from "react";
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import Image from 'next/image'
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import Image from "next/image";
 
-import '@splidejs/react-splide/css';
+import "@splidejs/react-splide/css";
 import "./Home.css";
 
 const HomeSection2 = () => {
@@ -26,17 +26,19 @@ const HomeSection2 = () => {
             </div>
           </div>
           <div className="col-12">
-            <Splide options={{
-                type: 'loop',
+            <Splide
+              options={{
+                type: "loop",
                 autoplay: false,
                 interval: 4000,
                 gap: 30,
                 autoWidth: true,
                 pagination: false,
                 arrows: false,
-            }}>
+              }}
+            >
               <SplideSlide>
-              <div className="text-center">
+                <div className="text-center">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +67,7 @@ const HomeSection2 = () => {
               </SplideSlide>
 
               <SplideSlide>
-              <div className="text-center">
+                <div className="text-center">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -105,9 +107,8 @@ const HomeSection2 = () => {
                 </div>
               </SplideSlide>
 
-
               <SplideSlide>
-              <div className="text-center">
+                <div className="text-center">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -135,9 +136,8 @@ const HomeSection2 = () => {
                 </div>
               </SplideSlide>
 
-
               <SplideSlide>
-              <div className="text-center">
+                <div className="text-center">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -164,37 +164,41 @@ const HomeSection2 = () => {
                   </div>
                 </div>
               </SplideSlide>
-
-
-           
             </Splide>
           </div>
         </div>
         <div className="d-none d-md-block">
-          <div className="col-12 text-center mb-5">
-            <div className="mb-4">
-              <Image
-                className="img-fluid"
-                width={280}
-                height={56}
-                src="/jewelone.webp"
-                alt="jewelone logo"
-              />
-            </div>
-            <div></div>
-            <div className="home-section2_text d-block d-md-none">
-              JewelOne, a retail jewelry brand from the house of Emerald Jewel
-              Industry India Limited,is an omni-channel jewelry retailer,
-              showcasing exquisite pieces of jewelry
-            </div>
-            <div className="home-section2_text d-none d-md-block">
-              We are <span>India’s largest B2B jewellery platform </span>{" "}
-              revolutionizing the jewellery supply chain. We enable jewellers to
-              purchase, organise, market, and sell jewellery. We offer retailers
-              gold, diamond, and platinum jewellery products.
-            </div>
-          </div>
-          <div className="row home-section2_grid-items">
+        <div className="row">
+  <div className="col-12 mb-5">
+    <div className="home-section2_main-content">
+      <div className="m-auto">
+        <img
+          className="img-fluid"
+          width={400}
+          height={287}
+          src="/jewelone-section2.webp"
+          alt="jewelone banner"
+        />
+      </div>
+      <div className="m-auto">
+        <div className="home-section2_text d-block d-md-none">
+          JewelOne, a retail jewelry brand from the house of Emerald Jewel
+          Industry India Limited,is an omni-channel jewelry retailer, showcasing
+          exquisite pieces of jewelry
+        </div>
+        <div className="home-section2_text d-none d-md-block">
+          We are <span>India’s largest B2B jewellery platform </span>{" "}
+          revolutionizing the jewellery supply chain. We enable jewellers to
+          purchase, organise, market, and sell jewellery. We offer retailers
+          gold, diamond, and platinum jewellery products.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+          <div className="row home-section2_grid-items home-section2_logos m-auto">
             <div className="col-12 col-sm-6 col-lg-3 mb-4">
               <div className="home-section2_grid-item text-center">
                 <div className="mb-4">
