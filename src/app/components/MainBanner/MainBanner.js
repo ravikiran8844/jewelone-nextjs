@@ -20,7 +20,7 @@ export const MainBanner = () => {
               <SplideSlide>
               <picture>
                 <source
-                    srcset="/home-main-banner1.webp"
+                    srcSet="/home-main-banner1.webp"
                     type="image/webp"
                     media="(min-width: 760px)"
                 />
@@ -41,7 +41,7 @@ export const MainBanner = () => {
               <SplideSlide>
               <picture>
                 <source
-                    srcset="/home-main-banner2.webp"
+                    srcSet="/home-main-banner2.webp"
                     type="image/webp"
                     media="(min-width: 760px)"
                 />
@@ -62,7 +62,7 @@ export const MainBanner = () => {
               <SplideSlide>
               <picture>
                 <source
-                    srcset="/home-main-banner3.webp"
+                    srcSet="/home-main-banner3.webp"
                     type="image/webp"
                     media="(min-width: 760px)"
                 />
