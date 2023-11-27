@@ -416,7 +416,7 @@
   );
 }
 .home-section5_wrapper {
-  background-image: url("http://jewelone-new.local/wp-content/uploads/2023/11/Mask-group-31.png");
+  background-image: url("/home-section5-bg.webp");
 }
 
 .home-section5 video {
@@ -490,10 +490,10 @@
   .home-section5 .splide__arrow {
     position: absolute;
   }
-  .splide__arrow--prev {
+  .home-section5 .splide__arrow--prev {
     left: -40px !important;
   }
-  .splide__arrow--next {
+  .home-section5 .splide__arrow--next {
     left: unset;
     right: -40px !important;
   }

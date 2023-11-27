@@ -10,12 +10,11 @@ export const MainBanner = () => {
 
 
   return (
-   <section className='main-banner-section'>
+   <section className='main-banner-section home-section1'>
     <Splide options={ {
                     type: 'loop',
                     autoplay: true,
                     interval: 4000,
-                    autoHeight:true,
                   } }>
               
               <SplideSlide>
@@ -23,15 +22,14 @@ export const MainBanner = () => {
                 <source
                     srcSet="/home-main-banner1.webp"
                     type="image/webp"
-                    media="(min-width: 760px)"
+                    media="(min-width: 650px)"
                 />
-                <img
+                <Image
                     alt="Image X alt"
                     src="/home-mobile-banner1.webp"
-                    height={671}
-                    width={1920}
-                    fetchPriority='high'
-                />
+                    height={541}
+                    width={1519 }
+                    priority="true"                />
                 </picture>
 
 
@@ -45,14 +43,14 @@ export const MainBanner = () => {
                 <source
                     srcSet="/home-main-banner2.webp"
                     type="image/webp"
-                    media="(min-width: 760px)"
+                    media="(min-width: 650px)"
                 />
                 <Image
                     alt="Image X alt"
                     src="/home-mobile-banner1.webp"
-                    height={671}
-                    width={1920}
-                    fetchPriority='high'
+                    height={541}
+                    width={1519 }
+                    priority="true"
                 />
                 </picture>
 
@@ -67,14 +65,14 @@ export const MainBanner = () => {
                 <source
                     srcSet="/home-main-banner3.webp"
                     type="image/webp"
-                    media="(min-width: 760px)"
+                    media="(min-width: 650px)"
                 />
                 <Image
                     alt="Image X alt"
                     src="/home-mobile-banner1.webp"
-                    height={671}
-                    width={1920}
-                    fetchPriority='high'
+                    height={541}
+                    width={1519 }
+                    priority="true"
 
                 />
                 </picture>

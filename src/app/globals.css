@@ -1,6 +1,8 @@
 body{
   background: #F8F8FB;
   font-family: var(--font-inter);
+  font-display: swap;
+  /* overflow-x: hidden; */
 }
 .container{
   margin: auto;

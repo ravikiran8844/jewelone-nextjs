@@ -172,12 +172,13 @@ const HomeSection2 = () => {
   <div className="col-12 mb-5">
     <div className="home-section2_main-content">
       <div className="m-auto">
-        <img
+        <Image
           className="img-fluid"
-          width={400}
+          width={509}
           height={287}
           src="/jewelone-section2.webp"
           alt="jewelone banner"
+          priority="true"
         />
       </div>
       <div className="m-auto">

@@ -1,10 +1,12 @@
 .main-banner-section picture img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 
-
+.main-banner-section .splide{
+    max-width: 100%;
+}
 
 .main-banner-section .splide__arrows{
     display: none;
