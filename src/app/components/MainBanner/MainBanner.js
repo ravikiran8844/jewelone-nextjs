@@ -12,10 +12,11 @@ export const MainBanner = () => {
   return (
    <section className='main-banner-section'>
     <Splide options={ {
-                    perPage: 1,
-                    arrows:true,
-                    pagination:true,
+                    type: 'loop',
+                    autoplay: true,
+                    interval: 4000,
                   } }>
+              
               <SplideSlide>
               <picture>
                 <source
@@ -35,10 +36,33 @@ export const MainBanner = () => {
 
 
               </SplideSlide>
+
+
               <SplideSlide>
               <picture>
                 <source
-                    srcset="/home-main-banner1.webp"
+                    srcset="/home-main-banner2.webp"
+                    type="image/webp"
+                    media="(min-width: 760px)"
+                />
+                <Image
+                    alt="Image X alt"
+                    src="/home-mobile-banner1.webp"
+                    height={671}
+                    width={1920}
+                />
+                </picture>
+
+
+
+
+              </SplideSlide>
+
+
+              <SplideSlide>
+              <picture>
+                <source
+                    srcset="/home-main-banner3.webp"
                     type="image/webp"
                     media="(min-width: 760px)"
                 />

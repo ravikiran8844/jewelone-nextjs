@@ -2,3 +2,15 @@
     width: 100%;
     height: auto;
 }
+
+
+
+
+.main-banner-section .splide__arrows{
+    display: none;
+   }
+   @media (min-width:768px) {
+    .main-banner-section .splide__arrows{
+           display: block;
+          }
+   }
