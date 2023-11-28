@@ -47,7 +47,7 @@ export const MainBanner = () => {
                 />
                 <Image
                     alt="Image X alt"
-                    src="/home-mobile-banner1.webp"
+                    src="/home-mobile-banner2.webp"
                     height={541}
                     width={1519 }
                     priority="true"
@@ -69,7 +69,7 @@ export const MainBanner = () => {
                 />
                 <Image
                     alt="Image X alt"
-                    src="/home-mobile-banner1.webp"
+                    src="/home-mobile-banner3.webp"
                     height={541}
                     width={1519 }
                     priority="true"

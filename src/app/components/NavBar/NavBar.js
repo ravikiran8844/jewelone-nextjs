@@ -21,7 +21,7 @@ const Navbar = () => {
   
   return (
     <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
-      <div className="container d-flex align-items-center">
+      <div className="container d-flex align-items-center navbar_wrapper">
         <Link className="navbar-brand" href="/">
           <Image
             src="/jewelone-logo.webp"
@@ -32,7 +32,7 @@ const Navbar = () => {
           />
         </Link>
         <button
-          className="navbar-toggler border-0 ms-auto"
+          className="navbar-toggler border-0"
           type="button"
           data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasNavbar"

@@ -31,14 +31,13 @@ const HomeSection2 = () => {
                 type: "loop",
                 autoplay: false,
                 interval: 4000,
-                gap: 30,
                 autoWidth: true,
                 pagination: false,
                 arrows: false,
               }}
             >
               <SplideSlide>
-                <div className="text-center">
+                <div className="text-center home-section2_mobile-logo-item">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +66,7 @@ const HomeSection2 = () => {
               </SplideSlide>
 
               <SplideSlide>
-                <div className="text-center">
+                <div className="text-center home-section2_mobile-logo-item">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +107,7 @@ const HomeSection2 = () => {
               </SplideSlide>
 
               <SplideSlide>
-                <div className="text-center">
+                <div className="text-center home-section2_mobile-logo-item">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -137,7 +136,7 @@ const HomeSection2 = () => {
               </SplideSlide>
 
               <SplideSlide>
-                <div className="text-center">
+                <div className="text-center home-section2_mobile-logo-item">
                   <div>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -182,18 +181,17 @@ const HomeSection2 = () => {
                   />
                 </div>
                 <div className="m-auto">
-                  <div className="home-section2_text d-block d-md-none">
-                    JewelOne, a retail jewelry brand from the house of Emerald
-                    Jewel Industry India Limited,is an omni-channel jewelry
-                    retailer, showcasing exquisite pieces of jewelry
+                  
+                  <div className="home-section2_text mb-3">
+                  <span className="item-text-red">Welcome to Jewel One,</span> where Beautiful Jewellry meets Beautiful You. From the house of Emerald Jewel Industry, one of Asia's largest jewellery makers, We have over 6,00,000+ designs in chains, bangles and any & every jewellery article you need.
                   </div>
-                  <div className="home-section2_text d-none d-md-block">
-                    We are <span>India’s largest B2B jewellery platform </span>{" "}
-                    revolutionizing the jewellery supply chain. We enable
-                    jewellers to purchase, organise, market, and sell jewellery.
-                    We offer retailers gold, diamond, and platinum jewellery
-                    products.
+
+
+                  <div  className="home-section2_text">
+                  With timeless masterpieces and endless customisation possibilities - We stand by our tagline <span className="item-text-dark">“Jewellery that understands women - Penn Manadhai Purintha Pon”.</span>
                   </div>
+
+
                 </div>
               </div>
             </div>
