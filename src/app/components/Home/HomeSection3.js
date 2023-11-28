@@ -74,8 +74,8 @@ const HomeSection3 = () => {
     <section className="home-section-3 py-5">
       <div className="container">
         <div className="col-12 mb-5">
-          <div className="home-section-3_caption">JewelOne</div>
-          <div className="home-section-3_title">All Trendy Collections</div>
+          {/* <div className="home-section-3_caption">JewelOne</div> */}
+          <div className="home-section-3_title">Our New Launches</div>
         </div>
 
         <Splide options={{
