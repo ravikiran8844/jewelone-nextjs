@@ -181,17 +181,22 @@ const HomeSection2 = () => {
                   />
                 </div>
                 <div className="m-auto">
-                  
-                  <div className="home-section2_text mb-3">
-                  <span className="item-text-red">Welcome to Jewel One,</span> where Beautiful Jewellry meets Beautiful You. From the house of Emerald Jewel Industry, one of Asia's largest jewellery makers, We have over 6,00,000+ designs in chains, bangles and any & every jewellery article you need.
+                <div className="home-section2_text mb-3">
+                  <span className="item-text-red">Welcome to Jewel One,</span>
+                  where Beautiful Jewellery meets Beautiful You. From the house
+                  of Emerald Jewel Industry, one of Asia&apos;s largest jewellery
+                  makers, We have over 6,00,000+ designs in chains, bangles
+                  and any & every jewellery article you need.
+                </div>
+
+                  <div className="home-section2_text">
+                    With timeless masterpieces and endless customisation
+                    possibilities - We stand by our tagline
+                    <span className="item-text-dark">
+                      “Jewellery that understands women - Penn Manadhai Purintha
+                      Pon”.
+                    </span>
                   </div>
-
-
-                  <div  className="home-section2_text">
-                  With timeless masterpieces and endless customisation possibilities - We stand by our tagline <span className="item-text-dark">“Jewellery that understands women - Penn Manadhai Purintha Pon”.</span>
-                  </div>
-
-
                 </div>
               </div>
             </div>
