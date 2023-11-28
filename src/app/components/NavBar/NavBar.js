@@ -9,47 +9,58 @@ import Link from "next/link";
 
 
 
-const formatDate = (date) => {
-  const options = { day: '2-digit', month: 'long', year: 'numeric' };
-  const formattedDate = new Date(date).toLocaleDateString(undefined, options);
-
-  // Extract day, month, and year
-  const day = formattedDate.slice(0, 2);
-  const monthYear = formattedDate.slice(2);
-
-  // Add ordinal suffix to the day
-  const dayWithSuffix = addOrdinalSuffix(day);
-
-  return `${dayWithSuffix} ${monthYear}`;
-};
-
-const addOrdinalSuffix = (day) => {
-  if (day > 10 && day < 20) {
-    return day + 'th';
-  } else {
-    const lastDigit = day % 10;
-    switch (lastDigit) {
-      case 1:
-        return day + 'st';
-      case 2:
-        return day + 'nd';
-      case 3:
-        return day + 'rd';
-      default:
-        return day + 'th';
-    }
-  }
-};
-
-const TodayDate = () => {
-  const today = new Date();
-  const formattedToday = formatDate(today);
-
-  return <div>{formattedToday}</div>;
-};
 
 
 const Navbar = () => {
+
+
+
+  const formatDate = (date) => {
+    const options = { day: '2-digit', month: 'long', year: 'numeric' };
+    const formattedDate = new Date(date).toLocaleDateString(undefined, options);
+  
+    // Extract day, month, and year
+    const day = formattedDate.slice(0, 2);
+    const monthYear = formattedDate.slice(2);
+  
+    // Add ordinal suffix to the day
+    const dayWithSuffix = addOrdinalSuffix(day);
+  
+    return `${dayWithSuffix} ${monthYear}`;
+  };
+  
+  const addOrdinalSuffix = (day) => {
+    if (day >= 11 && day <= 13) {
+      return `${day}th`;
+    } else {
+      const lastDigit = day % 10;
+      let suffix = '';
+      switch (lastDigit) {
+        case 1:
+          suffix = 'st';
+          break;
+        case 2:
+          suffix = 'nd';
+          break;
+        case 3:
+          suffix = 'rd';
+          break;
+        default:
+          suffix = 'th';
+          break;
+      }
+      return `${day}${suffix}`;
+    }
+  };
+  
+  const TodayDate = () => {
+    const today = new Date();
+    const formattedToday = formatDate(today);
+  
+    return <div>{formattedToday}</div>;
+  };
+
+  
   return (
     <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
       <div className="container d-flex align-items-center">
