@@ -28,7 +28,7 @@ const HomeSection5 = () => {
            
            
             <Splide className="home-section5-thubnials_wrapper mb-5" options={{  
-                 type: 'loop',
+                 type: 'slide',
                  rewind: true,
                  gap: '1rem',
                  pagination: false,
@@ -77,8 +77,8 @@ const HomeSection5 = () => {
 
 
             <Splide  ref={thumbsRef} className="home-section5-main-videos" options={ {
-                    type: 'loop',
-                    pagination: false,
+                 type: 'slide',
+                 pagination: false,
                     arrows: false,
                     cover: true,
                     gap: 10,

@@ -28,8 +28,8 @@ const HomeSection2 = () => {
                 <div className="mb-3">
                   <Image
                     className="img-fluid"
-                    width={627}
-                    height={279}
+                    width={400}
+                    height={177}
                     src="/home-srection2-img2.webp"
                     alt="jewelone banner"
                     priority="true"

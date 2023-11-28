@@ -54,17 +54,17 @@ const Footer = () => {
                 </div>
                 <ul className="list-unstyled">
                   <li className="nav-item">
-                    <Link href="#" className="footer-menu-link nav-link">
+                    <Link href="/blog" className="footer-menu-link nav-link">
                       Blog
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="#" className="footer-menu-link nav-link">
+                    <Link href="/stores" className="footer-menu-link nav-link">
                       Stores
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="#" className="footer-menu-link nav-link">
+                    <Link href="/our-story" className="footer-menu-link nav-link">
                       About JewelOne
                     </Link>
                   </li>

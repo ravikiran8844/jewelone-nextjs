@@ -7,7 +7,7 @@ import Image from "next/image";
 
 
 
-const Slide = ({ imageSrc, alt, initialText, title,date }) => {
+const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date }) => {
     const [showFullText, setShowFullText] = useState(false);
   
     const handleReadMoreClick = () => {
@@ -17,13 +17,23 @@ const Slide = ({ imageSrc, alt, initialText, title,date }) => {
     return (
       <SplideSlide>
         <div>
-          <Image
-            className="img-fluid"
-            width={829}
-            height={489}
-            src={imageSrc}
-            alt={alt}
-          />
+              <picture>
+                <source
+                    srcSet={imageSrc}
+                    type="image/webp"
+                    media="(min-width: 450px)"
+                />
+                <Image
+                    alt={altText}
+                    src={mobileSrc}
+                    height={489}
+                    width={829 }
+                    priority="true" />
+                </picture>
+
+
+
+
         </div>
         <div className="mt-4 home-section-3-slide-content">
           <div className="home-section-3-slide-date"><span className="me-1"><svg
@@ -44,7 +54,7 @@ const Slide = ({ imageSrc, alt, initialText, title,date }) => {
           <span className="home-section-3-slide-item-text">
             {showFullText ? (
               <>
-                {initialText} We are India’s largest B2B jewellery platform revolutionizing the jewellery supply chain.
+                {initialText}
               </>
             ) : (
               <>
@@ -72,11 +82,13 @@ const HomeSection3 = () => {
 
   return (
     <section className="home-section-3 py-5">
-      <div className="container">
-        <div className="col-12 mb-5">
+       <div className="container mb-4 ">
           {/* <div className="home-section-3_caption">JewelOne</div> */}
           <div className="home-section-3_title">Our New Launches</div>
         </div>
+
+      <div className="home-section-3_wrapper">
+       
 
         <Splide options={{
             type: 'slide',
@@ -104,32 +116,34 @@ const HomeSection3 = () => {
 
        <Slide
             date="October 7th 2023"
-
             imageSrc="/home-section3-img1.webp"
-            alt="Parambariya Collection"
+            mobileSrc="/home-section3mobile-img1.webp"
+            altText="Parambariya Collection"
             title="Parambariya Collection"
-            initialText="Find a JewelOne store in your locality, the JewelOne family is growing every day."
-          />
+            initialText={'"Parambariya," a jewellery collection that beautifully bridges the rich tapestry of heritage with the contemporary allure of modern design. Our tagline, "Where tradition meets modernity & history meets future," encapsulates the essence of this collection.'}
+            />
 
 
-<Slide
+        <Slide
             date="August 3rd 2023"
 
             imageSrc="/home-section3-img2.webp"
-            alt="Khata Collection 3"
+            mobileSrc="/home-section3mobile-img2.webp"
+
+            altText="Khata Collection 3"
             title="Khata Collection"
-            initialText="Find a JewelOne store in your locality, the JewelOne family is growing every day."
-          />
+            initialText="Introducing &quot;Katha,&quot; a jewellery collection where every piece is a masterpiece, reflecting the stories of valour, love, and timeless beauty. Each creation in this collection is more than adornment; it's a narrative woven with craftsmanship and passion."
 
-
-
+            />
         <Slide
             date="August 22nd 2023"
 
             imageSrc="/home-section3-img3.webp"
-            alt="Amara Collection"
+            mobileSrc="/home-section3mobile-img3.webp"
+
+            altText="Amara Collection"
             title="Amara Collection"
-            initialText="Find a JewelOne store in your locality, the JewelOne family is growing every day."
+            initialText="Whether you're looking for a striking statement piece for a special occasion or a subtle touch of everyday elegance, our Amara Collection is designed to complement every mood and moment. Each piece is a celebration of color, allowing you to express your unique style and add a vivid touch to your personal ensemble."
           />
 
 
@@ -137,7 +151,8 @@ const HomeSection3 = () => {
             date="September 5th 2023"
 
             imageSrc="/home-section3-img4.webp"
-            alt="Miraya Collection"
+            mobileSrc="/home-section3mobile-img4.webp"
+            altText="Miraya Collection"
             title="Miraya Collection"
             initialText="Introducing 'Miraya'... Miraya is more than just jewellery; it's a statement of individuality and style. Whether you seek a bold and contemporary look or a subtle touch of sophistication, this collection offers a diverse range of pieces to complement every personality and occasion."
           />

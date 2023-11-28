@@ -233,7 +233,15 @@
   .home-section-3 {
     background: #a0222c;
   }
- 
+  .home-section-3_wrapper{
+    padding: 0 15px;
+  }
+  .home-section-3 picture img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+  }
+  
   .home-section-3_caption {
     color: #fdd27c;
     font-family: var(--font-inter);
@@ -246,13 +254,17 @@
   .home-section-3_title {
     color: #fff;
     font-family: var(--font-inter);
-    font-size: 30px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
   }
   
   @media (min-width: 768px) {
+    .home-section-3_wrapper{
+      max-width: 85%;
+      padding: 0;
+    }
     .home-section-3_caption {
       color: #fdd27c;
       font-family: var(--font-inter);
@@ -265,7 +277,7 @@
     .home-section-3_title {
       color: #fff;
       font-family: var(--font-inter);
-      font-size: 36px;
+      font-size: 32px;
       font-style: normal;
       font-weight: 600;
       line-height: normal;
@@ -287,6 +299,7 @@
   
   .home-section-3-slide-content {
     max-width: 450px;
+    padding: 0 10px;
   }
 
 
