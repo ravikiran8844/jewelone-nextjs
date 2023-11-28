@@ -7,6 +7,48 @@ import Image from "next/image";
 import "./NavBar.css";
 import Link from "next/link";
 
+
+
+const formatDate = (date) => {
+  const options = { day: '2-digit', month: 'long', year: 'numeric' };
+  const formattedDate = new Date(date).toLocaleDateString(undefined, options);
+
+  // Extract day, month, and year
+  const day = formattedDate.slice(0, 2);
+  const monthYear = formattedDate.slice(2);
+
+  // Add ordinal suffix to the day
+  const dayWithSuffix = addOrdinalSuffix(day);
+
+  return `${dayWithSuffix} ${monthYear}`;
+};
+
+const addOrdinalSuffix = (day) => {
+  if (day > 10 && day < 20) {
+    return day + 'th';
+  } else {
+    const lastDigit = day % 10;
+    switch (lastDigit) {
+      case 1:
+        return day + 'st';
+      case 2:
+        return day + 'nd';
+      case 3:
+        return day + 'rd';
+      default:
+        return day + 'th';
+    }
+  }
+};
+
+const TodayDate = () => {
+  const today = new Date();
+  const formattedToday = formatDate(today);
+
+  return <div>{formattedToday}</div>;
+};
+
+
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
@@ -105,7 +147,7 @@ const Navbar = () => {
                 Today’s Rate:
               </div>
               <div className="header-today-rate-section_label-text">
-                06th October 2023
+                <TodayDate/>
               </div>
             </div>
 
