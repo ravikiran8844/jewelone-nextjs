@@ -7,7 +7,8 @@ import Image from "next/image";
 
 
 
-const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date }) => {
+const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date , newlyLanunched
+}) => {
     const [showFullText, setShowFullText] = useState(false);
   
     const handleReadMoreClick = () => {
@@ -21,7 +22,7 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date }) => {
                 <source
                     srcSet={imageSrc}
                     type="image/webp"
-                    media="(min-width: 450px)"
+                    media="(min-width: 550px)"
                 />
                 <Image
                     alt={altText}
@@ -36,7 +37,8 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date }) => {
 
         </div>
         <div className="mt-4 home-section-3-slide-content">
-          <div className="home-section-3-slide-date"><span className="me-1"><svg
+         <div className="d-flex align-items-center">
+         <div className="home-section-3-slide-date me-2"><span className="me-1"><svg
               width={15}
               height={15}
               viewBox="0 0 18 18"
@@ -49,6 +51,14 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date }) => {
               />
             </svg>
             </span>{date}</div>
+            {newlyLanunched === true && (
+            <div className="badge-container">
+              <div className="badge" style={{ backgroundImage: 'url("/badge.webp")' }}>
+                NEWLY LAUNCHED
+              </div>
+            </div>
+          )}
+         </div>
         <div className="mt-3 home-section-3-slide-item-title">{title}</div>
 
           <span className="home-section-3-slide-item-text">
@@ -81,8 +91,8 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date }) => {
 const HomeSection3 = () => {
 
   return (
-    <section className="home-section-3 py-5" style={{backgroundImage: 'url("/home-section3-bg.webp")'}}>
-       <div className="container mb-4 ">
+    <section className="home-section-3 section-padding" style={{backgroundImage: 'url("/home-section3-bg.webp")'}}>
+       <div className="container mb-5">
           {/* <div className="home-section-3_caption">JewelOne</div> */}
           <div className="home-section-3_title">Our New Launches</div>
         </div>
@@ -97,8 +107,7 @@ const HomeSection3 = () => {
             autoWidth: true,
             focus: 'center',
             arrows: true,
-            autoplay: true,
-            interval: 4000,
+            autoplay: false,
             pagination: false,
             breakpoints: {
                 1040: {
@@ -115,6 +124,7 @@ const HomeSection3 = () => {
        
 
        <Slide
+            newlyLanunched={false} 
             date="October 7th 2023"
             imageSrc="/home-section3-img1.webp"
             mobileSrc="/home-section3mobile-img1.webp"
@@ -126,7 +136,7 @@ const HomeSection3 = () => {
 
         <Slide
             date="August 3rd 2023"
-
+            newlyLanunched={true} 
             imageSrc="/home-section3-img2.webp"
             mobileSrc="/home-section3mobile-img2.webp"
 
@@ -136,11 +146,10 @@ const HomeSection3 = () => {
 
             />
         <Slide
-            date="August 22nd 2023"
-
+            date="August 3rd 2023"
+            newlyLanunched={false} 
             imageSrc="/home-section3-img3.webp"
             mobileSrc="/home-section3mobile-img3.webp"
-
             altText="Amara Collection"
             title="Amara Collection"
             initialText="Whether you're looking for a striking statement piece for a special occasion or a subtle touch of everyday elegance, our Amara Collection is designed to complement every mood and moment. Each piece is a celebration of color, allowing you to express your unique style and add a vivid touch to your personal ensemble."
@@ -149,7 +158,7 @@ const HomeSection3 = () => {
 
     <Slide
             date="September 5th 2023"
-
+            newlyLanunched={false} 
             imageSrc="/home-section3-img4.webp"
             mobileSrc="/home-section3mobile-img4.webp"
             altText="Miraya Collection"

@@ -1,6 +1,6 @@
 "use client"
 
-import React from "react";
+import React,{useState} from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 
 import Image from "next/image";
@@ -53,8 +53,8 @@ const Navbar = () => {
           </svg>
         </button>
         <div
-          className="offcanvas offcanvas-end"
-          tabIndex="-1"
+        className={`offcanvas offcanvas-end`}
+        tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
@@ -72,7 +72,7 @@ const Navbar = () => {
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-center m-auto">
               <li className="nav-item">
-                <Link href="/our-story" className="main-menu-link nav-link">
+                <Link   href="/our-story" className="main-menu-link nav-link"  >
                   Our story
                 </Link>
               </li>

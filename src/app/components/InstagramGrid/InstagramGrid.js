@@ -12,7 +12,7 @@ export const InstagramGrid = () => {
 
 
   return (
-    <div className='instagram-grid-section home-section6 py-5'>
+    <div className='instagram-grid-section home-section6 section-padding'>
         <div className='container'>
             <div className='col-12 text-center mb-5'>
                 <div className='instagram-grid-section_title home-section6_title'>
