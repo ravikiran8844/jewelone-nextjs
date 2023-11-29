@@ -19,7 +19,7 @@ const HomeSection5 = () => {
 
   return (
     <section className="home-section5">
-      <div className="home-section5_wrapper section-padding" style={{backgroundImage: 'url("/home-section5-bg.webp")'}}>
+      <div className="home-section5_wrapper section-padding" style={{backgroundImage: 'url("/home-section5-bg.webp")',backgroundSize:'cover'}}>
         <div className="container">
           <div className="col-12">
             <div className="mb-5 text-md-center">

@@ -91,7 +91,7 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date , newlyLa
 const HomeSection3 = () => {
 
   return (
-    <section className="home-section-3 section-padding" style={{backgroundImage: 'url("/home-section3-bg.webp")'}}>
+    <section className="home-section-3 section-padding" style={{backgroundImage: 'url("/home-section3-bg.webp")',backgroundSize:'cover'}}>
        <div className="container mb-5">
           {/* <div className="home-section-3_caption">JewelOne</div> */}
           <div className="home-section-3_title">Our New Launches</div>
