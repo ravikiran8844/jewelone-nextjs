@@ -1,28 +1,49 @@
-"use client";
+"use client"
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import  "./NavBar.css"
 
-
-import Image from "next/image";
-import "./NavBar.css";
-import Link from "next/link";
 
 const Navbar = () => {
+  const [price, setPrice] = useState({
+    "goldPricePerGram": "5,652",
+    "goldPricePerSovereign": "45,200",
+    "silverPricePerGram": "77.70",
+    "silverPricePerKilogram": "77,000",
+    "createdAt": "2023-12-01T00:04:56.975Z",
+    "updatedAt": "2023-12-01T00:10:54.499Z",
+    "publishedAt": "2023-12-01T00:05:04.354Z"
+});
+
+  const getData = async () => {
+    try {
+      const response = await fetch('https://jewelone-new-axfe.onrender.com/api/price-card');
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      setPrice(data.data.attributes);
+      
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   const today = new Date();
   const options = { day: "numeric", month: "short", year: "numeric" };
   const formattedDate = today.toLocaleDateString("en-US", options);
 
-
   const handleLinkClick = () => {
     const offcanvas = document.getElementById('offcanvasNavbar');
-    
     if (offcanvas) {
       offcanvas.classList.remove('show');
     }
   };
-
-
-  
-
-
 
   return (
     <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
@@ -36,10 +57,10 @@ const Navbar = () => {
             priority
           />
         </Link>
-     
 
         <ul className="navbar-nav justify-content-end ms-auto">
           <div className="d-flex justify-content-end align-items-center header-today-rate-section">
+            {/* Rendering Gold Rate */}
             <div className="me-2 header-today-rate-card_content">
               <div className="header-today-rate-section_label-title">
                 Today’s Rate:
@@ -60,7 +81,7 @@ const Navbar = () => {
                     <div className="header-today-rate-section_gold-item d-flex justify-content-between align-items-center p-3">
                       <div>
                         <div className="header-today-rate-section_gold-item-title">
-                          ₹5,650/-
+                          ₹{price?.goldPricePerGram}/-
                         </div>
                         <div className="header-today-rate-section_gold-item-text">
                           per gram
@@ -68,7 +89,7 @@ const Navbar = () => {
                       </div>
                       <div>
                         <div className="header-today-rate-section_gold-item-title">
-                          ₹45,200/-
+                          ₹{price?.goldPricePerSovereign}/-
                         </div>
                         <div className="header-today-rate-section_gold-item-text">
                           per sovereign
@@ -80,12 +101,14 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Rendering Silver Rate */}
                 <div className="carousel-item">
                   <div className="header-today-rate-section_silver">
                     <div className="header-today-rate-section_silver-item d-flex justify-content-between align-items-center p-3">
                       <div>
                         <div className="header-today-rate-section_silver-item-title">
-                          ₹77.70/-
+                          ₹{price?.silverPricePerGram}/-
                         </div>
                         <div className="header-today-rate-section_silver-item-text">
                           per gram
@@ -93,7 +116,7 @@ const Navbar = () => {
                       </div>
                       <div>
                         <div className="header-today-rate-section_silver-item-title">
-                          ₹77,700/-
+                          ₹{price?.silverPricePerKilogram}/-
                         </div>
                         <div className="header-today-rate-section_silver-item-text">
                           per kg
@@ -105,7 +128,6 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-           
               </div>
             </div>
           </div>
