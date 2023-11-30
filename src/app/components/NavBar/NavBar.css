@@ -6,6 +6,11 @@
 .navbar_wrapper{
   gap: 10px;
 }
+
+.offcanvas-backdrop.show {
+  opacity: .0 !important;
+}
+
 .navbar-nav .main-menu-link {
   white-space: nowrap; /* Prevent menu items from wrapping to the next line */
   color: #2d2d2d;
@@ -50,6 +55,13 @@
     width: 170px;
     height: 100%;
   }
+
+  .today-rate-carousel{
+    width: 170px;
+    height: 100%;
+  }
+
+  
   .header-today-rate-section_label-title {
     color: #6b6a6a;
     text-align: right;
