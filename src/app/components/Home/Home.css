@@ -14,12 +14,12 @@
 }
 
 
-.home-section2 #splide03-list li {
+.home-section2 .home-section2_mobile-logo-items ul li {
   border-right: 2px solid #E9E9E9;
 
 }
 
-.home-section2 #splide03-list li:last-child {
+.home-section2 .home-section2_mobile-logo-items ul li:last-child {
   border-right: none !important;
 }
 
