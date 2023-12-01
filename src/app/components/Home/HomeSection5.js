@@ -208,7 +208,7 @@ const HomeSection5 = () => {
                       </div>
                       <div className="col-12 col-md-6 m-auto">
                         <div className="mb-4 home-section5_slide-item-text">
-                        Meet Nandhini, a talented Makeup Artist from Coimbatore. She fell in love with Jewel One at her sister's wedding and wants to share her thoughts. Listen to Nandhini as she tells us how much she adores Jewel One and how it has added a special touch to her work and personal style.
+                        Meet Nandhini, a talented Makeup Artist from Coimbatore. She fell in love with Jewel One at her sister&apos;s wedding and wants to share her thoughts. Listen to Nandhini as she tells us how much she adores Jewel One and how it has added a special touch to her work and personal style.
                         </div>
                         <div>
                           <div className="home-section5_slide-item-footer--title">
