@@ -56,7 +56,8 @@
     margin:0 5px;
   }
   .footer-social-links li svg {
-    width: 26px;
+    width: 20px;
+    height: 20px
   }
   
   .newsletter-form-input-group {
