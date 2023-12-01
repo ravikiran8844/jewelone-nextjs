@@ -22,7 +22,7 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date , newlyLa
                 <source
                     srcSet={imageSrc}
                     type="image/webp"
-                    media="(min-width: 550px)"
+                    media="(min-width: 480px)"
                 />
                 <Image
                     alt={altText}
@@ -124,7 +124,7 @@ const HomeSection3 = () => {
        
 
        <Slide
-            newlyLanunched={false} 
+            newlyLanunched={true} 
             date="October 7th 2023"
             imageSrc="/home-section3-img1.webp"
             mobileSrc="/home-section3mobile-img1.webp"
@@ -136,7 +136,7 @@ const HomeSection3 = () => {
 
         <Slide
             date="August 3rd 2023"
-            newlyLanunched={true} 
+            newlyLanunched={false} 
             imageSrc="/home-section3-img2.webp"
             mobileSrc="/home-section3mobile-img2.webp"
 

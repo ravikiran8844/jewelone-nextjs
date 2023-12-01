@@ -291,7 +291,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* animation: blink 6s infinite;  */
+    animation: blink 6s infinite; 
   
 }
 
@@ -349,7 +349,11 @@
     border-radius: 20px;
     height: auto;
   }
-  
+  @media (min-width:480px) {
+    .home-section-3 img {
+      max-height: 300px;
+    }
+  }
   .home-section-3 .splide__slide {
     max-width: 100%;
   }
@@ -401,8 +405,8 @@
   
   .home-section-3 .splide__arrows {
     position: absolute !important;
-    top: 50%;
-    right: -79px;
+    top: 40%;
+    right: -50px;
     z-index: 999;
     display: flex;
     
@@ -415,8 +419,8 @@
   }
   .home-section-3 .splide__arrow {
     opacity: 1 !important;
-    width: 79px;
-    height: 72px;
+    width: 50px;
+    height: 50px;
     flex-shrink: 0;
   }
   
