@@ -25,7 +25,7 @@ export const InstagramGrid = () => {
 
             <div className='instagram-grid-items'>
             <Splide options={ {
-                      type: 'loop',
+                      type: 'slide',
                       gap: 10,
                       autoWidth: true,
                       arrows: false,
@@ -36,31 +36,25 @@ export const InstagramGrid = () => {
              
              <SplideSlide>
               <a target='__blank' href='https://instagram.com/jewelone_in/'>
-              <Image loading='lazy' width={316} height={316} src="/instagram1.webp" alt='instagram banner' />
+              <Image loading='lazy' width={316} height={316} src="/instagram-1.webp" alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
               <a target='__blank' href='https://instagram.com/jewelone_in/'>
-              <Image loading='lazy' width={316} height={316} src="/instagram2.webp"  alt='instagram banner' />
+              <Image loading='lazy' width={316} height={316} src="/instagram-2.webp"  alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
               <a target='__blank' href='https://instagram.com/jewelone_in/'>
-              <Image loading='lazy' width={316} height={316} src="/instagram3.webp" alt='instagram banner' />
+              <Image loading='lazy' width={316} height={316} src="/instagram-3.webp" alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
               <a target='__blank' href='https://instagram.com/jewelone_in/'>
-              <Image loading='lazy' width={316} height={316} src="/instagram4.webp" alt='instagram banner' />
-              </a>
-
-              </SplideSlide>
-              <SplideSlide>
-              <a target='__blank' href='https://instagram.com/jewelone_in/'>
-              <Image loading='lazy' width={316} height={316} src="/instagram5.webp"  alt='instagram banner'/>
+              <Image loading='lazy' width={316} height={316} src="/instagram-4.webp" alt='instagram banner' />
               </a>
 
               </SplideSlide>

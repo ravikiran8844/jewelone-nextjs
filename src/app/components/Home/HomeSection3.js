@@ -141,8 +141,8 @@ const HomeSection3 = () => {
             imageSrc="/home-section3-img2.webp"
             mobileSrc="/home-section3mobile-img2.webp"
 
-            altText="Khata Collection 3"
-            title="Khata Collection"
+            altText="Katha Collection 3"
+            title="Katha Collection"
             initialText="Introducing &quot;Katha,&quot; a jewellery collection where every piece is a masterpiece, reflecting the stories of valour, love, and timeless beauty. Each creation in this collection is more than adornment; it's a narrative woven with craftsmanship and passion."
 
             />

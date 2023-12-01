@@ -325,7 +325,7 @@
     .home-section-3_caption {
       color: #A0222C;
       font-family: var(--font-inter);
-      font-size: 18px;
+      font-size: 16px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
@@ -600,6 +600,12 @@
   border-radius: 20px;
 }
 
+.home-section5-main-videos iframe{
+  border-radius: 20px;
+  max-width: 100%;
+  width: 100%;
+}
+
 .home-section5_title {
   color: #2d2d2d;
   font-family: var(--font-inter);
@@ -767,5 +773,5 @@
 }
 .home-section5-thubnials_wrapper img {
   max-height: 64px;
-  object-fit: cover;
+  object-fit: fill;
 }
