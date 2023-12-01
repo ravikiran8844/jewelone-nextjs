@@ -242,9 +242,9 @@
   
   /* home-section-3 */
   
-  /* .home-section-3 {
-    background: #a0222c;
-  } */
+  .home-section-3 {
+    background: linear-gradient(90deg, #F2EBE4 0%, rgba(242, 235, 228, 0.00) 100%);
+    }
   .home-section-3_wrapper{
     padding: 0 15px;
   }
@@ -309,7 +309,7 @@
     text-transform: uppercase;
   }
   .home-section-3_title {
-    color: #fff;
+    color: #2D2D2D;
     font-family: var(--font-inter);
     font-size: 28px;
     font-style: normal;
@@ -323,16 +323,16 @@
       padding: 0;
     }
     .home-section-3_caption {
-      color: #fdd27c;
+      color: #A0222C;
       font-family: var(--font-inter);
-      font-size: 20px;
+      font-size: 18px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       text-transform: uppercase;
     }
     .home-section-3_title {
-      color: #fff;
+      color: #2D2D2D;
       font-family: var(--font-inter);
       font-size: 32px;
       font-style: normal;
@@ -365,16 +365,17 @@
 
 
   .home-section-3-slide-date{
-    color: #F7C676;
+    color: #A0222C;
     font-family: var(--font-inter);
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: 130%; /* 32.106px */
+    
   }
 
   .home-section-3-slide-item-title {
-    color: #fff;
+    color: #2D2D2D;
     font-family: var(--font-inter);
     font-size: 20px;
     font-style: normal;
@@ -384,7 +385,7 @@
     letter-spacing: 0.64px;
   }
   .home-section-3-slide-item-text {
-    color: #fff;
+    color: #6D6D6D;
     font-family: var(--font-inter);
     font-size: 14px;
     font-style: normal;
@@ -392,7 +393,7 @@
     line-height: 130%; /* 26px */
   }
   .home-section-3-slide-item-link {
-    color: #f9cf41;
+    color: #A0222C;
     font-family: var(--font-inter);
     font-size: 14px;
     font-style: normal;
@@ -425,7 +426,7 @@
   }
   
   .home-section-3 .splide__arrow svg {
-    fill: #2d2d2d;
+    fill: #FFF;
     width: 23px;
     height: 23px;
     flex-shrink: 0;
