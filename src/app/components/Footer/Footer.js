@@ -73,11 +73,12 @@ const Footer = () => {
 
               {/* Contact Us */}
               <div>
-                <div className="mb-3 footer-section_links_label">
+                <div className="mb-2 footer-section_links_label">
                   Contact Us
                 </div>
                 <ul className="list-unstyled">
                   <li>
+                    <a target="__blank" href="https://wa.me/message/DVQPGTOCP5MWI1">
                     <span className="me-2">
                       <svg
                         width="13"
@@ -101,9 +102,10 @@ const Footer = () => {
                         </defs>
                       </svg>
                     </span>
-                    Chat with Us
+                    Chat with Us</a>
                   </li>
                   <li>
+                    <a href="tel:1800 1033916">
                     <span className="me-2">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -127,9 +129,9 @@ const Footer = () => {
                         </defs>
                       </svg>
                     </span>
-                    1800 1033916
+                    1800 1033916</a>
                   </li>
-                  <li>
+                  {/* <li>
                     <span className="me-2">
                       <svg
                         width="16"
@@ -156,52 +158,38 @@ const Footer = () => {
                       </svg>
                     </span>
                     customercare@jewelone.in
-                  </li>
+                  </li> */}
                 </ul>
               </div>
 
               {/* Swarna Shakti App Download */}
-              <div>
-                <div className="mb-3 footer-section_links_label">
-                  Swarna Shakti App Download
-                </div>
-                <div className="d-flex gap-2">
-                  <div>
-                  <a target="__blank" href="https://apps.apple.com/in/app/jewelone/id1507128724">
-                      <Image
-                        className="img-fluid"
-                        width="160"
-                        height="50"
-                        src="/app-store.webp"
-                        alt="logo"
-                      />
-                    </a>
-                  </div>
-                  <div>
-                    <a target="__blank" href="https://play.google.com/store/apps/details?id=com.jewelone.winchit&hl=en&gl=US">
-                      <Image
-                        className="img-fluid"
-                        width="160"
-                        height="50"
-                        src="/google-play.webp"
-                        alt="logo"
-                      />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div
-              className="mt-4 d-flex flex-column g-3 flex-md-row justify-content-between flex-wrap"
-              style={{ borderTop: "1px solid #84141E", paddingTop: "10px" }}
-            >
-              {/* Follow Us */}
-              <div>
-                <div className="footer-section_links_label mb-3">Follow Us</div>
+            <div>
+            <div>
+                <div className="mb-2 footer-section_links_label">Follow Us</div>
                 <div>
                   <ul className="list-unstyled footer-social-links">
                     <ul className="list-unstyled footer-social-links">
+                    <li>
+                        <a target="__blank" href="https://www.instagram.com/jewelone_in/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              fill="#fff"
+                              d="M11.897 2.14c3.183 0 3.552.01 4.806.073 1.159.053 1.791.242 2.213.411.558.21.948.474 1.37.885.421.422.674.812.885 1.37.158.422.358 1.054.41 2.213.053 1.254.075 1.633.075 4.805 0 3.183-.01 3.552-.074 4.806-.053 1.159-.242 1.791-.411 2.213-.21.558-.474.948-.885 1.37a3.575 3.575 0 01-1.37.885c-.422.158-1.054.358-2.213.41-1.254.053-1.634.075-4.806.075-3.182 0-3.55-.01-4.805-.074-1.16-.053-1.791-.242-2.213-.411a3.702 3.702 0 01-1.37-.885 3.575 3.575 0 01-.885-1.37c-.158-.422-.358-1.054-.411-2.213-.053-1.254-.074-1.634-.074-4.806 0-3.182.01-3.55.074-4.805.053-1.16.242-1.791.411-2.213.21-.558.474-.948.885-1.37a3.575 3.575 0 011.37-.885c.422-.158 1.054-.358 2.213-.411 1.244-.063 1.623-.074 4.805-.074zm0-2.14c-3.235 0-3.635.01-4.91.074-1.265.052-2.129.263-2.888.548a5.856 5.856 0 00-2.107 1.37 5.856 5.856 0 00-1.37 2.107C.327 4.858.126 5.722.074 6.987.01 8.25 0 8.662 0 11.897c0 3.236.01 3.636.074 4.911.052 1.265.263 2.129.548 2.888.305.78.706 1.443 1.37 2.107a5.856 5.856 0 002.107 1.37c.759.295 1.623.495 2.888.559 1.264.052 1.675.073 4.91.073 3.236 0 3.636-.01 4.911-.073 1.265-.053 2.129-.264 2.888-.559a5.856 5.856 0 002.107-1.37 5.858 5.858 0 001.37-2.107c.295-.76.495-1.623.559-2.888.052-1.264.073-1.675.073-4.91 0-3.236-.01-3.636-.073-4.911-.053-1.265-.264-2.129-.559-2.888a5.857 5.857 0 00-1.37-2.107 5.857 5.857 0 00-2.107-1.37c-.76-.295-1.623-.496-2.888-.548C15.533.01 15.133 0 11.898 0z"
+                            ></path>
+                            <path
+                              fill="#fff"
+                              d="M11.897 5.785a6.116 6.116 0 00-6.112 6.112 6.116 6.116 0 006.112 6.112 6.116 6.116 0 006.112-6.112 6.116 6.116 0 00-6.112-6.112zm0 10.085a3.964 3.964 0 01-3.962-3.962 3.964 3.964 0 013.962-3.963 3.964 3.964 0 013.963 3.963 3.964 3.964 0 01-3.963 3.962zM19.675 5.544c0 .79-.643 1.433-1.433 1.433s-1.433-.643-1.433-1.433.642-1.434 1.433-1.434c.8.01 1.433.643 1.433 1.434z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
                       <li>
                         <a target="__blank" href="https://www.facebook.com/jewelone916">
                           <svg
@@ -218,6 +206,25 @@ const Footer = () => {
                           </svg>
                         </a>
                       </li>
+                      <li>
+                        <a target="__blank" href="https://www.youtube.com/channel/UCCG6vza_ECtCW9D58F8Xh_Q">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="27"
+                            height="19"
+                            fill="none"
+                            viewBox="0 0 27 19"
+                          >
+                            <path
+                              fill="#fff"
+                              d="M26.434 2.964A3.39 3.39 0 0024.047.566C21.94 0 13.5 0 13.5 0S5.059 0 2.953.566A3.408 3.408 0 00.566 2.964C0 5.08 0 9.5 0 9.5s0 4.42.566 6.536a3.39 3.39 0 002.387 2.398C5.06 19 13.5 19 13.5 19s8.441 0 10.547-.566a3.407 3.407 0 002.387-2.398C27 13.92 27 9.5 27 9.5s0-4.42-.566-6.536zM10.745 13.512V5.488L17.794 9.5l-7.049 4.012z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+
+
+
                       <li>
                         <a target="__blank" style={{ background: "#1DA1F2" }} href="https://twitter.com/jewelone916">
                           <svg
@@ -250,51 +257,59 @@ const Footer = () => {
                           </svg>
                         </a>
                       </li>
-                      <li>
-                        <a target="__blank" href="https://www.instagram.com/jewelone_in/">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              fill="#fff"
-                              d="M11.897 2.14c3.183 0 3.552.01 4.806.073 1.159.053 1.791.242 2.213.411.558.21.948.474 1.37.885.421.422.674.812.885 1.37.158.422.358 1.054.41 2.213.053 1.254.075 1.633.075 4.805 0 3.183-.01 3.552-.074 4.806-.053 1.159-.242 1.791-.411 2.213-.21.558-.474.948-.885 1.37a3.575 3.575 0 01-1.37.885c-.422.158-1.054.358-2.213.41-1.254.053-1.634.075-4.806.075-3.182 0-3.55-.01-4.805-.074-1.16-.053-1.791-.242-2.213-.411a3.702 3.702 0 01-1.37-.885 3.575 3.575 0 01-.885-1.37c-.158-.422-.358-1.054-.411-2.213-.053-1.254-.074-1.634-.074-4.806 0-3.182.01-3.55.074-4.805.053-1.16.242-1.791.411-2.213.21-.558.474-.948.885-1.37a3.575 3.575 0 011.37-.885c.422-.158 1.054-.358 2.213-.411 1.244-.063 1.623-.074 4.805-.074zm0-2.14c-3.235 0-3.635.01-4.91.074-1.265.052-2.129.263-2.888.548a5.856 5.856 0 00-2.107 1.37 5.856 5.856 0 00-1.37 2.107C.327 4.858.126 5.722.074 6.987.01 8.25 0 8.662 0 11.897c0 3.236.01 3.636.074 4.911.052 1.265.263 2.129.548 2.888.305.78.706 1.443 1.37 2.107a5.856 5.856 0 002.107 1.37c.759.295 1.623.495 2.888.559 1.264.052 1.675.073 4.91.073 3.236 0 3.636-.01 4.911-.073 1.265-.053 2.129-.264 2.888-.559a5.856 5.856 0 002.107-1.37 5.858 5.858 0 001.37-2.107c.295-.76.495-1.623.559-2.888.052-1.264.073-1.675.073-4.91 0-3.236-.01-3.636-.073-4.911-.053-1.265-.264-2.129-.559-2.888a5.857 5.857 0 00-1.37-2.107 5.857 5.857 0 00-2.107-1.37c-.76-.295-1.623-.496-2.888-.548C15.533.01 15.133 0 11.898 0z"
-                            ></path>
-                            <path
-                              fill="#fff"
-                              d="M11.897 5.785a6.116 6.116 0 00-6.112 6.112 6.116 6.116 0 006.112 6.112 6.116 6.116 0 006.112-6.112 6.116 6.116 0 00-6.112-6.112zm0 10.085a3.964 3.964 0 01-3.962-3.962 3.964 3.964 0 013.962-3.963 3.964 3.964 0 013.963 3.963 3.964 3.964 0 01-3.963 3.962zM19.675 5.544c0 .79-.643 1.433-1.433 1.433s-1.433-.643-1.433-1.433.642-1.434 1.433-1.434c.8.01 1.433.643 1.433 1.434z"
-                            ></path>
-                          </svg>
-                        </a>
-                      </li>
-                      <li>
-                        <a target="__blank" href="https://www.youtube.com/channel/UCCG6vza_ECtCW9D58F8Xh_Q">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="27"
-                            height="19"
-                            fill="none"
-                            viewBox="0 0 27 19"
-                          >
-                            <path
-                              fill="#fff"
-                              d="M26.434 2.964A3.39 3.39 0 0024.047.566C21.94 0 13.5 0 13.5 0S5.059 0 2.953.566A3.408 3.408 0 00.566 2.964C0 5.08 0 9.5 0 9.5s0 4.42.566 6.536a3.39 3.39 0 002.387 2.398C5.06 19 13.5 19 13.5 19s8.441 0 10.547-.566a3.407 3.407 0 002.387-2.398C27 13.92 27 9.5 27 9.5s0-4.42-.566-6.536zM10.745 13.512V5.488L17.794 9.5l-7.049 4.012z"
-                            ></path>
-                          </svg>
-                        </a>
-                      </li>
+                     
+                      
                     </ul>
                   </ul>
                 </div>
               </div>
 
+              <div>
+                <div className="mb-3 footer-section_links_label">
+                  Swarna Shakti App Download
+                </div>
+                <div className="d-flex flex-wrap gap-2">
+                  <div>
+                  <a target="__blank" href="https://apps.apple.com/in/app/jewelone/id1507128724">
+                      <Image
+                        className="img-fluid"
+                        width="160"
+                        height="50"
+                        src="/app-store.webp"
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                  <div>
+                    <a target="__blank" href="https://play.google.com/store/apps/details?id=com.jewelone.winchit&hl=en&gl=US">
+                      <Image
+                        className="img-fluid"
+                        width="160"
+                        height="50"
+                        src="/google-play.webp"
+                        alt="logo"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+              
+            </div>
+
+            <div
+              className="mt-4 d-flex flex-column g-3 flex-md-row justify-content-between flex-wrap"
+              style={{ borderTop: "1px solid #84141E", paddingTop: "10px" }}
+            >
+           
+
               {/* Copyright */}
               <div className="align-self-md-end mt-3">
                 <div className="footer-section_text">
-                  © {year} JewelOne. All Rights Reserved.{" "}
+                  &copy; {year} - Jewel One is Trademarked & Registered under Emerald Jewel Industry India Limited.{" "}
                 </div>
               </div>
             </div>
