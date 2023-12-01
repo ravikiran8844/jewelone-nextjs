@@ -24,7 +24,7 @@ const Footer = () => {
                   alt="logo"
                 />
               </div>
-              <div className="footer-section_text mb-4">
+              {/* <div className="footer-section_text mb-4">
                 Subscribe to email alerts. We promise not to spam
               </div>
               <div>
@@ -41,14 +41,14 @@ const Footer = () => {
                     </span>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div className="col-12 col-md-7 col-lg-8">
             <div className="footer-section_items">
               {/* Information */}
-              <div>
+              {/* <div>
                 <div className="mb-3 footer-section_links_label">
                   Information
                 </div>
@@ -69,7 +69,7 @@ const Footer = () => {
                     </Link>
                   </li>
                 </ul>
-              </div>
+              </div> */}
 
               {/* Contact Us */}
               <div>
