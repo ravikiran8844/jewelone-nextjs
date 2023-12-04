@@ -606,6 +606,8 @@
   width: 100%;
   background-color: #000;
   max-height: 319px;
+  max-width: 501px;
+  margin: auto;
   flex-shrink: 0;
 }
 
@@ -725,7 +727,7 @@
 }
 
 .home-section5-thubnials_wrapper {
-  max-width: 650px;
+  max-width: 450px;
   margin: auto;
 }
 
@@ -746,6 +748,7 @@
 }
 .home-section5 .card-body {
   padding: 5px;
+  text-align: center;
 }
 .home-section5 .thumbnail-title {
   color: #2d2d2d;
@@ -776,5 +779,6 @@
 }
 .home-section5-thubnials_wrapper img {
   max-height: 64px;
-  object-fit: fill;
+  object-fit: contain;
+  margin-bottom: 5px;
 }

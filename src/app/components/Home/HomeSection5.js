@@ -23,16 +23,15 @@ const HomeSection5 = () => {
         <div className="container">
           <div className="col-12">
             <div className="mb-5 text-md-center">
-              <div className="home-section5_title">Hear the Joyful experiences with Jewel One</div>
+              <div className="home-section5_title">Hear the Joyful Experiences with Jewel One</div>
             </div>
            
            
             <Splide className="home-section5-thubnials_wrapper mb-5" options={{  
                  type: 'slide',
-                 rewind: true,
-                 gap: '1rem',
+                 rewind: false,
                  pagination: false,
-                 fixedWidth: 110,
+                 fixedWidth: 100,
                  cover: true,
                  focus: 'center',
                  isNavigation: true,
@@ -158,7 +157,7 @@ const HomeSection5 = () => {
                 }}>
    <SplideSlide>
             <div className="row">
-                      <div className="col-12 col-md-6">
+                      <div className="col-12 col-md-6 d-flex">
                       <iframe loading="lazy"  src="https://drive.google.com/file/d/1lJnbbWjqX0wYzxDMSIZHIPsrvhthbwgy/preview" width="640" height="480" allow="autoplay"></iframe>                      </div>
                       <div className="col-12 col-md-6 m-auto">
                         <div className="mb-4 home-section5_slide-item-text">
@@ -179,7 +178,7 @@ const HomeSection5 = () => {
 
 <SplideSlide>
             <div className="row">
-                      <div className="col-12 col-md-6">
+                      <div className="col-12 col-md-6 d-flex">
                       <iframe loading="lazy"  src="https://drive.google.com/file/d/1Vay6028kWpAGCG4ReaWtJgAOXkw9hQX6/preview" width="640" height="480" allow="autoplay"></iframe>
                       </div>
                       <div className="col-12 col-md-6 m-auto">
@@ -203,7 +202,7 @@ const HomeSection5 = () => {
 
             <SplideSlide>
             <div className="row">
-                      <div className="col-12 col-md-6">
+                      <div className="col-12 col-md-6 d-flex">
                       <iframe loading="lazy"  src="https://drive.google.com/file/d/1PW7F-KMLUldjhHwf7a3idKY-eUNVcUaG/preview" width="640" height="480" allow="autoplay"></iframe>
                       </div>
                       <div className="col-12 col-md-6 m-auto">
@@ -223,7 +222,7 @@ const HomeSection5 = () => {
             </SplideSlide>
             <SplideSlide>
             <div className="row">
-                      <div className="col-12 col-md-6">
+                      <div className="col-12 col-md-6 d-flex">
                       <iframe loading='lazy' src="https://drive.google.com/file/d/1jNdMPYUcxyzmoHXg9yjwPnn7pI9QI1CG/preview" width="640" height="480" allow="autoplay"></iframe>
                       </div>
                 <div className="col-12 col-md-6 m-auto">
@@ -254,7 +253,7 @@ const HomeSection5 = () => {
 
             <SplideSlide>
             <div className="row">
-                      <div className="col-12 col-md-6">
+                      <div className="col-12 col-md-6 d-flex">
                       <iframe loading="lazy"  src="https://drive.google.com/file/d/1o_yAm0un-va61wIq7QSxTN9aqyuxkeRI/preview" width="640" height="480" allow="autoplay"></iframe>
                       </div>
                       <div className="col-12 col-md-6 m-auto">
