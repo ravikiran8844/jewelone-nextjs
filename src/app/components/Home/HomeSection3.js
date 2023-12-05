@@ -27,8 +27,8 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date , newlyLa
                 <Image
                     alt={altText}
                     src={mobileSrc}
-                    height={489}
-                    width={829 }
+                    height={405}
+                    width={323 }
                     priority="true" />
                 </picture>
 
@@ -104,7 +104,7 @@ const HomeSection3 = () => {
         <Splide options={{
             type: 'slide',
             rewind:true,
-            gap: 20,
+            gap: '.5rem',
             autoWidth: true,
             focus: 'center',
             arrows: true,

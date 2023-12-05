@@ -18,8 +18,8 @@ const Footer = () => {
               <div className="mb-4">
                 <Image
                   className="img-fluid"
-                  width="180"
-                  height="140"
+                  width="160"
+                  height="120"
                   src="/footer-logo.webp"
                   alt="logo"
                 />
@@ -72,7 +72,7 @@ const Footer = () => {
               </div> */}
 
               {/* Contact Us */}
-              <div>
+              <div className="m-auto m-sm-0">
                 <div className="mb-2 footer-section_links_label">
                   Contact Us
                 </div>
@@ -308,7 +308,7 @@ const Footer = () => {
 
               {/* Copyright */}
               <div className="align-self-md-end mt-3">
-                <div className="footer-section_text">
+                <div className="footer-section_text text-center">
                   &copy; {year} - Jewel One is Trademarked & Registered under Emerald Jewel Industry India Limited.{" "}
                 </div>
               </div>

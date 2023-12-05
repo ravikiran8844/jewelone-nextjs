@@ -57,3 +57,54 @@ line-height: 138%; /* 19.32px */
     width: 100%;
     height: auto;
 }
+
+
+
+
+.ourstory-section5{
+    background: #9F212C;
+}
+
+
+
+.ourstory-section5_title{
+    color: #F7C676;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 127.5%; /* 38.25px */
+}
+.ourstory-section5_text{
+    color: #EFD8C8;
+text-align: center;
+font-family: var(--font-inter);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 127.5%; /* 22.95px */
+}
+
+
+@media (min-width:768px) {
+    
+.ourstory-section5_title{
+    color: #F7C676;
+text-align: center;
+font-family: Playfair Display;
+font-size: 54px;
+font-style: italic;
+font-weight: 400;
+line-height: 127.5%; /* 68.85px */
+}
+.ourstory-section5_text{
+    color: #EFD8C8;
+text-align: center;
+font-family: var(--font-inter);
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 127.5%; /* 30.6px */
+}
+}

@@ -158,7 +158,8 @@ const HomeSection5 = () => {
    <SplideSlide>
             <div className="row">
                       <div className="col-12 col-md-6 d-flex">
-                      <iframe loading="lazy"  src="https://drive.google.com/file/d/1lJnbbWjqX0wYzxDMSIZHIPsrvhthbwgy/preview" width="640" height="480" allow="autoplay"></iframe>                      </div>
+                      <iframe  loading="lazy"  src="https://drive.google.com/file/d/1lJnbbWjqX0wYzxDMSIZHIPsrvhthbwgy/preview" width="640" height="480"></iframe>     
+                      </div>
                       <div className="col-12 col-md-6 m-auto">
                         <div className="mb-4 home-section5_slide-item-text">
                         Sushmita , a bride from Pollachi, shares her happiest moment of customising her entire bridal jewellery with Jewel One. Join her as she narrates the story of how her dream jewellery became a reality, making her special day even more magical.

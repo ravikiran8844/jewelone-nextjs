@@ -1,4 +1,5 @@
 import React from 'react'
+import "./OurStory.css";
 
 const OurStorySection3 = () => {
   return (

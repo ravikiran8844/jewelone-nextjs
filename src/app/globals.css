@@ -9,11 +9,6 @@ body{
   margin: auto;
 }
 
-/* @media (min-width: 576px) and (max-width: 1920px) {
-  .container {
-    max-width: calc(100% - 80px);
-  }
-} */
 
 .section-padding{
   padding: 40px 0;

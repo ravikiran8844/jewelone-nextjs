@@ -42,6 +42,21 @@
     line-height: 132.023%; /* 18.483px */
 text-transform: uppercase;
 }
+
+.instagram-grid-section_text{
+    color: #222;
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 132.023%; /* 18.483px */
+    text-transform: capitalize;
+}
+.instagram-grid-section_text b{
+    font-weight: 600;
+}
+
 @media (min-width:768px) {
     .home-section6 svg{
         width: 38.446px;
@@ -80,5 +95,16 @@ text-transform: uppercase;
     line-height: normal;
     text-transform: uppercase;
     }
+    
+.instagram-grid-section_text{
+    color: #222;
+text-align: center;
+font-family: var(--font-inter);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize;
+}
      
 }

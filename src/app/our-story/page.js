@@ -4,6 +4,11 @@ import OurStorySection1 from '../components/OurStory/OurStorySection1'
 import OurStorySection2 from '../components/OurStory/OurStorySection2'
 import OurStorySection5 from '../components/OurStory/OurStorySection5'
 
+
+export const metadata = {
+  title: 'Our Story - JewelOne',
+  description: 'JewelOne Our Story Page',
+}
 const page = () => {
   return (
     <main>

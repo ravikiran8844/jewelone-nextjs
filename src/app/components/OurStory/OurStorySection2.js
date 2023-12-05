@@ -1,6 +1,6 @@
 import React from "react";
-import "./OurStory.css";
 import Image from "next/image";
+import "./OurStory.css";
 
 const OurStorySection2 = () => {
   return (
@@ -24,8 +24,8 @@ const OurStorySection2 = () => {
                 <Image
                   className="img-fluid"
                   src="/ourstory-section2-img1.webp"
-                  height={420}
-                  width={300}
+                  height={670}
+                  width={469}
                 />
               </div>
           </div>
@@ -46,8 +46,8 @@ const OurStorySection2 = () => {
                 <Image
                   className="img-fluid our-story-section2_stars"
                   src="/stars.png"
-                  height={333}
-                  width={288}
+                  height={250}
+                  width={250}
                 />
                 </div>
 
@@ -57,8 +57,8 @@ const OurStorySection2 = () => {
                 <Image
                   className="img-fluid"
                   src="/our-story-section2-img2.webp"
-                  height={670}
-                  width={469}
+                  height={333}
+                  width={288}
                 />
               </div>
             </div>

@@ -1,8 +1,16 @@
 .navbar {
-  background: #fff;
   box-shadow: 0px 8px 45px 0px rgba(155, 155, 155, 0.25);
   min-height: 83px;
 }
+
+.navbar{
+  background: #fff;
+}
+/* @media (min-width:768px) {
+  .navbar{
+    background: #fff;
+  }
+} */
 .navbar_wrapper{
   gap: 10px;
 }
@@ -10,7 +18,17 @@
 .offcanvas-backdrop.show {
   opacity: .0 !important;
 }
+.header-card_wrapper{
+  margin: auto;
+}
 
+
+@media (min-width:500px) {
+  .header-card_wrapper{
+    margin:unset;
+    margin-left: auto;
+  }
+}
 .navbar-nav .main-menu-link {
   white-space: nowrap; /* Prevent menu items from wrapping to the next line */
   color: #2d2d2d;

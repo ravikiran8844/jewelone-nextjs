@@ -47,18 +47,18 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
-      <div className="container d-flex align-items-center navbar_wrapper">
+      <div className="container d-flex align-items-center align-items-sm-start justify-content-center navbar_wrapper">
         <Link className="navbar-brand" href="/">
           <Image
             src="/jewelone-logo.webp"
-            width="223"
-            height="57"
+            width="180"
+            height="48"
             alt="Site Logo"
             priority
           />
         </Link>
 
-        <ul className="navbar-nav justify-content-end ms-auto">
+        <ul className="navbar-nav justify-content-end header-card_wrapper">
           <div className="d-flex justify-content-end align-items-center header-today-rate-section">
             {/* Rendering Gold Rate */}
             <div className="me-2 header-today-rate-card_content">
