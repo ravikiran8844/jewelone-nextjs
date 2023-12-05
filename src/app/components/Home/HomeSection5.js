@@ -49,7 +49,7 @@ const HomeSection5 = () => {
                             alt="video thumbnail 2"
                           />
                         </div>
-                        <div className="thumbnail-title">Sushmita</div>
+                        <div className="thumbnail-title">Sushmita </div>
                         <div className="thumbnail-text">Customer</div>
                       </div>
                     </div>
@@ -161,7 +161,7 @@ const HomeSection5 = () => {
                       <iframe loading="lazy"  src="https://drive.google.com/file/d/1lJnbbWjqX0wYzxDMSIZHIPsrvhthbwgy/preview" width="640" height="480" allow="autoplay"></iframe>                      </div>
                       <div className="col-12 col-md-6 m-auto">
                         <div className="mb-4 home-section5_slide-item-text">
-                        Sushmitha, a bride from Pollachi, shares her happiest moment of customising her entire bridal jewellery with Jewel One. Join her as she narrates the story of how her dream jewellery became a reality, making her special day even more magical.
+                        Sushmita , a bride from Pollachi, shares her happiest moment of customising her entire bridal jewellery with Jewel One. Join her as she narrates the story of how her dream jewellery became a reality, making her special day even more magical.
                         </div>
                         <div>
                           <div className="home-section5_slide-item-footer--title">

@@ -1,0 +1,59 @@
+.our-story-title{
+    color: #A0222C;
+    font-family: var(--font-inter);
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 109%; /* 49.05px */
+    letter-spacing: -2.025px;
+}
+
+
+.our-story-text{
+    color: #747474;
+font-family: var(--font-inter);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 138%; /* 19.32px */
+}
+
+
+
+@media (min-width:768px) {
+    .our-story-title{
+        color: #A0222C;
+        font-family: var(--font-inter);
+        font-size: 52px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 109%; /* 87.2px */
+        letter-spacing: -3.6px;
+    }
+    
+    
+    .our-story-text{
+        color: #747474;
+        font-family: var(--font-inter);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 138%; /* 27.6px */
+    }
+    
+}
+
+
+
+
+.our-story-section2{
+    background: #F2EBE4;
+}
+
+
+.our-story-section2_stars{
+    min-width: 100px;
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
