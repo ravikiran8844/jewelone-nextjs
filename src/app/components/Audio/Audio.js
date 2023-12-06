@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const AudioSection = () => {
   const audioRef = useRef(null);
@@ -7,21 +7,26 @@ const AudioSection = () => {
   const playAudio = () => {
     const audio = audioRef.current;
     if (audio) {
-      audio.play();
+      audio.play().catch(error => {
+        // Handle the error, e.g., log it
+        console.error('Failed to play audio:', error.message);
+      });
     }
   };
 
-  // Add an event listener to the document to play audio on the first click or tap only
-  React.useEffect(() => {
+  useEffect(() => {
     const handleInteraction = () => {
       playAudio();
-      document.removeEventListener('pointerdown', handleInteraction);
+      document.removeEventListener('click', handleInteraction);
+      document.removeEventListener('touchstart', handleInteraction);
     };
 
-    document.addEventListener('pointerdown', handleInteraction);
+    document.addEventListener('click', handleInteraction);
+    document.addEventListener('touchstart', handleInteraction);
 
     return () => {
-      document.removeEventListener('pointerdown', handleInteraction);
+      document.removeEventListener('click', handleInteraction);
+      document.removeEventListener('touchstart', handleInteraction);
     };
   }, []); // Empty dependency array ensures the effect runs only once
 
