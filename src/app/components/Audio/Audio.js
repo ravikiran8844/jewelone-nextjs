@@ -1,20 +1,15 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import ReactAudioPlayer from 'react-audio-player';
 
 const Audio = () => {
 
     
 
   return (
-    <ReactAudioPlayer
-    className='audio-player'
-      src="audio.mp3"
-      autoPlay
-      controls
-    />
+    <audio className='audio-player' controls autoPlay>
+  <source src="audio.mp3" type="audio/mpeg" />
+</audio>
   );
 };
 
 export default Audio
-
