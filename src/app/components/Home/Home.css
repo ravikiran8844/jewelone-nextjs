@@ -300,11 +300,13 @@
 .home-section-3 .badge-container {
     position: relative;
     display: inline-block;
+    max-width: 80px;
+
 }
 
 .home-section-3 .badge {
-    width: 135px; /* Set your desired width */
-    height: 48px; /* Set your desired height */
+    width: 120px; /* Set your desired width */
+    height: 40px; /* Set your desired height */
     color: #000;
     font-family: var(--font-inter);
     font-size: 10px;

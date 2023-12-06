@@ -54,9 +54,11 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date , newlyLa
             </span>{date}</div>
             {newlyLanunched === true && (
             <div className="badge-container">
-              <div className="badge" style={{ backgroundImage: 'url("/badge.png")' }}>
+              {/* <div className="badge" style={{ backgroundImage: 'url("/badge.png")' }}>
                 NEWLY LAUNCHED
-              </div>
+              </div> */}
+
+              <Image className="img-fluid" width={104} height={40} src="/new.gif" />
             </div>
           )}
          </div>
