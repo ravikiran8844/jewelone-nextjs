@@ -13,18 +13,15 @@ const AudioSection = () => {
 
   // Add an event listener to the document to play audio on the first click or tap only
   React.useEffect(() => {
-    const handleClickOrTap = () => {
+    const handleInteraction = () => {
       playAudio();
-      document.removeEventListener('click', handleClickOrTap);
-      document.removeEventListener('touchstart', handleClickOrTap);
+      document.removeEventListener('pointerdown', handleInteraction);
     };
 
-    document.addEventListener('click', handleClickOrTap);
-    document.addEventListener('touchstart', handleClickOrTap);
+    document.addEventListener('pointerdown', handleInteraction);
 
     return () => {
-      document.removeEventListener('click', handleClickOrTap);
-      document.removeEventListener('touchstart', handleClickOrTap);
+      document.removeEventListener('pointerdown', handleInteraction);
     };
   }, []); // Empty dependency array ensures the effect runs only once
 
@@ -51,3 +48,4 @@ const AudioSection = () => {
 };
 
 export default AudioSection;
+
