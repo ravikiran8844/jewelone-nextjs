@@ -4,6 +4,7 @@ import HomeSection2 from './components/Home/HomeSection2'
 import HomeSection4 from './components/Home/HomeSection4'
 import HomeSection5 from './components/Home/HomeSection5'
 import HomeSection3 from './components/Home/HomeSection3'
+import AudioSection from './components/Audio/Audio'
 
 
 export const metadata = {
@@ -21,6 +22,7 @@ export default function Home() {
     <HomeSection4/>
     <HomeSection5/>
     <InstagramGrid/> 
+    <AudioSection/>
    </div>
   )
 }

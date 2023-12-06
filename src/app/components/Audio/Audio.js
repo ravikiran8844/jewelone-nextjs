@@ -1,15 +1,50 @@
 "use client"
-import React, { useEffect, useState } from 'react';
+import React, { useRef } from 'react';
 
-const Audio = () => {
+const AudioSection = () => {
+  const audioRef = useRef(null);
 
-    
+  const playAudio = () => {
+    const audio = audioRef.current;
+    if (audio) {
+      audio.play();
+    }
+  };
+
+  // Add an event listener to the document to play audio on the first click only
+  React.useEffect(() => {
+    const handleClick = () => {
+      playAudio();
+      document.removeEventListener('click', handleClick); // Remove the event listener after the first click
+    };
+
+    document.addEventListener('click', handleClick);
+
+    return () => {
+      document.removeEventListener('click', handleClick);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once
 
   return (
-    <audio className='audio-player' controls autoPlay>
-  <source src="audio.mp3" type="audio/mpeg" />
-</audio>
+    <div className='container-fluid position-relative'>
+      {/* Hidden button with transparent styles */}
+      <button
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          opacity: 0,
+          cursor: 'pointer',
+        }}
+      />
+      <audio ref={audioRef} style={{ display: 'none' }} autoPlay>
+        <source src="audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio tag.
+      </audio>
+    </div>
   );
 };
 
-export default Audio
+export default AudioSection;

@@ -37,7 +37,6 @@
   font-style: normal;
   font-weight: 500;
   line-height: 100%; /* 16px */
-  letter-spacing: 0.32px;
   text-transform: uppercase;
 }
 .navbar-toggler:focus {
@@ -88,7 +87,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 136%; /* 20.353px */
-    letter-spacing: 0.299px;
   }
   .header-today-rate-section_label-text {
     color: #2d2d2d !important;
@@ -98,7 +96,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 136%; /* 20.353px */
-    letter-spacing: 0.299px;
   }
   
   .header-today-rate-section_gold {
@@ -133,7 +130,6 @@
     font-style: normal;
     font-weight: 800;
     line-height: 100%; /* 16.105px */
-    letter-spacing: 0.322px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -194,7 +190,6 @@
     font-style: normal;
     font-weight: 800;
     line-height: 100%; /* 16.105px */
-    letter-spacing: 0.322px;
     text-transform: uppercase;
     display: flex;
     align-items: center;
