@@ -1,0 +1,57 @@
+
+.stores-section1 img{
+    width: 100%;
+    min-height: 339px;
+    height: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.stores-section1_wrapper{
+    max-width: 576px;
+    margin: auto;
+    padding: 10px;
+}
+.stores-section1_title{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 39px */
+    letter-spacing: 0.6px;
+}
+.stores-section1_text{
+    color: #FFF;
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133%; /* 21.28px */
+}
+@media (min-width:768px) {
+    .stores-section1_title{
+        color: #FFF;
+        text-align: center;
+        font-family: var(--font-inter);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%; /* 46.8px */
+        letter-spacing: 0.72px;
+    }
+    .stores-section1_text{
+        color: #FFF;
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 133%; /* 26.6px */
+    } 
+}
+/* .stores-section1-item{
+    left: 50%;
+    transform: translate(-50%);
+} */

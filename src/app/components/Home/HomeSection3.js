@@ -58,7 +58,7 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date , newlyLa
                 NEWLY LAUNCHED
               </div> */}
 
-              <Image className="img-fluid" width={104} height={40} src="/new.gif" />
+              <Image className="img-fluid" width={104} height={40} src="/new.gif" alt="new offer" />
             </div>
           )}
          </div>

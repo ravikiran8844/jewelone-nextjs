@@ -78,12 +78,12 @@ line-height: 138%; /* 19.32px */
 }
 .ourstory-section5_text{
     color: #EFD8C8;
-text-align: center;
-font-family: var(--font-inter);
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 127.5%; /* 22.95px */
+    text-align: center;
+    font-family: var(--font-inter);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 127.5%; /* 22.95px */
 }
 
 
@@ -100,7 +100,7 @@ line-height: 127.5%; /* 68.85px */
 }
 .ourstory-section5_text{
     color: #EFD8C8;
-text-align: center;
+text-align: right;
 font-family: var(--font-inter);
 font-size: 24px;
 font-style: normal;

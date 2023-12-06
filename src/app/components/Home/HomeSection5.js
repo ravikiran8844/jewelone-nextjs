@@ -44,7 +44,7 @@ const HomeSection5 = () => {
                           <Image
                             className="img-fluid"
                             width={139}
-                            height={64}
+                            height={80}
                             src="/sushmitha.webp"
                             alt="video thumbnail 2"
                           />
@@ -61,7 +61,7 @@ const HomeSection5 = () => {
                           <Image
                             className="img-fluid"
                             width={139}
-                            height={64}
+                            height={80}
                             src="/sujatha.webp"
                             alt="video thumbnail 3"
                           />
@@ -82,7 +82,7 @@ const HomeSection5 = () => {
                           <Image
                             className="img-fluid"
                             width={139}
-                            height={64}
+                            height={80}
                             src="/video-thumbnail1.webp"
                             alt="video thumbnail 4"
                           />
@@ -99,8 +99,8 @@ const HomeSection5 = () => {
                           <Image
                             className="img-fluid"
                             width={139}
-                            height={64}
-                            src="/video-thumbnail2.webp"
+                            height={80}
+                            src="/thumb2.jpg"
                             alt="video thumbnail 2"
                           />
                         </div>
@@ -128,7 +128,7 @@ const HomeSection5 = () => {
                           <Image
                             className="img-fluid"
                             width={139}
-                            height={64}
+                            height={80}
                             src="/customers.webp"
                             alt="video thumbnail 5"
                           />
