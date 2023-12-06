@@ -1,6 +1,6 @@
 
 body{
-  background: #F8F8FB;
+  background: #F8F8FB !important;
   font-family: var(--font-inter);
   font-display: swap;
   /* overflow-x: hidden; */
@@ -27,10 +27,18 @@ body{
 main{
   min-height: 70vh;
 }
+.form-control:focus{
+box-shadow: none !important;
+border: none;
+}
 picture img{
   max-width: 100%;
   width: 100%;
   height: auto;
+}
+.audio-player{
+  visibility: none;
+  display: none;
 }
 .bg-red{
   background: #9F212C;

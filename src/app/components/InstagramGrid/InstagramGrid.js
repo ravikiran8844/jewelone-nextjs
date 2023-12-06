@@ -38,7 +38,7 @@ export const InstagramGrid = () => {
              
              <SplideSlide>
               <a target='__blank' href='https://instagram.com/jewelone_in/'>
-              <Image loading='lazy' width={316} height={316} src="/instagram-1.webp" alt='instagram banner' />
+              <Image loading='lazy' width={316} height={316} src="/instagram-1.jpg" alt='instagram banner' />
               </a>
 
               </SplideSlide>

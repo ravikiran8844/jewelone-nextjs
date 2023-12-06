@@ -71,7 +71,7 @@ const StoresSection1 = () => {
               <label htmlFor="floatingInputGroup1">Enter Pincode or City</label>
             </div>
             <span className="input-group-text">
-            Locate Me
+            <button className="border-0 bg-transparent">Locate Me</button>
             </span>
           </div>
           </div>
