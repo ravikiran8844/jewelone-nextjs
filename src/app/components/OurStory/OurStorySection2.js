@@ -26,6 +26,7 @@ const OurStorySection2 = () => {
                   src="/ourstory-section2-img1.webp"
                   height={670}
                   width={469}
+                  alt="image"
                 />
               </div>
           </div>
@@ -48,6 +49,7 @@ const OurStorySection2 = () => {
                   src="/stars.png"
                   height={250}
                   width={250}
+                  alt="image"
                 />
                 </div>
 
@@ -59,6 +61,7 @@ const OurStorySection2 = () => {
                   src="/our-story-section2-img2.webp"
                   height={333}
                   width={288}
+                  alt="image"
                 />
               </div>
             </div>
