@@ -27,8 +27,8 @@ const Slide = ({ imageSrc, mobileSrc, altText, initialText, title,date , newlyLa
                 <Image
                     alt={altText}
                     src={mobileSrc}
-                    height={405}
-                    width={323 }
+                    height={489}
+                    width={829 }
                     priority="true" />
                 </picture>
 

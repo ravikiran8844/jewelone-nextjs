@@ -72,7 +72,7 @@ const Footer = () => {
               </div> */}
 
               {/* Contact Us */}
-              <div className="m-auto m-sm-0">
+              <div>
                 <div className="mb-2 footer-section_links_label">
                   Contact Us
                 </div>
