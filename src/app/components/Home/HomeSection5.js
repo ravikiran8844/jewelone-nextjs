@@ -2,6 +2,7 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import ReactPlayer from 'react-player/youtube'
 import "./Home.css";
 
 const HomeSection5 = () => {
@@ -147,7 +148,10 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                  <iframe  loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/8Q4eiTmy0b0?si=ruX4e94JoFu5tp_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
+
+                  <ReactPlayer url='https://www.youtube.com/watch?v=8Q4eiTmy0b0' />
+                  </div>
+
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
                       Sushmita , a bride from Pollachi, shares her happiest
@@ -171,7 +175,9 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                  <iframe  loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/TXlGcMOUGp0?si=tglXou5Wm0luu5KK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
+                  <ReactPlayer url='https://www.youtube.com/watch?v=TXlGcMOUGp0' />
+
+                          </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
                       Meet Sujatha, a Siddha Doctor from Ramanathapuram, who
@@ -195,12 +201,9 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                  <iframe  loading="lazy" width="315" height="560"
-                      src="https://www.youtube.com/embed/-UaIoygsBD4"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
+                  <ReactPlayer url='https://www.youtube.com/watch?v=-UaIoygsBD4' />
+
+                  
                   </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
@@ -225,12 +228,9 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                  <iframe  loading="lazy" width="315" height="560"
-                      src="https://www.youtube.com/embed/49wgYi_FUsk"
-                      title="YouTube video player"
-                      frameborder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
+                  <ReactPlayer url='https://www.youtube.com/watch?v=49wgYi_FUsk' />
+
+                 
                   </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
@@ -254,7 +254,8 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                       <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NwhLojRAfAM?si=SIocnxtJDhjSSgwG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <ReactPlayer url='https://www.youtube.com/watch?v=NwhLojRAfAM' />
+
 
                   </div>
                   <div className="col-12 col-md-6 m-auto">
