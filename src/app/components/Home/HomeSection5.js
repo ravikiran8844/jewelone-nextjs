@@ -147,7 +147,7 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/8Q4eiTmy0b0?si=ruX4e94JoFu5tp_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
+                  <iframe  loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/8Q4eiTmy0b0?si=ruX4e94JoFu5tp_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
                       Sushmita , a bride from Pollachi, shares her happiest
@@ -171,7 +171,7 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/TXlGcMOUGp0?si=tglXou5Wm0luu5KK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
+                  <iframe  loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/TXlGcMOUGp0?si=tglXou5Wm0luu5KK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
                       Meet Sujatha, a Siddha Doctor from Ramanathapuram, who
@@ -195,7 +195,7 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                  <iframe width="315" height="560"
+                  <iframe  loading="lazy" width="315" height="560"
                       src="https://www.youtube.com/embed/-UaIoygsBD4"
                       title="YouTube video player"
                       frameborder="0"
@@ -225,7 +225,7 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                  <iframe width="315" height="560"
+                  <iframe  loading="lazy" width="315" height="560"
                       src="https://www.youtube.com/embed/49wgYi_FUsk"
                       title="YouTube video player"
                       frameborder="0" 
@@ -254,7 +254,7 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                       <iframe width="560" height="315" src="https://www.youtube.com/embed/NwhLojRAfAM?si=SIocnxtJDhjSSgwG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                       <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/NwhLojRAfAM?si=SIocnxtJDhjSSgwG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
                   </div>
                   <div className="col-12 col-md-6 m-auto">
