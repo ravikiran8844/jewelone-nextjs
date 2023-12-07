@@ -1,8 +1,19 @@
-import React from "react";
+"use client"
+
+import React,{useState } from "react";
 import "./Stores.css"
 import Image from "next/image";
+import { useStoreContext } from "./StoreContext";
 
 const StoresSection1 = () => {
+
+  const { updateFilteredStores } = useStoreContext();
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleSearch = () => {
+    updateFilteredStores(searchTerm);
+  };
+
   return (
     <div className="stores-section1 position-relative">
         <Image className="img-fluid" width={1920} height={581} src="/store-location.png" alt="stores location" />
@@ -67,11 +78,15 @@ const StoresSection1 = () => {
                 className="form-control"
                 id="floatingInputGroup1"
                 placeholder="Enter Pincode or City"
+                onChange={(e) => setSearchTerm(e.target.value)}
+
               />
               <label htmlFor="floatingInputGroup1">Enter Pincode or City</label>
             </div>
             <span className="input-group-text">
-            <button className="border-0 bg-transparent">Locate Me</button>
+            <button className="border-0 bg-transparent"
+            onClick={handleSearch}
+            >Locate Me</button>
             </span>
           </div>
           </div>

@@ -147,13 +147,7 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                    <iframe
-                      loading="lazy"
-                      src="https://drive.google.com/file/d/1lJnbbWjqX0wYzxDMSIZHIPsrvhthbwgy/preview"
-                      width="640"
-                      height="480"
-                    ></iframe>
-                  </div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/8Q4eiTmy0b0?si=ruX4e94JoFu5tp_H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
                       Sushmita , a bride from Pollachi, shares her happiest
@@ -177,14 +171,7 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                    <iframe
-                      loading="lazy"
-                      src="https://drive.google.com/file/d/1Vay6028kWpAGCG4ReaWtJgAOXkw9hQX6/preview"
-                      width="640"
-                      height="480"
-                      allow="autoplay"
-                    ></iframe>
-                  </div>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/TXlGcMOUGp0?si=tglXou5Wm0luu5KK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                  </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
                       Meet Sujatha, a Siddha Doctor from Ramanathapuram, who
@@ -208,13 +195,12 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                    <iframe
-                      loading="lazy"
-                      src="https://drive.google.com/file/d/1PW7F-KMLUldjhHwf7a3idKY-eUNVcUaG/preview"
-                      width="640"
-                      height="480"
-                      allow="autoplay"
-                    ></iframe>
+                  <iframe width="315" height="560"
+                      src="https://www.youtube.com/embed/-UaIoygsBD4"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
                   </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
@@ -239,13 +225,12 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                    <iframe
-                      loading="lazy"
-                      src="https://drive.google.com/file/d/1jNdMPYUcxyzmoHXg9yjwPnn7pI9QI1CG/preview"
-                      width="640"
-                      height="480"
-                      allow="autoplay"
-                    ></iframe>
+                  <iframe width="315" height="560"
+                      src="https://www.youtube.com/embed/49wgYi_FUsk"
+                      title="YouTube video player"
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
                   </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
@@ -269,13 +254,8 @@ const HomeSection5 = () => {
               <SplideSlide>
                 <div className="row">
                   <div className="col-12 col-md-6 d-flex">
-                    <iframe
-                      loading="lazy"
-                      src="https://drive.google.com/file/d/1o_yAm0un-va61wIq7QSxTN9aqyuxkeRI/preview"
-                      width="640"
-                      height="480"
-                      allow="autoplay"
-                    ></iframe>
+                       <iframe width="560" height="315" src="https://www.youtube.com/embed/NwhLojRAfAM?si=SIocnxtJDhjSSgwG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
                   </div>
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
