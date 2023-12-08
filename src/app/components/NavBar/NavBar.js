@@ -7,14 +7,15 @@ import  "./NavBar.css"
 
 const Navbar = () => {
   const [price, setPrice] = useState({
-    "goldPricePerGram": "5,652",
-    "goldPricePerSovereign": "45,200",
-    "silverPricePerGram": "77.70",
-    "silverPricePerKilogram": "77,000",
-    "createdAt": "2023-12-01T00:04:56.975Z",
-    "updatedAt": "2023-12-01T00:10:54.499Z",
-    "publishedAt": "2023-12-01T00:05:04.354Z"
+    "goldPricePerGram": "",
+    "goldPricePerSovereign": "",
+    "silverPricePerGram": "",
+    "silverPricePerKilogram": "",
+    "createdAt": "",
+    "updatedAt": "",
+    "publishedAt": ""
 });
+
 
   const getData = async () => {
     try {

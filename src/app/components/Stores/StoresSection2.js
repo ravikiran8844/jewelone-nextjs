@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import { useStoreContext } from "./StoreContext";
+import "./Stores.css"
 
 
 
@@ -123,10 +124,10 @@ const StoresSection2 = () => {
 
 
   return (
-    <div className="stores-section2  section-padding">
+    <div className="stores-section2 section-padding">
     <div className="container">
       <div className="col-12 mb-5">
-        <div>Showing Store in</div>
+        <div className="stores-section2_title">Showing Store in</div>
       </div>
 
       <div className="row">
