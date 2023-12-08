@@ -27,7 +27,7 @@ export const MainBanner = () => {
                 <Image
                     alt="Image X alt"
                     src="/home-mobile-banner1.webp"
-                    height={541}
+                    height={550}
                     width={1519 }
                     priority="true"                />
                 </picture>

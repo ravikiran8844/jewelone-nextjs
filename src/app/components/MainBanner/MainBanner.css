@@ -4,6 +4,13 @@
 }
 
 
+@media (max-width:600px) {
+    .main-banner-section picture img{
+        min-height: 550px;
+    }
+    }  
+
+
 .main-banner-section .splide{
     max-width: 100%;
 }
