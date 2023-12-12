@@ -49,11 +49,11 @@ const HomeSection2 = () => {
                 </div>
 
                 <div className="home-section2_text">
-                  With timeless masterpieces and endless customisation
-                  possibilities - We stand by our tagline -{" "}
+                  With timeless masterpieces and endless customization
+                  possibilities - We stand by our tagline - {""}
                   <span className="item-text-dark">
-                    “Women's Heart is Where We Start - Penn Manadhai Purintha
-                    Pon”.
+                    “Women&#39;s Heart is Where We Start - Penn Manadhai
+                    Purintha Pon”.
                   </span>
                 </div>
               </div>
