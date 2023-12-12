@@ -52,7 +52,7 @@ const HomeSection2 = () => {
                   With timeless masterpieces and endless customisation
                   possibilities - We stand by our tagline -{" "}
                   <span className="item-text-dark">
-                    “Jewellery that understands women - Penn Manadhai Purintha
+                    “Women's Heart is Where We Start - Penn Manadhai Purintha
                     Pon”.
                   </span>
                 </div>
