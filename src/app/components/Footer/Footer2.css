@@ -1,19 +1,19 @@
 
 .footer-section {
-    background: #F2EBE4;
-    color: #6D6D6D;
+    background: #9f212c;
+    color: #fff;
   }
   .footer-section_text {
-    color: #6D6D6D;
+    color: #fff;
     font-family: var(--font-inter);
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 130%; /* 18.2px */
   }
-
+  
   .footer-section_links_label {
-    color: #A0222C;
+    color: #f7c676;
     font-family: var(--font-inter);
     font-size: 16px;
     font-style: normal;
@@ -21,7 +21,7 @@
     line-height: 140%; /* 22.4px */
   }
   .footer-section ul li {
-    color: #6D6D6D;
+    color: #fff;
     font-family: var(--font-inter);
     font-size: 12px;
     font-style: normal;
@@ -62,12 +62,12 @@
   
   .newsletter-form-input-group {
     border-radius: 8.728px;
-    border: 0.97px solid #BDB1A5;
+    border: 0.97px solid #d49950;
     padding: 5px;
   }
   
   .newsletter-form-input-group input {
-    color: #BDB1A5 !important;
+    color: #c0676f !important;
     font-family: var(--font-inter);
     font-size: 16px;
     font-style: normal;
@@ -78,7 +78,7 @@
     border: none;
   }
   .newsletter-form-input-group input::placeholder {
-    color: #BDB1A5 !important;
+    color: #c0676f !important;
     font-family: var(--font-inter);
     font-size: 16px;
     font-style: normal;
@@ -87,7 +87,7 @@
   }
   @media (min-width: 992px) {
     .footer-section_text {
-      color: #6D6D6D;
+      color: #fff;
       font-family: var(--font-inter);
       font-size: 14px;
       font-style: normal;
@@ -96,7 +96,7 @@
     }
   
     .footer-section_links_label {
-      color: #A0222C;
+      color: #f7c676;
       font-family: var(--font-inter);
       font-size: 18px;
       font-style: normal;
@@ -104,7 +104,7 @@
       line-height: 140%; /* 30.8px */
     }
     .footer-section ul li {
-      color: #6D6D6D;
+      color: #fff;
       font-family: var(--font-inter);
       font-size: 16px;
       font-style: normal;
@@ -117,5 +117,5 @@
 
   .footer-section_items a{
     text-decoration: none;
-    color: #6D6D6D;
+    color: #fff;
   }
