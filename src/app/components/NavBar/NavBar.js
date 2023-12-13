@@ -19,7 +19,7 @@ const Navbar = () => {
 
   const getData = async () => {
     try {
-      const response = await fetch('https://jewelone-new-axfe.onrender.com/api/price-card');
+      const response = await fetch(`${process.env.NEXT_PUBLIC_STRAPI_URL}/api/price-card`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
