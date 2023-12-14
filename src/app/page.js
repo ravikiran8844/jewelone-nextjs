@@ -18,7 +18,7 @@ export default function Home() {
   return (
    <div>
     {/* <MainBanner/> */}
-    <HomeSection1/>
+    <HomeSection4/>
     <HomeSection2/>
     <HomeSection3/>
     <HomeSection4/>
