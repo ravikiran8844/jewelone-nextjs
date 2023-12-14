@@ -16,15 +16,15 @@ export const metadata = {
 
 export default function Home() {
   return (
-   <div>
+   <main>
     {/* <MainBanner/> */}
-    <HomeSection4/>
+    <HomeSection1/>
     <HomeSection2/>
     <HomeSection3/>
     <HomeSection4/>
     <VideoSection/>
     <InstagramGrid/> 
     <AudioSection/>
-   </div>
+   </main>
   )
 }
