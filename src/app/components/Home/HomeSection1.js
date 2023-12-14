@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const HomeSection1 = () => {
   return (
-    <div className=''>
+    <div className='home-section1'>
           <picture>
                 <source
                     srcSet="/home-main-banner2.webp"
@@ -15,7 +15,8 @@ const HomeSection1 = () => {
                     src="/home-mobile-banner2.webp"
                     height={550}
                     width={1519 }
-                    priority="true"                />
+                    priority="true" 
+                    className='img-fluid'               />
                 </picture>
     </div>
   )
