@@ -5,6 +5,7 @@ import HomeSection4 from './components/Home/HomeSection4'
 import HomeSection3 from './components/Home/HomeSection3'
 import AudioSection from './components/Audio/Audio'
 import VideoSection from './components/Home/VideoSection'
+import HomeSection1 from './components/Home/HomeSection1'
 
 
 export const metadata = {
@@ -16,7 +17,8 @@ export const metadata = {
 export default function Home() {
   return (
    <div>
-    <MainBanner/>
+    {/* <MainBanner/> */}
+    <HomeSection1/>
     <HomeSection2/>
     <HomeSection3/>
     <HomeSection4/>

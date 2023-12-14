@@ -7,10 +7,10 @@ import  "./NavBar.css"
 
 const Navbar = () => {
   const [price, setPrice] = useState({
-    "goldPricePerGram": "5,652",
-    "goldPricePerSovereign": "45,200",
-    "silverPricePerGram": "77.70",
-    "silverPricePerKilogram": "77,000",
+    "goldPricePerGram": "",
+    "goldPricePerSovereign": "",
+    "silverPricePerGram": "",
+    "silverPricePerKilogram": "",
     "createdAt": "",
     "updatedAt": "",
     "publishedAt": ""
