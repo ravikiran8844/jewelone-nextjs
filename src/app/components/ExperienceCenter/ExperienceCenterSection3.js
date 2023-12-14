@@ -16,6 +16,7 @@ const ExperienceCenterSection3 = () => {
             <div className="text-center experienceCenterSection3_grid-item">
               <div className="mb-3 experienceCenterSection3_grid-item--logo-wrapper">
                 <Image
+                alt="image"
                   width={90}
                   height={90}
                   className="img-fluid"
@@ -29,6 +30,8 @@ const ExperienceCenterSection3 = () => {
             <div className="text-center experienceCenterSection3_grid-item">
               <div className="mb-3 experienceCenterSection3_grid-item--logo-wrapper">
                 <Image
+                                alt="image"
+
                   width={90}
                   height={90}
                   className="img-fluid"
@@ -43,6 +46,8 @@ const ExperienceCenterSection3 = () => {
             <div className="text-center experienceCenterSection3_grid-item">
               <div className="mb-3 experienceCenterSection3_grid-item--logo-wrapper">
                 <Image
+                                alt="image"
+
                   width={90}
                   height={90}
                   className="img-fluid"
@@ -57,6 +62,8 @@ const ExperienceCenterSection3 = () => {
             <div className="text-center experienceCenterSection3_grid-item">
               <div className="mb-3 experienceCenterSection3_grid-item--logo-wrapper">
                 <Image
+                                alt="image"
+
                   width={90}
                   height={90}
                   className="img-fluid"
