@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="d-flex justify-content-end align-items-center header-today-rate-section">
             {/* Rendering Gold Rate */}
             <div className="me-2 header-today-rate-card_content">
-              <div className="header-today-rate-section_label-title">
+              <div className="header-today-rate-section_label-title fw-bold">
                 Today’s Rate:
               </div>
               <div className="header-today-rate-section_label-text">
