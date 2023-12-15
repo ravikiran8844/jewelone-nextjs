@@ -61,6 +61,12 @@ const ContactSection3 = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+
+          <div className="col-12 col-md-6 mb-5 mb-md-0">
+            <div className="accordion accordion-flush" id="ContactPageFaqs2">
               <div className="accordion-item">
                 <h2 className="accordion-header">
                   <button
@@ -77,7 +83,7 @@ const ContactSection3 = () => {
                 <div
                   id="flush-collapseThree"
                   className="accordion-collapse collapse"
-                  data-bs-parent="#ContactPageFaqs"
+                  data-bs-parent="#ContactPageFaqs2"
                 >
                  <div className="accordion-body">
                     Answer 
@@ -101,7 +107,7 @@ const ContactSection3 = () => {
                 <div
                   id="flush-collapseFour"
                   className="accordion-collapse collapse"
-                  data-bs-parent="#ContactPageFaqs"
+                  data-bs-parent="#ContactPageFaqs2"
                 >
                  <div className="accordion-body">
                     Answer 
@@ -109,36 +115,16 @@ const ContactSection3 = () => {
                 </div>
               </div>
 
-              <div className="accordion-item">
-                <h2 className="accordion-header">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#flush-collapseFive"
-                    aria-expanded="false"
-                    aria-controls="flush-collapseFive"
-                  >
-                    Accordion Item #5
-                  </button>
-                </h2>
-                <div
-                  id="flush-collapseFive"
-                  className="accordion-collapse collapse"
-                  data-bs-parent="#ContactPageFaqs"
-                >
-                 <div className="accordion-body">
-                    Answer 
-                  </div>
-                </div>
-              </div>
+            
 
 
 
             </div>
           </div>
 
-          <div className="col-12 col-md-6">
+
+
+          {/* <div className="col-12 col-md-6">
             <div className="contact-section3_form">
               <div className="contact-section3_form-title mb-4">Ask a different question</div>
 
@@ -169,7 +155,10 @@ const ContactSection3 = () => {
                 </form>
               </div>
             </div>
-          </div>
+          </div> */}
+
+
+
         </div>
       </div>
     </div>

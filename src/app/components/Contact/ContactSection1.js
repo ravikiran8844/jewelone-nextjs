@@ -17,24 +17,27 @@ const ContactSection1 = () => {
                 </div>
 
 
-                <div className='col-12 col-md-6'>
-                    <div className='contact-section1_form-wrapper'>
-                       <div>
-                            <input className='form-control ' placeholder='Name' type='text'/>
-                       </div>
-                       <div>
-                            <input className='form-control ' placeholder='Email Address' type='email'/>
-                       </div>
-                       <div>
-                            <textarea className='form-control' placeholder='Message'/>
-                       </div>
+               <div className='col-12 col-md-6'>
+    <div className='contact-section1_form-wrapper'>
+        <div>
+            <input className='form-control' placeholder='Name' type='text' required />
+        </div>
+        <div>
+            <input className='form-control' placeholder='Email Address' type='email' required />
+        </div>
+        <div>
+            <input className='form-control' placeholder='Mobile Number' type='tel'  required />
+        </div>
+        <div>
+            <textarea className='form-control' placeholder='Message' required></textarea>
+        </div>
 
-                       <div className='text-end'>
-                         <button type='submit' className='btn'>SUBMIT</button>
-                       </div>
-                    </div>
+        <div className='text-end'>
+            <button type='submit' className='btn'>SUBMIT</button>
+        </div>
+    </div>
+</div>
 
-                </div>
             </div>
 
             <div className='row mt-5'>
@@ -47,7 +50,6 @@ const ContactSection1 = () => {
                             <div>
                                 <div className='mb-2 card-label'>Email</div>
                                 <div className='card-text'>customercare@jewelone.in</div>
-                                <div  className='card-text'>customercare@jewelone.in</div>
                             </div>
                         </div>
                     </div>
@@ -78,7 +80,7 @@ const ContactSection1 = () => {
                             </div>
                             <div>
                                 <div className='mb-2 card-label'>Address</div>
-                                <div className='card-text'>1234 Coimbatore, Tamil Nadu, 641302</div>
+                                <div className='card-text'>230, E TV Swamy Rd, R.S. Puram, Coimbatore, Tamil Nadu 641002</div>
                             </div>
                         </div>
                     </div>

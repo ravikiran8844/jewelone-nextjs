@@ -17,7 +17,7 @@ const page = () => {
   return (
     <main>
       <ContactSection1/>
-      <ContactSection2/>
+      {/* <ContactSection2/> */}
       <ContactSection3/>
     </main>
   )
