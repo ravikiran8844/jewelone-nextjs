@@ -6,6 +6,7 @@ import HomeSection3 from './components/Home/HomeSection3'
 import AudioSection from './components/Audio/Audio'
 import VideoSection from './components/Home/VideoSection'
 import HomeSection1 from './components/Home/HomeSection1'
+import AudioPlayOnScroll from './components/Audio/AudioPlayOnScroll'
 
 
 export const metadata = {
@@ -17,14 +18,15 @@ export const metadata = {
 export default function Home() {
   return (
    <main>
-    {/* <MainBanner/> */}
-    <HomeSection1/>
+    <MainBanner/>
+    {/* <HomeSection1/> */}
     <HomeSection2/>
     <HomeSection3/>
     <HomeSection4/>
     <VideoSection/>
     <InstagramGrid/> 
     <AudioSection/>
+    {/* <AudioPlayOnScroll/> */}
    </main>
   )
 }
