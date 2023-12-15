@@ -6,11 +6,10 @@ import HomeSection3 from './components/Home/HomeSection3'
 import AudioSection from './components/Audio/Audio'
 import VideoSection from './components/Home/VideoSection'
 import HomeSection1 from './components/Home/HomeSection1'
-import AudioPlayOnScroll from './components/Audio/AudioPlayOnScroll'
 
 
 export const metadata = {
-  title: 'JewelOne Home Page',
+  title: "JewelOne",
   description: 'JewelOne Home Page',
 }
 
@@ -26,7 +25,6 @@ export default function Home() {
     <VideoSection/>
     <InstagramGrid/> 
     <AudioSection/>
-    {/* <AudioPlayOnScroll/> */}
    </main>
   )
 }
