@@ -1,8 +1,42 @@
+"use client"
+
 import React from 'react'
+import { useForm } from "react-hook-form"
 import "./Contact.css"
 import Image from 'next/image'
 
 const ContactSection1 = () => {
+
+    const {
+        register,
+        handleSubmit,
+        watch,reset ,
+        formState: { errors },
+      } = useForm()
+    
+      const onSubmit = (data) => {
+        sendMail(data);
+        console.log(data);
+        reset();
+      }
+
+      const sendMail = (data) => {
+        const apiEndpoint = '/api/contact';
+            fetch(apiEndpoint, {
+                method: 'POST',
+                body: JSON.stringify(data),
+            })
+                .then((res) => res.json())
+                .then((response) => {
+                    console.log(response);
+                })
+                .catch((err) => {
+                console.log(err);
+                });
+      }
+
+      
+
   return (
     <div className='contact-section1 section-padding'>
         <div className='container'>
@@ -19,22 +53,35 @@ const ContactSection1 = () => {
 
                <div className='col-12 col-md-6'>
     <div className='contact-section1_form-wrapper'>
+       <form  onSubmit={handleSubmit(onSubmit)}>
+       <div>
+            <input {...register("name", { required: true })} className='form-control' placeholder='Name' type='text' />
+            {errors.name?.type === "required" && (
+            <div className='text-danger contact-required' role="alert">Name is Required</div>
+        )}
+        </div>
+        
         <div>
-            <input className='form-control' placeholder='Name' type='text' required />
+            <input {...register("email", { required: true })} className='form-control' placeholder='Email Address' type='email'  />
+            {errors.email?.type === "required" && (
+            <div className='text-danger contact-required' role="alert">Email is Required</div>
+        )}
         </div>
         <div>
-            <input className='form-control' placeholder='Email Address' type='email' required />
+            <input {...register("mobile", { required: true})} className='form-control' placeholder='Mobile Number' type='number' />
+       
+       {errors.mobile?.type === "required" && (
+            <div className='text-danger contact-required' role="alert">Mobile No is Required</div>
+        )}
         </div>
         <div>
-            <input className='form-control' placeholder='Mobile Number' type='tel'  required />
-        </div>
-        <div>
-            <textarea className='form-control' placeholder='Message' required></textarea>
+            <textarea {...register("message", { required: false })} className='form-control' placeholder='Message'></textarea>
         </div>
 
         <div className='text-end'>
             <button type='submit' className='btn'>SUBMIT</button>
         </div>
+       </form>
     </div>
 </div>
 
