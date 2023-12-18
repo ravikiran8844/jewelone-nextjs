@@ -9,9 +9,11 @@ export const StoreProvider = ({ children }) => {
         name:"Coimbatore",
         reviews:496,
         rating:4.0,
-        mapLink:"http://google.com",
+        city:"Coimbatore",
+        mapLink:"https://maps.app.goo.gl/LgNJSbfdEjJ4uEC9A",
         address:"284 &, 285, Cross Cut Road,Gandhipuram, Tamil Nadu - 641012",
         pincode:"641012",
+        city:"Coimbatore",
         phone:"8220017613",
         storeHours:"09:30 A.M. - 08:30 P.M.",
         image:"store1.webp"
@@ -23,6 +25,8 @@ export const StoreProvider = ({ children }) => {
         mapLink:"http://google.com",
         address:"JewelOne, Near Thirumangalam Metro station, 233-235,2nd Ave, L Block, Anna Nagar West, Chennai,Tamil Nadu 600040",
         pincode:"600040",
+        city:"Chennai",
+
         phone:"9791813222",
         storeHours:"09:30 A.M. - 08:30 P.M.",
         image:"store1.webp"
@@ -35,12 +39,12 @@ export const StoreProvider = ({ children }) => {
         mapLink:"http://google.com",
         address:"18/1, Anna Salai,, Opp Voorhees College,Vellore, Tamil Nadu 632001",
         pincode:"632001",
+        name:"Vellore",
         phone:"8220017613",
         storeHours:"09:30 A.M. - 08:30 P.M.",
         image:"store1.webp"
       
       }
-
   ]);
 
   const [filteredStores, setFilteredStores] = useState([

@@ -11,7 +11,7 @@ const StoresSection2 = () => {
   const { filteredStores } = useStoreContext();
 
   const renderStores = () => {
-    return filteredStores.map((store, index) => (
+    return  filteredStores.length<1 ? (<div className="fs-4 fw-medium"> No Stores Found.</div>): filteredStores.map((store, index) => (
       <div key={index} className="col-12 col-md-6 col-xl-4">
         <div className="card">
           <div>

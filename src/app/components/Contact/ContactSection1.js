@@ -127,6 +127,7 @@ const ContactSection1 = () => {
                             </div>
                             <div>
                                 <div className='mb-2 card-label'>Address</div>
+                                <div className='card-text fw-bold mb-1'>Jewel One HeadOffice</div>
                                 <div className='card-text'>230, E TV Swamy Rd, R.S. Puram, Coimbatore, Tamil Nadu 641002</div>
                             </div>
                         </div>

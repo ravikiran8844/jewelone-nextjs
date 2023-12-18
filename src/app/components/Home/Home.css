@@ -854,3 +854,54 @@ article.yt-lite {
 
 
 
+.home-section7{
+  background: #F8F8FB;
+}
+
+.home-section7_wrapper{
+  background: linear-gradient(77deg, #83151E 3.01%, #AE252F 71.52%, #871720 96.43%);
+}
+
+
+.home-section7_title{
+  color: #FFF;
+  font-family: var(--font-inter);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 39px */
+  letter-spacing: 0.6px;
+}
+
+.home-section7_text{
+  color: #FFF;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138%; /* 19.32px */
+  letter-spacing: 0.28px;
+}
+
+
+@media (min-width:768px) {
+  .home-section7_title{
+    color: #FFF;
+    font-family: var(--font-inter);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 59.8px */
+    letter-spacing: 0.92px;
+  }
+  
+  .home-section7_text{
+    color: #FFF;
+    font-family: var(--font-inter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138%; /* 27.6px */
+    letter-spacing: 0.4px;
+  }
+}
