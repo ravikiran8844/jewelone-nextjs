@@ -7,7 +7,7 @@ const HomeSection8 = () => {
     <div className='home-section8'>
         <div className='container py-5'>
             <div className='col-12'>
-                <div className='mb-5'>
+                <div className='mb-5 home-section8-heading'>
                 UPCOMING EVENTS
                 </div>
             </div>
