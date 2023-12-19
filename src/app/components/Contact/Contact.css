@@ -11,12 +11,12 @@
 }
 
 .contact-section1_form-wrapper input{
-    margin-top: 15px;
-    border-radius: 14px;
+    margin-top: 10px;
+    border-radius: 8px;
 background: #F2EBE4;
 border: none !important;
-outline: none !important;
-height: 49px;
+outline: none !important;   
+height: 36px;
 color: #A3A3A3 !important;
 
 
@@ -38,12 +38,12 @@ color: #A3A3A3 !important;
 
 
 .contact-section1_form-wrapper textarea{
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 15px;
 
-    border-radius: 14px;
+    border-radius: 8px;
     background: #F2EBE4;
-    height: 119px;
+    height: 80px;
 
 
 }
@@ -433,7 +433,7 @@ line-height: normal;
 .contact-section3_form input::placeholder,.contact-section3_form textarea::placeholder    {
     color: #2D2D2D;
     font-family: var(--font-inter);
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 155%; /* 31px */

@@ -25,7 +25,7 @@ const ContactSection3 = () => {
                     aria-expanded="false"
                     aria-controls="flush-collapseOne"
                   >
-                    Accordion Item #1
+                    Can I customise a piece of jewellery?
                   </button>
                 </h2>
                 <div
@@ -34,7 +34,7 @@ const ContactSection3 = () => {
                   data-bs-parent="#ContactPageFaqs"
                 >
                   <div className="accordion-body">
-                    Answer 
+                  Absolutely! You can visit our Experience Center, where you can personally customise your jewellery! Our in-house designers will guide you through the process, helping you create a unique piece that reflects your style. 
                   </div>
                 </div>
               </div>
@@ -48,7 +48,7 @@ const ContactSection3 = () => {
                     aria-expanded="false"
                     aria-controls="flush-collapseTwo"
                   >
-                    Accordion Item #2
+                    Do you host events or exhibitions at Jewel One?
                   </button>
                 </h2>
                 <div
@@ -57,7 +57,7 @@ const ContactSection3 = () => {
                   data-bs-parent="#ContactPageFaqs"
                 >
                    <div className="accordion-body">
-                    Answer 
+                   Yes, we occasionally host events and exhibitions. Stay tuned to our website and social media channels for information on upcoming showcases and special events.
                   </div>
                 </div>
               </div>
@@ -77,7 +77,7 @@ const ContactSection3 = () => {
                     aria-expanded="false"
                     aria-controls="flush-collapseThree"
                   >
-                    Accordion Item #3
+                    How many physical stores does Jewel One have?
                   </button>
                 </h2>
                 <div
@@ -86,7 +86,7 @@ const ContactSection3 = () => {
                   data-bs-parent="#ContactPageFaqs2"
                 >
                  <div className="accordion-body">
-                    Answer 
+                 Jewel One proudly operates 12 showrooms across Tamil Nadu. Additionally, we have over 40+ SIS stores, making our jewellery accessible in more locations for your convenience.
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const ContactSection3 = () => {
                     aria-expanded="false"
                     aria-controls="flush-collapseFour"
                   >
-                    Accordion Item #4
+                   What is the Jewel One Experience Center?
                   </button>
                 </h2>
                 <div
@@ -110,7 +110,7 @@ const ContactSection3 = () => {
                   data-bs-parent="#ContactPageFaqs2"
                 >
                  <div className="accordion-body">
-                    Answer 
+                 Our Coimbatore Experience Center is a treasure trove featuring an extensive display of over 1 lakh jewellery designs. 
                   </div>
                 </div>
               </div>
