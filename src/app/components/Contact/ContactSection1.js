@@ -45,7 +45,7 @@ const ContactSection1 = () => {
               <div className="contact-section-title mb-4">Get in touch</div>
               <p className="contact-section-text">
                 Have a question or want to connect with us? We're here to help!
-                Fill out the form below with your name, email address, and your
+                Fill out the form with your name, email address, mobile number and your
                 message, and we'll get back to you as soon as possible. Your
                 feedback is valuable to us.
               </p>
