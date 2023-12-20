@@ -36,9 +36,9 @@ const ContactSection1 = () => {
   };
 
   return (
-    <div className="contact-section1 section-padding pb-0" style={{
+    <div className="contact-section1 section-padding pb-3" style={{
       width: '100%',
-      height: '90%',
+      height: '100%',
       background: 'url("/contact-page-bg.webp") center/cover no-repeat',
       position: 'relative',
     }}>
@@ -119,15 +119,15 @@ const ContactSection1 = () => {
           </div>
         </div>
 
-        <div className="row mt-5">
+        <div className="row mt-5 section1-info-cards">
           <div className="col-12 col-md-4 mb-4 mb-md-0">
             <div className="card">
-              <div className="card-body d-flex">
+              <div className="card-body d-flex  align-items-center">
                 <div className="me-2">
                   <Image
                     className="img-fluid"
-                    height={60}
-                    width={60}
+                    height={50}
+                    width={50}
                     src="/email.png"
                     alt="email icon"
                   />
@@ -142,12 +142,12 @@ const ContactSection1 = () => {
 
           <div className="col-12 col-md-4 mb-4 mb-md-0">
             <div className="card">
-              <div className="card-body d-flex">
+              <div className="card-body d-flex  align-items-center">
                 <div className="me-2">
                   <Image
                     className="img-fluid"
-                    height={60}
-                    width={60}
+                    height={50}
+                    width={50}
                     src="/phone.png"
                     alt="phone icon"
                   />
@@ -162,21 +162,18 @@ const ContactSection1 = () => {
 
           <div className="col-12 col-md-4 mb-4 mb-md-0 ">
             <div className="card">
-              <div className="card-body d-flex">
+              <div className="card-body d-flex align-items-center ">
                 <div className="me-2">
                   <Image
                     className="img-fluid"
-                    height={60}
-                    width={60}
+                    height={50}
+                    width={50}
                     src="/address.png"
                     alt="address icon"
                   />
                 </div>
                 <div>
-                  <div className="mb-2 card-label">Address</div>
-                  <div className="card-text fw-bold mb-1">
-                    Jewel One HeadOffice
-                  </div>
+                  <div className="mb-2 card-label">Jewel One HeadOffice</div>
                   <div className="card-text">
                     230, E TV Swamy Rd, R.S. Puram, Coimbatore, Tamil Nadu
                     641002
