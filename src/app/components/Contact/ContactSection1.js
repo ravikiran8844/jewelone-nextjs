@@ -36,7 +36,12 @@ const ContactSection1 = () => {
   };
 
   return (
-    <div className="contact-section1 section-padding">
+    <div className="contact-section1 section-padding pb-0" style={{
+      width: '100%',
+      height: '90%',
+      background: 'url("/contact-page-bg.webp") center/cover no-repeat',
+      position: 'relative',
+    }}>
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6 col-lg-7">

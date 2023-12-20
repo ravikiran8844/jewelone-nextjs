@@ -6,8 +6,8 @@ const ContactSection3 = () => {
     <div className="contact-section3 section-padding">
       <div className="container">
         <div className="col-12 mb-5">
-          <div className="contact-section-label mb-2">FAQ</div>
-          <div className="contact-section-title mb-4">
+          <div className="contact-section-label text-red mb-2">FAQ</div>
+          <div className="contact-section-title text-black mb-4">
             Frequently Asked Questions
           </div>
         </div>

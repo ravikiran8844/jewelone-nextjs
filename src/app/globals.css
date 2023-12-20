@@ -41,9 +41,12 @@ picture img{
   background: #9F212C;
 }
 .text-red{
-  color: #A0222C;
+  color: #A0222C !important;
 }
 
 
 
 
+.text-black{
+  color: #000 !important;
+}
