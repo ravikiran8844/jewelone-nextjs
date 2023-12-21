@@ -3,13 +3,12 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request) {
-  const { email, name, message } = await request.json();
+  const { email, name,mobile, message } = await request.json();
 
   const transport = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    requireTLS:true,
+    port: 465,
+    secure: true,
     auth: {
       user: process.env.NEXT_PUBLIC_SMTP_USER,
       pass: process.env.NEXT_PUBLIC_SMTP_PASSWORD
@@ -25,11 +24,16 @@ export async function POST(request) {
 
   const mailOptions = {
     from: process.env.NEXT_PUBLIC_SMTP_USER,
-    to: 'retail.crm@ejindia.com',
+    to: 'ravikiran@brightbridgeinfotech.com,retail.crm@ejindia.com',
     replyTo: email,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `Jewlone Contact form - Message from ${name} (${email})`,
+    subject: `New Message from ${name} (${email})`,
     text: message,
+    html: `<p>You have a form submission</p><br>
+        <p><strong>First Name: </strong> ${name}</p><br>
+        <p><strong>Email: </strong> ${email}</p><br>
+        <p><strong>Mobile Number: </strong> ${mobile}</p><br>
+        <p><strong>Message: </strong> ${message}</p><br>`
   };
 
   const sendMailPromise = () =>
