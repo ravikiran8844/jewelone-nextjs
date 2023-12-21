@@ -25,10 +25,10 @@ export async function POST(request) {
 
   const mailOptions = {
     from: process.env.NEXT_PUBLIC_SMTP_USER,
-    to: 'ravi.kiran8844@gmail.com',
+    to: 'retail.crm@ejindia.com',
     replyTo: email,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `Message from ${name} (${email})`,
+    subject: `Jewlone Contact form - Message from ${name} (${email})`,
     text: message,
   };
 
