@@ -5,15 +5,15 @@ const ContactSection3 = () => {
   return (
     <div className="contact-section3 section-padding">
       <div className="container">
-        <div className="col-12 mb-5">
+        <div className="col-12 mb-4">
           <div className="contact-section-label text-red mb-2">FAQ</div>
-          <div className="contact-section-title text-black mb-4">
+          <div className="contact-section-title text-black">
             Frequently Asked Questions
           </div>
         </div>
 
         <div className="row">
-          <div className="col-12 col-md-6 mb-5 mb-md-0">
+          <div className="col-12 col-md-6">
             <div className="accordion accordion-flush" id="ContactPageFaqs">
               <div className="accordion-item">
                 <h2 className="accordion-header">

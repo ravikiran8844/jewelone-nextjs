@@ -24,16 +24,16 @@ export async function POST(request) {
 
   const mailOptions = {
     from: process.env.NEXT_PUBLIC_SMTP_USER,
-    to: 'ravikiran@brightbridgeinfotech.com,retail.crm@ejindia.com',
+    to: 'retail.crm@ejindia.com',
     replyTo: email,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
     subject: `New Message from ${name} (${email})`,
     text: message,
     html: `<p>You have a form submission</p><br>
-        <p><strong>First Name: </strong> ${name}</p><br>
-        <p><strong>Email: </strong> ${email}</p><br>
-        <p><strong>Mobile Number: </strong> ${mobile}</p><br>
-        <p><strong>Message: </strong> ${message}</p><br>`
+        <p><strong>Name: </strong> ${name}</p>
+        <p><strong>Email: </strong> ${email}</p>
+        <p><strong>Mobile Number: </strong> ${mobile}</p>
+        <p><strong>Message: </strong> ${message}</p>`
   };
 
   const sendMailPromise = () =>

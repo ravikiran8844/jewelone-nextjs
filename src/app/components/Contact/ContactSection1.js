@@ -134,7 +134,7 @@ const ContactSection1 = () => {
                 </div>
                 <div>
                   <div className="mb-2 card-label">Email</div>
-                  <div className="card-text">customercare@jewelone.in</div>
+                  <div className="card-text">retail.crm@ejindia.com</div>
                 </div>
               </div>
             </div>

@@ -10,6 +10,7 @@ import HomeSection7 from './components/Home/HomeSection7'
 import HomeSection8 from './components/Home/HomeSection8'
 import HomeSection5 from './components/Home/HomeSection5'
 import HomeSection9 from './components/Home/HomeSection9'
+import HomeGifBanner from './components/Home/HomeGifBanner'
 
 
 export const metadata = {
@@ -27,11 +28,12 @@ export default function Home() {
     <HomeSection3/>
     <HomeSection4/>
     <VideoSection/>
-    <HomeSection7/>
-    <HomeSection8/>
-    <HomeSection9/>
+    <HomeGifBanner/>
+    {/* <HomeSection7/> */}
+    {/* <HomeSection8/> */}
+    {/* <HomeSection9/> */}
     <InstagramGrid/> 
-    <AudioSection/>
+    {/* <AudioSection/> */}
    </main>
   )
 }

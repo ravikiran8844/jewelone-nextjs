@@ -32,6 +32,7 @@ const Navbar = () => {
             src="/jewelone-logo.webp"
             width="223"
             height="57"
+            className="img-fluid"
             alt="Site Logo"
             priority
           />
@@ -99,6 +100,11 @@ const Navbar = () => {
                   Stores
                 </Link>
               </li> */}
+                 <li className="nav-item">
+                <Link href="/" className="main-menu-link nav-link" onClick={handleLinkClick}>
+                  Home
+                </Link>
+              </li>
               <li className="nav-item">
                 <Link href="/contact-us" className="main-menu-link nav-link" onClick={handleLinkClick}>
                   Contact Us
