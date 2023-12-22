@@ -13,9 +13,14 @@ const Navbar = () => {
 
   const handleLinkClick = () => {
     const offcanvas = document.getElementById('offcanvasNavbar');
-    
+    const body = document.body;
+
     if (offcanvas) {
       offcanvas.classList.remove('show');
+
+       // Remove inline styles from body
+    body.style.overflow = '';
+    body.style.paddingRight = '';
     }
   };
 
