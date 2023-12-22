@@ -13,7 +13,7 @@ const ContactSection3 = () => {
         </div>
 
         <div className="row">
-          <div className="col-12 col-md-6">
+          <div className="col-12">
             <div className="accordion accordion-flush" id="ContactPageFaqs">
               <div className="accordion-item">
                 <h2 className="accordion-header">
@@ -65,7 +65,7 @@ const ContactSection3 = () => {
           </div>
 
 
-          <div className="col-12 col-md-6 mb-5 mb-md-0">
+          {/* <div className="col-12 col-md-6 mb-5 mb-md-0">
             <div className="accordion accordion-flush" id="ContactPageFaqs2">
               <div className="accordion-item">
                 <h2 className="accordion-header">
@@ -120,7 +120,7 @@ const ContactSection3 = () => {
 
 
             </div>
-          </div>
+          </div> */}
 
 
 
