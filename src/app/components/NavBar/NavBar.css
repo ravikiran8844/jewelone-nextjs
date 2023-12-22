@@ -226,4 +226,5 @@
     color:#000 !important;
     font-weight: 600;
     border-bottom: 3px solid #000;
+    width: fit-content;
   }
