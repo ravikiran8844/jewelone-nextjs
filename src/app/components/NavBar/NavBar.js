@@ -4,11 +4,14 @@
 import Image from "next/image";
 import "./NavBar.css";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
+
 
 const Navbar = () => {
   const today = new Date();
   const options = { day: "numeric", month: "short", year: "numeric" };
   const formattedDate = today.toLocaleDateString("en-US", options);
+  const currentRoute = usePathname();
 
 
   const handleLinkClick = () => {
@@ -32,7 +35,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
       <div className="container d-flex align-items-center navbar_wrapper">
-        <Link className="navbar-brand" href="/">
+        <Link className="navbar-brand" href="/"  >
           <Image
             src="/jewelone-logo.webp"
             width="223"
@@ -106,12 +109,12 @@ const Navbar = () => {
                 </Link>
               </li> */}
                  <li className="nav-item">
-                <Link href="/" className="main-menu-link nav-link" onClick={handleLinkClick}>
+                <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/contact-us" className="main-menu-link nav-link" onClick={handleLinkClick}>
+                <Link href="/contact-us" className={currentRoute === "/contact-us" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
                   Contact Us
                 </Link>
               </li>
