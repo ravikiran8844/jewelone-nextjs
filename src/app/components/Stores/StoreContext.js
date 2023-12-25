@@ -6,15 +6,16 @@ const StoreContext = createContext();
 export const StoreProvider = ({ children }) => {
   const [stores, setStores] =useState([
     {
-      "name": "Coimbatore Cross Cut",
+      "name": "Coimbatore",
       "address": "No. 284 &, 285, Cross Cut Rd, Gandhipuram, Tamil Nadu 641012",
       "reviews": 497,
       "rating": 4,
       "pincode": "641012",
+      "city":"Coimbatore",
       "phone": 8220017613,
       "contactPersonName": "Maheshwari / Tamil vendan",
       "mapLink": "https://maps.app.goo.gl/gyS45y3B1PdUAVVr7",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -23,10 +24,11 @@ export const StoreProvider = ({ children }) => {
       "reviews": 91,
       "rating": 4.6,
       "pincode": "641017",
+      "city":"Coimbatore",
       "phone": 9566419111,
       "contactPersonName": "Karthik",
       "mapLink": "https://maps.app.goo.gl/c4VfKNGKUGvry49T7",
-      "storeTiming": " ",
+      "storeTiming": "10:00 AM - 8:00 PM",
       "image":"store1.webp"
     },
     {
@@ -35,10 +37,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 159,
       "rating": 4.2,
       "pincode": "600040",
+      "city":"Chennai",
+
       "phone": 8220017615,
       "contactPersonName": "Ranjith",
       "mapLink": "https://maps.app.goo.gl/TBhsUhjcBpsrVNVj6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -46,11 +50,13 @@ export const StoreProvider = ({ children }) => {
       "address": "123, Netaji Rd, opposite Modern Restaurant, Madurai Main, Madurai, Tamil Nadu 625001",
       "reviews": 190,
       "rating": 4.1,
-      "pincode": "625001",
+      "pincode": "625001",      
+      "city":"Madurai",
+
       "phone": 8754807070,
       "contactPersonName": "Pradeep",
       "mapLink": "https://maps.app.goo.gl/7SpvWFZDYZ9ipVDk6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -59,10 +65,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 152,
       "rating": 4.1,
       "pincode": "632001",
+      "city":"Vellore",
+
       "phone": 8220017614,
       "contactPersonName": "Babu",
       "mapLink": "https://maps.app.goo.gl/zaWaCAZJMRBdp3gH9",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -71,10 +79,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 88,
       "rating": 4.3,
       "pincode": "623501",
+      "city":"Ramanathapuram",
+
       "phone": 8220017621,
       "contactPersonName": "Udhya Kumar",
       "mapLink": "https://maps.app.goo.gl/Pv3b8PEkugvWmepz6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -83,10 +93,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 192,
       "rating": 4.1,
       "pincode": "636016",
+      "city":"Salem",
+
       "phone": 9952555362,
       "contactPersonName": "Sekar",
       "mapLink": "https://maps.app.goo.gl/UMJNC8q4NGmPastu6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -95,10 +107,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 154,
       "rating": 4.1,
       "pincode": "638001",
+      "city":"Erode",
+
       "phone": 9597806333,
       "contactPersonName": "Vignesh / Ram",
       "mapLink": "https://maps.app.goo.gl/mAz75axh5inWhQAY6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -107,11 +121,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 218,
       "rating": 3.8,
       "pincode": "642001",
+      "city":"Pollachi",
+
       "phone": 8754011250,
       "contactPersonName": "Jayaprakash",
       "mapLink": "https://maps.app.goo.gl/9nobpHSrFU9gvqs36",
-      "storeTiming": " "
-      ,
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -120,11 +135,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 192,
       "rating": 4.1,
       "pincode": "605011",
+      "city":"Pondicherry",
+
       "phone": 8220017620,
       "contactPersonName": "MohanRajesh",
       "mapLink": "https://maps.app.goo.gl/CAtBihoQqHbUuayX7",
-      "storeTiming": " "
-      ,
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -133,11 +149,13 @@ export const StoreProvider = ({ children }) => {
       "reviews": 186,
       "rating": 4,
       "pincode": "635109",
+      "city":"Hosur",
+
       "phone": 8220862444,
       "contactPersonName": "Lakshmanan",
       "mapLink": "https://maps.app.goo.gl/xomB9TqNP8mdDcHC6",
-      "storeTiming": " "
-      ,
+      "storeTiming": "9:45 AM - 8:45 PM",
+
       "image":"store1.webp"
     },
     {
@@ -146,10 +164,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 211,
       "rating": 4,
       "pincode": "641126",
+      "city":"Udumalaipettai",
+
       "phone": 9944501010,
       "contactPersonName": "Baskar / Ganesh ",
       "mapLink": "https://maps.app.goo.gl/ikJoXkzv918Fv1L66",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
 
     }
@@ -157,15 +177,16 @@ export const StoreProvider = ({ children }) => {
 
   const [filteredStores, setFilteredStores] = useState([
     {
-      "name": "Coimbatore Cross Cut",
+      "name": "Coimbatore",
       "address": "No. 284 &, 285, Cross Cut Rd, Gandhipuram, Tamil Nadu 641012",
       "reviews": 497,
       "rating": 4,
       "pincode": "641012",
+      "city":"Coimbatore",
       "phone": 8220017613,
       "contactPersonName": "Maheshwari / Tamil vendan",
       "mapLink": "https://maps.app.goo.gl/gyS45y3B1PdUAVVr7",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -174,10 +195,11 @@ export const StoreProvider = ({ children }) => {
       "reviews": 91,
       "rating": 4.6,
       "pincode": "641017",
+      "city":"Coimbatore",
       "phone": 9566419111,
       "contactPersonName": "Karthik",
       "mapLink": "https://maps.app.goo.gl/c4VfKNGKUGvry49T7",
-      "storeTiming": " ",
+      "storeTiming": "10:00 AM - 8:00 PM",
       "image":"store1.webp"
     },
     {
@@ -186,10 +208,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 159,
       "rating": 4.2,
       "pincode": "600040",
+      "city":"Chennai",
+
       "phone": 8220017615,
       "contactPersonName": "Ranjith",
       "mapLink": "https://maps.app.goo.gl/TBhsUhjcBpsrVNVj6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -197,11 +221,13 @@ export const StoreProvider = ({ children }) => {
       "address": "123, Netaji Rd, opposite Modern Restaurant, Madurai Main, Madurai, Tamil Nadu 625001",
       "reviews": 190,
       "rating": 4.1,
-      "pincode": "625001",
+      "pincode": "625001",      
+      "city":"Madurai",
+
       "phone": 8754807070,
       "contactPersonName": "Pradeep",
       "mapLink": "https://maps.app.goo.gl/7SpvWFZDYZ9ipVDk6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -210,10 +236,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 152,
       "rating": 4.1,
       "pincode": "632001",
+      "city":"Vellore",
+
       "phone": 8220017614,
       "contactPersonName": "Babu",
       "mapLink": "https://maps.app.goo.gl/zaWaCAZJMRBdp3gH9",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -222,10 +250,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 88,
       "rating": 4.3,
       "pincode": "623501",
+      "city":"Ramanathapuram",
+
       "phone": 8220017621,
       "contactPersonName": "Udhya Kumar",
       "mapLink": "https://maps.app.goo.gl/Pv3b8PEkugvWmepz6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -234,10 +264,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 192,
       "rating": 4.1,
       "pincode": "636016",
+      "city":"Salem",
+
       "phone": 9952555362,
       "contactPersonName": "Sekar",
       "mapLink": "https://maps.app.goo.gl/UMJNC8q4NGmPastu6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -246,10 +278,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 154,
       "rating": 4.1,
       "pincode": "638001",
+      "city":"Erode",
+
       "phone": 9597806333,
       "contactPersonName": "Vignesh / Ram",
       "mapLink": "https://maps.app.goo.gl/mAz75axh5inWhQAY6",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -258,11 +292,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 218,
       "rating": 3.8,
       "pincode": "642001",
+      "city":"Pollachi",
+
       "phone": 8754011250,
       "contactPersonName": "Jayaprakash",
       "mapLink": "https://maps.app.goo.gl/9nobpHSrFU9gvqs36",
-      "storeTiming": " "
-      ,
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -271,11 +306,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 192,
       "rating": 4.1,
       "pincode": "605011",
+      "city":"Pondicherry",
+
       "phone": 8220017620,
       "contactPersonName": "MohanRajesh",
       "mapLink": "https://maps.app.goo.gl/CAtBihoQqHbUuayX7",
-      "storeTiming": " "
-      ,
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
     },
     {
@@ -284,11 +320,13 @@ export const StoreProvider = ({ children }) => {
       "reviews": 186,
       "rating": 4,
       "pincode": "635109",
+      "city":"Hosur",
+
       "phone": 8220862444,
       "contactPersonName": "Lakshmanan",
       "mapLink": "https://maps.app.goo.gl/xomB9TqNP8mdDcHC6",
-      "storeTiming": " "
-      ,
+      "storeTiming": "9:45 AM - 8:45 PM",
+
       "image":"store1.webp"
     },
     {
@@ -297,10 +335,12 @@ export const StoreProvider = ({ children }) => {
       "reviews": 211,
       "rating": 4,
       "pincode": "641126",
+      "city":"Udumalaipettai",
+
       "phone": 9944501010,
       "contactPersonName": "Baskar / Ganesh ",
       "mapLink": "https://maps.app.goo.gl/ikJoXkzv918Fv1L66",
-      "storeTiming": " ",
+      "storeTiming": "9:45 AM - 8:45 PM",
       "image":"store1.webp"
 
     }
@@ -312,10 +352,10 @@ export const StoreProvider = ({ children }) => {
         setFilteredStores(stores);
     }
     else{
-       // Implement your filtering logic here
+         // Implement your filtering logic here
         const filtered = stores.filter((store) =>
-        store.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        store.pincode.includes(searchTerm)
+        store.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        store.pincode.startsWith(searchTerm)
         );
         setFilteredStores(filtered);
     }

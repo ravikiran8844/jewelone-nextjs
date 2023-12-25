@@ -5,26 +5,48 @@ import "./Stores.css"
 import Image from "next/image";
 import { useStoreContext } from "./StoreContext";
 
+
 const StoresSection1 = () => {
+
+  const {stores}= useStoreContext();
 
   const { updateFilteredStores } = useStoreContext();
   const [searchTerm, setSearchTerm] = useState('');
+    const [suggestions, setSuggestions] = useState([]);
+
 
   const handleSearch = () => {
     updateFilteredStores(searchTerm);
   };
 
+  const searchInput = (e) => {
+    const newSearchTerm = e.target.value;
+    setSearchTerm(newSearchTerm);
 
-  const searchInput=(e)=>{
-    setSearchTerm(e.target.value);
-    if (searchTerm.length>1){
-      updateFilteredStores(searchTerm);
-    }
-    else{
+    // Generate suggestions based on your stores data
+    const storeSuggestions = generateStoreSuggestions(newSearchTerm);
+    setSuggestions(storeSuggestions);
+
+    if (newSearchTerm.length > 1) {
+      updateFilteredStores(newSearchTerm);
+    } else {
       updateFilteredStores("");
     }
+  };
 
-  }
+  const generateStoreSuggestions = (partialTerm) => {
+    // Implement your logic to generate suggestions based on the stores data
+    const uniqueSuggestions = [...new Set(
+      stores
+        .map((store) => [store.city, store.pincode])
+        .flat()
+        .filter((value) =>
+          value.toLowerCase().includes(partialTerm.toLowerCase())
+        )
+    )];
+    return uniqueSuggestions;
+  };
+
 
   return (
     <div className="stores-section1 position-relative">
@@ -92,7 +114,13 @@ const StoresSection1 = () => {
                 placeholder="Enter Pincode or City"
                 onChange={searchInput}
 
-              />
+                  list="suggestionsList" // Added list attribute
+                />
+                <datalist id="suggestionsList">
+                  {suggestions.map((suggestion, index) => (
+                    <option key={index} value={suggestion} />
+                  ))}
+                </datalist>
               <label htmlFor="floatingInputGroup1">Enter Pincode or City</label>
             </div>
             <span className="input-group-text">

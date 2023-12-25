@@ -12,7 +12,7 @@ const StoresSection2 = () => {
 
   const renderStores = () => {
     return  filteredStores.length<1 ? (<div className="fs-4 fw-medium"> No Stores Found.</div>): filteredStores.map((store, index) => (
-      <div key={index} className="col-12 col-md-6 col-xl-4">
+      <div key={index} className="col-12 col-md-6 col-xl-4 mb-4">
         <div className="card">
           <div>
             <Image className="img-fluid" width={520} height={190} src={`/${store.image}`} alt="store image" />
@@ -106,7 +106,7 @@ const StoresSection2 = () => {
             <div>
               <div className="stores-section2_card-text mb-2">{store.address}</div>
               <div className="stores-section2_card-text mb-2">Phone- <span className="stores-section2_card-yellow-text">{store.phone}</span></div>
-              <div className="stores-section2_card-red-text-light mb-2">STORE HOURS: {store.storeHours}</div>
+              <div className="stores-section2_card-red-text-light mb-2">STORE HOURS: {store.storeTiming}</div>
             </div>
           </div>
         </div>
