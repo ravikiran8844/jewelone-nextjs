@@ -14,13 +14,25 @@ const StoresSection1 = () => {
     updateFilteredStores(searchTerm);
   };
 
+
+  const searchInput=(e)=>{
+    setSearchTerm(e.target.value);
+    if (searchTerm.length>1){
+      updateFilteredStores(searchTerm);
+    }
+    else{
+      updateFilteredStores("");
+    }
+
+  }
+
   return (
     <div className="stores-section1 position-relative">
         <Image className="img-fluid" width={1920} height={581} src="/store-location.png" alt="stores location" />
       <div className="container">
         <div className="col-12 d-flex justify-content-center">
           <div className="stores-section1_wrapper position-absolute stores-section1-item top-0 d-flex flex-column  justify-content-center align-items-center h-100">
-          <div className="stores-section1_title mb-3">Find a store near you</div>
+          <div className="stores-section1_title mb-3">FIND US NEAR YOU</div>
           <div className="stores-section1_text mb-4">
           Find a JewelOne store in your locality, the JewelOne family is growing everyday
           </div>
@@ -78,7 +90,7 @@ const StoresSection1 = () => {
                 className="form-control"
                 id="floatingInputGroup1"
                 placeholder="Enter Pincode or City"
-                onChange={(e) => setSearchTerm(e.target.value)}
+                onChange={searchInput}
 
               />
               <label htmlFor="floatingInputGroup1">Enter Pincode or City</label>

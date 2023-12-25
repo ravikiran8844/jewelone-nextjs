@@ -169,6 +169,15 @@
   }
 }
 
+
+.form-required{
+  font-size: 13px;
+  font-weight: 500;
+  margin-left: 5px;
+
+}
+
+
 .book-now-form {
   border-radius: 37.017px;
   background: #fff !important;
@@ -225,10 +234,12 @@
 
 
 
-.experience-center-section2_item-text{
-    left: 50%;
-    transform: translate(-50%, 10px);
+.experience-center-section4_item-text{
+    position: absolute;
+    bottom: 0;
+    left: 50% !important;
     filter: drop-shadow(2px 4px 6px black);
+    transform: translate(-50%, 10px) !important;
 }
 
 .experience-center-section4 .splide__slide{
