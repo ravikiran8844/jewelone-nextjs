@@ -11,7 +11,10 @@
     font-weight: 500;
     line-height: 130%; /* 18.2px */
   }
-  
+  .footer-section img{
+    width: 100%;
+    height: auto;
+  }
   .footer-section_links_label {
     color: #f7c676;
     font-family: var(--font-inter);

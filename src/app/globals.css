@@ -1,6 +1,6 @@
 
 body{
-  background: #fff !important;
+  background: #F6F6F6 !important;
   font-family: var(--font-inter);
   font-display: swap;
   /* overflow-x: hidden; */
@@ -29,7 +29,8 @@ main{
 }
 .form-control:focus{
 box-shadow: none !important;
-border: none;
+border: 1px solid #E8E8E8;
+
 }
 picture img{
   max-width: 100%;
@@ -38,7 +39,7 @@ picture img{
 }
 
 .bg-red{
-  background: #9F212C;
+  background: #9F212C !important;
 }
 .text-red{
   color: #A0222C !important;
@@ -50,3 +51,15 @@ picture img{
 .text-black{
   color: #000 !important;
 }
+
+.text-gold{
+  color: #F7C676 !important;
+}
+
+.text-white{
+  color: #FFF !important;
+}
+.text-gold{
+  color: #C0832B !important;
+}
+

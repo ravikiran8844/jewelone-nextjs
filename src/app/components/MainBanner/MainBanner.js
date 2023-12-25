@@ -25,11 +25,12 @@ export const MainBanner = () => {
                     media="(min-width: 650px)"
                 />
                 <Image
-                    alt="Image X alt"
+                    priority="true"
+                    alt="main banner"
                     src="/home-mobile-banner1.webp"
                     height={550}
-                    width={1519 }
-                    priority="true"                />
+                    width={1519}
+                               />
                 </picture>
 
 

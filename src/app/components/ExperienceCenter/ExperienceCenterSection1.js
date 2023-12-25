@@ -1,9 +1,13 @@
 import Image from 'next/image'
 import React from 'react'
+import BookNowForm from './BookNowForm'
+
+import  "./ExperienceCenter.css"
+
 
 const ExperienceCenterSection1 = () => {
   return (
-    <div>
+    <div className='position-relative'>
         <picture>
         <source
                srcSet="/experience-center-sec1-banner1.webp"
@@ -16,6 +20,8 @@ const ExperienceCenterSection1 = () => {
                      alt='image banner'
                      />
        </picture>
+
+       <BookNowForm/>
     </div>
   )
 }

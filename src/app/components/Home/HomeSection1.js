@@ -15,7 +15,7 @@ const HomeSection1 = () => {
                     src="/home-mobile-banner2.webp"
                     height={550}
                     width={1519 }
-                    priority="true" 
+                    priority="true"
                     className='img-fluid'               />
                 </picture>
     </div>

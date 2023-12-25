@@ -26,20 +26,20 @@ const HomeSection9 = () => {
                   } }>
              
              <SplideSlide>
-              <Image loading='lazy' width={300} height={300} src="/gallery1.webp" alt='gallery image' />
+              <Image width={300} height={300} src="/gallery1.webp" alt='gallery image' />
 
               </SplideSlide>
 
               <SplideSlide>
-              <Image loading='lazy' width={300} height={300} src="/gallery1.webp" alt='gallery image' />
+              <Image width={300} height={300} src="/gallery1.webp" alt='gallery image' />
 
               </SplideSlide>
               <SplideSlide>
-              <Image loading='lazy' width={300} height={300} src="/gallery1.webp" alt='gallery image' />
+              <Image width={300} height={300} src="/gallery1.webp" alt='gallery image' />
 
               </SplideSlide>
               <SplideSlide>
-              <Image loading='lazy' width={300} height={300} src="/gallery1.webp" alt='gallery image' />
+              <Image width={300} height={300} src="/gallery1.webp" alt='gallery image' />
 
               </SplideSlide>
             </Splide>
