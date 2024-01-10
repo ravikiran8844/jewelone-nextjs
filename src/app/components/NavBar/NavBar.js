@@ -5,6 +5,7 @@ import Image from "next/image";
 import "./NavBar.css";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
+import AnnouncmentBar from "../ExperienceCenter/AnnouncmentBar";
 
 
 const Navbar = () => {
@@ -33,7 +34,9 @@ const Navbar = () => {
 
 
   return (
-    <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
+    <header>
+      {currentRoute === "/experience-center" && <AnnouncmentBar/> }
+      <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
       <div className="container d-flex align-items-center navbar_wrapper">
         <Link className="navbar-brand" href="/"  >
           <Image
@@ -136,6 +139,7 @@ const Navbar = () => {
 
       </div>
     </nav>
+    </header>
   );
 };
 
