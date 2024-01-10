@@ -124,8 +124,28 @@
     background: #F2EBE4;
 }
 
+.our-story-section3 .splide__arrows{
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+}
+
+.our-story-section3 .splide__arrow {
+    background: #ECBE62;
+}
+
+.our-story-section3 .splide__arrow svg {
+    fill: #fff;
+}
+
+.our-story-section3 .splide__arrow--prev{
+    left: 1em;
+}
 
 
+.our-story-section3 .splide__arrow--next{
+    left: 4em;
+}
 
 
 
