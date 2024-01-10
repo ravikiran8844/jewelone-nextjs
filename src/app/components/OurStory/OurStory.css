@@ -10,11 +10,11 @@
 
 .our-story-text{
     color: #747474;
-font-family: var(--font-inter);
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 138%; /* 19.32px */
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138%; /* 19.32px */
 }
 
 
@@ -43,6 +43,60 @@ line-height: 138%; /* 19.32px */
 
 
 
+/* our-story-section1 */
+
+
+.our-story-section1{
+    background: linear-gradient(77deg, #83151E 21.75%, #AE252F 71.52%, #871720 96.43%);
+}
+.our-story-section1_border-left{
+    border-left:1px solid #EFD8C8;
+}
+
+.our-story-section1_title{
+    color: #EFD8C8;
+    font-family: var(--font-inter);
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 116%; /* 52.2px */
+    letter-spacing: -2.025px;
+}
+.our-story-section1_text{
+    color: #EFD8C8;
+    font-family: var(--font-inter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138%; /* 19.32px */
+}
+
+@media (min-width:768px) {
+    .our-story-section1_title{
+        color: #EFD8C8;
+        font-family: var(--font-inter);
+        font-size: 62px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 109%; /* 87.2px */
+        letter-spacing: -3.6px;
+    }
+    .our-story-section1_text{
+        color: #EFD8C8;
+        font-family: var(--font-inter);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 138%; /* 24.84px */
+    }
+}
+
+
+
+
+
+
+
 
 .our-story-section2{
     background: #F2EBE4;
@@ -59,13 +113,34 @@ line-height: 138%; /* 19.32px */
 
 
 
-.ourstory-section5{
+
+
+
+
+/* our-story-section3 */
+
+
+.our-story-section3{
+    background: #F2EBE4;
+}
+
+
+
+
+
+
+
+
+
+
+
+.ourstory-Section4{
     background: #9F212C;
 }
 
 
 
-.ourstory-section5_title{
+.ourstory-Section4_title{
     color: #F7C676;
     text-align: center;
     font-family: Playfair Display;
@@ -74,7 +149,7 @@ line-height: 138%; /* 19.32px */
     font-weight: 400;
     line-height: 127.5%; /* 38.25px */
 }
-.ourstory-section5_text{
+.ourstory-Section4_text{
     color: #EFD8C8;
     text-align: center;
     font-family: var(--font-inter);
@@ -87,20 +162,20 @@ line-height: 138%; /* 19.32px */
 
 @media (min-width:768px) {
     
-.ourstory-section5_title{
+.ourstory-Section4_title{
     color: #F7C676;
 text-align: center;
 font-family: Playfair Display;
-font-size: 54px;
+font-size: 46px;
 font-style: italic;
 font-weight: 400;
 line-height: 127.5%; /* 68.85px */
 }
-.ourstory-section5_text{
+.ourstory-Section4_text{
     color: #EFD8C8;
 text-align: right;
 font-family: var(--font-inter);
-font-size: 24px;
+font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 127.5%; /* 30.6px */

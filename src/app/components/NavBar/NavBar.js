@@ -84,11 +84,7 @@ const Navbar = () => {
           </div>
           <div className="offcanvas-body">
             <ul className="navbar-nav justify-content-center ms-auto">
-              {/* <li className="nav-item">
-                <Link href="/our-story" className="main-menu-link nav-link" onClick={handleLinkClick}>
-                  Our story
-                </Link>
-              </li>
+              {/*
               <li className="nav-item">
                 <Link href="/swarna-sakthi" className="main-menu-link nav-link" onClick={handleLinkClick}>
                   Swarna Sakthi
@@ -110,6 +106,23 @@ const Navbar = () => {
                  <li className="nav-item">
                 <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
                   Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/our-story" className={currentRoute === "/our-story" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
+                Our Story
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link href="/swarna-sakthi" className={currentRoute === "/swarna-sakthi" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
+                Swarna Sakthi
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link href="/experience-center" className={currentRoute === "/experience-center" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
+                Experience Center
                 </Link>
               </li>
               <li className="nav-item">

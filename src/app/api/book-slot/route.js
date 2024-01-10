@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request) {
-  const { email, name,mobile, message } = await request.json();
+  const { firstName, lastName,city,phone, email,factoryVisit } = await request.json();
 
   const transport = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -27,13 +27,15 @@ export async function POST(request) {
     to: 'ravi.kiran8844@gmail.com',
     replyTo: email,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `New Message from ${name} (${email})`,
-    text: message,
+    subject: `New Book Slot form Submission - ${firstName} (${email})`,
     html: `<p>You have a form submission</p><br>
-        <p><strong>Name: </strong> ${name}</p>
+        <p><strong>First Name: </strong> ${firstName}</p>
+        <p><strong>Last Name: </strong> ${lastName}</p>
         <p><strong>Email: </strong> ${email}</p>
-        <p><strong>Mobile Number: </strong> ${mobile}</p>
-        <p><strong>Message: </strong> ${message}</p>`
+        <p><strong>Mobile Number: </strong> ${phone}</p>
+        <p><strong>City: </strong> ${city}</p>
+        <p><strong>Factory Visit: </strong> ${factoryVisit}</p>`
+        
   };
 
   const sendMailPromise = () =>
