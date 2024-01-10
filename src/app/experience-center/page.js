@@ -6,6 +6,17 @@ import ExperienceCenterSection3 from '../components/ExperienceCenter/ExperienceC
 import ExperienceCenterSection1 from '../components/ExperienceCenter/ExperienceCenterSection1'
 import ExperienceCenterSection4 from '../components/ExperienceCenter/ExperienceCenterSection4'
 
+
+
+
+export const metadata = {
+  title: "Experience Center - JewelOne",
+  description: 'JewelOne Experience Center',
+}
+
+
+
+
 const page = () => {
   return (
     <main>

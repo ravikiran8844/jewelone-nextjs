@@ -3,8 +3,8 @@ import  "./ExperienceCenter.css"
 
 const ExperienceCenterSection2 = () => {
   return (
-    <div className="experienceCenterSection2">
-      <div className="container section-padding">
+    <div className="experienceCenterSection2 section-padding">
+      <div className="container">
         <div className="row">
           <div className="col-12 col-lg-6 m-auto">
             <div className="text-center">
