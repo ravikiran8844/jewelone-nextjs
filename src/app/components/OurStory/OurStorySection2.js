@@ -19,7 +19,7 @@ const OurStorySection2 = () => {
             </div>
           </div>
 
-          <div className="col-12 col-sm-7 col-lg-4 mb-5 mb-lg-0">
+          <div className="col-12 col-sm-6 col-lg-4 mb-5 mb-lg-0">
               <div>
                 <Image
                   className="img-fluid"
@@ -31,7 +31,7 @@ const OurStorySection2 = () => {
               </div>
           </div>
 
-          <div className="col-12  col-sm-5 col-lg-4 mb-5 mb-lg-0">
+          <div className="col-12  col-sm-6 col-lg-4 mb-5 mb-lg-0">
             <div>
               
 

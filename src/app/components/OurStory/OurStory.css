@@ -91,12 +91,47 @@
     }
 }
 
+.our-story-section1-logo-items{
+    border-top: 1px solid #EFD8C8;
+    border-bottom: 1px solid #EFD8C8;
+}
+.our-story-section1-logo-item-content{
+    width: max-content;
+}
 
 
-
-
-
-
+/* Hide scrollbar for Chrome, Safari and Opera */
+.our-story-section1-logo-items-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .our-story-section1-logo-items-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.our-story-section1_acheivements-title{
+    color: #EFD8C8;
+}
+.our-story-section1_acheivements{
+    border-radius: 30px;
+    background: #F2EBE4;
+    padding: 15px;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+@media (min-width:768px) {
+    .our-story-section1_acheivements{
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+    }
+}
+/* .our-story-section1_acheivements img{
+    max-height: 100px;
+    width: auto;
+} */
 
 .our-story-section2{
     background: #F2EBE4;
