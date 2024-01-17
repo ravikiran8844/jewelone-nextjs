@@ -43,7 +43,7 @@ const BookNowModel =()=>{
       >
         <div className="modal-dialog">
           <div className="modal-content">
-            <div className="modal-header">
+            <div className="position-absolute top-0 end-0 p-2 z-index-9999">
               <button
                 type="button"
                 className="btn-close"
@@ -233,7 +233,7 @@ const AnnouncmentBar = () => {
    <>
     <div className="announcement-bar d-block d-lg-none">
       <div className="container">
-        <div className="col-12 d-flex align-items-center gap-2 py-2">
+        <div className="col-12 d-flex align-items-center justify-content-center gap-2 py-2">
           <div className="">
             <span>Thanksgiving sale</span> save up to 57% On select products!{" "}
             <span>View on Sale products</span>

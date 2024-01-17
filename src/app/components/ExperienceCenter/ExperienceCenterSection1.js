@@ -11,7 +11,7 @@ const ExperienceCenterSection1 = () => {
         <source
           srcSet="/experience-center-sec1-banner1.webp"
           type="image/webp"
-          media="(min-width: 992px)"
+          media="(min-width: 768px)"
         />
         <Image
           className="img-fluid"
@@ -22,7 +22,7 @@ const ExperienceCenterSection1 = () => {
         />
       </picture>
 
-      <div className="d-block d-lg-none">
+      <div className="d-block d-md-none">
       <div className="position-absolute bottom-0 left-0 p-4">
         <div>
           <svg
