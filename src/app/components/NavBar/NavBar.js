@@ -1,5 +1,8 @@
 "use client";
 
+import { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Offcanvas from 'react-bootstrap/Offcanvas';
 
 import Image from "next/image";
 import "./NavBar.css";
@@ -18,17 +21,26 @@ const Navbar = () => {
   const handleLinkClick = () => {
     const offcanvas = document.getElementById('offcanvasNavbar');
     const body = document.body;
-
+  
     if (offcanvas) {
       offcanvas.classList.remove('show');
-
-       // Remove inline styles from body
-    body.style.overflow = '';
-    body.style.paddingRight = '';
+  
+      // Use the `offcanvas.bs.hidden` event to ensure the offcanvas is hidden before modifying body styles
+      offcanvas.addEventListener('hidden.bs.offcanvas', () => {
+        // Remove inline styles from body
+        body.style.overflow = '';
+        body.style.paddingRight = '';
+  
+        // Remove the event listener to prevent memory leaks
+        offcanvas.removeEventListener('hidden.bs.offcanvas', () => {});
+      });
     }
   };
 
+  const [show, setShow] = useState(false);
 
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   
 
 
@@ -48,14 +60,46 @@ const Navbar = () => {
             priority
           />
         </Link>
-        <button
-          className="navbar-toggler border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <svg
+
+        <ul className="d-none d-lg-flex flex-row gap-3 navbar-nav ms-auto">
+                 <li className="nav-item">
+                <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
+                  Home
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/our-story" className={currentRoute === "/our-story" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
+                Our Story
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link href="/swarna-sakthi" className={currentRoute === "/swarna-sakthi" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
+                Swarna Sakthi
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link href="/experience-center" className={currentRoute === "/experience-center" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
+                Experience Center
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link href="/stores" className={currentRoute === "/stores" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
+                Stores
+                </Link>
+              </li>
+
+              <li className="nav-item">
+                <Link href="/contact-us" className={currentRoute === "/contact-us" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
+                  Contact Us
+                </Link>
+              </li>
+            </ul>
+      <div className='b-block d-lg-none'>
+      <Button variant="light" onClick={handleShow}>
+        <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -68,62 +112,52 @@ const Navbar = () => {
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
             ></path>
           </svg>
-        </button>
-        <div
-          className={`offcanvas offcanvas-end`}
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <div className="offcanvas-header">
-            <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-              Menu
-            </h5>
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div className="offcanvas-body">
-            <ul className="navbar-nav justify-content-center ms-auto">
+      </Button>
+      </div>
+
+      <Offcanvas show={show} onHide={handleClose}>
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Menu</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+        <ul className="navbar-nav gap-2">
                  <li className="nav-item">
-                <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
+                <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="/our-story" className={currentRoute === "/our-story" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
+                <Link href="/our-story" className={currentRoute === "/our-story" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Our Story
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link href="/swarna-sakthi" className={currentRoute === "/swarna-sakthi" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
+                <Link href="/swarna-sakthi" className={currentRoute === "/swarna-sakthi" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Swarna Sakthi
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link href="/experience-center" className={currentRoute === "/experience-center" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
+                <Link href="/experience-center" className={currentRoute === "/experience-center" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Experience Center
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link href="/stores" className={currentRoute === "/stores" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
+                <Link href="/stores" className={currentRoute === "/stores" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Stores
                 </Link>
               </li>
 
               <li className="nav-item">
-                <Link href="/contact-us" className={currentRoute === "/contact-us" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleLinkClick}>
+                <Link href="/contact-us" className={currentRoute === "/contact-us" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                   Contact Us
                 </Link>
               </li>
             </ul>
-          </div>
-        </div>
+        </Offcanvas.Body>
+      </Offcanvas>
 
       </div>
     </nav>
