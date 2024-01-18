@@ -3,6 +3,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import './MainBanner.css'
 import Image from 'next/image'
+import Link from 'next/link';
 
 
 
@@ -18,6 +19,7 @@ export const MainBanner = () => {
                   } }>
               
               <SplideSlide>
+              <Link href="/tvam">
               <picture>
                 <source
                     srcSet="/home-main-banner1.webp"
@@ -32,6 +34,7 @@ export const MainBanner = () => {
                     width={1519}
                                />
                 </picture>
+              </Link>
 
 
 
@@ -39,26 +42,7 @@ export const MainBanner = () => {
               </SplideSlide>
 
 
-              <SplideSlide>
-              <picture>
-                <source
-                    srcSet="/home-main-banner2.webp"
-                    type="image/webp"
-                    media="(min-width: 650px)"
-                />
-                <Image
-                    alt="Image X alt"
-                    src="/home-mobile-banner2.webp"
-                    height={541}
-                    width={1519 }
-                    priority="true"
-                />
-                </picture>
-
-
-
-
-              </SplideSlide>
+           
 
 
               <SplideSlide>
