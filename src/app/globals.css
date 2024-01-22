@@ -8,7 +8,9 @@ body{
 .container{
   margin: auto;
 }
-
+.navbar>.container{
+  flex-wrap: nowrap !important;
+}
 
 .section-padding{
   padding: 40px 0;
