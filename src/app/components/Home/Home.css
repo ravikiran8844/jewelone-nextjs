@@ -811,6 +811,7 @@ article.yt-lite {
   background: #fff;
   box-shadow: 0px 0px 21.84363px 0px rgba(134, 134, 134, 0.25);
   overflow: hidden;
+  padding: 0px !important;
 }
 .home-section5 .card-body {
   padding: 0px;
