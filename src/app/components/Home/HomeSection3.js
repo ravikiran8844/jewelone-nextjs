@@ -128,8 +128,19 @@ const HomeSection3 = () => {
             },
           }}
         >
-          <Slide
+           <Slide
             newlyLanunched={true}
+            date="January 13th 2024"
+            imageSrc="/home-section3-img-new.webp"
+            mobileSrc="/home-section3-img-mobile-new.webp"
+            altText="TVAM 2.0"
+            title="TVAM 2.0"
+            initialText={
+              'A Wedding creates memories for a lifetime! Make every moment special with TVAM 2.0 - A collection launched with Jewellery for every Bridal Moment. Explore the countless collections of designer wedding collections made to the trend!'
+            }
+          />
+          <Slide
+            newlyLanunched={false}
             date="October 7th 2023"
             imageSrc="/home-section3-img1.webp"
             mobileSrc="/home-section3mobile-img1.webp"

@@ -6,13 +6,13 @@ const HomeGifBanner = () => {
     <div className='container'>
     <picture>
           <source
-              srcSet="/home-gif-banner.gif"
+              srcSet="/gif-banner.gif"
               type="image/webp"
               media="(min-width: 650px)"
           />
           <Image
               alt="main banner"
-              src="/home-gif-mobile-banner.gif"
+              src="/mobile-gif-banner.gif"
               height={550}
               width={1519 }
               className='img-fluid'               />
