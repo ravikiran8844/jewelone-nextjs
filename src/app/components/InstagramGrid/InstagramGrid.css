@@ -108,3 +108,10 @@ text-transform: capitalize;
 }
      
 }
+
+
+.instagram-grid-items .splide__slide img{
+    height: auto;
+    aspect-ratio: 1;
+    width: 100%;
+  }

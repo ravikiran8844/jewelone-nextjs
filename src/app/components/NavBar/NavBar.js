@@ -51,14 +51,14 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
       <div className="container d-flex align-items-center navbar_wrapper">
         <Link className="navbar-brand" href="/"  >
-          <Image
-            src="/jewelone-logo.webp"
-            width="223"
-            height="57"
-            className="img-fluid"
-            alt="Site Logo"
-            priority
-          />
+        <Image
+                  className="img-fluid"
+                  width="222"
+                  height="56"
+                  src="/logo.svg"
+                  alt="logo"
+                  priority
+                />
         </Link>
 
         <ul className="d-none d-lg-flex flex-row gap-3 navbar-nav ms-auto">

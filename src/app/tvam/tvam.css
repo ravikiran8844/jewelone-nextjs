@@ -62,6 +62,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
+  .bride-grid-section_items img{
+    width: 100%;
+  }
   @media (min-width: 768px) {
     .tvam   .bride-grid-section_items {
       display: grid;

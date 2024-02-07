@@ -13,13 +13,13 @@ const Footer = () => {
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-5 col-lg-4 mb-4 text-center text-md-start">
-            <div style={{ maxWidth: "400px", margin: "auto" }}>
-              <div className="mb-4 mt-lg-5">
+            <div style={{ maxWidth: "300px", margin: "auto" }}>
+              <div className="mb-4">
                 <Image
-                  className="img-fluid"
-                  width="260"
-                  height="60"
-                  src="/jewelone-logo.webp"
+                  className="img-fluid w-100"
+                  width="222"
+                  height="56"
+                  src="/logo.svg"
                   alt="logo"
                 />
               </div>
@@ -276,7 +276,7 @@ const Footer = () => {
                   <div className="mb-3 footer-section_links_label">
                     Swarna Shakti App Download
                   </div>
-                  <div className="d-flex flex-wrap gap-2">
+                  <div className="d-flex gap-2">
                     <div>
                       <a
                         target="__blank"
@@ -310,20 +310,26 @@ const Footer = () => {
               </div>
             </div>
 
-            <div
-              className="mt-4 d-flex flex-column g-3 flex-md-row justify-content-between flex-wrap"
+            
+          </div>
+        </div>
+
+        <div className="col-12">
+        <div
+              className="mt-4"
               style={{ borderTop: "1px solid #BDB1A5", paddingTop: "10px" }}
             >
               {/* Copyright */}
-              <div className="align-self-md-end mt-3">
+              <div className="mt-2">
                 <div className="footer-section_text text-center">
                   &copy; {year} - Jewel One is Trademarked & Registered under
                   Emerald Jewel Industry India Limited.{" "}
                 </div>
               </div>
             </div>
-          </div>
         </div>
+
+
       </div>
     </footer>
   );

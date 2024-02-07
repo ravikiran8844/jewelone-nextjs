@@ -29,11 +29,23 @@ export const InstagramGrid = () => {
             <Splide options={ {
                       type: 'slide',
                       gap: 10,
-                      autoWidth: true,
+                      autoWidth: false,
                       arrows: false,
                       autoplay: true,
                       interval: 2000,
+                      perPage: 4,
                       pagination: false,
+                      breakpoints: {
+                        1040: {
+                          perPage: 3,
+                        },
+                        768: {
+                          perPage: 2,
+                        },
+                        480: {
+                          perPage: 1,
+                        },
+                      },
                   } }>
              
              <SplideSlide>
