@@ -44,7 +44,7 @@ const ImageCarousel = () => {
                 </div>
                 <div className="slider-section-grid-item mt-4  m-md-auto  text-center">
                   <div className="fs-1 mb-3 fw-bold">TVAM 2.0</div>
-                  <div className="fs-5 mb-4 mb-md-0 max-w-500">
+                  <div className="fs-6 mb-4 mb-md-0 max-w-500">
                   Embrace your timeless beauty with Jewel One's TVAM collection where modern elegance meets classic charm, making you the trendsetting bride.
                   </div>
                 </div>
