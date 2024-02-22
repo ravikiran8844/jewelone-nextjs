@@ -2,7 +2,7 @@
 .tvam {
     max-width: 100vw;
     overflow-x: hidden;
-    font-family: '__Inter_abbad9', '__Inter_Fallback_abbad9';
+    font-family: var(--font-inter);
     font-size: 14px;
   }
   @media (min-width: 768px) {
@@ -11,7 +11,7 @@
     }
   }
    .font-secondary {
-    font-family: "__Great_Vibes_7fd0b9", "__Great_Vibes_Fallback_7fd0b9";
+    font-family: var(--font-great-vibes) !important;
   }
   
   .tvam a {

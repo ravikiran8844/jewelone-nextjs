@@ -11,6 +11,7 @@ const HomeGifBanner = () => {
               media="(min-width: 650px)"
           />
           <Image
+              loading='lazy'
               alt="main banner"
               src="/mobile-gif-banner.gif"
               height={550}
