@@ -676,7 +676,7 @@ article.yt-lite {
   width: 100%;
   background-color: #000;
   min-height: 350px;
-  /* max-width: 550px; */
+  max-width: 550px;
   width: 100%;
   aspect-ratio: 16/9;
   margin: auto;
