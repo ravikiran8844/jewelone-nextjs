@@ -1,0 +1,112 @@
+/* 
+.review-card{
+  padding-left: 30px;
+} */
+.review-card .card-body{
+    padding: 20px;
+  }
+  
+  .review-card-overlay{
+    position: absolute;
+      background: #DCDCDC;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      top: 20px;
+      transform: translate(-50%, 0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 500;
+      left: 0;
+  }
+  
+  
+   .time-line-section ul{
+    border-top: 5px solid #fff;
+      width: 70%;
+      margin-top: 50px;
+     margin-bottom: 150px;
+     margin-left: 30px;
+      padding: 0;
+      position: relative;
+  }
+  .time-line-section ul li{
+    color: #000;
+  }
+  .time-line-section ul li:nth-child(1) {
+      left: 0%;
+  }
+  .time-line-section  ul li:nth-child(1):before {
+      position: absolute;
+      color: #fff;
+      font-size: 12px;
+      content: 'SIGNUP ONLINE, IT"S FREE';
+      top: 53px;
+      left: -39px;
+      width: 120px;
+      text-align: center;
+      height: auto;
+  }
+  .time-line-section  ul li:nth-child(2) {
+      left: 50%;
+  }
+  .time-line-section ul li:nth-child(2):before {
+      position: absolute;
+      color: #fff;
+      font-size: 12px;
+      content: "GRT LIVE TEAM WILL REVIEW AND CONFIRM APPOINTMENT";
+      top: 53px;
+      left: -39px;
+      width: 120px;
+      text-align: center;
+      height: auto;
+  }
+  .time-line-section ul li:nth-child(3) {
+      left: 100%;
+  }
+  .time-line-section ul li:nth-child(3):before {
+      position: absolute;
+      color: #fff;
+      font-size: 12px;
+      content: 'GET READY TO BROWSE AND SHOP VIA VIDEO SHOPPING';
+      top: 53px;
+      left: -39px;
+      width: 120px;
+      text-align: center;
+      height: auto;
+  }
+  .time-line-section ul li {
+      list-style: none;
+      text-align: center;
+      font-size: 16px;
+      padding-top: 8px;
+      width: 35px;
+      height: 35px;
+      background: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      top: -20px;
+  }
+  
+  
+  @media (min-width:992px) {
+    .how-it-works-logos{
+      border-left: 1px solid #fff;
+      padding-left: 30px;
+      height: 100%;
+    }
+  }
+  
+  .how-it-works-logo-item{
+    display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      max-width: 150px;
+      text-align: center;
+      font-size: 14px;
+      margin: auto;
+  }
