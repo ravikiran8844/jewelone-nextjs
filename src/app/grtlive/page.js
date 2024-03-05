@@ -3,6 +3,8 @@ import React, { Component } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Image from "next/image";
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 
 import './grtlive.css'
 
@@ -23,7 +25,18 @@ const page = () => {
       <section>
         <div className="container py-4 py-lg-5">
           <div className="row">
-            <div className="col-12 col-lg-7 order-1 order-lg-0">video</div>
+            <div className="col-12 col-lg-7 order-1 order-lg-0">
+              <div className="grtlive-youtube-iframe">
+              <iframe
+              width={560}
+              height={315}
+              src="https://www.youtube.com/embed/WzZ4Mx9NXLI?si=rUmxuMdy1noVes9k&autoplay=1&mute=1&rel=0"
+              title="YouTube video player"
+              allow="accelerometer; autoplay;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen=""
+            />
+              </div>
+            </div>
             <div className="col-12 col-lg-5 order-0 order-lg-1">form</div>
           </div>
         </div>
@@ -40,7 +53,7 @@ const page = () => {
           </div>
 
           <div className="row">
-            <div className="col-12 col-lg-9">
+            <div className="col-12 col-md-9">
               <div>
                 GRT Live brings you a great way to browse and shop for your
                 favourite jewels. View our collection live, compare and
@@ -59,10 +72,10 @@ const page = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-12 col-lg-3">
+            <div className="col-12 col-md-3">
                 <div className="how-it-works-logos">
                     <div className="how-it-works-logo-item">
-                        <div>
+                        <div className="how-it-works-logo-item__img-wrapper">
                             <Image className="img-fluid" width={50} height={50} src="/shop_anywhere.png" alt="SHOP FROM ANYWHERE" />
                         </div>
                         <div>
@@ -72,7 +85,7 @@ const page = () => {
                         </div>
                     </div>
                     <div className="how-it-works-logo-item mt-4">
-                        <div>
+                        <div className="how-it-works-logo-item__img-wrapper">
                             <Image className="img-fluid" width={50} height={50} src="/comfort_home.png" alt="COMFORT OF YOUR HOME" />
                         </div>
                         <div>
@@ -80,7 +93,7 @@ const page = () => {
                         </div>
                     </div>
                     <div className="how-it-works-logo-item mt-4">
-                        <div>
+                        <div className="how-it-works-logo-item__img-wrapper">
                             <Image className="img-fluid" width={50} height={50} src="/interactive.png" alt="INTERACTIVE SALES PERSONS" />
                         </div>
                         <div>

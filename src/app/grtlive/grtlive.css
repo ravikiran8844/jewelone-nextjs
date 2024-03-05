@@ -22,6 +22,10 @@
       left: 0;
   }
   
+  .how-it-works-logo-item__img-wrapper{
+    height: 50px;
+    width: 50px;
+  }
   
    .time-line-section ul{
     border-top: 5px solid #fff;
@@ -92,7 +96,7 @@
   }
   
   
-  @media (min-width:992px) {
+  @media (min-width:768px) {
     .how-it-works-logos{
       border-left: 1px solid #fff;
       padding-left: 30px;
@@ -109,4 +113,9 @@
       text-align: center;
       font-size: 14px;
       margin: auto;
+  }
+  .grtlive-youtube-iframe iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
   }
