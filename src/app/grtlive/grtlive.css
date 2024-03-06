@@ -48,7 +48,7 @@
       font-size: 12px;
       content: 'SIGNUP ONLINE, IT"S FREE';
       top: 53px;
-      left: -39px;
+      left: -45px;
       width: 120px;
       text-align: center;
       height: auto;
@@ -62,7 +62,7 @@
       font-size: 12px;
       content: "GRT LIVE TEAM WILL REVIEW AND CONFIRM APPOINTMENT";
       top: 53px;
-      left: -39px;
+      left: -45px;
       width: 120px;
       text-align: center;
       height: auto;
@@ -76,7 +76,7 @@
       font-size: 12px;
       content: 'GET READY TO BROWSE AND SHOP VIA VIDEO SHOPPING';
       top: 53px;
-      left: -39px;
+      left: -45px;
       width: 120px;
       text-align: center;
       height: auto;
@@ -118,4 +118,9 @@
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
+  }
+
+  .book-appointment-form label{
+    font-weight: 500;
+    font-size: 14px;
   }

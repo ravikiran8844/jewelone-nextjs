@@ -6,7 +6,7 @@ import Footer from './components/Footer/Footer';
 import BootstrapClient from './components/BootstrapClient';
 
 
-const inter = Inter({ subsets: ['latin'],  weight: ['400','500','700'], style: ['normal'],display: 'swap',variable: '--font-inter', }) 
+const inter = Inter({ subsets: ['latin'],  weight: ['400','500'], style: ['normal'],display: 'swap',variable: '--font-inter', }) 
 const great_vibes = Great_Vibes({subsets: ['latin'],  weight: '400',display: 'swap',variable: '--font-great-vibes',})
 
 
