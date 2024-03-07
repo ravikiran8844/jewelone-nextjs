@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import "./grtlive.css";
 import GrtReviewSlider from "../components/GRTLIVE/GrtReviewSlider";
+import GrtFormSection from "../components/GRTLIVE/GrtFormSection";
 
 const page = () => {
   return (
@@ -19,103 +20,7 @@ const page = () => {
         />
       </section>
 
-      <section>
-        <div className="container py-4 py-lg-5">
-          <div className="row">
-            <div className="col-12 col-lg-7 order-1 order-lg-0">
-              <div className="grtlive-youtube-iframe">
-                <iframe
-                  width={560}
-                  height={315}
-                  src="https://www.youtube.com/embed/WzZ4Mx9NXLI?si=rUmxuMdy1noVes9k&autoplay=1&mute=1&rel=0"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay;  clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen=""
-                />
-              </div>
-            </div>
-            <div className="col-12 col-lg-5 order-0 order-lg-1">
-              <div className="card book-appointment-form">
-                <div className="card-body">
-                  <div className="fs-4 fw-semibold mb-4 text-center">BOOK A NO OBLIGATION APPOINTMENT</div>
-
-                    <div className="row">
-                      <div className="col-12 mb-4">
-                          <input type="text" className="form-control" placeholder="Name" />
-                      </div>
-                      <div className="col-12 mb-4">
-                          <input type="text" className="form-control" placeholder="Phone" />
-                      </div>
-                      <div className="col-12 mb-4">
-                          <input type="text" className="form-control" placeholder="Email ID" />
-                      </div>
-                      <div className="col-12 mb-4">
-                          <input type="text" className="form-control" placeholder="City Or Country" />
-                      </div>
-                      <div className="col-12 mb-4">
-                          <label className="form-label">
-                          Which category you want to shop? <span className="text-danger">*</span> 
-                          </label>
-                          <select className="form-select">
-                            <option>
-                            --Select Category--
-                            </option>
-                            <option>
-                            Diamond Jewellery
-                            </option>
-                            <option>
-                            Gold Jewellery
-                            </option>
-                            <option>
-                            Silver Jewellery
-                            </option>
-                            <option>
-                            Other Products
-                            </option>
-                          </select>
-                      </div>
-                      <div className="col-12 mb-4">
-                          <label className="form-label">
-                          Preferred Language? <span className="text-danger">*</span>
-                          </label>
-                          <select className="form-select">
-                          <option value="">--Select Language--</option>
-                          <option value="english">English</option>
-																	<option value="hindi">Hindi</option>
-																	<option value="kannada">Kannada</option>
-																	<option value="telugu">Telugu</option>
-																	<option value="tamil">Tamil</option>
-																	<option value="malayalam">Malayalam</option>
-                          </select>
-                      </div>
-                      <div className="col-6 mb-4">
-                        <label className="form-label">Date<span className="text-danger">*</span></label>
-                          <input type="date" className="form-control" />
-                      </div>
-                      <div className="col-6 mb-4">
-                      <label className="form-label">Time<span className="text-danger">*</span></label>
-
-                          <input type="time" className="form-control" />
-                      </div>
-
-                      <div className="col-12 mb-4">
-                      <label className="form-label">When do you want us to reach you?<span className="text-danger">*</span></label>
-                      <label className="form-label">To get more details about your requirement</label>
-                          <input type="text" className="form-control" placeholder="Ex: Call me at 10am tomorrow" />
-                      </div>
-
-
-                      <div className="col-12 mb-4">
-                        <button className="btn btn-danger px-4 py-2 fs-6" style={{backgroundColor:"#bf3e43"}}>BOOK AN APPOINTMENT</button>
-                      </div>
-
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <GrtFormSection/>
 
       <section style={{ backgroundColor: "#bf3e43" }}>
         <div className="container py-5 text-white">
