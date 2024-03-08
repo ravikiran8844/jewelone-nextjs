@@ -22,12 +22,16 @@ export async function POST(request) {
     // }
   });
 
+  let mailList=[
+    'ravi.kiran8844@gmail.com',
+    'retail.crm@ejindia.com'
+  ]
   const mailOptions = {
     from: process.env.NEXT_PUBLIC_SMTP_USER,
-    to: 'ravi.kiran8844@gmail.com',
+    to: mailList,
     replyTo: email,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
-    subject: `New Book Appointment form Submission - ${name} (${email})`,
+    subject: `Book Appointment form Submission - ${name} (${email})`,
     html: `<p>You have a new form submission</p><br>
         <p><strong>Name: </strong> ${name}</p>
         <p><strong>Phone: </strong> ${phone}</p>
