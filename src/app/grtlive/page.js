@@ -7,6 +7,12 @@ import "./grtlive.css";
 import GrtReviewSlider from "../components/GRTLIVE/GrtReviewSlider";
 import GrtFormSection from "../components/GRTLIVE/GrtFormSection";
 
+export const metadata = {
+  title: 'JewelOne Live Video Shopping',
+  description: 'JewelOne Live Video Shopping',
+}
+
+
 const page = () => {
   return (
     <main className="bg-white">
