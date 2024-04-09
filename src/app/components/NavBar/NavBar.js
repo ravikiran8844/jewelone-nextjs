@@ -68,6 +68,21 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link href="/tvam" className={currentRoute === "/tvam" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
+                TVAM 2.0
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/akshaya-tritiya" className={currentRoute === "/akshaya-tritiya" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
+                Akshaya Tritiya
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="https://florencia.vercel.app/" className="main-menu-link nav-link" onClick={handleClose}>
+                Florencia
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link href="/our-story" className={currentRoute === "/our-story" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Our Story
                 </Link>
