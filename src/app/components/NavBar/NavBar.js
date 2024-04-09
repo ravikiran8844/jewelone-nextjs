@@ -78,7 +78,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link href="https://florencia.vercel.app/" className="main-menu-link nav-link" onClick={handleClose}>
+                <Link href="/florencia" className={currentRoute === "/florencia" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Florencia
                 </Link>
               </li>

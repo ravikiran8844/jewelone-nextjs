@@ -336,7 +336,6 @@ export const StoreProvider = ({ children }) => {
       "rating": 4,
       "pincode": "641126",
       "city":"Udumalaipettai",
-
       "phone": 9944501010,
       "contactPersonName": "Baskar / Ganesh ",
       "mapLink": "https://maps.app.goo.gl/ikJoXkzv918Fv1L66",
