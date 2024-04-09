@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
+import "./Florencia.css"
 
 
 const FlorenciaSection2 = () => {
