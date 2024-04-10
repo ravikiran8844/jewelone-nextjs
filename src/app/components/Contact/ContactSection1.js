@@ -15,25 +15,54 @@ const ContactSection1 = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    sendMail(data);
+    sendMailWPContactForm(data);
     console.log(data);
     reset();
   };
 
-  const sendMail = (data) => {
-    const apiEndpoint = "/api/contact";
-    fetch(apiEndpoint, {
-      method: "POST",
-      body: JSON.stringify(data),
+  const sendMailWPContactForm=(data)=>{
+    const { email, name,mobile, message }=data
+    // console.log("hi",email, name,mobile, message );
+    const formData = new FormData();
+    formData.append('your-name', name);
+    formData.append('your-email', email);
+    formData.append('your-mobile', mobile);
+    formData.append('your-message', message);
+    formData.append('_wpcf7_unit_tag', 'wpcf7-f11-p12-o1');
+
+    // POST request
+    fetch('http://emerald-jewel-career.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/11/feedback', {
+        method: 'POST',
+        body: formData
     })
-      .then((res) => res.json())
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+    .then(response => {
+        if (response.ok) {
+            console.log('Form submitted successfully');
+        } else {
+            console.error('Form submission failed');
+        }
+    })
+    .catch(error => {
+        console.error('Error occurred while submitting form:', error);
+    });
+
+
+  }
+
+  // const sendMail = (data) => {
+  //   const apiEndpoint = "/api/contact";
+  //   fetch(apiEndpoint, {
+  //     method: "POST",
+  //     body: JSON.stringify(data),
+  //   })
+  //     .then((res) => res.json())
+  //     .then((response) => {
+  //       console.log(response);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
 
   return (
     <div className="contact-section1 section-padding pb-3" style={{

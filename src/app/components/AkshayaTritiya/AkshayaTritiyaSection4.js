@@ -181,10 +181,11 @@ const storesData = [
   },
 ];
 
-const AkshayaTritiyaSection4 = () => {
+const AkshayaTritiyaSection4 = ({goldPrice}) => {
+
   const [amount, setAmount] = useState("");
   const [grams, setGrams] = useState("");
-  const [goldRate, setGoldRate] = useState(6460); // Initial gold rate
+  const [goldRate, setGoldRate] = useState(goldPrice); // Initial gold rate
   const [location, setLocation] = useState('');
   const [agreed, setAgreed] = useState(false); // State for checkbox
 

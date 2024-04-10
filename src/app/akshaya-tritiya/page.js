@@ -11,14 +11,30 @@ export const metadata = {
   description: 'JewelOne Akshaya Tritiya Page',
 }
 
+async function getData() {
+  const res = await fetch('http://emerald-jewel-career.brightbridge.co/wp-json/acf/v3/options/option');
 
-const page = () => {
+  if (!res.ok) {
+    // This will activate the closest `error.js` Error Boundary
+    throw new Error('Failed to fetch data')
+  }
+ 
+  return res.json()
+}
+
+
+
+const page = async () => {
+  const data = await getData()
+  const goldPrice = data.acf.todays_gold_price_per_gram
+
+
   return (
     <main className='akshatritiya-page'>
         <AkshayaTritiyaSection1/>
         <AkshayaTritiyaSection2/>
         <AkshayaTritiyaSection3/>
-        <AkshayaTritiyaSection4/>
+        <AkshayaTritiyaSection4 goldPrice={goldPrice}/>
         <AkshayaTritiyaSection5/>
     </main>
   )
