@@ -10,7 +10,7 @@ const AkshayaTritiyaSection2 = () => {
             <div className='row'>
                 <div className='col-12 col-md-4'>
                         <div className='fs-2'>Enjoy the</div>
-                        <div className='display-5'>Moment</div>
+                        <div className='display-4'>Moment</div>
 
                         <p className='mt-3 fs-6'>We live every second of our day. Why not make every moment special?</p>
                         <div className='mt-4'>

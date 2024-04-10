@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <header>
       {currentRoute === "/experience-center" && <AnnouncmentBar/> }
-      <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret sticky-top">
+      <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret">
       <div className="container d-flex align-items-center navbar_wrapper">
         <Link className="navbar-brand" href="/"  >
         <Image
