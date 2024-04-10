@@ -87,12 +87,10 @@ const AkshayaTritiyaSection3 = () => {
                 // cover: true,
                 // focus: "center",
                 isNavigation: true,
-                gap: 20,
+                gap: 5,
                 autoWidth: false,
                 autoHeight:true,
                 arrows: true,
-                autoplay: true,
-                interval: 3000,
                 perPage: 3,
                 perMove: 1,
                 breakpoints: {
