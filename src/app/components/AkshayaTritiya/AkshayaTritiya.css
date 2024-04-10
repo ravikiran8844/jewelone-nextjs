@@ -72,6 +72,22 @@
     color: #C0832B;
 }
 
-.AkshayaTritiyaSection3__slider img{
+.AkshayaTritiyaSection3__thumb-slider img{
     border-radius: 12px;
+}
+
+.akshatritiya-page .splide__track--nav>.splide__list>.splide__slide.is-active{
+    border: none;
+    box-shadow: none;
+}
+/* 
+.AkshayaTritiyaSection3_main-img-slider{
+
+} */
+
+.AkshayaTritiyaSection3_main-img-slider__text{
+    position: absolute;
+    color: #FFF;
+    left: 20px;
+    bottom: 20px;
 }

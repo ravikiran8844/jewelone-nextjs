@@ -38,23 +38,7 @@ const FlorenciaSection1 = () => {
           </picture>
         </a>
       </SwiperSlide>
-      <SwiperSlide>
-        <a href="#">
-          <picture>
-            <source
-              media="(min-width:768px)"
-              srcSet="florencia/main-slider/main-slider2.webp"
-            />
-            <img
-              className="img-fluid"
-              width={428}
-              height={743}
-              src="florencia/main-slider/main-slider2-mobile.webp"
-              alt="main banner"
-            />
-          </picture>
-        </a>
-      </SwiperSlide>
+      
       <SwiperSlide>
         <a href="#">
           <picture>
@@ -72,6 +56,24 @@ const FlorenciaSection1 = () => {
           </picture>
         </a>
       </SwiperSlide>
+      <SwiperSlide>
+        <a href="#">
+          <picture>
+            <source
+              media="(min-width:768px)"
+              srcSet="florencia/main-slider/main-slider2.webp"
+            />
+            <img
+              className="img-fluid"
+              width={428}
+              height={743}
+              src="florencia/main-slider/main-slider2-mobile.webp"
+              alt="main banner"
+            />
+          </picture>
+        </a>
+      </SwiperSlide>
+      
     </Swiper>
     </section>
    
