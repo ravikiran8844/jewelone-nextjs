@@ -151,7 +151,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="8Q4eiTmy0b0"
-                      poster="hqdefault"
+                      poster="sddefault"
                       params="rel=0"
                       title="Sushmita"
                     />
@@ -181,7 +181,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="TXlGcMOUGp0"
-                      poster="hqdefault"
+                      poster="sddefault"
                       params="rel=0"
                       title="Sujatha"
                     />
@@ -211,7 +211,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="-UaIoygsBD4"
-                      poster="hqdefault"
+                      poster="sddefault"
                       params="rel=0"
                       title="Nandini"
                     />
@@ -241,7 +241,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="49wgYi_FUsk"
-                      poster="hqdefault"
+                      poster="sddefault"
                       params="rel=0"
                       title="Srinivasan"
                     />
@@ -270,7 +270,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="NwhLojRAfAM"
-                      poster="hqdefault"
+                      poster="sddefault"
                       params="rel=0"
                       title="Customers"
                     />

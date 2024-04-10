@@ -666,8 +666,8 @@
   max-width: 100%;
   width: 100%;
   background-color: #000;
-  max-height: 350px;
-  max-width: 550px;
+  /* max-height: 350px;
+  max-width: 550px; */
   margin: auto;
   flex-shrink: 0;
 }
@@ -675,8 +675,8 @@
   border-radius: 20px;
   width: 100%;
   background-color: #000;
-  min-height: 350px;
-  max-width: 550px;
+  /* min-height: 350px; */
+  /* max-width: 550px; */
   width: 100%;
   aspect-ratio: 16/9;
   margin: auto;
