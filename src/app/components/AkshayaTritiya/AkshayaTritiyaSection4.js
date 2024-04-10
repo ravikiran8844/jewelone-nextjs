@@ -209,13 +209,13 @@ const AkshayaTritiyaSection4 = () => {
 
 
   return (
-    <section className="AkshayaTritiyaSection4">
-      <div className="container py-5">
+    <section id='prebookFormSection' className="AkshayaTritiyaSection4">
+      <div className="container pb-5">
         <div className="row">
           <div className="col-12 col-lg-6">
             <Image
-              width={518}
-              height={400}
+              width={454}
+              height={350}
               className="img-fluid"
               alt="Akshaya Tritiya"
               src="/AkshayaTritiya/Akshaya-Tritiya.webp"
@@ -253,7 +253,7 @@ const AkshayaTritiyaSection4 = () => {
       <div className="card AkshayaTritiyaSection4__form">
         <div className="card-body py-4">
           <div className="text-center">
-            <div className="mb-3">
+            <div className="mb-2">
             <Image
                 alt="jewelone logo"
                 className="img-fluid"
@@ -262,14 +262,14 @@ const AkshayaTritiyaSection4 = () => {
                 height={60}
               />
             </div>
-            <div className="mb-3 fs-2 fw-semibold text-red">Advance Booking Open</div>
+            <div className="mb-2 fs-3 fw-semibold text-red">Advance Booking Open</div>
 
-            <div className="mb-3 fs-6 text-gold fw-medium">Current Gold Rate : <span className="fw-bold">₹{goldRate}</span> per gram</div>
+            <div className="mb-2 fs-6 text-gold fw-medium">Current Gold Rate : <span className="fw-bold">₹{goldRate}</span> per gram</div>
 
-            <div className="mb-3 AkshayaTritiyaSection4__prebook-text">Pre-book your Jewellery</div>
+            <div className="mb-2 AkshayaTritiyaSection4__prebook-text">Pre-book your Jewellery</div>
           </div>
 
-          <div className="mb-3">
+          <div className="mb-2">
             <label className="form-label">Pre-Book Amount<span>*</span></label>
             <div>
               <input
@@ -283,7 +283,7 @@ const AkshayaTritiyaSection4 = () => {
             </div>
           </div>
 
-          <div className="mb-3">
+          <div className="mb-2">
             <label className="form-label">Total Grams<span>*</span></label>
             <div>
               <input
@@ -297,7 +297,7 @@ const AkshayaTritiyaSection4 = () => {
             </div>
           </div>
 
-          <div className="mb-3">
+          <div className="mb-2">
             <label className="form-label">Nearest Store Location<span>*</span></label>
             <div>
               <select name='location' className="form-select">
@@ -308,7 +308,7 @@ const AkshayaTritiyaSection4 = () => {
             </div>
           </div>
 
-          <div className="form-check mb-3">
+          <div className="form-check mb-2">
             <input type='checkbox' className="form-check-input" />
             <label className="form-check-label">I agree with the terms & conditions</label>
           </div>

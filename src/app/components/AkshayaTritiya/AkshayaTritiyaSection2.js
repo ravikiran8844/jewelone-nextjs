@@ -12,9 +12,9 @@ const AkshayaTritiyaSection2 = () => {
                         <div className='fs-2'>Enjoy the</div>
                         <div className='display-5'>Moment</div>
 
-                        <p className='mt-3'>We live every second of our day. Why not make every moment special?</p>
+                        <p className='mt-3 fs-6'>We live every second of our day. Why not make every moment special?</p>
                         <div className='mt-4'>
-                          <Link href="" className='btn btn-outline-danger akshatritiyasection2__btn px-4 py-2'>Explore</Link>
+                          <Link href="" className='btn fw-semibold btn-outline-danger akshatritiyasection2__btn px-4 py-2'>Explore</Link>
                         </div>
                 </div>
 

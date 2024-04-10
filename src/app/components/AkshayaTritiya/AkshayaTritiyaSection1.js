@@ -14,7 +14,7 @@ const AkshayaTritiyaSection1 = () => {
             }}>
 
                 <SplideSlide>
-                    <Link href="">
+                    <Link href="#prebookFormSection">
                         <picture>
                             <source
                                 srcSet="/AkshayaTritiya/slider-img1.webp"
@@ -41,6 +41,7 @@ const AkshayaTritiyaSection1 = () => {
 
 
                 <SplideSlide>
+                    <Link href="#prebookFormSection">
                     <picture>
                         <source
                             srcSet="/AkshayaTritiya/slider-img1.webp"
@@ -56,10 +57,7 @@ const AkshayaTritiyaSection1 = () => {
 
                         />
                     </picture>
-
-
-
-
+                    </Link>
                 </SplideSlide>
 
             </Splide>

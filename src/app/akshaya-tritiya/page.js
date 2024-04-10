@@ -17,7 +17,7 @@ const page = () => {
     <main className='akshatritiya-page'>
         <AkshayaTritiyaSection1/>
         <AkshayaTritiyaSection2/>
-        <AkshayaTritiyaSection3/>
+        {/* <AkshayaTritiyaSection3/> */}
         <AkshayaTritiyaSection4/>
         <AkshayaTritiyaSection5/>
     </main>
