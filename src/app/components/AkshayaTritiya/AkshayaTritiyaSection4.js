@@ -275,16 +275,21 @@ const AkshayaTritiyaSection4 = ({goldPrice}) => {
       <div className="container pb-5">
         <div className="row">
           <div className="col-12 col-lg-6">
-            <Image
-              width={454}
-              height={350}
+              <div className="text-center">
+              <Image
+              width={400}
+              height={300}
               className="img-fluid"
               alt="Akshaya Tritiya"
-              src="/AkshayaTritiya/Akshaya-Tritiya.webp"
+              src="/AkshayaTritiya/Akshaya-Tritiya1.webp"
             />
+            <div className="fs-3 mt-3" style={{color:"#FFD2A9"}}>
+            Minimum 10% Advance
+            </div>
+              </div>
 
             <div>
-              <div className="mt-5 mb-2 text-warning fs-3">
+              <div className="mt-3 mb-2 fs-3  text-warning" >
                 Terms & Conditions
               </div>
               <ul className="text-light">

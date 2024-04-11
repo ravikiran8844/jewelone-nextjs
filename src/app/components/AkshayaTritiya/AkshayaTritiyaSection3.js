@@ -114,7 +114,7 @@ const AkshayaTritiyaSection3 = () => {
                   src="AkshayaTritiya/section3-img1.webp"
                   alt="Image 1"
                 />
-                <div className="fs-5 fw-semibold text-center mt-3">
+                <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 1
                 </div>
               </SplideSlide>
@@ -124,7 +124,7 @@ const AkshayaTritiyaSection3 = () => {
                   src="AkshayaTritiya/section3-img2.webp"
                   alt="Image 2"
                 />
-                <div className="fs-5 fw-semibold text-center mt-3">
+                <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 2
                 </div>
               </SplideSlide>
@@ -134,7 +134,7 @@ const AkshayaTritiyaSection3 = () => {
                   src="AkshayaTritiya/section3-img3.webp"
                   alt="Image 3"
                 />
-                <div className="fs-5 fw-semibold text-center mt-3">
+                <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 3
                 </div>
               </SplideSlide>
