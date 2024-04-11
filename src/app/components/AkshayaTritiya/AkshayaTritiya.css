@@ -11,7 +11,7 @@
 }
 .akshatritiyasection2 video{
     border-radius: 16.258px;
-
+    max-width: 100%;
 }
 
 .akshatritiyasection2__img-grid{
@@ -138,7 +138,7 @@ text-transform: uppercase;
     justify-content: center;
 }
 
-@media (min-width:468px) {
+@media (min-width:360px) {
     .AkshayaTritiyaSection5 .product-cards{
         grid-template-columns: repeat(2,1fr);
     }
@@ -155,7 +155,7 @@ text-transform: uppercase;
  border: none !important;
  margin: auto;
  width: 100%;
- max-width: 320px;
+ max-width: 240px;
  margin: auto;
 }
 
