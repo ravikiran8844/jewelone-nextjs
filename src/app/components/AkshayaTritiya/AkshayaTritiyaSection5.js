@@ -29,25 +29,25 @@ const goldProducts=[{
 ]
 
 const silverProducts=[{
-  title:"Silver Coin",
-  weight:"1 gm",
-  image:"/AkshayaTritiya/gold-coin.png"
+  title:"Silver Idol",
+  // weight:"1 gm",
+  image:"/AkshayaTritiya/silver-idol-img1.webp"
 },
 
 {
-  title:"Silver Coin",
-  weight:"2 gm",
-  image:"/AkshayaTritiya/gold-coin.png"
+  title:"Silver Idol",
+  // weight:"2 gm",
+  image:"/AkshayaTritiya/silver-idol-img2.webp"
 },
 {
-  title:"Silver Coin",
-  weight:"4 gm",
-  image:"/AkshayaTritiya/gold-coin.png"
+  title:"Silver Idol",
+  // weight:"4 gm",
+  image:"/AkshayaTritiya/silver-idol-img3.webp"
 },
 {
-  title:"Silver Coin",
-  weight:"8 gm",
-  image:"/AkshayaTritiya/gold-coin.png"
+  title:"Silver Idol",
+  // weight:"8 gm",
+  image:"/AkshayaTritiya/silver-idol-img4.webp"
 },
 
 ]
