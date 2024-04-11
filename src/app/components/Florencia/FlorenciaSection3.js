@@ -2,6 +2,7 @@
 import React from "react";
 import { Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from "next/image";
 
 // Import Swiper styles
 import "swiper/css";
@@ -33,19 +34,19 @@ const FlorenciaSection3 = () => {
             spaceBetween={20}
             slidesPerView='auto'
             navigation
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
+            // onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
             className="home-section3-slider"
           >
             <SwiperSlide>
               {" "}
               <div className="text-center home-section3-logo-item">
                 <div className="home-section3-logo-item--img_wrapper mb-3">
-                  <img
+                  <Image
                     width={60}
                     height={60}
                     className="img-fluid"
-                    src="florencia/icons/home-section3-img1.png"
+                    src="/florencia/icons/home-section3-img1.png"
                     alt="Innovation in Craftmanship"
                   />
                 </div>
@@ -58,11 +59,11 @@ const FlorenciaSection3 = () => {
               {" "}
               <div className="text-center home-section3-logo-item">
                 <div className="home-section3-logo-item--img_wrapper mb-3">
-                  <img
+                  <Image
                     width={60}
                     height={60}
                     className="img-fluid"
-                    src="florencia/icons/home-section3-img2.png"
+                    src="/florencia/icons/home-section3-img2.png"
                     alt="Ethical Manufacturing Practices"
                   />
                 </div>
@@ -75,11 +76,11 @@ const FlorenciaSection3 = () => {
               {" "}
               <div className="text-center home-section3-logo-item">
                 <div className="home-section3-logo-item--img_wrapper mb-3">
-                  <img
+                  <Image
                     width={60}
                     height={60}
                     className="img-fluid"
-                    src="florencia/icons/home-section3-img3.png"
+                    src="/florencia/icons/home-section3-img3.png"
                     alt="Assured Quality"
                   />
                 </div>
@@ -92,11 +93,11 @@ const FlorenciaSection3 = () => {
               {" "}
               <div className="text-center home-section3-logo-item">
                 <div className="home-section3-logo-item--img_wrapper mb-3">
-                  <img
+                  <Image
                     width={60}
                     height={60}
                     className="img-fluid"
-                    src="florencia/icons/home-section3-img4.png"
+                    src="/florencia/icons/home-section3-img4.png"
                     alt="Commitment to Exclusivity in Design"
                   />
                 </div>
@@ -108,11 +109,11 @@ const FlorenciaSection3 = () => {
             <SwiperSlide>
               <div className="text-center home-section3-logo-item">
                 <div className="home-section3-logo-item--img_wrapper mb-3">
-                  <img
+                  <Image
                     width={60}
                     height={60}
                     className="img-fluid"
-                    src="florencia/icons/home-section3-img5.png"
+                    src="/florencia/icons/home-section3-img5.png"
                     alt="Endless Posssibilities in Customisation"
                   />
                 </div>

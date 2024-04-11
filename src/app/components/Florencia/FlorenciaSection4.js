@@ -1,6 +1,7 @@
 "use client";
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import Image from "next/image";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -37,8 +38,8 @@ const FlorenciaSection4 = () => {
               loop={true}
               centeredSlides= {true}
               pagination={{ clickable: true }}
-              onSwiper={(swiper) => console.log(swiper)}
-              onSlideChange={() => console.log("slide change")}
+              // onSwiper={(swiper) => console.log(swiper)}
+              // onSlideChange={() => console.log("slide change")}
               breakpoints= {{
                 540: {
                   slidesPerView: 1.2,
@@ -63,11 +64,11 @@ const FlorenciaSection4 = () => {
               <SwiperSlide>
                 <div>
                   <div>
-                    <img
+                    <Image
                       className="img-fluid"
                       height={560}
                       width={420}
-                      src="florencia/home-section5-slider2.webp"
+                      src="/florencia/home-section5-slider2.webp"
                       alt="Birthdays"
                     />
                   </div>
@@ -81,11 +82,11 @@ const FlorenciaSection4 = () => {
               <SwiperSlide>
                 <div>
                   <div>
-                    <img
+                    <Image
                       className="img-fluid"
                       height={560}
                       width={420}
-                      src="florencia/home-section5-slider1.webp"
+                      src="/florencia/home-section5-slider1.webp"
                       alt="Anniversaries"
                     />
                   </div>
@@ -100,11 +101,11 @@ const FlorenciaSection4 = () => {
                 {" "}
                 <div>
                   <div>
-                    <img
+                    <Image
                       className="img-fluid"
                       height={560}
                       width={420}
-                      src="florencia/home-section5-slider4.webp"
+                      src="/florencia/home-section5-slider4.webp"
                       alt="Engagement"
                     />
                   </div>
@@ -118,11 +119,11 @@ const FlorenciaSection4 = () => {
               <SwiperSlide>
                 <div>
                   <div>
-                    <img
+                    <Image
                       className="img-fluid"
                       height={560}
                       width={420}
-                      src="florencia/home-section5-slider3.webp"
+                      src="/florencia/home-section5-slider3.webp"
                       alt="New Beginnings"
                     />
                   </div>

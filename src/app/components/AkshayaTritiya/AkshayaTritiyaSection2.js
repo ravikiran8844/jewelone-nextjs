@@ -17,9 +17,6 @@ const AkshayaTritiyaSection2 = () => {
   useEffect(() => {
     videoRefs.current[currentVideoIndex].current.play();
     videoRefs.current[currentVideoIndex].current.addEventListener('ended', playNextVideo);
-    return () => {
-      videoRefs.current[currentVideoIndex].current.removeEventListener('ended', playNextVideo);
-    };
   }, [currentVideoIndex]);
 
   const playNextVideo = () => {

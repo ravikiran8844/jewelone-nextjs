@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Typewriter from 'typewriter-effect';
 import "./Florencia.css"
+import Image from "next/image";
 
 
 const FlorenciaSection2 = () => {
@@ -36,11 +37,11 @@ const FlorenciaSection2 = () => {
     </div>
     <div className="row mt-5">
       <div className="col-12 col-md-6 col-lg-7 mb-4 mb-md-0">
-        <img
+        <Image
           width={1055}
           height={754}
           className="img-fluid w-100 h-100 object-fit-cover"
-          src="florencia/home-section2-banner.webp"
+          src="/florencia/home-section2-banner.webp"
           alt="Florencia Model"
         />
       </div>
