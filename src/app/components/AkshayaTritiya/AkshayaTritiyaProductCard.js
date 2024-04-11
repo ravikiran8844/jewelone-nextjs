@@ -6,7 +6,7 @@ const AkshayaTritiyaProductCard = ({ product }) => {
     return (
     <div className="card product-card">
               <div className="text-center card-img-top ">
-                    <Image width={186} height={186} className="img-fluid" src={image} alt={`gold coin ${weight}`} />
+                    <Image width={186} height={186} className="img-fluid" src={image} alt={`${title} ${weight}`} />
                   </div>
                 <div className="card-body">
                   
