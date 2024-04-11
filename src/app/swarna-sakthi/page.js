@@ -14,7 +14,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <main>
+    <main className='SwarnaSakthi'>
       <SwarnaSakthiSection1/>
       <SwarnaSakthiSection2/>
     </main>

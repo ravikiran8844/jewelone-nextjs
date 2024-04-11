@@ -1,6 +1,6 @@
 
 
-.nav-tabs{
+.SwarnaSakthi .nav-tabs{
     background-color: hsl(355, 65%, 38%) !important;
     min-height: 60px;
     height: auto;
@@ -8,19 +8,19 @@
     justify-content: center;
     align-items: center;
 }
-.nav-tabs .nav-link{
+.SwarnaSakthi .nav-tabs .nav-link{
     color: #fff !important;
     border: none !important;
     text-transform: uppercase;
 }
 
 @media (max-width:768px) {
-    .nav-tabs .nav-link {
+  .SwarnaSakthi  .nav-tabs .nav-link {
         font-size: 12px;
         padding: 0px 5px;
        } 
 }
-.nav-tabs .nav-link.active{
+.SwarnaSakthi .nav-tabs .nav-link.active{
 color: #F7C676 !important;
 background-color: #A0222C !important;
 }
