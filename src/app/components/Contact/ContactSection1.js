@@ -1,11 +1,12 @@
 "use client";
 
-import React from "react";
+import {React,useState} from "react";
 import { useForm } from "react-hook-form";
 import "./Contact.css";
 import Image from "next/image";
 
 const ContactSection1 = () => {
+  const [loading,setLoading]=useState(false)
   const {
     register,
     handleSubmit,
@@ -17,7 +18,6 @@ const ContactSection1 = () => {
   const onSubmit = (data) => {
     sendMail(data);
     console.log(data);
-    reset();
   };
 
   // const sendMailWPContactForm=(data)=>{
@@ -26,6 +26,7 @@ const ContactSection1 = () => {
   // }
 
   const sendMail = (data) => {
+    setLoading(true);
     const apiEndpoint = "/api/wp-contact-form";
     fetch(apiEndpoint, {
       method: "POST",
@@ -34,9 +35,13 @@ const ContactSection1 = () => {
       .then((res) => res.json())
       .then((response) => {
         console.log(response);
+        setLoading(false);
+        reset();
       })
       .catch((err) => {
         console.log(err);
+        setLoading(false);
+        reset();
       });
   };
 
@@ -116,7 +121,13 @@ const ContactSection1 = () => {
 
                 <div className="text-center">
                   <button type="submit" className="btn">
-                    SUBMIT
+
+                  {loading ? <span className="spinner-border spinner-border-sm" aria-hidden="true"></span> : <span>SUBMIT</span>}
+                  
+
+                  
+
+                    
                   </button>
                 </div>
               </form>

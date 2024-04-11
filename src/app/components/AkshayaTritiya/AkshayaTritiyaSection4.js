@@ -188,6 +188,8 @@ const AkshayaTritiyaSection4 = ({goldPrice}) => {
   const [goldRate, setGoldRate] = useState(goldPrice); // Initial gold rate
   const [location, setLocation] = useState('');
   const [agreed, setAgreed] = useState(false); // State for checkbox
+  const [loading,setLoading]=useState(false)
+
 
   // useEffect(()=>{
   //   getGoldRate()
@@ -240,6 +242,7 @@ const AkshayaTritiyaSection4 = ({goldPrice}) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission
+    setLoading(true);
 
     // Check if all fields are filled
     if (!amount || !grams || !location || !agreed) {
@@ -248,6 +251,10 @@ const AkshayaTritiyaSection4 = ({goldPrice}) => {
     }
 
     console.log("form submitted")
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+
 
     // Your form submission logic here
     // try {
@@ -403,9 +410,9 @@ const AkshayaTritiyaSection4 = ({goldPrice}) => {
                 <div>
                   <button
                     type="submit"
-                    className="btn AkshayaTritiyaSection4__prebook-btn px-4 py-2"
+                    className="btn AkshayaTritiyaSection4__prebook-btn"
                   >
-                    PRE-BOOK NOW
+                    {loading ? <span className="spinner-border spinner-border-sm" aria-hidden="true"></span> : <span>PRE-BOOK NOW</span>} 
                   </button>
                 </div>
               </div>

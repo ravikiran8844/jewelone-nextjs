@@ -68,9 +68,7 @@ const FlorenciaSection2 = () => {
           </div>
           <div className="fs-2 mt-3 brittany-font">I am a Diamond</div>
         </div>
-        {/* <div class="pt-2">
-        <a href="" class="btn custom-outline-btn px-5 py-2">Know More</a>
-      </div> */}
+       
       </div>
     </div>
   </div>
