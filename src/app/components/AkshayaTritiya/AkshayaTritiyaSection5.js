@@ -56,9 +56,9 @@ const AkshayaTritiyaSection5 = () => {
   return (
     <section className="AkshayaTritiyaSection5 position-relative">
       <div className=" position-absolute top-0">
-        <img className="img-fluid w-100" src="AkshayaTritiya/section5-top-img.png" alt="overlay image" />
+        <Image width={1920} height={221} className="img-fluid w-100" src="/AkshayaTritiya/section5-top-img.png" alt="overlay image" />
       </div>
-      <div className="container py-5">
+      <div className="container py-5 position-relative">
         {/* <a target="_blank" href="https://www.amazon.in/dp/B0CX1N8QPZ">
           <Image
             width={1105}
@@ -74,7 +74,7 @@ const AkshayaTritiyaSection5 = () => {
           Available on
           </div>
           <div>
-            <img src="amazon.png" alt="Amazon" width={172} height={52} className="img-fluid" /> 
+            <a target="_blank" href="https://www.amazon.in/dp/B0CX1N8QPZ"><Image src="/amazon.png" alt="Amazon" width={172} height={52} className="img-fluid" /> </a>
           </div>
         </div>
 

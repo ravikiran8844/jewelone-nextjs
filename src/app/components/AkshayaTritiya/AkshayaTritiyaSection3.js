@@ -1,5 +1,7 @@
 "use client";
 import { React, useRef, useEffect } from "react";
+import Image from "next/image";
+
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./AkshayaTritiya.css";
 
@@ -32,9 +34,11 @@ const AkshayaTritiyaSection3 = () => {
               ref={thumbsRef}
             >
              <SplideSlide>
-                <img
+                <Image
+                width={576}
+                height={577}
                   className="img-fluid"
-                  src="AkshayaTritiya/section3-img1.webp"
+                  src="/AkshayaTritiya/section3-img1.webp"
                   alt="Image 1"
                 />
                 <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
@@ -42,9 +46,11 @@ const AkshayaTritiyaSection3 = () => {
                 </div>
               </SplideSlide>
               <SplideSlide>
-                <img
+                <Image
+                width={576}
+                height={577}
                   className="img-fluid"
-                  src="AkshayaTritiya/section3-img2.webp"
+                  src="/AkshayaTritiya/section3-img2.webp"
                   alt="Image 2"
                 />
                 <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
@@ -52,9 +58,11 @@ const AkshayaTritiyaSection3 = () => {
                 </div>
               </SplideSlide>
               <SplideSlide>
-                <img
+                <Image
+                width={576}
+                height={577}
                   className="img-fluid"
-                  src="AkshayaTritiya/section3-img3.webp"
+                  src="/AkshayaTritiya/section3-img3.webp"
                   alt="Image 3"
                 />
                 <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
@@ -109,9 +117,11 @@ const AkshayaTritiyaSection3 = () => {
                aria-label="Image Slider"
             >
               <SplideSlide>
-                <img
+                <Image
+                width={274}
+                height={270}
                   className="img-fluid"
-                  src="AkshayaTritiya/section3-img1.webp"
+                  src="/AkshayaTritiya/section3-img1.webp"
                   alt="Image 1"
                 />
                 <div className="fs-6 fw-semibold text-center mt-3">
@@ -119,9 +129,11 @@ const AkshayaTritiyaSection3 = () => {
                 </div>
               </SplideSlide>
               <SplideSlide>
-                <img
+                <Image
+                  width={274}
+                  height={270}
                   className="img-fluid"
-                  src="AkshayaTritiya/section3-img2.webp"
+                  src="/AkshayaTritiya/section3-img2.webp"
                   alt="Image 2"
                 />
                 <div className="fs-6 fw-semibold text-center mt-3">
@@ -129,9 +141,11 @@ const AkshayaTritiyaSection3 = () => {
                 </div>
               </SplideSlide>
               <SplideSlide>
-                <img
+                <Image
+                  width={274}
+                  height={270}
                   className="img-fluid"
-                  src="AkshayaTritiya/section3-img3.webp"
+                  src="/AkshayaTritiya/section3-img3.webp"
                   alt="Image 3"
                 />
                 <div className="fs-6 fw-semibold text-center mt-3">
