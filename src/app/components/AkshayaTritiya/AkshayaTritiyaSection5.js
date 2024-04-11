@@ -7,7 +7,7 @@ const AkshayaTritiyaSection5 = () => {
   return (
     <section className="AkshayaTritiyaSection5">
       <div className="container-fluid p-0">
-        <Link href="https://amazon.in/">
+        <a target="_blank" href="https://www.amazon.in/dp/B0CX1N8QPZ">
           <Image
             width={1105}
             height={308}
@@ -15,7 +15,7 @@ const AkshayaTritiyaSection5 = () => {
             alt="coins"
             src="/AkshayaTritiya/coins.webp"
           />
-        </Link>
+        </a>
       </div>
     </section>
   );
