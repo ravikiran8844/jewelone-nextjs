@@ -198,8 +198,8 @@ const ContactSection1 = () => {
         <Toast
           show={showToast}
           onClose={() => setShowToast(false)}
-          delay={3000}
-          // autohide
+          delay={5000}
+          autohide
           style={{
             position: "absolute",
             top: 20,
