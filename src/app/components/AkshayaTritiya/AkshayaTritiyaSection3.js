@@ -75,13 +75,11 @@ const AkshayaTritiyaSection3 = () => {
           </div>
           <div className="col-12 col-lg-7 order-0 order-lg-1">
             <div className="mb-5">
-              <div className="fs-2">Our Culture</div>
-              <div className="display-4">Our Heritage</div>
-              <div className="fs-6 mt-3" style={{ maxWidth: "750px" }}>
-                We have been trusted with millions of marriages & will do the
-                same in times ahead. India being a land of diversity, we ensures
-                that diversity seeps into the Jewellery we craft for your
-                special day.
+              <div className="fs-2">Jewellery that brings you</div>
+              <div className="display-4">Prosperity & Joy</div>
+              <div className="fs-6 mt-3" style={{ maxWidth: "500px" }}>
+              This Akshaya Tritiya, Enjoy the launch of our latest collections with the
+newest designs you can ever see!
               </div>
             </div>
 

@@ -55,7 +55,7 @@ const Navbar = () => {
                   className="img-fluid"
                   width="222"
                   height="56"
-                  src="/logo.svg"
+                  src="/main-logo.svg"
                   alt="logo"
                   priority
                 />
