@@ -1,16 +1,17 @@
 "use client";
-
-import {React,useState} from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./Contact.css";
 import Image from "next/image";
+import { Toast } from "react-bootstrap";
 
 const ContactSection1 = () => {
-  const [loading,setLoading]=useState(false)
+  const [loading, setLoading] = useState(false);
+  const [showToast, setShowToast] = useState(false);
+  const [toastMessage, setToastMessage] = useState("");
   const {
     register,
     handleSubmit,
-    watch,
     reset,
     formState: { errors },
   } = useForm();
@@ -19,11 +20,6 @@ const ContactSection1 = () => {
     sendMail(data);
     console.log(data);
   };
-
-  // const sendMailWPContactForm=(data)=>{
-  //   const { email, name,mobile, message }=data
-  //   // console.log("hi",email, name,mobile, message );
-  // }
 
   const sendMail = (data) => {
     setLoading(true);
@@ -37,11 +33,15 @@ const ContactSection1 = () => {
         console.log(response);
         setLoading(false);
         reset();
+        setToastMessage("Form submitted successfully!");
+        setShowToast(true);
       })
       .catch((err) => {
         console.log(err);
         setLoading(false);
         reset();
+        setToastMessage("Failed to submit form. Please try again later.");
+        setShowToast(true);
       });
   };
 
@@ -121,13 +121,7 @@ const ContactSection1 = () => {
 
                 <div className="text-center">
                   <button type="submit" className="btn">
-
-                  {loading ? <span className="spinner-border spinner-border-sm" aria-hidden="true"></span> : <span>SUBMIT</span>}
-                  
-
-                  
-
-                    
+                    {loading ? <span className="spinner-border spinner-border-sm" aria-hidden="true"></span> : <span>SUBMIT</span>}
                   </button>
                 </div>
               </form>
@@ -199,6 +193,26 @@ const ContactSection1 = () => {
             </div>
           </div>
         </div>
+
+        {/* React Bootstrap Toast */}
+        <Toast
+          show={showToast}
+          onClose={() => setShowToast(false)}
+          delay={3000}
+          // autohide
+          style={{
+            position: "absolute",
+            top: 20,
+            right: 20,
+            backgroundColor: "#A0222C",
+            color: "#ffffff"
+          }}
+        >
+          <Toast.Header closeButton={true}>
+            <strong className="me-auto">Contact Form</strong>
+          </Toast.Header>
+          <Toast.Body>{toastMessage}</Toast.Body>
+        </Toast>
       </div>
     </div>
   );

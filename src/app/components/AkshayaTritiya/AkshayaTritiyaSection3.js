@@ -19,7 +19,7 @@ const AkshayaTritiyaSection3 = () => {
     <section className="AkshayaTritiyaSection3">
       <div className="container pb-5">
         <div className="row">
-          <div className="col-12 col-lg-5 order-1 mt-5 mt-lg-0 order-lg-0">
+          <div className="col-12 col-lg-5 order-1 mt-5 mt-lg-0 order-lg-0 d-none d-lg-block">
             <Splide
               
               className="AkshayaTritiyaSection3_main-img-slider"
@@ -74,12 +74,12 @@ const AkshayaTritiyaSection3 = () => {
             </Splide>
           </div>
           <div className="col-12 col-lg-7 order-0 order-lg-1">
-            <div className="mb-5">
-              <div className="fs-2">Jewellery that brings you</div>
-              <div className="display-4">Prosperity & Joy</div>
-              <div className="fs-6 mt-3" style={{ maxWidth: "500px" }}>
+            <div className="mb-5 text-center text-lg-start">
+              <div className="fs-5">Jewellery that brings you</div>
+              <div className="fs-1 fw-bold">Prosperity & Joy</div>
+              <div className="fs-6 mt-3 w-75 mx-auto mx-lg-0">
               This Akshaya Tritiya, Enjoy the launch of our latest collections with the
-newest designs you can ever see!
+              newest designs you can ever see!
               </div>
             </div>
 
@@ -103,11 +103,14 @@ newest designs you can ever see!
                   1240: {
                     perPage: 3,
                   },
-                  968: {
-                    perPage: 3,
+                  992: {
+                    perPage: 2.3,
+                  },
+                  768: {
+                    perPage: 1.6,
                   },
                   680: {
-                    perPage: 3,
+                    perPage: 1.2,
                   },
                 },
               }}

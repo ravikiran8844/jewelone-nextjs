@@ -82,6 +82,7 @@
 
 .AkshayaTritiyaSection3__thumb-slider img{
     border-radius: 12px;
+    width: 100%;
 }
 
 .akshatritiya-page .splide__track--nav>.splide__list>.splide__slide.is-active{
