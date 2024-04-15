@@ -1,8 +1,10 @@
+"use client"
 import React from "react";
 import "./AkshayaTritiya.css";
 import Image from "next/image";
 import Link from "next/link";
 import AkshayaTritiyaProductCard from "./AkshayaTritiyaProductCard";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 
 
 const goldProducts=[{
@@ -121,8 +123,54 @@ const AkshayaTritiyaSection5 = () => {
               
 
             <div className="col-12 col-xl-10 m-auto  product-cards">
+
+            <Splide hasTrack={ false }
+             options={{
+              type: "loop",
+              pagination: false,
+              gap: 5,
+              arrows: false,
+              perPage: 4,
+              perMove: 1,
+              breakpoints: {
+                1440: {
+                  perPage: 4,
+                  gap: 20,
+
+                },
+                1240: {
+                  perPage: 4,
+                  gap: 10,
+
+                },
+                992: {
+                  perPage: 3,
+                  gap: 10,
+
+                },
+                768: {
+                  perPage: 3,
+                },
+                680: {
+                  perPage: 2,
+                },
+                340: {
+                  perPage: 1,
+                },
+              },
+            }}
+            aria-label="gold products slider">
+              <div className="custom-wrapper">
+                <SplideTrack>
+
+                {goldProducts.map((product,index)=><SplideSlide key={index}><AkshayaTritiyaProductCard product={product} /></SplideSlide>)}
+                </SplideTrack>
+
+
+                <div className="splide__arrows" />
+              </div>
+            </Splide>
               
-            {goldProducts.map((product,index)=><AkshayaTritiyaProductCard key={index} product={product} />)}
               
             </div>
 
@@ -140,9 +188,54 @@ const AkshayaTritiyaSection5 = () => {
               tabIndex={0}
             >
                <div className="col-12 col-xl-10 m-auto  product-cards">
-              
-              {silverProducts.map((product,index)=><AkshayaTritiyaProductCard key={index} product={product} />)}
-                
+
+               <Splide hasTrack={ false }
+             options={{
+              type: "loop",
+              pagination: false,
+              gap: 5,
+              arrows: false,
+              perPage: 4,
+              perMove: 1,
+              breakpoints: {
+                1440: {
+                  perPage: 4,
+                  gap: 20,
+
+                },
+                1240: {
+                  perPage: 4,
+                  gap: 10,
+
+                },
+                992: {
+                  perPage: 3,
+                  gap: 10,
+
+                },
+                768: {
+                  perPage: 3,
+                },
+                680: {
+                  perPage: 2,
+                },
+                340: {
+                  perPage: 1,
+                },
+              },
+            }}
+            aria-label="silver products slider">
+              <div className="custom-wrapper">
+                <SplideTrack>
+
+                {silverProducts.map((product,index)=><SplideSlide key={index}><AkshayaTritiyaProductCard product={product} /></SplideSlide>)}
+                </SplideTrack>
+
+
+                <div className="splide__arrows" />
+              </div>
+            </Splide>
+                              
               </div>
             </div>
            
