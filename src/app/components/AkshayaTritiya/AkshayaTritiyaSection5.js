@@ -128,7 +128,7 @@ const AkshayaTritiyaSection5 = () => {
              options={{
               type: "loop",
               pagination: false,
-              gap: 5,
+              gap: 20,
               arrows: false,
               perPage: 4,
               perMove: 1,
@@ -144,18 +144,18 @@ const AkshayaTritiyaSection5 = () => {
 
                 },
                 992: {
-                  perPage: 3,
+                  perPage: 3.3,
                   gap: 10,
 
                 },
                 768: {
-                  perPage: 3,
+                  perPage: 2.3,
                 },
                 680: {
-                  perPage: 2,
+                  perPage: 2.1,
                 },
                 340: {
-                  perPage: 1,
+                  perPage: 1.2,
                 },
               },
             }}
@@ -193,7 +193,7 @@ const AkshayaTritiyaSection5 = () => {
              options={{
               type: "loop",
               pagination: false,
-              gap: 5,
+              gap: 20,
               arrows: false,
               perPage: 4,
               perMove: 1,
@@ -209,18 +209,18 @@ const AkshayaTritiyaSection5 = () => {
 
                 },
                 992: {
-                  perPage: 3,
+                  perPage: 3.3,
                   gap: 10,
 
                 },
                 768: {
-                  perPage: 3,
+                  perPage: 2.3,
                 },
                 680: {
-                  perPage: 2,
+                  perPage: 2.1,
                 },
                 340: {
-                  perPage: 1,
+                  perPage: 1.2,
                 },
               },
             }}

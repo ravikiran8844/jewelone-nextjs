@@ -46,7 +46,7 @@ const AkshayaTritiyaSection2 = () => {
     <section className="akshatritiyasection2">
       <div className="container py-5">
         <div className="row">
-          <div className="col-12 col-md-4">
+          <div className="col-12 col-md-4 m-auto">
             <div className="d-block d-md-none text-center">
               <div className="fs-5">Aishwaryam Tharum</div>
               <div className="fs-1 fw-bold">Akshaya Tritiya</div>
