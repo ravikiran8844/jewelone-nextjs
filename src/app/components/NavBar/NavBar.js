@@ -53,9 +53,9 @@ const Navbar = () => {
         <Link className="navbar-brand" href="/"  >
         <Image
                   className="img-fluid"
-                  width="222"
-                  height="56"
-                  src="/main-logo.svg"
+                  width="266"
+                  height="58"
+                  src="/JO_logo.png"
                   alt="logo"
                   priority
                 />
