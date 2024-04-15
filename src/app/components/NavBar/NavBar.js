@@ -52,10 +52,10 @@ const Navbar = () => {
       <div className="container d-flex align-items-center navbar_wrapper">
         <Link className="navbar-brand" href="/"  >
         <Image
+        width={222}
+        height={56}
                   className="img-fluid"
-                  width="222"
-                  height="56"
-                  src="/Jo-logo.svg"
+                  src="JO_Logo.svg"
                   alt="logo"
                   priority
                 />
