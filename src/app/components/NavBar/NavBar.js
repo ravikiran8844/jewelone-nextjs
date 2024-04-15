@@ -82,29 +82,29 @@ const Navbar = () => {
                 Florencia
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href="/our-story" className={currentRoute === "/our-story" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Our Story
                 </Link>
-              </li>
+              </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href="/swarna-sakthi" className={currentRoute === "/swarna-sakthi" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Swarna Sakthi
                 </Link>
-              </li>
+              </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href="/experience-center" className={currentRoute === "/experience-center" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Experience Center
                 </Link>
-              </li>
+              </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href="/stores" className={currentRoute === "/stores" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Stores
                 </Link>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link href="/contact-us" className={currentRoute === "/contact-us" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
@@ -157,7 +157,7 @@ const Navbar = () => {
                 </Link>
               </li>
               
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href="/our-story" className={currentRoute === "/our-story" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Our Story
                 </Link>
@@ -167,9 +167,9 @@ const Navbar = () => {
                 <Link href="/swarna-sakthi" className={currentRoute === "/swarna-sakthi" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Swarna Sakthi
                 </Link>
-              </li>
+              </li> */}
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link href="/experience-center" className={currentRoute === "/experience-center" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Experience Center
                 </Link>
@@ -179,7 +179,7 @@ const Navbar = () => {
                 <Link href="/stores" className={currentRoute === "/stores" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Stores
                 </Link>
-              </li>
+              </li> */}
 
               <li className="nav-item">
                 <Link href="/contact-us" className={currentRoute === "/contact-us" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
