@@ -41,9 +41,9 @@ const AkshayaTritiyaSection3 = () => {
                   src="/AkshayaTritiya/section3-img1.webp"
                   alt="Image 1"
                 />
-                <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
                   Jewellery 1
-                </div>
+                </div> */}
               </SplideSlide>
               <SplideSlide>
                 <Image
@@ -53,9 +53,9 @@ const AkshayaTritiyaSection3 = () => {
                   src="/AkshayaTritiya/section3-img2.webp"
                   alt="Image 2"
                 />
-                <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
                   Jewellery 2
-                </div>
+                </div> */}
               </SplideSlide>
               <SplideSlide>
                 <Image
@@ -65,9 +65,9 @@ const AkshayaTritiyaSection3 = () => {
                   src="/AkshayaTritiya/section3-img3.webp"
                   alt="Image 3"
                 />
-                <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
                   Jewellery 3
-                </div>
+                </div> */}
               </SplideSlide>
 
               <SplideSlide>
@@ -78,9 +78,9 @@ const AkshayaTritiyaSection3 = () => {
                   src="/AkshayaTritiya/section3-img4.webp"
                   alt="Image 4"
                 />
-                <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
                   Jewellery 4
-                </div>
+                </div> */}
               </SplideSlide>
             </Splide>
           </div>
@@ -137,9 +137,9 @@ const AkshayaTritiyaSection3 = () => {
                   src="/AkshayaTritiya/section3-img1.webp"
                   alt="Image 1"
                 />
-                <div className="fs-6 fw-semibold text-center mt-3">
+                {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 1
-                </div>
+                </div> */}
               </SplideSlide>
               <SplideSlide>
                 <Image
@@ -149,9 +149,9 @@ const AkshayaTritiyaSection3 = () => {
                   src="/AkshayaTritiya/section3-img2.webp"
                   alt="Image 2"
                 />
-                <div className="fs-6 fw-semibold text-center mt-3">
+                {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 2
-                </div>
+                </div> */}
               </SplideSlide>
               <SplideSlide>
                 <Image
@@ -161,9 +161,9 @@ const AkshayaTritiyaSection3 = () => {
                   src="/AkshayaTritiya/section3-img3.webp"
                   alt="Image 3"
                 />
-                <div className="fs-6 fw-semibold text-center mt-3">
+                {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 3
-                </div>
+                </div> */}
               </SplideSlide>
               <SplideSlide>
                 <Image
@@ -173,9 +173,9 @@ const AkshayaTritiyaSection3 = () => {
                   src="/AkshayaTritiya/section3-img4.webp"
                   alt="Image 4"
                 />
-                <div className="fs-6 fw-semibold text-center mt-3">
+                {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 4
-                </div>
+                </div> */}
               </SplideSlide>
               </SplideTrack>
 
