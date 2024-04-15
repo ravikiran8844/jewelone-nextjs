@@ -84,7 +84,7 @@ const AkshayaTritiyaSection3 = () => {
               </SplideSlide>
             </Splide>
           </div>
-          <div className="col-12 col-lg-7 order-0 order-lg-1">
+          <div className="col-12 col-lg-7 order-0 order-lg-1 m-auto">
             <div className="mb-5 text-center text-lg-start">
               <div className="fs-5">Jewellery that brings you</div>
               <div className="fs-1 fw-bold">Prosperity & Joy</div>

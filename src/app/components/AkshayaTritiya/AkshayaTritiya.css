@@ -79,13 +79,15 @@
 .AkshayaTritiyaSection4__form label span{
     color: #C0832B;
 }
-.AkshayaTritiyaSection3 img{
+/* .AkshayaTritiyaSection3 img{
     aspect-ratio: 1;
     object-fit: cover;
-}
+} */
 .AkshayaTritiyaSection3__thumb-slider img{
     border-radius: 12px;
     width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
 }
 
 .akshatritiya-page .splide__track--nav>.splide__list>.splide__slide.is-active{
