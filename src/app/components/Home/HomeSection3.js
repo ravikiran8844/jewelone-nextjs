@@ -107,11 +107,9 @@ const HomeSection3 = () => {
       <div className="home-section-3_wrapper">
         <Splide
           options={{
-            type: "slide",
-            rewind: true,
+            type: "loop",
             gap: ".5rem",
             autoWidth: true,
-            focus: "center",
             arrows: true,
             autoplay: false,
             pagination: false,

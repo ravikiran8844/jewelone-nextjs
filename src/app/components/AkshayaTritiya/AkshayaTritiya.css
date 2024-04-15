@@ -106,6 +106,21 @@
     bottom: 20px;
 }
 
+.AkshayaTritiyaSection3 .splide__arrow{
+ background-color: #E0A73C !important; 
+ opacity: 1;  
+ width: 42px;
+ height: 42px;
+}
+.AkshayaTritiyaSection3 .splide__arrow--prev
+{
+left: -21px !important;
+}
+.AkshayaTritiyaSection3 .splide__arrow--next
+{
+    right: -21px !important;
+}
+
 
 .AkshayaTritiyaSection5 .nav-tabs{
     /* border: none; */
