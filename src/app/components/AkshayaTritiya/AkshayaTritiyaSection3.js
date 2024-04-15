@@ -2,7 +2,7 @@
 import { React, useRef, useEffect } from "react";
 import Image from "next/image";
 
-import { Splide, SplideSlide } from "@splidejs/react-splide";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "./AkshayaTritiya.css";
 
 const AkshayaTritiyaSection3 = () => {
@@ -70,7 +70,18 @@ const AkshayaTritiyaSection3 = () => {
                 </div>
               </SplideSlide>
 
-
+              <SplideSlide>
+                <Image
+                width={576}
+                height={577}
+                  className="img-fluid"
+                  src="/AkshayaTritiya/section3-img4.webp"
+                  alt="Image 4"
+                />
+                <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                  Jewellery 4
+                </div>
+              </SplideSlide>
             </Splide>
           </div>
           <div className="col-12 col-lg-7 order-0 order-lg-1">
@@ -84,7 +95,7 @@ const AkshayaTritiyaSection3 = () => {
             </div>
 
             <Splide
-              className="AkshayaTritiyaSection3__thumb-slider"
+              className="AkshayaTritiyaSection3__thumb-slider" hasTrack={false}
               options={{
 
                 type: "slide",
@@ -117,6 +128,7 @@ const AkshayaTritiyaSection3 = () => {
               ref={mainRef}
                aria-label="Image Slider"
             >
+              <SplideTrack>
               <SplideSlide>
                 <Image
                 width={274}
@@ -153,6 +165,23 @@ const AkshayaTritiyaSection3 = () => {
                   Jewellery 3
                 </div>
               </SplideSlide>
+              <SplideSlide>
+                <Image
+                  width={274}
+                  height={270}
+                  className="img-fluid"
+                  src="/AkshayaTritiya/section3-img4.webp"
+                  alt="Image 4"
+                />
+                <div className="fs-6 fw-semibold text-center mt-3">
+                  Jewellery 4
+                </div>
+              </SplideSlide>
+              </SplideTrack>
+
+
+
+            
             </Splide>
           </div>
         </div>
