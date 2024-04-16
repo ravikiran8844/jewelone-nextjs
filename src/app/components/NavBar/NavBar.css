@@ -125,7 +125,7 @@ header{
   .header-today-rate-section_gold-overlay {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='94' height='26' viewBox='0 0 94 26' fill='none'%3E%3Cg clip-path='url(%23clip0_3321_164)'%3E%3Cpath d='M93.2109 7.65452V17.3993C93.2109 21.6264 89.4877 25.0532 84.8949 25.0532L8.47436 25.0532C3.88152 25.0532 0.158302 21.6264 0.158302 17.3993V7.65452C0.158302 3.42737 3.88152 0.000593185 8.47436 0.000593185L84.8949 0.000593185C89.4877 0.000593185 93.2109 3.42737 93.2109 7.65452Z' fill='url(%23paint0_linear_3321_164)'/%3E%3Cpath d='M85.1179 24.3257H8.25112C4.21839 24.3257 0.949219 21.3168 0.949219 17.6052V7.45063C0.949219 3.73898 4.21839 0.730101 8.25112 0.730101H85.1179C89.1506 0.730101 92.4198 3.73898 92.4198 7.45063V17.6052C92.4198 21.3168 89.1506 24.3257 85.1179 24.3257Z' fill='url(%23paint1_linear_3321_164)'/%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_3321_164' x1='46.6846' y1='25.1988' x2='46.6846' y2='-0.145019' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9C924'/%3E%3Cstop offset='0.27' stop-color='%23FFF98C'/%3E%3Cstop offset='0.73' stop-color='%23E4AF18'/%3E%3Cstop offset='1' stop-color='%23FFD440'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_3321_164' x1='0.949219' y1='12.5274' x2='92.4198' y2='12.5274' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F9C924'/%3E%3Cstop offset='0.27' stop-color='%23FFF98C'/%3E%3Cstop offset='0.73' stop-color='%23E4AF18'/%3E%3Cstop offset='1' stop-color='%23FFD440'/%3E%3C/linearGradient%3E%3CclipPath id='clip0_3321_164'%3E%3Crect width='93.0526' height='25.0526' fill='white' transform='matrix(1 0 0 -1 0.158203 25.0532)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
     height: 25.053px;
-    background-size: cover;
+    /* background-size: cover; */
     height: 17px;
     flex-shrink: 0;
     border-radius: 8px;
@@ -172,7 +172,7 @@ header{
     width: 170px;
     height: auto;
     flex-shrink: 0;
-    background-size: cover;
+    /* background-size: cover; */
     position: relative;
     margin-top: 10px;
   }

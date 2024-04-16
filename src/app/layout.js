@@ -15,7 +15,22 @@ export const metadata = {
   description: 'JewelOne Website',
 }
 
-export default function RootLayout({ children }) {
+
+
+// async function getData() {
+//   const res = await fetch('http://emerald-jewel-career.brightbridge.co/wp-json/acf/v3/options/option');
+
+//   if (!res.ok) {
+//     // This will activate the closest `error.js` Error Boundary
+//     throw new Error('Failed to fetch data')
+//   }
+  
+ 
+//   return res.json()
+// }
+
+
+export default async function RootLayout({ children }) {
 
   return (
     <html lang="en">

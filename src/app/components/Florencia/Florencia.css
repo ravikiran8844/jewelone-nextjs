@@ -149,7 +149,8 @@
     background-color: #faf3f1;
   }
   .florencia-page .home-section3 img {
-    max-width: 100px;
+    max-width: 50px;
+    aspect-ratio: 1;
   }
   .florencia-page .highlight-text {
     border-radius: 4px;
@@ -161,11 +162,10 @@
   .florencia-page .home-section3 h3 {
     line-height: 160%;
   }
-  .florencia-page .home-section3-logo-item--img_wrapper {
+  /* .florencia-page .home-section3-logo-item--img_wrapper {
     height: 60px;
     width: 60px;
-    /* margin: auto; */
-  }
+  } */
   .florencia-page .home-section3-logo-item {
     border-radius: 20px;
     background: #fff;
@@ -187,10 +187,12 @@
     grid-template-columns: 1fr;
     gap: 20px;
   } */
-  
+  /* .florencia-page .home-section3-slider .swiper-wrapper{
+    justify-content: center;
+  } */
   .florencia-page .home-section3-slider .swiper-slide {
     height: unset;
-    width: 248px;
+    width: 180px;
   }
   
   @media (min-width: 768px) {

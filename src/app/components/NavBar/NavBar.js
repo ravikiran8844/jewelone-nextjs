@@ -15,18 +15,22 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import AnnouncmentBar from "../ExperienceCenter/AnnouncmentBar";
 
-const Navbar = () => {
+const Navbar = ({data}) => {
   const today = new Date();
   const options = { day: "numeric", month: "short", year: "numeric" };
   const formattedDate = today.toLocaleDateString("en-US", options);
   const currentRoute = usePathname();
 
-  const [price, setPrice] = useState({
-    goldPricePerGram: "5650",
-    goldPricePerSovereign: "45200",
-    silverPricePerGram: "77.60",
-    silverPricePerKilogram: "77000",
-  });
+  // const [price, setPrice] = useState({
+  //   goldPricePerGram: data.acf.todays_gold_price_per_gram,
+  //   goldPricePerSovereign: data.acf.todays_gold_price_per_sovereign,
+  //   silverPricePerGram: data.acf.todays_silver_price_per_gram,
+  //   silverPricePerKilogram: data.acf.todays_gold_price_per_gram,
+  // });
+
+  // console.log(data)
+  // console.log(data.acf.todays_gold_price_per_gram)
+  // console.log(data.acf.todays_silver_price_per_kg)
 
   const handleLinkClick = () => {
     const offcanvas = document.getElementById("offcanvasNavbar");
@@ -152,9 +156,8 @@ const Navbar = () => {
             </li>
           </ul>
 
-          <ul className="navbar-nav justify-content-end header-card_wrapper d-none d-md-block">
+          {/* <ul className="navbar-nav justify-content-end header-card_wrapper d-none d-md-block">
             <div className="d-flex justify-content-end align-items-center header-today-rate-section">
-              {/* Rendering Gold Rate */}
               <div className="me-2 header-today-rate-card_content">
                 <div className="header-today-rate-section_label-title fw-bold">
                   Today’s Rate:
@@ -226,7 +229,7 @@ const Navbar = () => {
                 </SwiperSlide>
               </Swiper>
             </div>
-          </ul>
+          </ul> */}
 
           <div className="d-block d-lg-none">
             <Button variant="light" onClick={handleShow}>
@@ -336,9 +339,8 @@ const Navbar = () => {
                 </li>
               </ul>
 
-              <ul className="navbar-nav justify-content-end header-card_wrapper d-block d-md-none">
+              {/* <ul className="navbar-nav justify-content-end header-card_wrapper d-block d-md-none">
                 <div className="d-flex justify-content-end align-items-center header-today-rate-section">
-                  {/* Rendering Gold Rate */}
                   <div className="me-2 header-today-rate-card_content">
                     <div className="header-today-rate-section_label-title fw-bold">
                       Today’s Rate:
@@ -410,7 +412,7 @@ const Navbar = () => {
                     </SwiperSlide>
                   </Swiper>
                 </div>
-              </ul>
+              </ul> */}
 
 
             </Offcanvas.Body>
