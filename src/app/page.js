@@ -11,6 +11,7 @@ import VideoSection from './components/Home/VideoSection'
 // import HomeSection5 from './components/Home/HomeSection5'
 // import HomeSection9 from './components/Home/HomeSection9'
 import HomeGifBanner from './components/Home/HomeGifBanner'
+import HomeSection3New from './components/Home/HomeSection3New'
 
 
 export const metadata = {
@@ -26,6 +27,7 @@ export default function Home() {
     {/* <HomeSection1/> */}
     <HomeSection2/>
     <HomeSection3/>
+    {/* <HomeSection3New/> */}
     <HomeSection4/>
     <VideoSection/>
     <HomeGifBanner/>

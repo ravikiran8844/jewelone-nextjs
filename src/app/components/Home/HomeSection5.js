@@ -26,7 +26,7 @@ const HomeSection5 = () => {
         <div className="container">
           <div className="col-12">
             <div className="mb-5 text-center">
-              <div className="home-section5_title">
+              <div className="fs-2 fw-semibold">
                 Hear the Joyful Experiences with Jewel One
               </div>
             </div>

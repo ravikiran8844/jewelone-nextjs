@@ -1,4 +1,6 @@
 "use client";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import Image from "next/image";

@@ -104,24 +104,45 @@ const HomeSection3 = () => {
         <div className="home-section-3_title">Our New Launches</div>
       </div>
 
-      <div className="home-section-3_wrapper">
+      <div className="home-section-3_wrapper col-12">
         <Splide
           options={{
             type: "loop",
-            gap: ".5rem",
-            autoWidth: true,
+            gap: "1.25rem",
+            perPage: 1,
+            padding: '20rem',
             arrows: true,
             autoplay: false,
             pagination: false,
+            perMove:1,
             breakpoints: {
+              1440: {
+                perPage: 1,
+                padding: '16rem',
+                gap: "1rem",
+
+              },
+              1240: {
+                perPage: 1,
+                padding: '15rem',
+                gap: ".8rem",
+              },
               1040: {
-                perPage: 3,
+                perPage: 1,
+                padding: '6rem',
+                gap: ".7rem",
+
               },
               640: {
-                perPage: 2,
+                perPage: 1,
+                padding: '2rem',
+                gap: ".5rem",
               },
               480: {
+                padding: '0rem',
                 perPage: 1,
+                gap: ".5rem",
+
               },
             },
           }}
@@ -178,6 +199,7 @@ const HomeSection3 = () => {
             initialText="Introducing 'Miraya'... Miraya is more than just jewellery; it's a statement of individuality and style. Whether you seek a bold and contemporary look or a subtle touch of sophistication, this collection offers a diverse range of pieces to complement every personality and occasion."
           />
         </Splide>
+ 
       </div>
     </section>
   );
