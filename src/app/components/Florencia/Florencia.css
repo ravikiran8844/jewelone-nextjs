@@ -297,6 +297,11 @@
     font-weight: 400;
     line-height: normal;
   }
+  .italic-font{
+    font-family: "Libre Baskerville";
+    font-style: italic;
+
+  }
   
   .florencia-page .home-section5-slider img {
     object-fit: cover;
@@ -421,3 +426,60 @@
       grid-column-end: 5;
     }
   }
+
+
+
+
+
+
+
+  
+.FlorenciaSection3New{
+  background-color: #faf3f1;
+
+}
+.FlorenciaSection3New .splide__slide img,.FlorenciaSection3New_main-img-slider .splide__slide img{
+  object-position: top !important;
+}
+
+  /* .FlorenciaSection3New img{
+    aspect-ratio: 1;
+    object-fit: cover;
+} */
+.FlorenciaSection3New__thumb-slider img{
+  border-radius: 12px;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.akshatritiya-page .splide__track--nav>.splide__list>.splide__slide.is-active{
+  border: none;
+  box-shadow: none;
+}
+/* 
+.FlorenciaSection3New_main-img-slider{
+
+} */
+
+.FlorenciaSection3New_main-img-slider__text{
+  position: absolute;
+  color: #FFF;
+  left: 20px;
+  bottom: 20px;
+}
+
+.FlorenciaSection3New .splide__arrow{
+background-color: #E0A73C !important; 
+opacity: 1;  
+width: 42px;
+height: 42px;
+}
+.FlorenciaSection3New .splide__arrow--prev
+{
+left: -21px !important;
+}
+.FlorenciaSection3New .splide__arrow--next
+{
+  right: -21px !important;
+}

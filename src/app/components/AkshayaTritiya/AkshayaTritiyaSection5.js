@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import AkshayaTritiyaProductCard from "./AkshayaTritiyaProductCard";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
-
+import '@splidejs/react-splide/css';
 
 const goldProducts=[{
   title:"Gold Coin",
@@ -126,7 +126,8 @@ const AkshayaTritiyaSection5 = () => {
 
             <Splide hasTrack={ false }
              options={{
-              type: "loop",
+              type: "slide",
+              drag   : 'free',
               pagination: false,
               gap: 20,
               arrows: false,
@@ -191,8 +192,9 @@ const AkshayaTritiyaSection5 = () => {
 
                <Splide hasTrack={ false }
              options={{
-              type: "loop",
+              type: "slide",
               pagination: false,
+              drag   : 'free',
               gap: 20,
               arrows: false,
               perPage: 4,

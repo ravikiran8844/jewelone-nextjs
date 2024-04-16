@@ -4,6 +4,8 @@ import FlorenciaSection2 from '../components/Florencia/FlorenciaSection2'
 import FlorenciaSection3 from '../components/Florencia/FlorenciaSection3'
 import FlorenciaSection4 from '../components/Florencia/FlorenciaSection4'
 import FlorenciaSection5 from '../components/Florencia/FlorenciaSection5'
+import FlorenciaSection3New from '../components/Florencia/FlorenciaSection3New'
+import AkshayaTritiyaSection3 from '../components/AkshayaTritiya/AkshayaTritiyaSection3'
 
 export const metadata = {
     title: 'Florencia - JewelOne',
@@ -15,7 +17,8 @@ const page = () => {
     <main className='florencia-page'>
         <FlorenciaSection1/>
         <FlorenciaSection2/>
-        <FlorenciaSection3/>
+        {/* <FlorenciaSection3/> */}
+        <FlorenciaSection3New/>
         <FlorenciaSection4/>
         <FlorenciaSection5/>
     </main>

@@ -4,9 +4,8 @@ import Image from "next/image";
 
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import '@splidejs/react-splide/css';
-import "./AkshayaTritiya.css";
 
-const AkshayaTritiyaSection3 = () => {
+const FlorenciaSection3New = () => {
   const mainRef = useRef(null);
   const thumbsRef = useRef(null);
 
@@ -17,18 +16,18 @@ const AkshayaTritiyaSection3 = () => {
   }, []);
 
   return (
-    <section className="AkshayaTritiyaSection3">
-      <div className="container pb-5">
+    <section className="FlorenciaSection3New">
+      <div className="container py-5">
         <div className="row">
           <div className="col-12 col-lg-5 order-1 mt-5 mt-lg-0 order-lg-0 d-none d-lg-block">
             <Splide
-              className="AkshayaTritiyaSection3_main-img-slider"
+              className="FlorenciaSection3New_main-img-slider"
               options={{
                 type: "slide",
                 pagination: false,
                 arrows: false,
-                cover: true,
-                height: 500,
+                // cover: true,
+                height: 550,
                 gap: 10,
               }}
               ref={thumbsRef}
@@ -38,10 +37,10 @@ const AkshayaTritiyaSection3 = () => {
                   width={576}
                   height={577}
                   className="img-fluid"
-                  src="/AkshayaTritiya/section3-img1.webp"
+                  src="/florencia/section3-img1.webp"
                   alt="Image 1"
                 />
-                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                {/* <div className="fs-2 fw-semibold text-center mt-3 FlorenciaSection3New_main-img-slider__text">
                   Jewellery 1
                 </div> */}
               </SplideSlide>
@@ -50,10 +49,10 @@ const AkshayaTritiyaSection3 = () => {
                   width={576}
                   height={577}
                   className="img-fluid"
-                  src="/AkshayaTritiya/section3-img2.webp"
+                  src="/florencia/section3-img2.webp"
                   alt="Image 2"
                 />
-                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                {/* <div className="fs-2 fw-semibold text-center mt-3 FlorenciaSection3New_main-img-slider__text">
                   Jewellery 2
                 </div> */}
               </SplideSlide>
@@ -62,40 +61,28 @@ const AkshayaTritiyaSection3 = () => {
                   width={576}
                   height={577}
                   className="img-fluid"
-                  src="/AkshayaTritiya/section3-img3.webp"
+                  src="/florencia/section3-img3.webp"
                   alt="Image 3"
                 />
-                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                {/* <div className="fs-2 fw-semibold text-center mt-3 FlorenciaSection3New_main-img-slider__text">
                   Jewellery 3
                 </div> */}
               </SplideSlide>
 
-              <SplideSlide>
-                <Image
-                  width={576}
-                  height={577}
-                  className="img-fluid"
-                  src="/AkshayaTritiya/section3-img4.webp"
-                  alt="Image 4"
-                />
-                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
-                  Jewellery 4
-                </div> */}
-              </SplideSlide>
+            
             </Splide>
           </div>
           <div className="col-12 col-lg-7 order-0 order-lg-1 m-auto p-4">
             <div className="mb-5 text-center text-lg-start">
-              <div className="fs-5">Jewellery that brings you</div>
-              <div className="fs-1 fw-bold">Prosperity & Joy</div>
-              <div className="fs-6 mt-3 w-75 mx-auto mx-lg-0">
-                This Akshaya Tritiya, Enjoy the launch of our latest collections
-                with the newest designs you can ever see!
+              <div className="fs-2 secondary-color fw-bold mb-2 text-uppercase">PRODUCT CATEGORY</div>
+              <div className="main-color italic-font fs-5 mb-3">So that you don’t run out of options to choose from!</div>
+              <div className="fs-6">
+              So, let's celebrate you and your individuality. Florencia is more than just jewelry; it's a way to tell your story. Come, explore, and let your style shine with us!
               </div>
             </div>
 
             <Splide
-              className="AkshayaTritiyaSection3__thumb-slider"
+              className="FlorenciaSection3New__thumb-slider"
               hasTrack={false}
               options={{
                 type: "slide",
@@ -137,7 +124,7 @@ const AkshayaTritiyaSection3 = () => {
                     width={274}
                     height={270}
                     className="img-fluid"
-                    src="/AkshayaTritiya/section3-img1.webp"
+                    src="/florencia/section3-img1.webp"
                     alt="Image 1"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
@@ -149,7 +136,7 @@ const AkshayaTritiyaSection3 = () => {
                     width={274}
                     height={270}
                     className="img-fluid"
-                    src="/AkshayaTritiya/section3-img2.webp"
+                    src="/florencia/section3-img2.webp"
                     alt="Image 2"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
@@ -161,25 +148,14 @@ const AkshayaTritiyaSection3 = () => {
                     width={274}
                     height={270}
                     className="img-fluid"
-                    src="/AkshayaTritiya/section3-img3.webp"
+                    src="/florencia/section3-img3.webp"
                     alt="Image 3"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 3
                 </div> */}
                 </SplideSlide>
-                <SplideSlide>
-                  <Image
-                    width={274}
-                    height={270}
-                    className="img-fluid"
-                    src="/AkshayaTritiya/section3-img4.webp"
-                    alt="Image 4"
-                  />
-                  {/* <div className="fs-6 fw-semibold text-center mt-3">
-                  Jewellery 4
-                </div> */}
-                </SplideSlide>
+                
               </SplideTrack>
 
               <div className="splide__arrows">
@@ -208,4 +184,4 @@ const AkshayaTritiyaSection3 = () => {
   );
 };
 
-export default AkshayaTritiyaSection3;
+export default FlorenciaSection3New;
