@@ -183,7 +183,7 @@ const ContactSection1 = () => {
                   />
                 </div>
                 <div>
-                  <div className="mb-2 card-label">Jewel One HeadOffice</div>
+                  <div className="mb-2 card-label">Jewel One Corporate</div>
                   <div className="card-text">
                     230, E TV Swamy Rd, R.S. Puram, Coimbatore, Tamil Nadu
                     641002
