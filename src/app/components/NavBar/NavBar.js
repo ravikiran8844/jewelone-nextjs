@@ -91,7 +91,7 @@ const Navbar = ({data}) => {
                 TVAM 2.0
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 href="/akshaya-tritiya"
                 className={
@@ -103,7 +103,7 @@ const Navbar = ({data}) => {
               >
                 Akshaya Tritiya
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
               <Link
                 href="/florencia"
@@ -273,7 +273,7 @@ const Navbar = ({data}) => {
                     TVAM 2.0
                   </Link>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     href="/akshaya-tritiya"
                     className={
@@ -285,7 +285,7 @@ const Navbar = ({data}) => {
                   >
                     Akshaya Tritiya
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link
                     href="/florencia"

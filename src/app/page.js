@@ -26,8 +26,8 @@ export default function Home() {
     <MainBanner/>
     {/* <HomeSection1/> */}
     <HomeSection2/>
-    <HomeSection3/>
-    {/* <HomeSection3New/> */}
+    {/* <HomeSection3/> */}
+    <HomeSection3New/>
     <HomeSection4/>
     <VideoSection/>
     <HomeGifBanner/>

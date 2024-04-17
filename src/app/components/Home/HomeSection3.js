@@ -200,6 +200,8 @@ const HomeSection3 = () => {
             title="Miraya Collection"
             initialText="Introducing 'Miraya'... Miraya is more than just jewellery; it's a statement of individuality and style. Whether you seek a bold and contemporary look or a subtle touch of sophistication, this collection offers a diverse range of pieces to complement every personality and occasion."
           />
+
+          
         </Splide>
  
       </div>
