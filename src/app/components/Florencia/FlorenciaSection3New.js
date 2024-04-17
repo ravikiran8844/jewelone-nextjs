@@ -37,7 +37,7 @@ const FlorenciaSection3New = () => {
                   width={576}
                   height={577}
                   className="img-fluid"
-                  src="/florencia/section3-img1.webp"
+                  src="/florencia/slide-img1.webp"
                   alt="Image 1"
                 />
                 {/* <div className="fs-2 fw-semibold text-center mt-3 FlorenciaSection3New_main-img-slider__text">
@@ -49,7 +49,7 @@ const FlorenciaSection3New = () => {
                   width={576}
                   height={577}
                   className="img-fluid"
-                  src="/florencia/section3-img2.webp"
+                  src="/florencia/slide-img2.webp"
                   alt="Image 2"
                 />
                 {/* <div className="fs-2 fw-semibold text-center mt-3 FlorenciaSection3New_main-img-slider__text">
@@ -61,7 +61,7 @@ const FlorenciaSection3New = () => {
                   width={576}
                   height={577}
                   className="img-fluid"
-                  src="/florencia/section3-img3.webp"
+                  src="/florencia/slide-img3.webp"
                   alt="Image 3"
                 />
                 {/* <div className="fs-2 fw-semibold text-center mt-3 FlorenciaSection3New_main-img-slider__text">
@@ -124,7 +124,7 @@ const FlorenciaSection3New = () => {
                     width={274}
                     height={270}
                     className="img-fluid"
-                    src="/florencia/section3-img1.webp"
+                    src="/florencia/slide-img1.webp"
                     alt="Image 1"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
@@ -136,7 +136,7 @@ const FlorenciaSection3New = () => {
                     width={274}
                     height={270}
                     className="img-fluid"
-                    src="/florencia/section3-img2.webp"
+                    src="/florencia/slide-img2.webp"
                     alt="Image 2"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
@@ -148,7 +148,7 @@ const FlorenciaSection3New = () => {
                     width={274}
                     height={270}
                     className="img-fluid"
-                    src="/florencia/section3-img3.webp"
+                    src="/florencia/slide-img3.webp"
                     alt="Image 3"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
@@ -160,7 +160,7 @@ const FlorenciaSection3New = () => {
 
               <div className="splide__arrows">
                 <button className="splide__arrow splide__arrow--prev">
-                  <img
+                  <Image
                     width={42}
                     height={42}
                     alt="arrow"
@@ -168,7 +168,7 @@ const FlorenciaSection3New = () => {
                   />
                 </button>
                 <button className="splide__arrow splide__arrow--next">
-                  <img
+                  <Image
                     width={42}
                     height={42}
                     alt="arrow"
