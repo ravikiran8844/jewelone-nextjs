@@ -26,7 +26,7 @@ const HomeSection5 = () => {
         <div className="container">
           <div className="col-12">
             <div className="mb-5 text-center">
-              <div className="fs-2 fw-semibold">
+              <div className="fs-3 fw-semibold">
                 Hear the Joyful Experiences with Jewel One
               </div>
             </div>
@@ -37,10 +37,18 @@ const HomeSection5 = () => {
                 type: "slide",
                 rewind: false,
                 pagination: false,
-                fixedWidth: 100,
+                perPage:4,
                 cover: true,
                 focus: "center",
                 isNavigation: true,
+                breakpoints: {
+                  680: {
+                    perPage: 4,
+                  },
+                  340: {
+                    perPage: 3,
+                  },
+                },
               }}
               ref={mainRef}
             >

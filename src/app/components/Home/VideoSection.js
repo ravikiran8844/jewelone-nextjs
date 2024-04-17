@@ -20,15 +20,11 @@ const VideoSection = () => {
     <section className="home-section5">
       <div
         className="home-section5_wrapper section-padding"
-        style={{
-          backgroundImage: 'url("/home-section5-bg.webp")',
-          backgroundSize: "cover",
-        }}
       >
         <div className="container">
           <div className="col-12">
-            <div className="mb-5 text-center">
-              <div className="fs-3 fw-semibold">
+            <div className="mb-5 mb-md-4 text-center">
+              <div className="fs-4 fw-semibold">
                 Hear the Joyful Experiences with Jewel One
               </div>
             </div>
@@ -39,10 +35,21 @@ const VideoSection = () => {
                 type: "slide",
                 rewind: false,
                 pagination: false,
-                fixedWidth: 100,
+                perPage:4,
                 cover: true,
                 focus: "center",
                 isNavigation: true,
+                breakpoints: {
+                  768: {
+                    perPage: 4,
+                  },
+                  680: {
+                    perPage: 3,
+                  },
+                  340: {
+                    perPage: 3,
+                  },
+                },
               }}
               ref={mainRef}
             >

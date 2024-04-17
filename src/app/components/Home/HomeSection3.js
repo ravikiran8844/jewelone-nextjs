@@ -73,7 +73,7 @@ const Slide = ({
             </div>
           )}
         </div>
-        <div className="mt-3 home-section-3-slide-item-title">{title}</div>
+        <div className="mt-2 home-section-3-slide-item-title">{title}</div>
 
         <span className="home-section-3-slide-item-text">
           {showFullText ? (
@@ -99,9 +99,11 @@ const Slide = ({
 const HomeSection3 = () => {
   return (
     <section className="home-section-3 section-padding">
-      <div className="container mb-5">
+      <div className="container mb-5 ps-lg-5">
+        <div className="col-12 ps-lg-5">
         <div className="home-section-3_caption">Latest Collections</div>
         <div className="home-section-3_title">Our New Launches</div>
+        </div>
       </div>
 
       <div className="home-section-3_wrapper col-12">
@@ -124,7 +126,7 @@ const HomeSection3 = () => {
               },
               1240: {
                 perPage: 1,
-                padding: '15rem',
+                padding: '10rem',
                 gap: ".8rem",
               },
               1040: {

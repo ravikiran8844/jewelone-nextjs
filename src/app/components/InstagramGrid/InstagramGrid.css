@@ -59,8 +59,8 @@ text-transform: uppercase;
 
 @media (min-width:768px) {
     .home-section6 svg{
-        width: 38.446px;
-    height: 38.413px;
+        width: 30px;
+    height: 30px;
     flex-shrink: 0;
     }
     .home-section6 .splide__slide{
