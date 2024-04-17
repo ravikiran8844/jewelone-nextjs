@@ -435,8 +435,7 @@
 
   
 .FlorenciaSection3New{
-  background-color: #fff;
-
+ background-image: url("/florencia/bg.png");
 }
 .FlorenciaSection3New .splide__slide img,.FlorenciaSection3New_main-img-slider .splide__slide img{
   object-position: top !important;

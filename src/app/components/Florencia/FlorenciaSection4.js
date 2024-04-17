@@ -66,8 +66,8 @@ const FlorenciaSection4 = () => {
                   <div>
                     <Image
                       className="img-fluid"
-                      height={560}
-                      width={420}
+                      height={1200}
+                      width={870}
                       src="/florencia/home-section5-slider2.webp"
                       alt="Birthdays"
                     />
@@ -84,8 +84,8 @@ const FlorenciaSection4 = () => {
                   <div>
                     <Image
                       className="img-fluid"
-                      height={560}
-                      width={420}
+                      height={1200}
+                      width={870}
                       src="/florencia/home-section5-slider1.webp"
                       alt="Anniversaries"
                     />
@@ -103,8 +103,8 @@ const FlorenciaSection4 = () => {
                   <div>
                     <Image
                       className="img-fluid"
-                      height={560}
-                      width={420}
+                      height={1200}
+                      width={870}
                       src="/florencia/home-section5-slider4.webp"
                       alt="Engagement"
                     />
@@ -121,8 +121,8 @@ const FlorenciaSection4 = () => {
                   <div>
                     <Image
                       className="img-fluid"
-                      height={560}
-                      width={420}
+                      height={1200}
+                      width={870}
                       src="/florencia/home-section5-slider3.webp"
                       alt="New Beginnings"
                     />

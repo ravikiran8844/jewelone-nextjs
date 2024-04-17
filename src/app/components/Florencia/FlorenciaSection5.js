@@ -10,54 +10,54 @@ const FlorenciaSection5 = () => {
     <div className="instgram-grid d-none d-md-grid">
       <div className="instgram-grid_item">
         <a target="_blank" href="https://www.instagram.com/florenciadiamonds/">
-          <Image width={220} height={220}
+          <Image width={600} height={600}
             className="img-fluid"
-            src="/florencia/instgram-grid-img1.png"
+            src="/florencia/instgram-grid-img1.webp"
             alt="instgram image 1"
           />
         </a>
       </div>
       <div className="instgram-grid_item">
         <a target="_blank" href="https://www.instagram.com/florenciadiamonds/">
-          <Image width={220} height={220}
+          <Image width={600} height={600}
             className="img-fluid"
-            src="/florencia/instgram-grid-img2.png"
+            src="/florencia/instgram-grid-img2.webp"
             alt="instgram image 2"
           />
         </a>
       </div>
       <div className="instgram-grid_item">
         <a target="_blank" href="https://www.instagram.com/florenciadiamonds/">
-          <Image width={220} height={457}
+          <Image width={600} height={918}
             className="img-fluid"
-            src="/florencia/instgram-grid-img3.png"
+            src="/florencia/instgram-grid-img3.webp"
             alt="instgram image 3"
           />
         </a>
       </div>
       <div className="instgram-grid_item">
         <a target="_blank" href="https://www.instagram.com/florenciadiamonds/">
-          <Image width={220} height={220}
+          <Image width={600} height={600}
             className="img-fluid"
-            src="/florencia/instgram-grid-img4.png"
+            src="/florencia/instgram-grid-img4.webp"
             alt="instgram image 4"
           />
         </a>
       </div>
       <div className="instgram-grid_item">
         <a target="_blank" href="https://www.instagram.com/florenciadiamonds/">
-          <Image width={460} height={221}
+          <Image width={833} height={400}
             className="img-fluid"
-            src="/florencia/instgram-grid-img5.png"
+            src="/florencia/instgram-grid-img5.webp"
             alt="instgram image 5"
           />
         </a>
       </div>
       <div className="instgram-grid_item">
         <a target="_blank" href="https://www.instagram.com/florenciadiamonds/">
-          <Image width={220} height={220}
+          <Image width={600} height={600}
             className="img-fluid"
-            src="/florencia/instgram-grid-img6.png"
+            src="/florencia/instgram-grid-img6.webp"
             alt="instgram image 6"
           />
         </a>
