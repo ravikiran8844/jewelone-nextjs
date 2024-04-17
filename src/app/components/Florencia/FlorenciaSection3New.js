@@ -77,7 +77,7 @@ const FlorenciaSection3New = () => {
               <div className="fs-2 secondary-color fw-bold mb-2 text-uppercase">PRODUCT CATEGORY</div>
               <div className="main-color italic-font fs-5 mb-3">So that you don’t run out of options to choose from!</div>
               <div className="fs-6">
-              So, let's celebrate you and your individuality. Florencia is more than just jewelry; it's a way to tell your story. Come, explore, and let your style shine with us!
+              Explore Our Show-Stopping Diamond Statement Pieces
               </div>
             </div>
 
