@@ -59,10 +59,7 @@ const ContactSection1 = () => {
               <div className="contact-section-label mb-2">CONTACT</div>
               <div className="contact-section-title mb-4">Get in touch</div>
               <p className="contact-section-text">
-                Have a question or want to connect with us? We're here to help!
-                Fill out the form with your name, email address, mobile number and your
-                message, and we'll get back to you as soon as possible. Your
-                feedback is valuable to us.
+              Have a question or want to connect with us? We're here to help! Fill out the form, will get back you shortly....
               </p>
             </div>
           </div>
@@ -183,7 +180,7 @@ const ContactSection1 = () => {
                   />
                 </div>
                 <div>
-                  <div className="mb-2 card-label">Jewel One Corporate</div>
+                  <div className="mb-2 card-label">Jewel One Corporate Office</div>
                   <div className="card-text">
                     230, E TV Swamy Rd, R.S. Puram, Coimbatore, Tamil Nadu
                     641002

@@ -61,16 +61,31 @@ const Navbar = ({data}) => {
       {currentRoute === "/experience-center" && <AnnouncmentBar />}
       <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret">
         <div className="container d-flex align-items-center navbar_wrapper">
-          <Link className="navbar-brand" href="/">
+
+        {currentRoute === "/florencia" ? 
+        (<Link className="navbar-brand" href="/">
+        <Image
+          width={265}
+          height={46}
+          className="img-fluid"
+          src="/florencia/logo.svg"
+          alt="logo"
+          priority
+        />
+      </Link>) 
+        : 
+        (<Link className="navbar-brand" href="/">
             <Image
               width={222}
               height={56}
               className="img-fluid"
-              src="JO_Logo.svg"
+              src="/JO_Logo.svg"
               alt="logo"
               priority
             />
-          </Link>
+          </Link>) }
+
+          
 
           <ul className="d-none d-lg-flex flex-row gap-3 navbar-nav ms-auto">
             {/* <li className="nav-item">
