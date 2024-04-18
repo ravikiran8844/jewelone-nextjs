@@ -30,8 +30,8 @@ export const MainBanner = () => {
                     priority="true"
                     alt="main banner"
                     src="/home-mobile-banner1.webp"
-                    height={550}
-                    width={1519}
+                    height={688}
+                    width={1920}
                                />
                 </picture>
               </Link>
