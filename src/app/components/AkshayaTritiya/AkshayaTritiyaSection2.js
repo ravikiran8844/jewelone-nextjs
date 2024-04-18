@@ -75,6 +75,7 @@ const AkshayaTritiyaSection2 = () => {
               {videos.map((video, index) => (
                 <div key={index}>
                   <video
+                    preload="none"
                     ref={videoRefs.current[index]}
                     src={video.src}
                     autoPlay={index === 0}

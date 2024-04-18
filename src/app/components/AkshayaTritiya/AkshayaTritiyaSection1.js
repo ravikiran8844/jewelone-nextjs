@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const AkshayaTritiyaSection1 = () => {
     return (
-        <section className=''>
+        <section className='container-fluid p-0'>
             {/* <Splide options={{
                 type: 'loop',
                 autoplay: true,
@@ -33,7 +33,8 @@ const AkshayaTritiyaSection1 = () => {
                 </SplideSlide>
             </Splide> */}
 
-<Link href="#prebookFormSection">
+           <div className='col-12'>
+           <Link href="#prebookFormSection">
                         <picture>
                             <source
                                 srcSet="/AkshayaTritiya/main-banner-img1.webp"
@@ -41,14 +42,16 @@ const AkshayaTritiyaSection1 = () => {
                                 media="(min-width: 650px)"
                             />
                             <Image
+                                className='img-fluid'
                                 priority="true"
                                 alt="main banner"
                                 src="/AkshayaTritiya/main-banner-mob-img1.webp"
-                                height={550}
-                                width={1519}
+                                height={750}
+                                width={562}
                             />
                         </picture>
-                    </Link>
+            </Link>
+           </div>
 
         </section>
     )
