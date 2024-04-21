@@ -14,16 +14,16 @@ const AkshayaTritiyaSection2 = () => {
 
   const videos = [
     {
-      src: "/AkshayaTritiya/Video_part1.mp4",
-      poster: "/AkshayaTritiya/placeholder1.webp",
+      src: "/AkshayaTritiya/section2-v1.mp4",
+      poster: "/AkshayaTritiya/section2-p1.jpg",
     },
     {
-      src: "/AkshayaTritiya/Video_part2.mp4",
-      poster: "/AkshayaTritiya/placeholder2.webp",
+      src: "/AkshayaTritiya/section2-v2.mp4",
+      poster: "/AkshayaTritiya/section2-p2.jpg",
     },
     {
-      src: "/AkshayaTritiya/Video_part3.mp4",
-      poster: "/AkshayaTritiya/placeholder3.webp",
+      src: "/AkshayaTritiya/section2-v3.mp4",
+      poster: "/AkshayaTritiya/section2-p3.jpg",
     },
   ];
 
