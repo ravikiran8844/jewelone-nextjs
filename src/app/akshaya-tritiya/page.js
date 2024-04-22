@@ -35,7 +35,7 @@ const page = async () => {
         <AkshayaTritiyaSection2/>
         <AkshayaTritiyaSection3/>
         <AkshayaTritiyaSection4 goldPrice={goldPrice}/>
-        {/* <AkshayaTritiyaSection5/> */}
+        <AkshayaTritiyaSection5/>
     </main>
   )
 }
