@@ -238,3 +238,12 @@ header{
     border-bottom: 3px solid #000;
     width: fit-content;
   }
+  
+  @media (max-width:992px) {
+    .navbar-brand{
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      max-height: 52px;
+    }
+  }

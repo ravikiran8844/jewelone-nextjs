@@ -15,7 +15,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import AnnouncmentBar from "../ExperienceCenter/AnnouncmentBar";
 
-const Navbar = ({data}) => {
+const Navbar = ({ data }) => {
   const today = new Date();
   const options = { day: "numeric", month: "short", year: "numeric" };
   const formattedDate = today.toLocaleDateString("en-US", options);
@@ -46,7 +46,7 @@ const Navbar = ({data}) => {
         body.style.paddingRight = "";
 
         // Remove the event listener to prevent memory leaks
-        offcanvas.removeEventListener("hidden.bs.offcanvas", () => { });
+        offcanvas.removeEventListener("hidden.bs.offcanvas", () => {});
       });
     }
   };
@@ -61,31 +61,64 @@ const Navbar = ({data}) => {
       {currentRoute === "/experience-center" && <AnnouncmentBar />}
       <nav className="navbar navbar-expand-xl bsb-navbar bsb-navbar-hover bsb-navbar-caret">
         <div className="container d-flex align-items-center navbar_wrapper">
+          <div className="d-block d-lg-none">
+            <Button
+              variant="light"
+              className="bg-transparent border-0 z-1"
+              onClick={handleShow}
+            >
+              <svg
+                width={29}
+                height={20}
+                viewBox="0 0 29 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1H28"
+                  stroke="black"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M1 19H28"
+                  stroke="black"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M1 10H19"
+                  stroke="black"
+                  strokeWidth={2}
+                  strokeLinecap="round"
+                />
+              </svg>
+            </Button>
+          </div>
 
-        {currentRoute === "/florencia" ? 
-        (<Link className="navbar-brand" href="/">
-        <Image
-          width={265}
-          height={46}
-          className="img-fluid"
-          src="/florencia/logo.svg"
-          alt="logo"
-          priority
-        />
-      </Link>) 
-        : 
-        (<Link className="navbar-brand" href="/">
-            <Image
-              width={222}
-              height={56}
-              className="img-fluid"
-              src="/JO_Logo.svg"
-              alt="logo"
-              priority
-            />
-          </Link>) }
-
-          
+          {currentRoute === "/florencia" ? (
+            <Link className="navbar-brand" href="/">
+              <Image
+                width={265}
+                height={46}
+                className="img-fluid"
+                src="/florencia/logo.svg"
+                alt="logo"
+                priority
+              />
+            </Link>
+          ) : (
+            <Link className="navbar-brand" href="/">
+              <Image
+                width={222}
+                height={56}
+                className="img-fluid"
+                src="/JO_Logo.svg"
+                alt="logo"
+                priority
+              />
+            </Link>
+          )}
 
           <ul className="d-none d-lg-flex flex-row gap-3 navbar-nav ms-auto">
             {/* <li className="nav-item">
@@ -245,24 +278,6 @@ const Navbar = ({data}) => {
               </Swiper>
             </div>
           </ul> */}
-
-          <div className="d-block d-lg-none">
-            <Button variant="light" onClick={handleShow}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="currentColor"
-                className="bi bi-list"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                ></path>
-              </svg>
-            </Button>
-          </div>
 
           <Offcanvas show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
@@ -428,8 +443,6 @@ const Navbar = ({data}) => {
                   </Swiper>
                 </div>
               </ul> */}
-
-
             </Offcanvas.Body>
           </Offcanvas>
         </div>
