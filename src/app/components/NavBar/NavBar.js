@@ -64,7 +64,7 @@ const Navbar = ({ data }) => {
           <div className="d-block d-lg-none">
             <Button
               variant="light"
-              className="bg-transparent border-0 z-1"
+              className="bg-transparent border-0 z-1 nav-trigger-btn"
               onClick={handleShow}
             >
               <svg

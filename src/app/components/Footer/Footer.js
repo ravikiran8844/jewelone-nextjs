@@ -113,6 +113,7 @@ const Footer = () => {
                       <ul className="list-unstyled footer-social-links">
                         <li>
                           <a
+                            aria-label="instagram"
                             target="__blank"
                             href="https://www.instagram.com/jewelone_in/"
                           >
@@ -140,6 +141,7 @@ const Footer = () => {
                         </li>
                         <li>
                           <a
+                            aria-label="facebook"
                             target="__blank"
                             href="https://www.facebook.com/jewelone916"
                           >
@@ -159,6 +161,7 @@ const Footer = () => {
                         </li>
                         <li>
                           <a
+                            aria-label="youtube"
                             target="__blank"
                             href="https://www.youtube.com/channel/UCCG6vza_ECtCW9D58F8Xh_Q"
                           >
@@ -179,6 +182,7 @@ const Footer = () => {
 
                         <li>
                           <a
+                            aria-label="twitter"
                             target="__blank"
                             href="https://twitter.com/jewelone916"
                           >
@@ -198,6 +202,7 @@ const Footer = () => {
                         </li>
                         <li>
                           <a
+                            aria-label="pinterest"
                             target="__blank"
                             href="https://www.pinterest.com/JewelOne916/"
                           >

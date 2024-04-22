@@ -12,8 +12,8 @@ const AkshayaTritiyaProductCard = ({ product }) => {
                   
 
                   <div className="text-center">
-                    <div className="fw-semibold fs-5 text-red">{weight}</div>
-                    <div className="fs-5">{title}</div>
+                    <div className="fw-semibold fs-6 text-red">{weight}</div>
+                    <div className="fs-6 fw-medium">{title}</div>
                     <div className="mt-2">
                     <a href="#" className="btn btn-outline buy-now-btn">Buy Now</a>
                     </div>
