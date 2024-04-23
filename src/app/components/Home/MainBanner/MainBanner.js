@@ -22,16 +22,16 @@ export const MainBanner = () => {
               <Link href="/tvam">
               <picture>
                 <source
-                    srcSet="/home-main-banner1.webp"
+                    srcSet="/home-mobile-banner1.webp"
                     type="image/webp"
-                    media="(min-width: 650px)"
+                    media="(max-width: 650px)"
                 />
                 <Image
                     priority="true"
                     alt="main banner"
-                    src="/home-mobile-banner1.webp"
-                    height={688}
-                    width={1920}
+                    src="/home-main-banner1.webp"
+                    height={544}
+                    width={1519}
                                />
                 </picture>
               </Link>
