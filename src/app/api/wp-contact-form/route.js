@@ -1,5 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+
+export async function GET (request){
+  const message = "WP Contact Form API"
+  const json = {
+    message
+  };
+  
+  return NextResponse.json(json);
+}
+
 export async function POST(request) {
   try {
     const { email, name, mobile, message } = await request.json();
