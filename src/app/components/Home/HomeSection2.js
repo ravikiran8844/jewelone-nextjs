@@ -20,7 +20,7 @@ const HomeSection2 = () => {
                     className="img-fluid home-section-2_img1"
                     width={203}
                     height={52}
-                    src="/home-srection2-img1.webp"
+                    src="/JO_Logo.svg"
                     alt="jewelone logo"
                     priority="true"
                   />
@@ -28,9 +28,9 @@ const HomeSection2 = () => {
                 <div className="mb-3">
                   <Image
                     className="img-fluid home-section-2_img2"
-                    width={400}
-                    height={177}
-                    src="/home-srection2-img2.webp"
+                    width={671}
+                    height={236}
+                    src="/home-srection2-img3.webp"
                     alt="jewelone banner"
                     priority="true"
                   />
