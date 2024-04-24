@@ -17,7 +17,6 @@ const AkshayaTritiyaSection1 = () => {
         <SplideSlide>
           <div className="AkshayaTritiyaSection1-mob-video">
             <video
-              preload="none"
               autoPlay
               loop
               muted
@@ -36,7 +35,6 @@ const AkshayaTritiyaSection1 = () => {
 
           <div className="AkshayaTritiyaSection1-large-video">
             <video
-              preload="none"
               autoPlay
               loop
               muted
