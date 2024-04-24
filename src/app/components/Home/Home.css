@@ -30,13 +30,13 @@
     width: 100%;
     height: auto;
   }
-  .home-section-2_img2{
-    max-width: 450px;
-    max-height: 200px;
-    flex-shrink: 0;
-    width: 100%;
-    height: auto;
-  }
+
+}
+.home-section-2_img2{
+  max-width: 500px;
+  flex-shrink: 0;
+  width: 100%;
+  height: auto;
 }
 
 
