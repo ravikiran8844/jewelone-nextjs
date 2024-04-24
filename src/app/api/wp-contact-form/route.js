@@ -22,7 +22,7 @@ export async function POST(request) {
     formData.append('_wpcf7_unit_tag', 'wpcf7-f11-p12-o1');
 
     // POST request
-    const response = await fetch('http://emerald-jewel-career.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/11/feedback', {
+    const response = await fetch('https://emerald-jewel-career.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/11/feedback', {
       method: 'POST',
       body: formData,
     });
