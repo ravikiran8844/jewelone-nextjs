@@ -15,13 +15,19 @@ const AkshayaTritiyaSection1 = () => {
                 <SplideSlide>
                    
                     <div className='AkshayaTritiyaSection1-mob-video'>
-                    <video autoPlay muted loop controls>
+                    <video autoPlay muted loop controls
+                     height={867}
+                     width={650}
+                    >
                     <source src="/AkshayaTritiya/main-slider-video1-mob.mp4" type="video/mp4" /> 
                     </video>
                     </div>
 
                     <div className='AkshayaTritiyaSection1-large-video'>
-                    <video autoPlay muted loop controls>
+                    <video autoPlay muted loop controls
+                     height={550}
+                     width={1519}
+                    >
                     <source src="/AkshayaTritiya/main-slider-video1.mp4" type="video/mp4" /> 
                     </video>
                     </div>
