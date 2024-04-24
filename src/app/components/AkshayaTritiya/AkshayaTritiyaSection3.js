@@ -33,6 +33,30 @@ const AkshayaTritiyaSection3 = () => {
               }}
               ref={thumbsRef}
             >
+                 <SplideSlide>
+                <Image
+                  width={576}
+                  height={577}
+                  className="img-fluid"
+                  src="/AkshayaTritiya/section3-img5.webp"
+                  alt="Image 1"
+                />
+                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                  Jewellery 1
+                </div> */}
+              </SplideSlide>
+              <SplideSlide>
+                <Image
+                  width={576}
+                  height={577}
+                  className="img-fluid"
+                  src="/AkshayaTritiya/section3-img6.webp"
+                  alt="Image 1"
+                />
+                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
+                  Jewellery 1
+                </div> */}
+              </SplideSlide>
               <SplideSlide>
                 <Image
                   width={576}
@@ -132,6 +156,31 @@ const AkshayaTritiyaSection3 = () => {
               aria-label="Image Slider"
             >
               <SplideTrack>
+              <SplideSlide>
+                  <Image
+                    width={274}
+                    height={270}
+                    className="img-fluid"
+                    src="/AkshayaTritiya/section3-img5.webp"
+                    alt="Image 1"
+                  />
+                  {/* <div className="fs-6 fw-semibold text-center mt-3">
+                  Jewellery 1
+                </div> */}
+                </SplideSlide>
+                <SplideSlide>
+                  <Image
+                    width={274}
+                    height={270}
+                    className="img-fluid"
+                    src="/AkshayaTritiya/section3-img6.webp"
+                    alt="Image 1"
+                  />
+                  {/* <div className="fs-6 fw-semibold text-center mt-3">
+                  Jewellery 1
+                </div> */}
+                </SplideSlide>
+
                 <SplideSlide>
                   <Image
                     width={274}

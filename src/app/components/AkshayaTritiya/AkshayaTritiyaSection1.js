@@ -6,18 +6,34 @@ import Link from 'next/link';
 
 const AkshayaTritiyaSection1 = () => {
     return (
-        <section className='container-fluid p-0'>
-            {/* <Splide options={{
+        <section className='AkshayaTritiyaSection1 container-fluid p-0'>
+            <Splide options={{
                 type: 'loop',
-                autoplay: true,
-                interval: 4000,
+                // autoplay: true,
+                // interval: 4000,
             }}>
+                <SplideSlide>
+                   
+                    <div className='AkshayaTritiyaSection1-mob-video'>
+                    <video autoPlay muted loop controls>
+                    <source src="/AkshayaTritiya/main-slider-video1-mob.mp4" type="video/mp4" /> 
+                    </video>
+                    </div>
+
+                    <div className='AkshayaTritiyaSection1-large-video'>
+                    <video autoPlay muted loop controls>
+                    <source src="/AkshayaTritiya/main-slider-video1.mp4" type="video/mp4" /> 
+                    </video>
+                    </div>
+
+                </SplideSlide>
 
                 <SplideSlide>
+
                     <Link href="#prebookFormSection">
                         <picture>
                             <source
-                                srcSet="/AkshayaTritiya/slider-img1.webp"
+                                srcSet="/AkshayaTritiya/main-banner1.webp"
                                 type="image/webp"
                                 media="(min-width: 650px)"
                             />
@@ -31,9 +47,9 @@ const AkshayaTritiyaSection1 = () => {
                         </picture>
                     </Link>
                 </SplideSlide>
-            </Splide> */}
+            </Splide>
 
-           <div className='col-12'>
+           {/* <div className='col-12'>
            <Link href="#prebookFormSection">
                         <picture>
                             <source
@@ -51,7 +67,7 @@ const AkshayaTritiyaSection1 = () => {
                             />
                         </picture>
             </Link>
-           </div>
+           </div> */}
 
         </section>
     )

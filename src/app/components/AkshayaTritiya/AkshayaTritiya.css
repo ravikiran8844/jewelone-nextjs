@@ -7,7 +7,27 @@
 }
 .akshatritiyasection2 img{
     border-radius: 16.258px;
+}
 
+@media (max-width:650px) {
+    .AkshayaTritiyaSection1-mob-video{
+        display: block;
+    }
+    .AkshayaTritiyaSection1-large-video{
+        display: none;
+    }
+}
+@media (min-width:650px) {
+    .AkshayaTritiyaSection1-mob-video{
+        display: none;
+    }
+    .AkshayaTritiyaSection1-large-video{
+        display: block;
+    }
+}
+.AkshayaTritiyaSection1 video{
+    width: 100%;
+    height: auto;
 }
 .akshatritiyasection2 video{
     border-radius: 16.258px;
