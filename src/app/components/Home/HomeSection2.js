@@ -48,14 +48,14 @@ const HomeSection2 = () => {
                   bangles and any & every jewellery article you need.
                 </div>
 
-                <div className="home-section2_text">
+                {/* <div className="home-section2_text">
                   With timeless masterpieces and endless customisation
                   possibilities - We stand by our tagline -{" "}
                   <span className="item-text-dark">
                     “Women's Heart is Where We Start - Penn Manadhai Purintha
                     Pon”.
                   </span>
-                </div>
+                </div> */}
               </div>
 
               <div className="col-12 mt-5 home-section2_mobile-logo-items">
