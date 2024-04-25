@@ -38,7 +38,10 @@
   width: 100%;
   height: auto;
 }
-
+.home-section-3_new .splide__slide picture img{
+  border-radius: 30px;
+  overflow: hidden;
+}
 
 
 

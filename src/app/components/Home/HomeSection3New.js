@@ -22,7 +22,7 @@ const Slide = ({
 
   return (
     <SplideSlide>
-      <div>
+      <div className="shadow rounded-5">
         <picture>
           <source
             srcSet={imageSrc}
@@ -151,6 +151,17 @@ const HomeSection3New = () => {
           }}
         >
           <SplideTrack>
+          <Slide
+            newlyLanunched={true}
+            date="April 21 2024"
+            imageSrc="/home-section3-img6.webp"
+            mobileSrc="/home-section3-img6-mob.webp"
+            altText="Akshaya-Tritiya Collection"
+            title="Akshaya-Tritiya Collection"
+            initialText={
+              'Celebrate Akshaya Tritiya with our all-new collection! Unveiling trending & modern jewellery that reflects your timeless style.'
+            }
+          />
            <Slide
             newlyLanunched={true}
             date="January 13th 2024"
