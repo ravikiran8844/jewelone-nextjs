@@ -155,7 +155,7 @@ const HomeSection3New = () => {
             newlyLanunched={true}
             date="April 21 2024"
             imageSrc="/home-section3-img6.webp"
-            mobileSrc="/home-section3-img6-mob.webp"
+            mobileSrc="/j-one-collection-img-mob.webp"
             altText="Akshaya-Tritiya Collection"
             title="Akshaya-Tritiya Collection"
             initialText={

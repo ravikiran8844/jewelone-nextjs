@@ -19,14 +19,14 @@ export const MainBanner = () => {
           <Link href="/akshaya-tritiya">
             <picture>
               <source
-                srcSet="/AkshayaTritiya/main-banner-mob-img1.webp"
+                srcSet="/jone-main-banner-mob1.jpg"
                 type="image/webp"
                 media="(max-width: 650px)"
               />
               <Image
                 priority="true"
                 alt="main banner"
-                src="/AkshayaTritiya/main-banner-img1.webp"
+                src="/jone-main-banner1.jpg"
                 height={544}
                 width={1519}
               />

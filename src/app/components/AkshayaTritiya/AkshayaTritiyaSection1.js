@@ -56,14 +56,14 @@ const AkshayaTritiyaSection1 = () => {
           <Link href="#prebookFormSection">
             <picture>
               <source
-                srcSet="/AkshayaTritiya/At_Banner-01.webp"
+                srcSet="/AkshayaTritiya/at-main-banner1.jpg"
                 type="image/webp"
                 media="(min-width: 650px)"
               />
               <Image
                 priority="true"
                 alt="main banner"
-                src="/AkshayaTritiya/main-banner-mob-img1.webp"
+                src="/AkshayaTritiya/at-main-banner1-mob.jpg"
                 height={550}
                 width={1519}
               />

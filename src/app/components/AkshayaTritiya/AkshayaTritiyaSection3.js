@@ -33,6 +33,45 @@ const AkshayaTritiyaSection3 = () => {
               }}
               ref={thumbsRef}
             >
+              
+              <SplideSlide>
+                <Image
+                  width={576}
+                  height={577}
+                  className="img-fluid"
+                  src="/AkshayaTritiya/at-collection-img1.png"
+                  alt="Image 1"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <Image
+                  width={576}
+                  height={577}
+                  className="img-fluid"
+                  src="/AkshayaTritiya/at-collection-img2.png"
+                  alt="Image 2"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <Image
+                  width={576}
+                  height={577}
+                  className="img-fluid"
+                  src="/AkshayaTritiya/at-collection-img3.png"
+                  alt="Image 3"
+                />
+              </SplideSlide>
+              <SplideSlide>
+                <Image
+                  width={576}
+                  height={577}
+                  className="img-fluid"
+                  src="/AkshayaTritiya/at-collection-img4.jpg"
+                  alt="Image 4"
+                />
+              </SplideSlide>
+
+
                  <SplideSlide>
                 <Image
                   width={576}
@@ -41,9 +80,6 @@ const AkshayaTritiyaSection3 = () => {
                   src="/AkshayaTritiya/section3-img5.webp"
                   alt="Image 1"
                 />
-                {/* <div className="fs-2 fw-semibold text-center mt-3 AkshayaTritiyaSection3_main-img-slider__text">
-                  Jewellery 1
-                </div> */}
               </SplideSlide>
               <SplideSlide>
                 <Image
@@ -161,12 +197,45 @@ const AkshayaTritiyaSection3 = () => {
                     width={274}
                     height={270}
                     className="img-fluid"
-                    src="/AkshayaTritiya/section3-img5.webp"
+                    src="/AkshayaTritiya/at-collection-img1.png"
                     alt="Image 1"
                   />
-                  {/* <div className="fs-6 fw-semibold text-center mt-3">
-                  Jewellery 1
-                </div> */}
+                </SplideSlide>
+                <SplideSlide>
+                  <Image
+                    width={274}
+                    height={270}
+                    className="img-fluid"
+                    src="/AkshayaTritiya/at-collection-img2.png"
+                    alt="Image 2"
+                  />
+                </SplideSlide>
+                <SplideSlide>
+                  <Image
+                    width={274}
+                    height={270}
+                    className="img-fluid"
+                    src="/AkshayaTritiya/at-collection-img3.png"
+                    alt="Image 3"
+                  />
+                </SplideSlide>
+                <SplideSlide>
+                  <Image
+                    width={274}
+                    height={270}
+                    className="img-fluid"
+                    src="/AkshayaTritiya/at-collection-img4.jpg"
+                    alt="Image 4"
+                  />
+                </SplideSlide>
+              <SplideSlide>
+                  <Image
+                    width={274}
+                    height={270}
+                    className="img-fluid"
+                    src="/AkshayaTritiya/section3-img5.webp"
+                    alt="Image 5"
+                  />
                 </SplideSlide>
                 <SplideSlide>
                   <Image
@@ -174,7 +243,7 @@ const AkshayaTritiyaSection3 = () => {
                     height={270}
                     className="img-fluid"
                     src="/AkshayaTritiya/section3-img6.webp"
-                    alt="Image 1"
+                    alt="Image 6"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 1
@@ -187,7 +256,7 @@ const AkshayaTritiyaSection3 = () => {
                     height={270}
                     className="img-fluid"
                     src="/AkshayaTritiya/section3-img1.webp"
-                    alt="Image 1"
+                    alt="Image 7"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 1
@@ -199,7 +268,7 @@ const AkshayaTritiyaSection3 = () => {
                     height={270}
                     className="img-fluid"
                     src="/AkshayaTritiya/section3-img2.webp"
-                    alt="Image 2"
+                    alt="Image 8"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 2
@@ -211,7 +280,7 @@ const AkshayaTritiyaSection3 = () => {
                     height={270}
                     className="img-fluid"
                     src="/AkshayaTritiya/section3-img3.webp"
-                    alt="Image 3"
+                    alt="Image 9"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 3
@@ -223,7 +292,7 @@ const AkshayaTritiyaSection3 = () => {
                     height={270}
                     className="img-fluid"
                     src="/AkshayaTritiya/section3-img4.webp"
-                    alt="Image 4"
+                    alt="Image 10"
                   />
                   {/* <div className="fs-6 fw-semibold text-center mt-3">
                   Jewellery 4
