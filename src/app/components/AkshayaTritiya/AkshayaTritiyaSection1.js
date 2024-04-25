@@ -56,7 +56,7 @@ const AkshayaTritiyaSection1 = () => {
           <Link href="#prebookFormSection">
             <picture>
               <source
-                srcSet="/AkshayaTritiya/main-banner1.webp"
+                srcSet="/AkshayaTritiya/At_Banner-01.webp"
                 type="image/webp"
                 media="(min-width: 650px)"
               />
