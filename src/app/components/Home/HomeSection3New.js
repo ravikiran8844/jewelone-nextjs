@@ -153,7 +153,7 @@ const HomeSection3New = () => {
           <SplideTrack>
           <Slide
             newlyLanunched={true}
-            date="April 21 2024"
+            date="April 21st 2024"
             imageSrc="/j-one-collection-img.webp"
             mobileSrc="/j-one-collection-img-mob.webp"
             altText="Akshaya-Tritiya Collection"
