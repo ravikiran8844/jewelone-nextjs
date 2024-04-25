@@ -154,7 +154,7 @@ const HomeSection3New = () => {
           <Slide
             newlyLanunched={true}
             date="April 21 2024"
-            imageSrc="/home-section3-img6.webp"
+            imageSrc="/j-one-collection-img.webp"
             mobileSrc="/j-one-collection-img-mob.webp"
             altText="Akshaya-Tritiya Collection"
             title="Akshaya-Tritiya Collection"
