@@ -41,8 +41,8 @@ const AkshayaTritiyaSection1 = () => {
               playsInline
               controls
               poster="/AkshayaTritiya/AkshayaTritiyaSection1-video-poster.jpg"
-              height={550}
-              width={1519}
+              height={691}
+              width={1940}
             >
               <source
                 src="/AkshayaTritiya/main-slider-video1.mp4"
@@ -56,7 +56,7 @@ const AkshayaTritiyaSection1 = () => {
           <Link href="#prebookFormSection">
             <picture>
               <source
-                srcSet="/AkshayaTritiya/at-main-banner1.jpg"
+                srcSet="/AkshayaTritiya/at-main-banner1.webp"
                 type="image/webp"
                 media="(min-width: 650px)"
               />
@@ -64,8 +64,8 @@ const AkshayaTritiyaSection1 = () => {
                 priority="true"
                 alt="main banner"
                 src="/AkshayaTritiya/at-main-banner1-mob.jpg"
-                height={550}
-                width={1519}
+                height={691}
+                width={1940}
               />
             </picture>
           </Link>
