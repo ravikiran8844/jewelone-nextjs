@@ -26,7 +26,7 @@ export const MainBanner = () => {
               <Image
                 priority="true"
                 alt="main banner"
-                src="/at-main-banner-img1.webp"
+                src="/at-main-banner-img1.jpg"
                 height={688}
                 width={1920}
               />
