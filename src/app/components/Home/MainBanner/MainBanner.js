@@ -16,7 +16,7 @@ export const MainBanner = () => {
         }}
       >
   <SplideSlide>
-          <Link href="/akshaya-tritiya">
+          <Link href="https://www.jeweloneretail.in/purchaseplan/index.php/purchase/p_list">
             <picture>
               <source
                 srcSet="/jone-main-banner-mob1.jpg"
