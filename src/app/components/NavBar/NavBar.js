@@ -126,6 +126,21 @@ const Navbar = ({ data }) => {
                   Home
                 </Link>
               </li> */}
+
+            <li className="nav-item">
+              <Link
+                href="https://www.jeweloneretail.in/purchaseplan/index.php/purchase/p_list"
+                className={
+                  currentRoute === "/akshaya-tritiya"
+                    ? "active main-menu-link nav-link"
+                    : "main-menu-link nav-link"
+                }
+                onClick={handleClose}
+              >
+                Akshaya Tritiya
+              </Link>
+            </li>
+
             <li className="nav-item">
               <Link
                 href="/tvam"
@@ -139,19 +154,7 @@ const Navbar = ({ data }) => {
                 TVAM 2.0
               </Link>
             </li>
-            {/* <li className="nav-item">
-              <Link
-                href="/akshaya-tritiya"
-                className={
-                  currentRoute === "/akshaya-tritiya"
-                    ? "active main-menu-link nav-link"
-                    : "main-menu-link nav-link"
-                }
-                onClick={handleClose}
-              >
-                Akshaya Tritiya
-              </Link>
-            </li> */}
+
             <li className="nav-item">
               <Link
                 href="/florencia"
