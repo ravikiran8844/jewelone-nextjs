@@ -14,7 +14,7 @@ const AkshayaTritiyaSection1 = () => {
           // interval: 4000,
         }}
       >
-        <SplideSlide>
+        {/* <SplideSlide>
           <div className="AkshayaTritiyaSection1-mob-video">
             <video
               autoPlay
@@ -50,7 +50,7 @@ const AkshayaTritiyaSection1 = () => {
               />
             </video>
           </div>
-        </SplideSlide>
+        </SplideSlide> */}
 
         <SplideSlide>
           <Link href="#prebookFormSection">
