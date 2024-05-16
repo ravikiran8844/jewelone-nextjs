@@ -37,7 +37,7 @@ const HomeSection2 = () => {
                 </div>
               </div> */}
 
-              <div className="fs-1 brittany-font text-red">Idhu dhan</div>
+              <div className="fs-1 brittany-font text-red">Indha</div>
               <div>
                 <div className="fs-2 optima-font text-uppercase">
                   <span className="fw-bold">Nagaipol</span> Parthadhilai
