@@ -19,7 +19,7 @@
 
 /* home-section2 */
 .home-section2 {
-  background: #f6f6f6;
+  background: #F8F8FB;
 }
 
 @media (max-width:992px) {
@@ -1081,3 +1081,10 @@ padding: 10px;
 
 
 
+
+
+.home-video-slider video{
+    width: 100%;
+    height: auto;
+    border-radius: 20.575px;
+}
