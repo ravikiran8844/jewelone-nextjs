@@ -11,28 +11,26 @@ export const MainBanner = () => {
       <Splide
         options={{
           type: "loop",
-          autoplay: true,
+          autoplay: false,
           interval: 4000,
         }}
       >
-  <SplideSlide>
-          <Link href="https://www.jeweloneretail.in/purchaseplan/index.php/purchase/p_list">
-            <picture>
+  {/* <SplideSlide>
+        <video className="w-100 h-auto object-fit-cover"
+              autoPlay
+              loop
+              muted
+              playsInline
+              controls
+              height={1920}
+              width={684}
+            >
               <source
-                srcSet="/jone-main-banner-mob1.jpg"
-                type="image/webp"
-                media="(max-width: 650px)"
+                src="/home/home-main-banner-video-desktop.mp4"
+                type="video/mp4"
               />
-              <Image
-                priority="true"
-                alt="main banner"
-                src="/at-main-banner-img1.jpg"
-                height={688}
-                width={1920}
-              />
-            </picture>
-          </Link>
-        </SplideSlide>
+            </video>
+        </SplideSlide> */}
 
 
         <SplideSlide>
@@ -44,6 +42,7 @@ export const MainBanner = () => {
                 media="(max-width: 650px)"
               />
               <Image
+                className="img-fluid"
                 priority="true"
                 alt="main banner"
                 src="/home-main-banner1.webp"
@@ -62,6 +61,7 @@ export const MainBanner = () => {
               media="(min-width: 650px)"
             />
             <Image
+            className="img-fluid"
               alt="Image X alt"
               src="/home-mobile-banner3.webp"
               height={541}

@@ -127,7 +127,7 @@ const Navbar = ({ data }) => {
                 </Link>
               </li> */}
 
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 href="https://www.jeweloneretail.in/purchaseplan/index.php/purchase/p_list"
                 className={
@@ -139,7 +139,7 @@ const Navbar = ({ data }) => {
               >
                 Akshaya Tritiya
               </Link>
-            </li>
+            </li> */}
 
             <li className="nav-item">
               <Link
