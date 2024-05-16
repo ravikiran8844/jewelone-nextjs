@@ -32,8 +32,9 @@ export default function Home() {
     <HomeSection2/>
     <HomeVideoSlider/>
 
-    {/* <HomeSection3/> */}
-    <HomeSection3New/>
+    <HomeSection3/>
+
+    {/* <HomeSection3New/> */}
     <HomeSection4/>
     <VideoSection/>
     <HomeGifBanner/>

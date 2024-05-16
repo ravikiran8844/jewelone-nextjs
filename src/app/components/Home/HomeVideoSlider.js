@@ -22,9 +22,9 @@ const videos = [
 
 const HomeVideoSlider = () => {
   return (
-    <section className="bg-white">
-      <div className="container home-video-slider section-padding">
-      <div className="row g-4">
+    <section className="bg-white home-video-slider">
+      <div className="container py-5">
+      <div className="row g-4 my-4">
         <div className="col-12 col-lg-4 col-xl-3 order-lg-1 m-auto">
           <div className="fs-1 brittany-font text-red">Idhu dhan</div>
           <div>
@@ -61,6 +61,8 @@ const HomeVideoSlider = () => {
             {videos.map((video, index) => (
               <SwiperSlide className="col-12 col-lg-4" key={index}>
                 <video
+                style={{maxHeight:'600px', maxWidth:'400px'}}
+                className="img-fluid object-fit-cover"
                 height={502}
                 width={310}
                   preload="none"
