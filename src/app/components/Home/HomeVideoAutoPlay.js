@@ -15,7 +15,7 @@ const HomeVideoAutoPlay = () => {
               playsInline
               controls
               height={1920}
-              width={684}
+              width={704}
             >
               <source
                 src="/home/home-main-banner-video-desktop.mp4"
@@ -33,8 +33,8 @@ const HomeVideoAutoPlay = () => {
                             playsInline
               poster='/home/video-poster-mobile.webp'
               controls
-              height={1920}
-              width={684}
+              height={813}
+              width={600}
             >
               <source
                 src="/home/home-main-banner-video-mobile.mp4"
