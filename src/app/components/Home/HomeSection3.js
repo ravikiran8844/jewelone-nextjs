@@ -101,13 +101,16 @@ const HomeSection3 = () => {
     <section className="home-section-3 section-padding">
       <div className="container mb-5 ps-lg-5">
         <div className="col-12 ps-lg-5">
-        <div className="home-section-3_caption">Latest Collections</div>
+          <div className=" ps-xl-5">
+          <div className="home-section-3_caption">Latest Collections</div>
         <div className="home-section-3_title">Our New Launches</div>
+          </div>
         </div>
       </div>
 
       <div className="home-section-3_wrapper col-12">
         <Splide
+        
           options={{
             type: "loop",
             gap: "1.25rem",
@@ -149,16 +152,32 @@ const HomeSection3 = () => {
             },
           }}
         >
+   <Slide
+        newlyLanunched={true}
+        date="April 21st 2024"
+        imageSrc="/j-one-collection-img.webp"
+        mobileSrc="/j-one-collection-img-mob.webp"
+        altText="Akshaya-Tritiya Collection"
+        title="Akshaya-Tritiya Collection"
+        initialText={
+          'Celebrate Akshaya Tritiya with our all-new collection! Unveiling trending & modern jewellery that reflects your timeless style.'
+        }
+          />
+
+
+
+
+
            <Slide
-            newlyLanunched={true}
-            date="January 13th 2024"
-            imageSrc="/home-section3-img-new.webp"
-            mobileSrc="/home-section3-img-mobile-new.webp"
-            altText="TVAM 2.0"
-            title="TVAM 2.0"
-            initialText={
-              'A Wedding creates memories for a lifetime! Make every moment special with TVAM 2.0 - A collection launched with Jewellery for every Bridal Moment. Explore the countless collections of designer wedding collections made to the trend!'
-            }
+               newlyLanunched={true}
+               date="January 13th 2024"
+               imageSrc="/home-section3-img-new.webp"
+               mobileSrc="/home-section3-img-mobile-new.webp"
+               altText="TVAM 2.0"
+               title="TVAM 2.0"
+               initialText={
+                 'A Wedding creates memories for a lifetime! Make every moment special with TVAM 2.0 - A collection launched with Jewellery for every Bridal Moment. Explore the countless collections of designer wedding collections made to the trend!'
+               }
           />
           <Slide
             newlyLanunched={false}
@@ -203,6 +222,8 @@ const HomeSection3 = () => {
 
           
         </Splide>
+ 
+
  
       </div>
     </section>
