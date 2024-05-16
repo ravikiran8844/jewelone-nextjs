@@ -13,6 +13,8 @@ import VideoSection from './components/Home/VideoSection'
 import HomeGifBanner from './components/Home/HomeGifBanner'
 import HomeSection3New from './components/Home/HomeSection3New'
 import HomeVideoAutoPlay from './components/Home/HomeVideoAutoPlay'
+import AkshayaTritiyaSection2 from './components/AkshayaTritiya/AkshayaTritiyaSection2'
+import HomeVideoSlider from './components/Home/HomeVideoSlider'
 
 
 export const metadata = {
@@ -28,6 +30,8 @@ export default function Home() {
     {/* <MainBanner/> */}
     {/* <HomeSection1/> */}
     <HomeSection2/>
+    <HomeVideoSlider/>
+
     {/* <HomeSection3/> */}
     <HomeSection3New/>
     <HomeSection4/>

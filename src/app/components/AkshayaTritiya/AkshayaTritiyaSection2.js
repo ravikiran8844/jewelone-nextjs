@@ -56,18 +56,6 @@ const AkshayaTritiyaSection2 = () => {
               <div className="fs-5">Aishwaryam Tharum</div>
               <div className="fs-1 fw-bold">Akshaya Tritiya</div>
 
-              {/* <p className="mt-3 fs-6">
-                We live every second of our day. Why not make every moment
-                special?
-              </p>
-              <div className="mt-4">
-                <Link
-                  href=""
-                  className="btn fw-semibold btn-outline-danger akshatritiyasection2__btn px-4 py-2"
-                >
-                  Explore
-                </Link>
-              </div> */}
             </div>
 
             <div className="d-none d-md-block">

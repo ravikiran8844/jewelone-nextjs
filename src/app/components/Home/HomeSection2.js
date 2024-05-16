@@ -12,9 +12,9 @@ const HomeSection2 = () => {
     <section className="home-section2 section-padding">
       <div className="container">
         <div className="d-block">
-          <div className="row">
+          <div className="row g-4">
             <div className="col-12 col-lg-5">
-              <div className="">
+              {/* <div className="">
                 <div className="mb-3">
                   <Image
                     className="img-fluid home-section-2_img1"
@@ -35,27 +35,44 @@ const HomeSection2 = () => {
                     priority="true"
                   />
                 </div>
+              </div> */}
+
+              <div className="fs-1 brittany-font text-red">Idhu dhan</div>
+              <div>
+                <div className="fs-2 optima-font text-uppercase">
+                  <span className="fw-bold">Nagaipol</span> Parthadhilai
+                </div>
+
+                <div className="mt-3">
+                <Image
+                  width={703}
+                  height={408}
+                  className="img-fluid rounded-4"
+                  src="/AkshayaTritiya/section3-img1.webp"
+                  alt="banner"
+                />
+                </div>
               </div>
             </div>
 
-            <div className="col-12 col-lg-7">
-              <div>
+            <div className="col-12 col-lg-7 mt-4 m-lg-auto ">
+              <div className="px-lg-5">
                 <div className="home-section2_text mb-3">
                   <span className="item-text-red">Welcome to Jewel One, </span>
                   where Beautiful Jewellery meets Beautiful You. From the house
-                  of Emerald Jewel Industry, one of Asia&apos;s largest
-                  jewellery makers, We have over 6,00,000+ designs in chains,
-                  bangles and any & every jewellery article you need.
+                  of Emerald Jewel Industry, one of Asia's largest jewellery
+                  makers, We have over 6,00,000+ designs in chains, bangles and
+                  any & every jewellery article you need.
                 </div>
 
-                {/* <div className="home-section2_text">
+                <div className="home-section2_text">
                   With timeless masterpieces and endless customisation
-                  possibilities - We stand by our tagline -{" "}
+                  possibilities - We stand by our tagline{" "}
                   <span className="item-text-dark">
-                    “Women's Heart is Where We Start - Penn Manadhai Purintha
+                    “Jewellery that understands women - Penn Manadhai Purintha
                     Pon”.
                   </span>
-                </div> */}
+                </div>
               </div>
 
               <div className="col-12 mt-5 home-section2_mobile-logo-items">
@@ -72,10 +89,13 @@ const HomeSection2 = () => {
                   <SplideSlide>
                     <div className="text-center home-section2_mobile-logo-item">
                       <div className="home-section2_mobile-logo_wrapper">
-                   
-
-                        <Image className="img-fluid" src="/home/section2-icon1.png"  width={66}
-                          height={66} alt="Diamond icon" /> 
+                        <Image
+                          className="img-fluid"
+                          src="/home/section2-icon1.png"
+                          width={66}
+                          height={66}
+                          alt="Diamond icon"
+                        />
                       </div>
                       <div className="home-section2-mobile-slider_text">
                         6,00,000+ Designs
