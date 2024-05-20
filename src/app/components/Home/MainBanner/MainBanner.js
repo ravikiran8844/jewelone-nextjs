@@ -27,8 +27,8 @@ export const MainBanner = () => {
               poster="/home/video-poster-desktop.webp"
               playsInline
               // controls
-              height={1920}
-              width={704}
+              height={1940}
+              width={691}
             >
               <source
                 src="/home/home-main-banner-video-desktop.mp4"
@@ -48,7 +48,7 @@ export const MainBanner = () => {
               playsInline
               poster="/home/video-poster-mobile.webp"
               // controls
-              height={813}
+              height={800}
               width={600}
             >
               <source
@@ -70,8 +70,8 @@ export const MainBanner = () => {
               className="img-fluid"
               alt="Image X alt"
               src="/home-mobile-banner5.webp"
-              height={541}
-              width={1519}
+              height={1940}
+              width={691}
               priority="true"
             />
           </picture>
@@ -81,17 +81,17 @@ export const MainBanner = () => {
           <Link href="/tvam">
             <picture>
               <source
-                srcSet="/home-mobile-banner1.webp"
+                srcSet="/home-main-banner1.webp"
                 type="image/webp"
-                media="(max-width: 650px)"
+                media="(min-width: 650px)"
               />
               <Image
                 className="img-fluid"
                 priority="true"
                 alt="main banner"
-                src="/home-main-banner1.webp"
-                height={544}
-                width={1519}
+                src="/home-mobile-banner1.webp"
+                height={1940}
+                width={691}
               />
             </picture>
           </Link>
