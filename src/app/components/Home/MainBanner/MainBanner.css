@@ -1,16 +1,26 @@
-.main-banner-section picture img{
+.main-banner-section picture img,.main-banner-section video{
     max-width: 100%;
-    height: auto;
+    height:auto;
     width: 100%;
+    object-fit: cover;
 }
 
 
-/* @media (max-width:600px) {
-    .main-banner-section picture img{
-        min-height: 550px;
-    }
-    }   */
+.slide-large-video{
+display: none;
+}
+.slide-small-video{
+    display: block;
+}
 
+@media (min-width:650px) {
+    .slide-large-video{
+        display: block;
+        }
+        .slide-small-video{
+            display: none;
+        }
+}
 
 .main-banner-section .splide{
     max-width: 100%;

@@ -26,8 +26,8 @@ export const metadata = {
 export default function Home() {
   return (
    <main>
-    <HomeVideoAutoPlay/>
-    {/* <MainBanner/> */}
+    {/* <HomeVideoAutoPlay/> */}
+    <MainBanner/>
     {/* <HomeSection1/> */}
     <HomeSection2/>
     <HomeVideoSlider/>

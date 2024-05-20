@@ -15,23 +15,67 @@ export const MainBanner = () => {
           interval: 4000,
         }}
       >
-  {/* <SplideSlide>
-        <video className="w-100 h-auto object-fit-cover"
+        <SplideSlide>
+          <div className="slide-large-video">
+            <video
+              className="w-100 h-auto object-fit-cover"
               autoPlay
               loop
               muted
+              loading="lazy"
+              preload="none"
+              poster="/home/video-poster-desktop.webp"
               playsInline
-              controls
+              // controls
               height={1920}
-              width={684}
+              width={704}
             >
               <source
                 src="/home/home-main-banner-video-desktop.mp4"
                 type="video/mp4"
               />
             </video>
-        </SplideSlide> */}
+          </div>
 
+          <div className="slide-small-video">
+            <video
+              className="w-100 h-auto object-fit-cover"
+              autoPlay
+              loop
+              muted
+              loading="lazy"
+              preload="none"
+              playsInline
+              poster="/home/video-poster-mobile.webp"
+              // controls
+              height={813}
+              width={600}
+            >
+              <source
+                src="/home/home-main-banner-video-mobile.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </SplideSlide>
+
+        <SplideSlide>
+          <picture>
+            <source
+              srcSet="/home-main-banner5.webp"
+              type="image/webp"
+              media="(min-width: 650px)"
+            />
+            <Image
+              className="img-fluid"
+              alt="Image X alt"
+              src="/home-mobile-banner5.webp"
+              height={541}
+              width={1519}
+              priority="true"
+            />
+          </picture>
+        </SplideSlide>
 
         <SplideSlide>
           <Link href="/tvam">
@@ -53,7 +97,7 @@ export const MainBanner = () => {
           </Link>
         </SplideSlide>
 
-        <SplideSlide>
+        {/* <SplideSlide>
           <picture>
             <source
               srcSet="/home-main-banner3.webp"
@@ -69,7 +113,7 @@ export const MainBanner = () => {
               priority="true"
             />
           </picture>
-        </SplideSlide>
+        </SplideSlide> */}
       </Splide>
     </section>
   );
