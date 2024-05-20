@@ -15,6 +15,25 @@ export const MainBanner = () => {
           interval: 4000,
         }}
       >
+        
+        <SplideSlide>
+          <picture>
+            <source
+              srcSet="/home-main-banner5.webp"
+              type="image/webp"
+              media="(min-width: 650px)"
+            />
+            <Image
+              className="img-fluid"
+              alt="Image X alt"
+              src="/home-mobile-banner5.webp"
+              height={1940}
+              width={691}
+              priority="true"
+            />
+          </picture>
+        </SplideSlide>
+
         <SplideSlide>
           <div className="slide-large-video">
             <video
@@ -59,25 +78,9 @@ export const MainBanner = () => {
           </div>
         </SplideSlide>
 
-        <SplideSlide>
-          <picture>
-            <source
-              srcSet="/home-main-banner5.webp"
-              type="image/webp"
-              media="(min-width: 650px)"
-            />
-            <Image
-              className="img-fluid"
-              alt="Image X alt"
-              src="/home-mobile-banner5.webp"
-              height={1940}
-              width={691}
-              priority="true"
-            />
-          </picture>
-        </SplideSlide>
+        
 
-        <SplideSlide>
+        {/* <SplideSlide>
           <Link href="/tvam">
             <picture>
               <source
@@ -95,7 +98,7 @@ export const MainBanner = () => {
               />
             </picture>
           </Link>
-        </SplideSlide>
+        </SplideSlide> */}
 
         {/* <SplideSlide>
           <picture>
