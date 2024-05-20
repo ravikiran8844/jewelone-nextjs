@@ -22,8 +22,8 @@ export const MainBanner = () => {
               autoPlay
               loop
               muted
-              loading="lazy"
-              preload="none"
+              // loading="lazy"
+              // preload="none"
               poster="/home/video-poster-desktop.webp"
               playsInline
               // controls
@@ -43,8 +43,8 @@ export const MainBanner = () => {
               autoPlay
               loop
               muted
-              loading="lazy"
-              preload="none"
+              // loading="lazy"
+              // preload="none"
               playsInline
               poster="/home/video-poster-mobile.webp"
               // controls
