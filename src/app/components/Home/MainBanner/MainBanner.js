@@ -6,6 +6,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const MainBanner = () => {
+
+
+
   return (
     <section className="main-banner-section home-section1">
       <Splide
@@ -15,7 +18,6 @@ export const MainBanner = () => {
           interval: 4000,
         }}
       >
-        
         <SplideSlide>
           <picture>
             <source
@@ -77,8 +79,6 @@ export const MainBanner = () => {
             </video>
           </div>
         </SplideSlide>
-
-        
 
         {/* <SplideSlide>
           <Link href="/tvam">
