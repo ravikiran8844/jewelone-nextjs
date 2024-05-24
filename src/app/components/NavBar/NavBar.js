@@ -141,6 +141,20 @@ const Navbar = ({ data }) => {
               </Link>
             </li> */}
 
+          <li className="nav-item">
+              <Link
+                href="/zillara"
+                className={
+                  currentRoute === "/zillara"
+                    ? "active main-menu-link nav-link"
+                    : "main-menu-link nav-link"
+                }
+                onClick={handleClose}
+              >
+                Zillara
+              </Link>
+            </li> 
+
             <li className="nav-item">
               <Link
                 href="/tvam"
@@ -293,6 +307,21 @@ const Navbar = ({ data }) => {
                   Home
                 </Link>
               </li> */}
+              <li className="nav-item">
+                  <Link
+                    href="/zillara"
+                    className={
+                      currentRoute === "/zillara"
+                        ? "active main-menu-link nav-link"
+                        : "main-menu-link nav-link"
+                    }
+                    onClick={handleClose}
+                  >
+                    Zillara
+                  </Link>
+                </li>
+
+
                 <li className="nav-item">
                   <Link
                     href="/tvam"
