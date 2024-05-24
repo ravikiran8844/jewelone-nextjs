@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@googlemaps/extended-component-library": "^0.6.11",
     "@lite-embed/react": "^1.0.4",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",

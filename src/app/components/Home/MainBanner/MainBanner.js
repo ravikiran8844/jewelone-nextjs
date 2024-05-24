@@ -18,6 +18,24 @@ export const MainBanner = () => {
           interval: 4000,
         }}
       >
+          <SplideSlide>
+          <picture>
+            <source
+              srcSet="/home/Banner_1_Necklace_Mela.jpg"
+              type="image/webp"
+              media="(min-width: 650px)"
+            />
+            <Image
+              className="img-fluid"
+              alt="Image X alt"
+              src="/home/Mobile_Banner_Necklace_Mela.jpg"
+              height={1940}
+              width={691}
+              priority="true"
+            />
+          </picture>
+        </SplideSlide>
+
         <SplideSlide>
           <picture>
             <source
