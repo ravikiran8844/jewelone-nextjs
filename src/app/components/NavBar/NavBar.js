@@ -141,7 +141,7 @@ const Navbar = ({ data }) => {
               </Link>
             </li> */}
 
-          <li className="nav-item">
+          {/* <li className="nav-item">
               <Link
                 href="/zillara"
                 className={
@@ -153,7 +153,7 @@ const Navbar = ({ data }) => {
               >
                 Zillara
               </Link>
-            </li> 
+            </li>  */}
 
             <li className="nav-item">
               <Link
@@ -307,7 +307,7 @@ const Navbar = ({ data }) => {
                   Home
                 </Link>
               </li> */}
-              <li className="nav-item">
+              {/* <li className="nav-item">
                   <Link
                     href="/zillara"
                     className={
@@ -319,7 +319,7 @@ const Navbar = ({ data }) => {
                   >
                     Zillara
                   </Link>
-                </li>
+                </li> */}
 
 
                 <li className="nav-item">
