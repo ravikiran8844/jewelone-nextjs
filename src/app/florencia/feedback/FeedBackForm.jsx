@@ -2,13 +2,11 @@
 import { useState } from "react";
 import "./FeedBackForm.css";
 import Image from "next/image";
-import Confetti from 'react-confetti'
-import useWindowSize from 'react-use/lib/useWindowSize'
+
 
 const FeedBackForm = () => {
 
   const [currentStep, setCurrentStep] = useState(1);
-  const { width, height } = useWindowSize()
 
   const totalSteps = 4;
 
@@ -129,12 +127,7 @@ const FeedBackForm = () => {
         return <div>Slide 3 Content</div>;
       case 4:
         return<div>
-            <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
-              <Confetti
-                width={width}
-                height={height}
-              />
-            </div>
+           
               <div className="col-12 text-center m-auto" style={{maxWidth:'503px'}}>
                 <div className="display-3 mb-5 brittany-font">Thank you</div>
                 <div className="fs-5">for your time and valuable feedback. We look forward to serving you again!</div>
