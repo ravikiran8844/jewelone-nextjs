@@ -1,0 +1,89 @@
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(/fonts/Helvetica-Neue/HelveticaNeueLight.otf);
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url(/fonts/Helvetica-Neue/HelveticaNeueMedium.otf);
+  font-weight: 600;
+  font-display: swap;
+}
+
+.FeedBackForm{
+  color: #473677;
+  font-family: "Helvetica Neue";
+}
+.FeedBackForm .form-main-title{
+  background: linear-gradient(90deg, #682884 0%, #CC75A9 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.FeedBackForm .alt-color{
+  color: #CC75A9;
+}
+.FeedBackForm .progressBar {
+  width: 8px;
+  height: 200px;
+  background-color: #cbcbcb;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.FeedBackForm .progressBar {
+  rotate: -90deg;
+}
+
+@media (min-width:768px) {
+  .FeedBackForm .progressBar{
+    rotate:0deg;
+  }
+
+}
+.FeedBackForm .progress {
+  height: 100%;
+  background-color: #473677;
+  border-radius: 5px;
+}
+
+.FeedBackForm button {
+  color: #473677;
+  background-color: transparent;
+  border-radius: 5.052px;
+  border: 1.5px solid #682884;
+  height: 42px;
+  padding: 0 30px;
+}
+.FeedBackForm button:hover {
+  color: #fff;
+  background: linear-gradient(270deg, #cc75a9 0%, #682884 100%);
+}
+
+.form_buttons-wrapper{
+  border-top:1px solid #5E5D7F;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.FeedBackForm label{
+  color: #473677;
+  margin-bottom: 6px;
+}
+.FeedBackForm .form-control::placeholder{
+  color: #9f9b9b;
+}
+.FeedBackForm .form-control{
+  color: #9f9b9b;
+}
+.FeedBackForm .form-control{
+  border-radius: 5.052px;
+border: 1.263px solid #CBCBCB;
+height: 56.84px;
+
+background: #FFF;
+}
