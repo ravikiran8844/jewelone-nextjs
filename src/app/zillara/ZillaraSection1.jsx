@@ -29,25 +29,31 @@ const ZillaraSection1 = () => {
             >
               <SplideTrack>
                 <SplideSlide>
-                  <Image
+                <picture>
+            <source
+              media="(min-width:768px)"
+              srcSet="/zillara/zillara-main-slider-img1.webp"
+              />
+            <img
+              className="img-fluid"
+              width={768}
+              height={1024}
+              src="/zillara/zillara-main-slider-img1-mobile.webp"
+              alt="main banner"
+            />
+          </picture>
+
+
+                  {/* <Image
                     width={1920}
                     height={720}
                     className="img-fluid"
                     src="/zillara/zillara-main-slider-img1.webp"
                     alt="Image 1"
-                  />
+                  /> */}
              
                 </SplideSlide>
-                <SplideSlide>
-                  <Image
-                    width={1920}
-                    height={720}
-                    className="img-fluid"
-                    src="/zillara/zillara-main-slider-img1.webp"
-                    alt="Image 1"
-                  />
-             
-                </SplideSlide>
+              
             
                 
               </SplideTrack>
