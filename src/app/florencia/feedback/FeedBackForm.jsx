@@ -55,6 +55,7 @@ const FeedBackForm = () => {
   const handleNext = () => {
     if (isStepValid(currentStep)) {
       setCurrentStep(currentStep + 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } else {
       alert("Please fill in all required fields.");
     }
@@ -87,12 +88,14 @@ const FeedBackForm = () => {
   const handlePrev = () => {
     if (currentStep > 1) {
       setCurrentStep(currentStep - 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
 
   const handleOk = async () => {
     if (isStepValid(currentStep)) {
       setCurrentStep(currentStep + 1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
       console.log(formData);
     } else {
       alert("Please fill in all required fields.");
