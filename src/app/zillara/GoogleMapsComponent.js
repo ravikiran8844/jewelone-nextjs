@@ -4,7 +4,7 @@ import {
   APILoader,
   StoreLocator,
 } from "@googlemaps/extended-component-library/react";
-
+import './zillara.css'
 const LISTINGS = [
   {
     title: "Jewelone Coimbatore",
@@ -188,20 +188,21 @@ const LISTINGS = [
 const GoogleMapsComponent = () => {
   return (
     <section>
-      <div className="container py-5">
+      <div className="container pb-5">
         <div className="col-12">
           <div className="fs-2 fw-semibold text-center mb-4 text-uppercase">store locator</div>
-          {/* <div className="border border-1 border-black">
+          <div className="border border-1 border-black">
             <APILoader
               apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP_API}
               solutionChannel="GMP_GCC_storelocator_v1"
-            />
+                          />
             <StoreLocator
               className="store-locator"
               mapId="DEMO_MAP_ID"
+              featureSet="intermediate"
               listings={LISTINGS}
             />
-          </div> */}
+          </div>
         </div>
       </div>
     </section>

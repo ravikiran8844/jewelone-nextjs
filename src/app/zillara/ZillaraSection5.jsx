@@ -33,7 +33,7 @@ const ZillaraSection5 = () => {
           </div>
         </div>
         <div style={{ backgroundColor: "#F5F5F5" }}>
-          <div className="container py-5">
+          <div className="container-fluid py-5">
             <div className="col-12">
               <Swiper
                 ref={sliderRef}
