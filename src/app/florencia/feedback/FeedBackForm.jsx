@@ -4,6 +4,9 @@ import { useState } from "react";
 import "./FeedBackForm.css";
 import Image from "next/image";
 
+
+
+
 const FeedBackForm = () => {
   const [currentStep, setCurrentStep] = useState(1);
   const [isChecked, setIsChecked] = useState(true);
@@ -91,16 +94,50 @@ const FeedBackForm = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   };
-
   const handleOk = async () => {
     if (isStepValid(currentStep)) {
       setCurrentStep(currentStep + 1);
       window.scrollTo({ top: 0, behavior: 'smooth' });
-      console.log(formData);
+      console.log(JSON.stringify(formData))
+      // Sending data to Google Sheets
+      handleSubmit()
     } else {
       alert("Please fill in all required fields.");
     }
   };
+
+  const handleSubmit = async () => {
+    const data = {
+      
+        name: formData.personalInfo.name,
+        dateOfBirth: formData.personalInfo.dateOfBirth,
+        phone: formData.personalInfo.phone,
+        address: formData.personalInfo.address,
+        email: formData.personalInfo.email,
+        shoppingExperienceQuestion1:formData.shoppingExperience.question1.answer ,
+        shoppingExperienceQuestion2:formData.shoppingExperience.question2.answer ,
+        shoppingExperienceQuestion3:formData.shoppingExperience.question3.answer ,
+        shoppingExperienceQuestion4:formData.shoppingExperience.question4.answer ,
+        storeEnvironmentQuestion1:formData.storeEnvironment.question1.answer ,
+        recommendToOthers: formData.recommendToOthers ? 'Yes' : 'No',
+        suggestions: formData.suggestions,
+    };
+
+  
+    const response = await fetch('/api/florencia/feedback', {
+      method: 'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+  
+    const result = await response.json();
+    console.log(result);
+  };
+  
+
 
   const handleChange = (section, question, value) => {
     setFormData((prevData) => ({
@@ -144,7 +181,12 @@ const FeedBackForm = () => {
           <div>
             <div className="mb-4 text-center">
               <span className="fs-4 alt-color">01.</span>{" "}
-              <span className="fs-3">Basic Information</span>
+              <span className="fs-3 position-relative">Basic Information
+              <span style={{position:'absolute',top:"-100%"}}>
+                <img alt="butterfly svg" width={40} height={40} src="/florencia/feedbackForm/butterfly.png" alt="" />
+              </span>
+              </span>
+              
             </div>
             <div className="row gy-4 gx-2">
               <div className="col-12">
@@ -252,7 +294,11 @@ const FeedBackForm = () => {
             <div className="mb-4 text-center">
               <div>
                 <span className="fs-4 alt-color">02.</span>{" "}
-                <span className="fs-3">Shopping Experience</span>
+                <span className="fs-3 position-relative">Shopping Experience
+                <span style={{position:'absolute',top:"-100%"}}>
+                <img alt="butterfly svg" width={40} height={40} src="/florencia/feedbackForm/butterfly.png" alt="" />
+              </span>
+              </span>
               </div>
               <div className="mb-4">
                 <svg
@@ -740,7 +786,11 @@ const FeedBackForm = () => {
             <div className="mb-4 text-center">
               <div>
                 <span className="fs-4 alt-color">03.</span>{" "}
-                <span className="fs-3">Store Environment</span>
+                <span className="fs-3 position-relative">Store Environment
+                <span style={{position:'absolute',top:"-100%"}}>
+                <img alt="butterfly svg" width={40} height={40} src="/florencia/feedbackForm/butterfly.png" alt="" />
+              </span>
+              </span>
               </div>
               <div className="mb-4">
                 <svg
@@ -987,7 +1037,12 @@ const FeedBackForm = () => {
               className="col-12 text-center m-auto"
               style={{ maxWidth: "503px" }}
             >
-              <div className="display-3 mb-5 brittany-font">Thank you</div>
+              <div className="display-3 mb-5 brittany-font position-relative">Thank you
+              <span style={{position:'absolute',top:"-100%"}}>
+                <img alt="butterfly svg" width={60} height={60} src="/florencia/feedbackForm/butterfly.png" alt="" />
+              </span>
+             
+              </div>
               <div className="fs-5">
                 for your time and valuable feedback. We look forward to serving
                 you again!
@@ -1052,14 +1107,22 @@ const FeedBackForm = () => {
       : {};
 
   return (
-    <section className="FeedBackForm" style={sectionStyle}>
+    <section className="FeedBackForm overflow-x-hidden" style={sectionStyle}>
       {SlideImage()}
       <div className="container py-5">
         {currentStep == 1 && (
           <div className="col-12">
             <div className="text-center mb-5">
-              <div className="fs-3 form-main-title fw-semibold">
-                Customer Feedback{" "}
+              <div className="fs-3 fw-semibold w-75 m-auto">
+              
+             
+                <span className="form-main-title position-relative">
+                Customer Feedback {""}
+                <span style={{position:'absolute',top:"-100%",left:"-60px"}}>
+                <img alt="butterfly icon" width={40} height={40} src="/florencia/feedbackForm/butterfly2.png" alt="" />
+              </span>
+                </span>
+                
                 <span className="brittany-font">Questionnaire</span>
               </div>
 
