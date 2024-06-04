@@ -183,7 +183,7 @@ const FeedBackForm = () => {
               <span className="fs-4 alt-color">01.</span>{" "}
               <span className="fs-3 position-relative">Basic Information
               <span style={{position:'absolute',top:"-100%"}}>
-                <img alt="butterfly svg" width={40} height={40} src="/florencia/feedbackForm/butterfly.png" alt="" />
+                <Image alt="butterfly svg" width={40} height={40} src="/florencia/feedbackForm/butterfly.png"  />
               </span>
               </span>
               
@@ -296,7 +296,7 @@ const FeedBackForm = () => {
                 <span className="fs-4 alt-color">02.</span>{" "}
                 <span className="fs-3 position-relative">Shopping Experience
                 <span style={{position:'absolute',top:"-100%"}}>
-                <img alt="butterfly svg" width={40} height={40} src="/florencia/feedbackForm/butterfly.png" alt="" />
+                <Image alt="butterfly svg" width={40} height={40} src="/florencia/feedbackForm/butterfly.png"  />
               </span>
               </span>
               </div>
@@ -788,7 +788,7 @@ const FeedBackForm = () => {
                 <span className="fs-4 alt-color">03.</span>{" "}
                 <span className="fs-3 position-relative">Store Environment
                 <span style={{position:'absolute',top:"-100%"}}>
-                <img alt="butterfly svg" width={40} height={40} src="/florencia/feedbackForm/butterfly.png" alt="" />
+                <Image alt="butterfly svg" width={40} height={40} src="/florencia/feedbackForm/butterfly.png"  />
               </span>
               </span>
               </div>
@@ -1039,7 +1039,7 @@ const FeedBackForm = () => {
             >
               <div className="display-3 mb-5 brittany-font position-relative">Thank you
               <span style={{position:'absolute',top:"-100%"}}>
-                <img alt="butterfly svg" width={60} height={60} src="/florencia/feedbackForm/butterfly.png" alt="" />
+                <Image alt="butterfly svg" width={60} height={60} src="/florencia/feedbackForm/butterfly.png"  />
               </span>
              
               </div>
@@ -1119,7 +1119,7 @@ const FeedBackForm = () => {
                 <span className="form-main-title position-relative">
                 Customer Feedback {""}
                 <span style={{position:'absolute',top:"-100%",left:"-60px"}}>
-                <img alt="butterfly icon" width={40} height={40} src="/florencia/feedbackForm/butterfly2.png" alt="" />
+                <Image alt="butterfly icon" width={40} height={40} src="/florencia/feedbackForm/butterfly2.png"  />
               </span>
                 </span>
                 
