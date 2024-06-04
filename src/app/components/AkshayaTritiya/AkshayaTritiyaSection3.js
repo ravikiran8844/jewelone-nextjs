@@ -158,7 +158,7 @@ const AkshayaTritiyaSection3 = () => {
 
               <div className="splide__arrows">
                 <button className="splide__arrow splide__arrow--prev">
-                  <img
+                  <Image 
                     width={42}
                     height={42}
                     alt="arrow"
@@ -166,7 +166,7 @@ const AkshayaTritiyaSection3 = () => {
                   />
                 </button>
                 <button className="splide__arrow splide__arrow--next">
-                  <img
+                  <Image 
                     width={42}
                     height={42}
                     alt="arrow"

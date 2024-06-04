@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const ZillaraSection3 = () => {
@@ -21,7 +22,7 @@ const ZillaraSection3 = () => {
               </div>
 
               <div>
-                <img
+                <Image 
                   className="img-fluid w-100"
                   src="/zillara/section3/img1.webp"
                   alt=""
@@ -30,7 +31,7 @@ const ZillaraSection3 = () => {
             </div>
 
             <div className="d-none d-md-block position-relative">
-              <img
+              <Image 
                 className="img-fluid w-100"
                 src="/zillara/section3/item1-img-large.webp"
                 alt=""
@@ -70,7 +71,7 @@ const ZillaraSection3 = () => {
           </div>
 
           <div className="col-12 col-md-6 col-lg-5 ZillaraSection3_item-3 position-relative">
-            <img
+            <Image 
               className="img-fluid w-100"
               src="/zillara/section3/item4.webp"
               alt=""
@@ -92,7 +93,7 @@ const ZillaraSection3 = () => {
           <div className="col-12 col-lg-7 ZillaraSection3_item-4 m-lg-auto">
             <div className="d-block d-md-none">
               <div>
-                <img
+                <Image 
                   className="img-fluid w-100"
                   src="/zillara/section3/item3.webp"
                   alt=""
@@ -112,7 +113,7 @@ const ZillaraSection3 = () => {
             <div className="d-none d-md-block">
               
                 <div className="position-relative">
-                  <img
+                  <Image 
                     className="img-fluid w-100"
                     src="/zillara/section3/item5-img-large.webp"
                     alt=""
@@ -135,7 +136,7 @@ const ZillaraSection3 = () => {
                 </div>
 
                 <div className="position-relative mt-4">
-                  <img
+                  <Image 
                     className="img-fluid w-100"
                     src="/zillara/section3/item5.webp"
                     alt=""
