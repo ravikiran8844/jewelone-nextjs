@@ -193,7 +193,7 @@ const GoogleMapsComponent = () => {
           <div className="fs-2 fw-semibold text-center mb-4 text-uppercase">store locator</div>
           <div className="border border-1 border-black">
             <APILoader
-              apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP_API}
+              apiKey="AIzaSyAHHUJ_8LdeUmB5gEr8jLa84hv3MKYQcdY"
               solutionChannel="GMP_GCC_storelocator_v1"
                           />
             <StoreLocator
