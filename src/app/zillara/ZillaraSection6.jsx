@@ -8,8 +8,7 @@ const GoogleMapsComponent = dynamic(() => import('./GoogleMapsComponent'), {
 const ZillaraSection6 = () => {
   return (
     <div>
-      {/* <GoogleMapsComponent/> */}
-      hi
+      <GoogleMapsComponent/>
     </div>
   )
 }

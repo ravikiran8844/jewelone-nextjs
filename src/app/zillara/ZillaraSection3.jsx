@@ -26,6 +26,8 @@ const ZillaraSection3 = () => {
                   className="img-fluid w-100"
                   src="/zillara/section3/img1.webp"
                   alt=""
+                  width={430}
+                  height={413}
                 />
               </div>
             </div>
@@ -35,6 +37,8 @@ const ZillaraSection3 = () => {
                 className="img-fluid w-100"
                 src="/zillara/section3/item1-img-large.webp"
                 alt=""
+                width={832}
+                  height={555}
               />
               <div
                 className="ZillaraSection3_item-wrapper ps-3 position-absolute start-0 top-50"
@@ -75,6 +79,8 @@ const ZillaraSection3 = () => {
               className="img-fluid w-100"
               src="/zillara/section3/item4.webp"
               alt=""
+              height={842}
+              width={563}
             />
             <div className="ZillaraSection3_item-wrapper p-4 position-absolute bottom-0 ZillaraSection3_item-3_overlay">
               <div className="ZillaraSection3_title text-white">
@@ -97,6 +103,8 @@ const ZillaraSection3 = () => {
                   className="img-fluid w-100"
                   src="/zillara/section3/item3.webp"
                   alt=""
+                  height={842}
+                  width={563}
                 />
               </div>
 
@@ -117,6 +125,8 @@ const ZillaraSection3 = () => {
                     className="img-fluid w-100"
                     src="/zillara/section3/item5-img-large.webp"
                     alt=""
+                    height={556}
+                    width={832}
                   />
                   <div
                     className="ZillaraSection3_item-wrapper ps-3 position-absolute start-0 top-50"
@@ -140,6 +150,8 @@ const ZillaraSection3 = () => {
                     className="img-fluid w-100"
                     src="/zillara/section3/item5.webp"
                     alt=""
+                    height={266}
+                    width={832}
                   />
                 </div>
             </div>
