@@ -45,6 +45,41 @@ const ContactSection1 = () => {
       });
   };
 
+
+  // const sendMail = (data) => {
+  //   setLoading(true);
+  //   const apiEndpoint = "https://emerald-jewel-career.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/11/feedback";
+    
+  //   const formData = new FormData();
+  //   formData.append('your-name', data.name);
+  //   formData.append('your-email', data.email);
+  //   formData.append('your-mobile', data.mobile);
+  //   formData.append('your-message', data.message);
+  //   formData.append('_wpcf7_unit_tag', 'wpcf7-f11-p12-o1');
+  
+  //   fetch(apiEndpoint, {
+  //     method: "POST",
+  //     body: formData,
+  //   })
+  //     .then((res) => res.json())
+  //     .then((response) => {
+  //       console.log(response);
+  //       setLoading(false);
+  //       reset();
+  //       setToastMessage("Form submitted successfully!");
+  //       setShowToast(true);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       setLoading(false);
+  //       reset();
+  //       setToastMessage("Failed to submit form. Please try again later.");
+  //       setShowToast(true);
+  //     });
+  // };
+
+  
+  
   return (
     <div className="contact-section1 section-padding pb-3" style={{
       width: '100%',

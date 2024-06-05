@@ -107,6 +107,17 @@ const Navbar = ({ data }) => {
                 priority
               />
             </Link>
+          ) : currentRoute === "/zillara" ? (
+            <Link className="navbar-brand" href="/">
+              <Image
+               width={222}
+               height={56}
+                className="img-fluid"
+                src="/zillara.svg"
+                alt="logo"
+                priority
+              />
+            </Link>
           ) : (
             <Link className="navbar-brand" href="/">
               <Image
@@ -141,7 +152,7 @@ const Navbar = ({ data }) => {
               </Link>
             </li> */}
 
-          {/* <li className="nav-item">
+          <li className="nav-item">
               <Link
                 href="/zillara"
                 className={
@@ -153,7 +164,7 @@ const Navbar = ({ data }) => {
               >
                 Zillara
               </Link>
-            </li>  */}
+            </li> 
 
             <li className="nav-item">
               <Link
@@ -307,7 +318,7 @@ const Navbar = ({ data }) => {
                   Home
                 </Link>
               </li> */}
-              {/* <li className="nav-item">
+              <li className="nav-item">
                   <Link
                     href="/zillara"
                     className={
@@ -319,7 +330,7 @@ const Navbar = ({ data }) => {
                   >
                     Zillara
                   </Link>
-                </li> */}
+                </li>
 
 
                 <li className="nav-item">
