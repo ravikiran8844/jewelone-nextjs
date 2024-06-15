@@ -41,7 +41,7 @@ const ZillaraSection2 = () => {
     ],
   };
   return (
-    <section className="container ZillaraSection2">
+    <section className="container ZillaraSection2 overflow-hidden">
       <div className="pt-5">
         <div className="col-12 text-center">
           <div
