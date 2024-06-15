@@ -8,9 +8,9 @@ import Image from "next/image";
 const ZillaraSection2 = () => {
   var settings = {
     className: "center",
-    centerMode: true,
+    centerMode: false,
     centerPadding: "0px",
-    infinite: true,
+    infinite: false,
     dots: true,
     slidesToShow: 3,
     speed: 500,
@@ -45,13 +45,13 @@ const ZillaraSection2 = () => {
       <div className="pt-5">
         <div className="col-12 text-center">
           <div
-            className="fs-2 ZillaraSection2__title fw-semibold mb-4 mb-lg-2"
+            className="fs-2 ZillaraSection2__title fw-semibold mb-4"
             style={{ maxWidth: "550px", margin: "auto" }}
           >
             Beauty and uniqueness in every piece of jewellery
           </div>
         </div>
-        <div>
+        <div className="col-xl-10 m-auto">
           <Slider {...settings}>
             <div>
               <video
@@ -98,20 +98,7 @@ const ZillaraSection2 = () => {
               </video>
             </div>
 
-            <div>
-              <video
-                height={867}
-                width={650}
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="w-100 h-auto"
-                poster="/zillara/section2/poster2.jpg"
-              >
-                <source src="/zillara/section2/Video_2.mp4" type="video/mp4" />
-              </video>
-            </div>
+      
           </Slider>
         </div>
       </div>

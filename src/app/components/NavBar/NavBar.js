@@ -107,7 +107,7 @@ const Navbar = ({ data }) => {
                 priority
               />
             </Link>
-          ) : currentRoute === "/zillara" ? (
+          ) : currentRoute === "/zilara" ? (
             <Link className="navbar-brand" href="/">
               <Image
                width={222}
@@ -154,15 +154,15 @@ const Navbar = ({ data }) => {
 
           <li className="nav-item">
               <Link
-                href="/zillara"
+                href="/zilara"
                 className={
-                  currentRoute === "/zillara"
+                  currentRoute === "/zilara"
                     ? "active main-menu-link nav-link"
                     : "main-menu-link nav-link"
                 }
                 onClick={handleClose}
               >
-                Zillara
+                Zilara
               </Link>
             </li> 
 
@@ -320,15 +320,15 @@ const Navbar = ({ data }) => {
               </li> */}
               <li className="nav-item">
                   <Link
-                    href="/zillara"
+                    href="/zilara"
                     className={
-                      currentRoute === "/zillara"
+                      currentRoute === "/zilara"
                         ? "active main-menu-link nav-link"
                         : "main-menu-link nav-link"
                     }
                     onClick={handleClose}
                   >
-                    Zillara
+                    Zilara
                   </Link>
                 </li>
 
