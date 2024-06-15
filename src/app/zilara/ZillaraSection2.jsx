@@ -45,7 +45,7 @@ const ZillaraSection2 = () => {
       <div className="pt-5">
         <div className="col-12 text-center">
           <div
-            className="fs-2 ZillaraSection2__title fw-semibold mb-4"
+            className="fs-2 ZillaraSection2__title fw-semibold mb-5"
             style={{ maxWidth: "550px", margin: "auto" }}
           >
             Beauty and uniqueness in every piece of jewellery

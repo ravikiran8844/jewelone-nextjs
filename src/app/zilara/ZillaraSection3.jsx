@@ -9,16 +9,11 @@ const ZillaraSection3 = () => {
           <div className="col-12 col-lg-7 ZillaraSection3_item-1">
             <div className="d-block d-md-none">
               <div className="ZillaraSection3_item-wrapper pb-5">
-                <div className="ZillaraSection3_title">
-                  there are times to celebrate
-                </div>
+                
                 <div className="ZillaraSection3_text">
-                  We believe real beauty comes when you're true to yourself. Our
-                  pieces are like an{" "}
+                Discover our trendy and chic ring collection, designed to perfectly complement all your stylish looks. With bold and delicate designs, these rings are perfect for everyday wear. Elevate your accessory game with pieces that blend fashion-forward aesthetics and timeless elegance.
                 </div>
-                <div className="ZillaraSection3_sub-title">
-                  Zilara celebration rings
-                </div>
+                
               </div>
 
               <div>
@@ -44,16 +39,11 @@ const ZillaraSection3 = () => {
                 className="ZillaraSection3_item-wrapper ps-3 position-absolute start-0 top-50"
                 style={{ width: "45%", transform: "translate(0%, -50%)" }}
               >
-                <div className="ZillaraSection3_title">
-                  there are times to celebrate
-                </div>
+                
                 <div className="ZillaraSection3_text">
-                  We believe real beauty comes when you're true to yourself. Our
-                  pieces are like an{" "}
+                Discover our trendy and chic ring collection, designed to perfectly complement all your stylish looks. With bold and delicate designs, these rings are perfect for everyday wear. Elevate your accessory game with pieces that blend fashion-forward aesthetics and timeless elegance.
                 </div>
-                <div className="ZillaraSection3_sub-title">
-                  Zilara celebration rings
-                </div>
+                
               </div>
             </div>
           </div>
@@ -87,8 +77,7 @@ const ZillaraSection3 = () => {
                 HEART COLLECTION
               </div> */}
               <div className="ZillaraSection3_text text-white">
-                We believe real beauty comes when you're true to yourself. Our
-                pieces are like an
+              Leave a trail of shimmer wherever you go with our stunning charm collection. Designed for every classic woman, these lovely and captivating pieces add a spellbinding touch to your style.
               </div>
               {/* <div className="ZillaraSection3_sub-title text-white">
                 SHOP THE COLLECTION
@@ -112,8 +101,7 @@ const ZillaraSection3 = () => {
                 <div className="ZillaraSection3_item-wrapper py-5">
                   {/* <div className="ZillaraSection3_title">HEART COLLECTION</div> */}
                   <div className="ZillaraSection3_text">
-                    We believe real beauty comes when you're true to yourself.
-                    Our pieces are like an
+                  Leave a trail of shimmer wherever you go with our stunning charm collection. Designed for every classic woman, these lovely and captivating pieces add a spellbinding touch to your style.
                   </div>
                   {/* <div className="ZillaraSection3_sub-title">
                     view COLLECTION
@@ -133,11 +121,11 @@ const ZillaraSection3 = () => {
                 </div>
 
                 <div className="p-4 position-absolute bottom-0 text-center w-100">
-                  <div className="ZillaraSection3_title">Sparkling please</div>
+                  {/* <div className="ZillaraSection3_title">Sparkling please</div> */}
 
-                  {/* <div className="ZillaraSection3_sub-title">
-                    shop zilara birth
-                  </div> */}
+                  <div className="ZillaraSection3_text">
+                  Designed to blend seamlessly with any outfit, this captivating set showcases your refined taste and adds a touch of sophistication to your look. Embrace effortless elegance with this must-have accessory collection.
+                  </div>
                 </div>
               </div>
             </div>
@@ -157,8 +145,7 @@ const ZillaraSection3 = () => {
                 >
                   {/* <div className="ZillaraSection3_title">HEART COLLECTION</div> */}
                   <div className="ZillaraSection3_text">
-                    We believe real beauty comes when you're true to yourself.
-                    Our pieces are like an
+                  Elevate your everyday style with our enchanting chain set, perfect for daily wear. This exquisite set includes a delicate chain, a charming pendant, and matching earrings, each piece crafted to highlight your simplicity and elegance.
                   </div>
                   {/* <div className="ZillaraSection3_sub-title">
                     view COLLECTION
@@ -172,19 +159,18 @@ const ZillaraSection3 = () => {
                   src="/zillara/section3/item5.webp"
                   alt=""
                   height={266}
-                  width={832}
+                  width={832} style={{minHeight:'240px'}}
                 />
                 <div
-                  className="ZillaraSection3_item-wrapper ps-3 position-absolute end-0 top-50"
+                  className="ZillaraSection3_item-wrapper ps-3 position-absolute end-0 pe-3 top-50"
                   style={{ width: "45%", transform: "translate(0%, -50%)" }}
                 >
-                  <div className="ZillaraSection3_title">
+                  {/* <div className="ZillaraSection3_title">
                     Sparkling <br /> please
-                  </div>
-
-                  {/* <div className="ZillaraSection3_sub-title">
-                    shop zilara birth
                   </div> */}
+
+                  <div className="ZillaraSection3_text">
+                  Designed to blend seamlessly with any outfit, this captivating set showcases your refined taste and adds a touch of sophistication to your look. Embrace effortless elegance with this must-have accessory collection.                  </div>
                 </div>
               </div>
             </div>

@@ -15,12 +15,12 @@ const LISTINGS = [
     ],
     position: { lat: 11.017003, lng: 76.963993 },
     placeId: "ChIJA7QLfP9YqDsR_k9amWQXVFQ",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Experience Center",
@@ -31,12 +31,12 @@ const LISTINGS = [
     ],
     position: { lat: 11.103166, lng: 76.934209 },
     placeId: "ChIJweZMNhf3qDsRPv54pRO7yLs",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Chennai",
@@ -47,12 +47,12 @@ const LISTINGS = [
     ],
     position: { lat: 13.085065, lng: 80.201262 },
     placeId: "ChIJgf34DdNnUjoR18qynFlxQpI",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Madurai",
@@ -62,12 +62,12 @@ const LISTINGS = [
     ],
     position: { lat: 9.917816, lng: 78.116923 },
     placeId: "ChIJtc1F-4PFADsRitSYwbIA2DI",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Vellore",
@@ -77,12 +77,12 @@ const LISTINGS = [
     ],
     position: { lat: 12.910461, lng: 79.131816 },
     placeId: "ChIJxZ1aZ904rTsRx0B3_hpnacQ",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Ramanathapuram",
@@ -92,12 +92,12 @@ const LISTINGS = [
     ],
     position: { lat: 9.36968, lng: 78.833963 },
     placeId: "ChIJHahh_6OiATsRVvzI9ZCqjJ0",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Salem",
@@ -107,24 +107,24 @@ const LISTINGS = [
     ],
     position: { lat: 11.670864, lng: 78.139411 },
     placeId: "ChIJs5WKl0VvqTsRUJpTYi5JtIg",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Erode",
     addressLines: ["85, RKV Rd, Marapalam", "Erode, Tamil Nadu 638001, India"],
     position: { lat: 11.344969, lng: 77.730169 },
     placeId: "ChIJ9Rj0l0VvqTsRRNwfHfnwFc8",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Pollachi",
@@ -134,12 +134,12 @@ const LISTINGS = [
     ],
     position: { lat: 10.65641, lng: 77.009116 },
     placeId: "ChIJzZb3e_9YqDsRk0CtorS8Dzc",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Pondicherry",
@@ -149,12 +149,12 @@ const LISTINGS = [
     ],
     position: { lat: 11.937466, lng: 79.82286 },
     placeId: "ChIJLzkGF35hUzoRqKXTednCqYw",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Hosur",
@@ -164,24 +164,24 @@ const LISTINGS = [
     ],
     position: { lat: 12.735892, lng: 77.827999 },
     placeId: "ChIJERzvKM9wrjsRS8Rd0UciRjQ",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+   // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
   {
     title: "Jewelone Udumalaipettai",
     addressLines: ["24, Dhali Rd", "Udumalaipettai, Tamil Nadu 641126, India"],
     position: { lat: 10.586591, lng: 77.245599 },
     placeId: "ChIJJdShw6nNqTsR8sLfe-aQcWI",
-    actions: [
-      {
-        label: "Website",
-        defaultUri: "https://jewelone.in/",
-      },
-    ],
+    // actions: [
+    //   {
+    //     label: "Website",
+    //     defaultUri: "https://jewelone.in/",
+    //   },
+    // ],
   },
 ];
 
