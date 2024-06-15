@@ -149,15 +149,6 @@
     padding: 20px;
 }
 
-@media (min-width:1024px) {
-    .slick-slide{
-        transform: scale(.7);
-    }
-    
-    .slick-slide.slick-center{
-        transform: scale(.9);
-    }  
-}
 
 .ZillaraSection2__title{
     color: #2D2D2D;
@@ -165,3 +156,25 @@
     line-height: 113%; /* 33.9px */
     text-transform: uppercase;
 }
+
+@media (min-width:1024px) {
+    /* .slick-slide{
+        transform: scale(.7);
+    }
+    
+    .slick-slide.slick-center{
+        transform: scale(.9);
+    }   */
+
+   
+    .slick-slide:nth-child(1){
+        transform: scale(.75);
+    }
+    .slick-slide:nth-child(2){
+        transform: scale(1);
+    }
+    .slick-slide:nth-child(3){
+        transform: scale(.75);
+    }
+}
+

@@ -83,16 +83,16 @@ const ZillaraSection3 = () => {
               width={563}
             />
             <div className="ZillaraSection3_item-wrapper p-4 position-absolute bottom-0 ZillaraSection3_item-3_overlay">
-              <div className="ZillaraSection3_title text-white">
+              {/* <div className="ZillaraSection3_title text-white">
                 HEART COLLECTION
-              </div>
+              </div> */}
               <div className="ZillaraSection3_text text-white">
                 We believe real beauty comes when you're true to yourself. Our
                 pieces are like an
               </div>
-              <div className="ZillaraSection3_sub-title text-white">
+              {/* <div className="ZillaraSection3_sub-title text-white">
                 SHOP THE COLLECTION
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -110,14 +110,14 @@ const ZillaraSection3 = () => {
                 </div>
 
                 <div className="ZillaraSection3_item-wrapper py-5">
-                  <div className="ZillaraSection3_title">HEART COLLECTION</div>
+                  {/* <div className="ZillaraSection3_title">HEART COLLECTION</div> */}
                   <div className="ZillaraSection3_text">
                     We believe real beauty comes when you're true to yourself.
                     Our pieces are like an
                   </div>
-                  <div className="ZillaraSection3_sub-title">
+                  {/* <div className="ZillaraSection3_sub-title">
                     view COLLECTION
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -135,9 +135,9 @@ const ZillaraSection3 = () => {
                 <div className="p-4 position-absolute bottom-0 text-center w-100">
                   <div className="ZillaraSection3_title">Sparkling please</div>
 
-                  <div className="ZillaraSection3_sub-title">
+                  {/* <div className="ZillaraSection3_sub-title">
                     shop zilara birth
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -155,14 +155,14 @@ const ZillaraSection3 = () => {
                   className="ZillaraSection3_item-wrapper ps-3 position-absolute start-0 top-50"
                   style={{ width: "45%", transform: "translate(0%, -50%)" }}
                 >
-                  <div className="ZillaraSection3_title">HEART COLLECTION</div>
+                  {/* <div className="ZillaraSection3_title">HEART COLLECTION</div> */}
                   <div className="ZillaraSection3_text">
                     We believe real beauty comes when you're true to yourself.
                     Our pieces are like an
                   </div>
-                  <div className="ZillaraSection3_sub-title">
+                  {/* <div className="ZillaraSection3_sub-title">
                     view COLLECTION
-                  </div>
+                  </div> */}
                 </div>
               </div>
 
@@ -182,9 +182,9 @@ const ZillaraSection3 = () => {
                     Sparkling <br /> please
                   </div>
 
-                  <div className="ZillaraSection3_sub-title">
+                  {/* <div className="ZillaraSection3_sub-title">
                     shop zilara birth
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
