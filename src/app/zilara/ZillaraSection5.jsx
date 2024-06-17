@@ -34,20 +34,28 @@ const ZillaraSection5 = () => {
       fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
       truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
     },
-    {
-    image: "/zillara/zillara-section5-img3.png",
-    title: "Birth Stone Collection",
-    subTitle: "Celebrating Personalized Elegance",
-    fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
-    truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
-  },
+  //   {
+  //   image: "/zillara/zillara-section5-img3.png",
+  //   title: "Birth Stone Collection",
+  //   subTitle: "Celebrating Personalized Elegance",
+  //   fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
+  //   truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
+  // },
   {
     image: "/zillara/zillara-section5-img4.png",
     title: "Birth Stone Collection",
     subTitle: "Celebrating Personalized Elegance",
     fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
     truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
-  }
+  },
+  {
+    image: "/zillara/zillara-section5-img2.png",
+    title: "Birth Stone Collection",
+    subTitle: "Celebrating Personalized Elegance",
+    fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
+    truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
+  },
+ 
   ];
 
   const [expandedStates, setExpandedStates] = useState(Array(items.length).fill(false));
