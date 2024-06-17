@@ -56,7 +56,7 @@
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
-    margin:0 5px;
+    /* margin:0 5px; */
   }
   .footer-social-links li svg {
     width: 20px;

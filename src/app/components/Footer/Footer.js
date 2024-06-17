@@ -281,7 +281,8 @@ const Footer = () => {
 
               <div className="footer-grid-item order-md-0">
                 <div className="d-flex  gap-2 align-items-center flex-column flex-xl-row">
-                  <div className="footer-section_links_label">Follow Us</div>
+                  <div className="footer-section_links_label">Follow us on 
+                  </div>
                   <div>
                     <ul className="list-unstyled footer-social-links mb-0">
                       <SocialLinks/>
