@@ -76,9 +76,9 @@ const ZillaraSection3 = () => {
               {/* <div className="ZillaraSection3_title text-white">
                 HEART COLLECTION
               </div> */}
-              <div className="ZillaraSection3_text text-white">
+              {/* <div className="ZillaraSection3_text text-white">
               Leave a trail of shimmer wherever you go with our stunning charm collection. Designed for every classic woman, these lovely and captivating pieces add a spellbinding touch to your style.
-              </div>
+              </div> */}
               {/* <div className="ZillaraSection3_sub-title text-white">
                 SHOP THE COLLECTION
               </div> */}

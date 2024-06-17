@@ -93,6 +93,7 @@ export const MainBanner = () => {
               <source
                 src="/home/home-main-banner-video-mobile.mp4"
                 type="video/mp4"
+                
               />
             </video>
           </div>
