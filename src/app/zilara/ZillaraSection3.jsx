@@ -120,7 +120,7 @@ const ZillaraSection3 = () => {
                   />
                 </div>
 
-                <div className="p-4 position-absolute bottom-0 text-center w-100">
+                <div className="p-4 position-absolute bottom-0 w-100">
                   {/* <div className="ZillaraSection3_title">Sparkling please</div> */}
 
                   <div className="ZillaraSection3_text">
