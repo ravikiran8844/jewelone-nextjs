@@ -242,7 +242,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="d-flex flex-column align-items-center flex-md-row justify-content-center gap-4">
+            <div className="d-flex flex-column align-items-xl-center flex-md-row justify-content-center gap-3 gap-xl-1">
               <div className="footer-grid-item d-flex gap-2  flex-column  align-items-center  flex-xl-row order-md-1">
                 <div className="footer-section_links_label">
                   Swarna Shakti App Download
