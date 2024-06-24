@@ -190,9 +190,9 @@
 }
 
 
- /* .modal-dialog{
+ .modal-dialog{
     max-width: 99%;
-} */
+}
  .modal {
     z-index: 9999 !important;
 }
