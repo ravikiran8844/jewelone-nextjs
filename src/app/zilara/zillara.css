@@ -169,13 +169,31 @@
     }
    
 .zillara-page  .slick-slide:nth-child(1){
-        transform: scale(.75);
+        transform: scale(.65);
+
     }
   .zillara-page  .slick-slide:nth-child(2){
-        transform: scale(1);
+        transform: scale(.8);
+
     }
   .zillara-page  .slick-slide:nth-child(3){
-        transform: scale(.75);
+        transform: scale(1);
+
+    }
+    .zillara-page  .slick-slide:nth-child(4){
+        transform: scale(.8);
+    }
+    .zillara-page  .slick-slide:nth-child(5){
+        transform: scale(.65);
+
     }
 }
 
+
+
+.zillara-page .modal-dialog{
+    max-width: 100%;
+}
+.zillara-page .modal {
+    z-index: 9999;
+}

@@ -1,12 +1,24 @@
 "use client";
 import React, { useCallback, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import Image from "next/image";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import PdfModal from "./PdfModal";
+
+
+
 
 const ZillaraSection5 = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const sliderRef = useRef(null);
 
   const handlePrev = useCallback(() => {
@@ -21,40 +33,50 @@ const ZillaraSection5 = () => {
 
   const items = [
     {
+      link:"/pdf/Kids-Collection.pdf",
       image: "/zillara/zillara-section5-img1.png",
-      title: "Birth Stone Collection",
-      subTitle: "Celebrating Personalized Elegance",
-      fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
-      truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
+      title: "Kids Collection",
     },
     {
+      link:"/pdf/The-Zodiac-Affair-Collection.pdf",
       image: "/zillara/zillara-section5-img2.png",
-      title: "Birth Stone Collection",
-      subTitle: "Celebrating Personalized Elegance",
-      fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
-      truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
+      title: "Zodiac Collection",
     },
-  //   {
-  //   image: "/zillara/zillara-section5-img3.png",
-  //   title: "Birth Stone Collection",
-  //   subTitle: "Celebrating Personalized Elegance",
-  //   fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
-  //   truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
-  // },
   {
+    link:"/pdf/Heart-Collection.pdf",
     image: "/zillara/zillara-section5-img4.png",
-    title: "Birth Stone Collection",
-    subTitle: "Celebrating Personalized Elegance",
-    fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
-    truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
+    title: "Heart Collection",
   },
   {
+    link:"/pdf/Aqua-Aurora-Collection.pdf.pdf",
     image: "/zillara/zillara-section5-img2.png",
-    title: "Birth Stone Collection",
-    subTitle: "Celebrating Personalized Elegance",
-    fullText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing personalized elegance and uniqueness. Each piece reflects the birth month of the wearer, offering a meaningful and cherished connection. From rings to necklaces, the Birth Stone Collection celebrates the individuality and personal stories of each person.",
-    truncatedText: "Birthstone silver jewelry holds a special place in the hearts of many, symbolizing."
-  },
+    title: "Aqua Aurora Collection",
+   },
+   {
+    link:"/pdf/Enchant-Collection.pdf",
+    image: "/zillara/zillara-section5-img2.png",
+    title: "Enchat Colleciton",
+   },
+   {
+    link:"/pdf/Birth-Stone-Collection.pdf",
+    image: "/zillara/zillara-section5-img2.png",
+    title: "Birthstone Collection",
+   },
+   {
+    link:"/pdf/Sparkling-Collection.pdf",
+    image: "/zillara/zillara-section5-img2.png",
+    title: "Sparkling Collection",
+   },
+   {
+    link:"/pdf/Traditional-Collection.pdf",
+    image: "/zillara/zillara-section5-img2.png",
+    title: "Traditional Collection",
+   },
+   {
+    link:"/pdf/Pearl-Collection.pdf",
+    image: "/zillara/zillara-section5-img2.png",
+    title: "Pearl Collection",
+   },
  
   ];
 
@@ -71,7 +93,7 @@ const ZillaraSection5 = () => {
       <div className="py-5">
         <div className="col-12 text-center mb-4">
           <div className="fs-2 fw-semibold text-center mb-4 text-uppercase">
-            Latest collection
+            Our collection
           </div>
         </div>
         <div style={{ backgroundColor: "#F5F5F5" }}>
@@ -108,23 +130,9 @@ const ZillaraSection5 = () => {
                 {items.map((item, index) => (
                   <SwiperSlide key={index}>
                     <div className="position-relative">
-                      <Image
-                        className="img-fluid w-100"
-                        width={1022}
-                        height={570}
-                        src={item.image}
-                        alt={`Image ${index + 1}`}
-                      />
-                      {/* <div className="ZillaraSection5__item position-absolute bottom-0 w-100 text-center p-4">
-                        <div className="ZillaraSection5__title">{item.title}</div>
-                        <div className="ZillaraSection5__sub-title">{item.subTitle}</div>
-                        <div className="ZillaraSection5__text">
-                          {expandedStates[index] ? item.fullText : item.truncatedText}
-                          <button onClick={() => handleToggle(index)} className="btn btn-link ZillaraSection5__read-more-btn">
-                            {expandedStates[index] ? 'Show Less' : 'Read More'}
-                          </button>
-                        </div>
-                      </div> */}
+
+                      <PdfModal image={item.image} title={item.title} link={item.link} />
+                      
                     </div>
                   </SwiperSlide>
                 ))}
