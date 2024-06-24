@@ -30,11 +30,11 @@ const PdfModal = ({title,link,image}) => {
                       />
             </Button>
 
-            <Modal show={show} onHide={handleClose} size="xl">
+            <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
-                <Modal.Body style={{ height: '500px' }}>
+                <Modal.Body>
                     <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js`}>
                         <Viewer
                             fileUrl={link}
@@ -42,11 +42,7 @@ const PdfModal = ({title,link,image}) => {
                         />
                     </Worker>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                </Modal.Footer>
+                
             </Modal>
         </>
     );
