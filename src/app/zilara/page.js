@@ -5,11 +5,13 @@ import ZillaraSection3 from './ZillaraSection3'
 import ZillaraSection5 from './ZillaraSection5'
 import ZillaraSection6 from './ZillaraSection6'
 import ZillaraBanner from './ZillaraBanner'
+import ZillaraPdf from './ZillaraPdf'
 
 const page = () => {
   return (
     <main className='bg-white zillara-page'>
       <ZillaraBanner/>
+      {/* <ZillaraPdf/> */}
         {/* <ZillaraSection1/> */}
         <ZillaraSection2/>
         <ZillaraSection3/>

@@ -12,7 +12,7 @@ const ZillaraSection2 = () => {
     centerPadding: "0px",
     infinite: false,
     dots: true,
-    slidesToShow: 3,
+    slidesToShow: 5,
     speed: 500,
     responsive: [
       {
@@ -51,7 +51,7 @@ const ZillaraSection2 = () => {
             Beauty and uniqueness in every piece of jewellery
           </div>
         </div>
-        <div className="col-xl-10 m-auto">
+        <div className="col-12">
           <Slider {...settings}>
             <div>
               <video
@@ -62,10 +62,13 @@ const ZillaraSection2 = () => {
                 muted
                 playsInline
                 className="w-100 h-auto"
-                poster="/zillara/section2/poster1.jpg"
               >
-                <source src="/zillara/section2/Video_1.mp4" type="video/mp4" />
+                <source src="/zillara/section2/v1.mp4" type="video/mp4" />
               </video>
+            </div>
+
+            <div>
+              <Image width={400} height={600} className="img-fluid" src="/zillara/section2/zillara-banner-img1.webp" alt="" />
             </div>
 
             <div>
@@ -84,6 +87,10 @@ const ZillaraSection2 = () => {
             </div>
 
             <div>
+              <Image width={400} height={600} className="img-fluid" src="/zillara/section2/zillara-banner-img2.webp" alt="" />
+            </div>
+
+            <div>
               <video
                 height={867}
                 width={650}
@@ -92,9 +99,8 @@ const ZillaraSection2 = () => {
                 muted
                 playsInline
                 className="w-100 h-auto"
-                poster="/zillara/section2/poster1.jpg"
               >
-                <source src="/zillara/section2/Video_1.mp4" type="video/mp4" />
+                <source src="/zillara/section2/v2.mp4" type="video/mp4" />
               </video>
             </div>
 
