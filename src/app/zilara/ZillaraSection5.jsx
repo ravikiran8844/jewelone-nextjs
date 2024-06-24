@@ -34,48 +34,65 @@ const ZillaraSection5 = () => {
   const items = [
     {
       link:"/pdf/Kids-Collection.pdf",
-      image: "/zillara/zillara-section5-img1.png",
+      image: "/zillara/Kids-Collection.webp",
       title: "Kids Collection",
+      mobileImage:"/zillara/Kids-Collection-mob.webp",
     },
     {
       link:"/pdf/The-Zodiac-Affair-Collection.pdf",
-      image: "/zillara/zillara-section5-img2.png",
+      image: "/zillara/The-Zodiac-Affair-Collection.webp",
       title: "Zodiac Collection",
+      mobileImage:"/zillara/The-Zodiac-Affair-Collection-mob.webp",
+
     },
   {
     link:"/pdf/Heart-Collection.pdf",
-    image: "/zillara/zillara-section5-img4.png",
+    image: "/zillara/Heart-Collection.webp",
     title: "Heart Collection",
+    mobileImage:"/zillara/Heart-Collection-mob.webp",
+
   },
   {
-    link:"/pdf/Aqua-Aurora-Collection.pdf.pdf",
-    image: "/zillara/zillara-section5-img2.png",
+    link:"/pdf/Aqua-Aurora-Collection.pdf",
+    image: "/zillara/Aqua-Aurora-Collection.webp",
     title: "Aqua Aurora Collection",
+    mobileImage:"/zillara/Aqua-Aurora-Collection-mob.webp",
+
    },
    {
     link:"/pdf/Enchant-Collection.pdf",
-    image: "/zillara/zillara-section5-img2.png",
+    image: "/zillara/Enchant-Collection.webp",
     title: "Enchat Colleciton",
+    mobileImage:"/zillara/Enchant-Collection-mob.webp",
+
    },
    {
     link:"/pdf/Birth-Stone-Collection.pdf",
-    image: "/zillara/zillara-section5-img2.png",
+    image: "/zillara/Birth-Stone-Collection.webp",
     title: "Birthstone Collection",
+    mobileImage:"/zillara/Birth-Stone-Collection-mob.webp",
+
    },
    {
     link:"/pdf/Sparkling-Collection.pdf",
-    image: "/zillara/zillara-section5-img2.png",
+    image: "/zillara/Sparkling-Collection.webp",
     title: "Sparkling Collection",
+    mobileImage:"/zillara/Sparkling-Collection-mob.webp",
+
    },
    {
     link:"/pdf/Traditional-Collection.pdf",
-    image: "/zillara/zillara-section5-img2.png",
+    image: "/zillara/Traditional-Collection.webp",
     title: "Traditional Collection",
+    mobileImage:"/zillara/Traditional-Collection-mob.webp",
+
    },
    {
     link:"/pdf/Pearl-Collection.pdf",
-    image: "/zillara/zillara-section5-img2.png",
+    image: "/zillara/Pearl-Collection.webp",
     title: "Pearl Collection",
+    mobileImage:"/zillara/Pearl-Collection-mob.webp",
+
    },
  
   ];
@@ -131,7 +148,7 @@ const ZillaraSection5 = () => {
                   <SwiperSlide key={index}>
                     <div className="position-relative">
 
-                      <PdfModal image={item.image} title={item.title} link={item.link} />
+                      <PdfModal mobileImage={item.mobileImage} image={item.image} title={item.title} link={item.link} />
                       
                     </div>
                   </SwiperSlide>
