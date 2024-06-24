@@ -30,7 +30,7 @@ const PdfModal = ({title,link,image}) => {
                       />
             </Button>
 
-            <Modal show={show} onHide={handleClose} size="lg">
+            <Modal show={show} onHide={handleClose} size="xl">
                 <Modal.Header closeButton>
                     <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>

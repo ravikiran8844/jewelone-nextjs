@@ -190,10 +190,9 @@
 }
 
 
-
-.zillara-page .modal-dialog{
-    max-width: 100%;
-}
-.zillara-page .modal {
-    z-index: 9999;
+ /* .modal-dialog{
+    max-width: 99%;
+} */
+ .modal {
+    z-index: 9999 !important;
 }
