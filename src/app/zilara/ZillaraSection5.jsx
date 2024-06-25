@@ -62,7 +62,7 @@ const ZillaraSection5 = () => {
    {
     link:"/pdf/Enchant-Collection.pdf",
     image: "/zillara/Enchant-Collection.webp",
-    title: "Enchat Colleciton",
+    title: "Enchat Collection",
     mobileImage:"/zillara/Enchant-Collection-mob.webp",
 
    },
