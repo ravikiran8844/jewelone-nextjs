@@ -52,7 +52,7 @@ const PdfModal = ({title,link,image,mobileImage}) => {
                     <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body style={{height:'85vh'}}>
-                    <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js`}>
+                    <Worker workerUrl={`https://unpkg.com/pdfjs-dist@3/build/pdf.worker.min.js`}>
                         <Viewer
                             fileUrl={link}
                             plugins={[defaultLayoutPluginInstance]}

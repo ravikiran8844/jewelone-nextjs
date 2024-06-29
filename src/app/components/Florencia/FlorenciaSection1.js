@@ -26,13 +26,13 @@ const FlorenciaSection1 = () => {
           <picture>
             <source
               media="(min-width:768px)"
-              srcSet="florencia/main-slider/main-slider1.webp"
+              srcSet="/florencia/main-slider/main-slider1.webp"
             />
             <img
               className="img-fluid"
               width={428}
               height={743}
-              src="florencia/main-slider/main-slider1-mobile.webp"
+              src="/florencia/main-slider/main-slider1-mobile.webp"
               alt="main banner"
             />
           </picture>
@@ -44,13 +44,13 @@ const FlorenciaSection1 = () => {
           <picture>
             <source
               media="(min-width:768px)"
-              srcSet="florencia/main-slider/main-slider3.webp"
+              srcSet="/florencia/main-slider/main-slider3.webp"
             />
             <img
               className="img-fluid"
               width={428}
               height={743}
-              src="florencia/main-slider/main-slider3-mobile.webp"
+              src="/florencia/main-slider/main-slider3-mobile.webp"
               alt="main banner"
             />
           </picture>
@@ -61,13 +61,13 @@ const FlorenciaSection1 = () => {
           <picture>
             <source
               media="(min-width:768px)"
-              srcSet="florencia/main-slider/main-slider2.webp"
+              srcSet="/florencia/main-slider/main-slider2.webp"
             />
             <img
               className="img-fluid"
               width={428}
               height={743}
-              src="florencia/main-slider/main-slider2-mobile.webp"
+              src="/florencia/main-slider/main-slider2-mobile.webp"
               alt="main banner"
             />
           </picture>
