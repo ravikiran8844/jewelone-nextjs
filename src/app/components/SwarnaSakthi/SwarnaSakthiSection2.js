@@ -20,7 +20,7 @@ const SwarnaSakthiSection2 = () => {
             aria-controls="plan1-tab-pane"
             aria-selected="true"
           >
-            Plan1
+            Plan 1
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -34,7 +34,7 @@ const SwarnaSakthiSection2 = () => {
             aria-controls="plan2-tab-pane"
             aria-selected="false"
           >
-            plan2
+            plan 2
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -48,7 +48,7 @@ const SwarnaSakthiSection2 = () => {
             aria-controls="plan3-tab-pane"
             aria-selected="false"
           >
-            plan3
+            plan 3
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -62,7 +62,7 @@ const SwarnaSakthiSection2 = () => {
             aria-controls="wedding-jewellery-plan-tab-pane"
             aria-selected="false"
           >
-            wedding jewelleryplan
+            wedding jewellery plan
           </button>
         </li>
       </ul>

@@ -255,3 +255,17 @@ header{
   .nav-trigger-btn svg{
     width: 20px;
   }
+
+  .navbar-nav .dropdown-menu{
+    position: absolute;
+  }
+
+  .dropdown-item:focus, .dropdown-item:focus, .dropdown-item:active{
+    color: var(--bs-dropdown-link-hover-color);
+    background-color: var(--bs-dropdown-link-hover-bg);
+  }
+
+  .mobile-menu .dropdown-menu{
+    position: relative !important;
+    transform: unset !important;
+  }
