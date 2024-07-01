@@ -144,36 +144,9 @@ const Plan3 = () => {
                   className="img-fluid w-100"
                   width={1920}
                   height={521}
-                  src="/swarna-sakthi/plan3-banner.webp"
+                  src="/swarna-sakthi/plan3-banner-img.webp"
                 />
-                {/* <div style={{rotate:'-5deg'}}>
-                  <div className="ms-4 fs-3 fw-medium">BEST</div>
-                  <div className="display-3 fw-semibold">EXCHANGE</div>
-                  <div className="d-flex gap-2">
-                    <div>
-                    <Image
-                  alt="plan 3 banner"
-                  className="img-fluid"
-                  width={60}
-                  height={200}
-                  src="/swarna-sakthi/earring-1.png"
-                />
-
-                <Image
-                  alt="plan 3 banner"
-                  className="img-fluid"
-                  width={60}
-
-                  height={200}
-                  src="/swarna-sakthi/earring-2.png"
-                />
-                    </div>
-                    <div>
-                    <div className="display-3 fw-semibold ms-4">VALUE</div>
-                    <div  className="fs-3 fw-medium">FOR OLD GOLD.</div>
-                    </div>
-                  </div>
-                </div> */}
+                
               </div>
             </div>
         </section>
