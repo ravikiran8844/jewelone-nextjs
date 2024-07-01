@@ -7,14 +7,14 @@ const Plan4 = () => {
       <div>
         <section className="swarna-sakthi-plan-header">
           <div className="col-12 px-4 text-center">
-            <div className="h5 py-3 text-red fw-bold">
+            <div className="h6 py-3 text-red fw-bold">
               One-Time Lump-Sum Advance Plan (Tenure: 330 Days)
             </div>
           </div>
         </section>
 
         <section className="swarna-sakthi-plan-content">
-          <div className="container py-5">
+          <div className="container  pb-5 py-md-5">
             <div className="row bg-red">
               <div className="col-12 col-lg-5 col-xl-4 order-1 order-lg-0 p-4 m-auto">
                 <div className="text-white">
