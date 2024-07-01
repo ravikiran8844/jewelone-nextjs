@@ -156,7 +156,7 @@ const Plan1 = () => {
 
      
      
-      <section>
+      <section className='bg-white'>
         <div className="container py-5">
           <div className="col-12 col-lg-10 m-auto">
             <div className="table-responsive">

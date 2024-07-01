@@ -134,6 +134,86 @@ const Plan3 = () => {
             </div>
           </div>
         </section>
+
+
+        <section className="container-fluid">
+        <div className="row">
+              <div className="col-12 d-flex justify-content-center align-items-center">
+              <Image
+                  alt="plan 3 banner"
+                  className="img-fluid w-100"
+                  width={1920}
+                  height={521}
+                  src="/swarna-sakthi/plan3-banner.webp"
+                />
+                {/* <div style={{rotate:'-5deg'}}>
+                  <div className="ms-4 fs-3 fw-medium">BEST</div>
+                  <div className="display-3 fw-semibold">EXCHANGE</div>
+                  <div className="d-flex gap-2">
+                    <div>
+                    <Image
+                  alt="plan 3 banner"
+                  className="img-fluid"
+                  width={60}
+                  height={200}
+                  src="/swarna-sakthi/earring-1.png"
+                />
+
+                <Image
+                  alt="plan 3 banner"
+                  className="img-fluid"
+                  width={60}
+
+                  height={200}
+                  src="/swarna-sakthi/earring-2.png"
+                />
+                    </div>
+                    <div>
+                    <div className="display-3 fw-semibold ms-4">VALUE</div>
+                    <div  className="fs-3 fw-medium">FOR OLD GOLD.</div>
+                    </div>
+                  </div>
+                </div> */}
+              </div>
+            </div>
+        </section>
+
+
+        <section className="container py-5">
+          <div className="col-12 mb-4">
+          <div className="plan-terms_title">General Terms</div>
+          </div>
+          <div className="row general-terms">
+
+              <div className="col-12 col-lg-6">
+                <ul>
+                  <li>Every Month’s advance amount should be paid on or before the end of the month in Plan I.</li>
+                  <li>In plan I, any excess advance amount will be adjusted for upcoming months.</li>
+                  <li>In Plan I, full benefits will be given only if EMA payments are paid continuously without any default.</li>
+                  <li>Waiver of VA is applicable only on Gold Jewellery and Gold Coin. Stone charges are applicable.</li>
+                  <li>No Customization Orders accepted/allowed for any Swarna Sakthi schemes. The customer can place the order from our Existing Design Bank only.</li>
+                  <li>No Partial purchase from the advance paid will be allowed.</li>
+                  <li>Refund will not be permitted under any circumstances for any of the Swarna Sakthi Plans.</li>
+                  <li>Collection of receipt from JewelOne for amount remitted is mandatory. Incase of payment made through Cheque/PDC/ECS/Virtual Account, receipt can be obtained after realisation in our account. EMA receipts will be sent through Mail / WhatsApp.</li>
+                  <li>Any promotional offers / existing discounts will not be clubbed with Swarna Sakthi redemption value.</li>
+                </ul>
+              </div>
+
+              <div  className="col-12 col-lg-6">
+            <ul>
+              <li>If the customer buys extra gold over and above the accumulated weight in Swarna Sakthi, actual VA is applicable for the extra weight. They can also avail prevailing offers at the time of purchase for the extra gold.</li>
+              <li>Gold Coins can also be purchased under this scheme.</li>
+              <li>Customers should produce their identity proof (preferably Aadhaar Card) and the bank account details with documentary proof, which is mandatory at the time of enrollment and redemption. The customer should also produce the original receipt during the clouser.</li>
+              <li>If any assistance is needed in opting for Virtual Account Payment, Kindly contact your nearest JewelOne showroom (or) call toll free: 1800 1033 916.</li>
+              <li>GST and other Levies will be charged extra as per government norms.</li>
+              <li>All terms and conditions are subject to change in accordance with government policies / company policies with / without any prior notice.</li>
+              <li>JewelOne reserves the right to retain / modify / withdraw any of the schemes at its sole discretion.</li>
+              <li>Any dispute would be subject to Coimbatore Jurisdiction only.</li>
+            </ul>
+              </div>
+          </div>
+
+        </section>
       </div>
     </>
   );

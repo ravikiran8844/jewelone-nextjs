@@ -1,5 +1,7 @@
 
-
+.SwarnaSakthi{
+    font-size: 14px;
+}
 .SwarnaSakthi .nav-tabs{
     background-color: hsl(355, 65%, 38%) !important;
     min-height: 60px;
@@ -7,6 +9,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position:sticky;
+    top: 62px;
+    gap: 10px;
+    padding: 10px;
+    z-index: 2;
+}
+
+@media (min-width:992px) {
+    .SwarnaSakthi .nav-tabs{
+        top: 73.65px;
+        gap: 20px;
+    }
 }
 .SwarnaSakthi .nav-tabs .nav-link{
     color: #fff !important;
@@ -63,11 +77,11 @@ line-height: 109%; /* 17.44px */
     line-height: 138%; /* 19.32px */
 }
 
-@media (min-width:768px) {
+@media (min-width:1200px) {
     .plan-terms{
         color: #8A8A8A;
     font-family: var(--font-inter);
-    font-size: 22px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 109%; /* 26.16px */
@@ -76,7 +90,7 @@ line-height: 109%; /* 17.44px */
     .plan-terms_title{
         color: #2D2D2D;
         font-family: var(--font-inter);
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 500;
         line-height: 109%; /* 23.98px */
@@ -103,4 +117,46 @@ text-align: center;
 
 table tr td{
     background: #F8F8FB !important;
+}
+
+.general-terms ul li{
+    color: #6D6D6D;
+    margin-bottom: 15px;
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 15 15' fill='none'%3E%3Cpath d='M7.5 0L15 7.5L7.5 15L0 7.5L7.5 0Z' fill='%23F7C676'/%3E%3C/svg%3E");;
+}
+
+
+.plan-3-banner{
+    background: linear-gradient(0deg, rgba(137, 42, 41, 0.73) 0%, rgba(137, 42, 41, 0.73) 100%);
+    color: #fff;
+}
+
+
+.plan4-banner-section__title{
+    color: #9E5924;
+font-family: "Canela Trial";
+font-style: normal;
+font-weight: 400;
+line-height: 115%; /* 102.151px */
+letter-spacing: 2.665px;
+}
+
+.plan4-banner-section__sub-title{
+    color: #9E5924;
+font-family: "Canela Trial";
+font-style: italic;
+font-weight: 400;
+line-height: 100%; /* 48.683px */
+letter-spacing: 4.868px;
+}
+.app-store-icons{
+    display: none;
+}
+@media (min-width:768px) {
+    .app-store-icons{
+        position: absolute;
+        top: 60%;
+        right: 30px;
+        display: block;
+    }
 }

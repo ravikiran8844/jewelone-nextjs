@@ -110,8 +110,8 @@ const Navbar = ({ data }) => {
           ) : currentRoute === "/zilara" ? (
             <Link className="navbar-brand" href="/">
               <Image
-               width={222}
-               height={56}
+                width={222}
+                height={56}
                 className="img-fluid"
                 src="/zillara.svg"
                 alt="logo"
@@ -131,7 +131,7 @@ const Navbar = ({ data }) => {
             </Link>
           )}
 
-          <ul className="d-none d-lg-flex flex-row gap-3 navbar-nav ms-auto">
+          <ul className="d-none d-lg-flex align-items-center flex-row gap-4 navbar-nav ms-auto">
             {/* <li className="nav-item">
                 <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                   Home
@@ -152,7 +152,50 @@ const Navbar = ({ data }) => {
               </Link>
             </li> */}
 
-          <li className="nav-item">
+            <li className="nav-item">
+              <Link
+                href="/swarna-sakthi"
+                className={
+                  currentRoute === "/swarna-sakthi"
+                    ? "active main-menu-link nav-link"
+                    : "main-menu-link nav-link"
+                }
+                onClick={handleClose}
+              >
+                SWARNA SAKTHI
+              </Link>
+            </li>
+
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                OUR BRANDS
+              </a>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link className="dropdown-item" href="/zilara">
+                    Zilara
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" href="/florencia">
+                    Florencia
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" href="/tvam">
+                    TVAM 2.0
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
+            {/* <li className="nav-item">
               <Link
                 href="/zilara"
                 className={
@@ -164,7 +207,7 @@ const Navbar = ({ data }) => {
               >
                 Zilara
               </Link>
-            </li> 
+            </li>
 
             <li className="nav-item">
               <Link
@@ -192,7 +235,7 @@ const Navbar = ({ data }) => {
               >
                 Florencia
               </Link>
-            </li>
+            </li> */}
             {/* <li className="nav-item">
                 <Link href="/our-story" className={currentRoute === "/our-story" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                 Our Story
@@ -312,13 +355,13 @@ const Navbar = ({ data }) => {
               <Offcanvas.Title>Menu</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              <ul className="navbar-nav gap-2">
+              <ul className="navbar-nav gap-2 mobile-menu">
                 {/* <li className="nav-item">
                 <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                   Home
                 </Link>
               </li> */}
-              <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     href="/zilara"
                     className={
@@ -332,7 +375,6 @@ const Navbar = ({ data }) => {
                   </Link>
                 </li>
 
-
                 <li className="nav-item">
                   <Link
                     href="/tvam"
@@ -345,7 +387,7 @@ const Navbar = ({ data }) => {
                   >
                     TVAM 2.0
                   </Link>
-                </li>
+                </li> */}
                 {/* <li className="nav-item">
                   <Link
                     href="/akshaya-tritiya"
@@ -359,7 +401,7 @@ const Navbar = ({ data }) => {
                     Akshaya Tritiya
                   </Link>
                 </li> */}
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link
                     href="/florencia"
                     className={
@@ -371,7 +413,7 @@ const Navbar = ({ data }) => {
                   >
                     Florencia
                   </Link>
-                </li>
+                </li> */}
 
                 {/* <li className="nav-item">
                 <Link href="/our-story" className={currentRoute === "/our-story" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
@@ -396,6 +438,49 @@ const Navbar = ({ data }) => {
                 Stores
                 </Link>
               </li> */}
+
+                <li className="nav-item">
+                  <Link
+                    href="/swarna-sakthi"
+                    className={
+                      currentRoute === "/swarna-sakthi"
+                        ? "active main-menu-link nav-link"
+                        : "main-menu-link nav-link"
+                    }
+                    onClick={handleClose}
+                  >
+                    SWARNA SAKTHI
+                  </Link>
+                </li>
+
+                <li className="nav-item dropdown">
+                  <a
+                    className="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    OUR BRANDS
+                  </a>
+                  <ul className="dropdown-menu">
+                    <li>
+                      <Link className="dropdown-item" href="/zilara" onClick={handleClose}>
+                        Zilara
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="/florencia" onClick={handleClose}>
+                        Florencia
+                      </Link>
+                    </li>
+                    <li>
+                      <Link className="dropdown-item" href="/tvam" onClick={handleClose}>
+                        TVAM 2.0
+                      </Link>
+                    </li>
+                  </ul>
+                </li>
 
                 <li className="nav-item">
                   <Link
