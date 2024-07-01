@@ -23,7 +23,7 @@ const page = () => {
         <ZillaraSection2/>
         <ZillaraSection3/>
         <ZillaraSection5/>
-        {/* <ZillaraSection6/> */}
+        <ZillaraSection6/>
     </main>
   )
 }
