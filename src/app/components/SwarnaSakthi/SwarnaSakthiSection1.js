@@ -25,6 +25,15 @@ const SwarnaSakthiSection1 = () => {
       <div className="app-store-icons">
         <div className="fs-6 fw-semibold mb-3">Download Swarna Sakthi App</div>
         <div className="d-flex gap-2">
+        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jewelone.winchit&hl=en&gl=US">
+          <Image
+            alt="play store"
+            src="/swarna-sakthi/play-store.png"
+            height={32}
+            width={140}
+            className="img-fluid"
+          />
+          </a>
           <a target="_blank" href="https://apps.apple.com/in/app/jewelone/id1507128724">
             <Image
               alt="app store"
@@ -35,15 +44,7 @@ const SwarnaSakthiSection1 = () => {
             />
           </a>
 
-          <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jewelone.winchit&hl=en&gl=US">
-          <Image
-            alt="play store"
-            src="/swarna-sakthi/play-store.png"
-            height={32}
-            width={140}
-            className="img-fluid"
-          />
-          </a>
+          
         </div>
       </div>
     </div>
