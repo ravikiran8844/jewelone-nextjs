@@ -49,6 +49,13 @@ header{
   line-height: 100%; /* 16px */
   text-transform: uppercase;
 }
+.navbar-nav .nav-link.dropdown-toggle,.navbar-nav .dropdown-item{
+  color: #2d2d2d;
+  font-family: var(--font-inter);
+  font-size: 14px;
+  font-weight: 500;
+
+}
 .navbar-toggler:focus {
   outline: none;
   box-shadow: none !important;
