@@ -265,14 +265,23 @@ header{
 
   .navbar-nav .dropdown-menu{
     position: absolute;
+    box-shadow: 0 8px 45px 0 hsla(0, 0%, 61%, .25);
+    background: #faf4f4;
+    border: none;
   }
 
-  .dropdown-item:focus, .dropdown-item:focus, .dropdown-item:active{
-    color: var(--bs-dropdown-link-hover-color);
-    background-color: var(--bs-dropdown-link-hover-bg);
+  .dropdown-item:hover,.dropdown-item:focus, .dropdown-item:focus, .dropdown-item:active{
+    color: #fff;
+    background-color:#9F212C;
   }
 
   .mobile-menu .dropdown-menu{
     position: relative !important;
     transform: unset !important;
+  }
+  .offcanvas{
+    background: #faf4f4;
+  }
+  .dropdown-menu .dropdown-item{
+    text-transform: uppercase;
   }
