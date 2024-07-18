@@ -5,7 +5,7 @@ import {
 } from "@googlemaps/extended-component-library/react";
 import "./zillara.css";
 
-const LISTINGS = [
+const LISTINGS =[
     {
         "title": "Jewel One Coimbatore",
         "addressLines": [
@@ -645,7 +645,7 @@ const LISTINGS = [
         "placeId": "ChIJudk_vhPrADsR9syxK_Sczpc"
     },
     {
-        "title": "BROOKS Coimbatore",
+        "title": "BROOKEFIELDS Coimbatore",
         "addressLines": [
             "Brookefields, Sukrawar Pettai, R.S. Puram, Coimbatore, Tamil Nadu 641001, India"
         ],
@@ -678,7 +678,7 @@ const LISTINGS = [
         "placeId": "ChIJkQVca1JYqDsR0zeSZgvxyws"
     },
     {
-        "title": "SEEMATI-THIRUVRUR Thiruvarur",
+        "title": "SEEMATI Thiruvarur",
         "addressLines": [
             "Old No.2756 New No.1/10,Panagal Park, near Bus Stand, Rajgopal Nagar, Santhamangalam, Madappuram, Thiruvarur, Tamil Nadu 610001, India"
         ],
@@ -755,7 +755,7 @@ const LISTINGS = [
         "placeId": "ChIJrS_77QtZqDsR0njBMXf7BaU"
     },
     {
-        "title": "GANAPTHY SILKS-CBE coimbatore",
+        "title": "GANAPTHY SILKS coimbatore",
         "addressLines": [
             "135-136, SANJAY COMPLEX, RAJA STREET, COIMBATORE, Coimbatore, Tamil Nadu, 641001"
         ],
@@ -766,7 +766,7 @@ const LISTINGS = [
         "placeId": "ChIJP2RDDMFZqDsRMLzk6q-jfwA"
     },
     {
-        "title": "POTHYS-CBE coimbatore",
+        "title": "POTHYS coimbatore",
         "addressLines": [
             "East, 399, Oppanakara St., Area, Coimbatore, Tamil Nadu 641001, India"
         ],
@@ -777,7 +777,7 @@ const LISTINGS = [
         "placeId": "ChIJzf_3sglZqDsRVcO5X7EVOic"
     },
     {
-        "title": "POTHYS-SALEM salem",
+        "title": "POTHYS salem",
         "addressLines": [
             "No.4 Omalur Main Road, Salem - 636009"
         ],
@@ -788,7 +788,7 @@ const LISTINGS = [
         "placeId": "ChIJM_aldzr6qzsRPtdim88WeCM"
     },
     {
-        "title": "POTHYS- HYPER Chennai",
+        "title": "POTHYS Chennai",
         "addressLines": [
             "No.84 85, Pothys Hyper, Usman Road, T Nagar Chennai - 600017."
         ],
@@ -799,7 +799,7 @@ const LISTINGS = [
         "placeId": "ChIJAzU83P9mUjoRVnShDJT2R4E"
     },
     {
-        "title": "POTHYS PONDY Pondicherry",
+        "title": "POTHYS  Pondicherry",
         "addressLines": [
             "400, Anna Salai, near Ram International Hotel, Govindhasalai, Subbarayapillai Chathiram, Puducherry, 605001, India"
         ],
@@ -810,7 +810,7 @@ const LISTINGS = [
         "placeId": "ChIJ9z_qS39hUzoR8Z3UIeohvGQ"
     },
     {
-        "title": "SPP ERD Erode",
+        "title": "SPP  Erode",
         "addressLines": [
             "6, Eswaran Kovil St, Erode Fort, Erode, Tamil Nadu 638001, India"
         ],
@@ -865,7 +865,7 @@ const LISTINGS = [
         "placeId": "ChIJ_egcq4TFADsR_gEFAD1QG9M"
     },
     {
-        "title": "GANAPTHY SILKS-THENI Theni",
+        "title": "GANAPTHY SILKS Theni",
         "addressLines": [
             "153, Madurai Main Rd, Sunnambu Kalavara, NRT Nagar, Theni, Tamil Nadu 625531, India"
         ],
@@ -898,7 +898,7 @@ const LISTINGS = [
         "placeId": "ChIJTXEshGQRBDsRRBy7WnWAci4"
     },
     {
-        "title": "CD&CO THIRU Thiruchendur",
+        "title": "CD&CO Thiruchendur",
         "addressLines": [
             "815, 130, N Car St, Thiruchendur, Tamil Nadu 628215, India"
         ],
@@ -909,7 +909,7 @@ const LISTINGS = [
         "placeId": "WmEIIBKhQKEgl9znlqGJADOxFSyvLR5i2WXRIDODE1"
     },
     {
-        "title": "CD&CO TUTICRN Thoothukudi",
+        "title": "CD&CO  Thoothukudi",
         "addressLines": [
             "158, Palayamkottai Rd, Pudugramam, Thoothukudi, Tamil Nadu 628003, India"
         ],
@@ -975,7 +975,7 @@ const LISTINGS = [
         "placeId": "J268s0338qDsR0ht_dIi6rGQQBioUChIJza5GxXD8qDsRzTuibAYAnok"
     },
     {
-        "title": "RR FASHION JEWELLERY (LRC ) Attur",
+        "title": "RR FASHION JEWELLERY  Attur",
         "addressLines": [
             "1, Ranipet Main Rd, Attur, Tamil Nadu 636102, India"
         ],
@@ -1096,7 +1096,7 @@ const LISTINGS = [
         "placeId": "GOxHwJ2-JUvKHnBC1AyoUChIJ_3kRLXCyBjsRwoaa_CF2zcs"
     },
     {
-        "title": "ABHI SILVERS ( MKN ) Krishnakiri",
+        "title": "ABHI SILVERS  Krishnakiri",
         "addressLines": [
             "439, Bangalore Rd, near Rountana, near army canteen, Bairappa Colony, Veerappa Nagar, Krishnagiri, Tamil Nadu 635001, India"
         ],
@@ -1107,7 +1107,7 @@ const LISTINGS = [
         "placeId": "ChIJNfiNpZU0rDsRaJq1c9nlFKE"
     },
     {
-        "title": "UMA JEWELERY WORKS ( VASAVI ) Krishnakiri",
+        "title": "UMA JEWELERY WORKS  Krishnakiri",
         "addressLines": [
             "Bangalore Road, Krishnagiri, Tamil Nadu- 635001,India\n\n\n\n\n\n\n"
         ],
@@ -1162,7 +1162,7 @@ const LISTINGS = [
         "placeId": "DsReth3LTUdUjwQJSoUChIJ6xVuZJYAADsRWP2zXUzeTRg"
     },
     {
-        "title": "SIVA VALLI VILAS - Pondy Pondy",
+        "title": "SIVA VALLI VILAS  Pondy",
         "addressLines": [
             "259, Jawaharlal Nehru St, Ilango Nagar, Puducherry, 605001, India"
         ],
@@ -1206,7 +1206,7 @@ const LISTINGS = [
         "placeId": "ChIJv8sGMVMGqTsRjN4v7-C3Oh8"
     },
     {
-        "title": "Pachaiyappas silks Tiruvannamalai Tiruvannamalai",
+        "title": "Pachaiyappas silks  Tiruvannamalai",
         "addressLines": [
             "9, Polur Rd, opposite to bus stand, Chettikulam, Tiruvannamalai, Tamil Nadu 606601, India"
         ],
@@ -1217,7 +1217,7 @@ const LISTINGS = [
         "placeId": "ChIJAS4Q4YzArDsRP0NkKpZDvgE"
     },
     {
-        "title": "Pachaiyappas silks Vellore Vellore",
+        "title": "Pachaiyappas silks Vellore",
         "addressLines": [
             "8, Dharmaraja Kovil St, Thottapalayam, Vellore, Tamil Nadu 632004, India"
         ],
@@ -1613,7 +1613,7 @@ const LISTINGS = [
         "placeId": "ChIJPXy18SSYVDoR_sk-vrhrHec"
     },
     {
-        "title": "SIVA VALLI VILAS - Cuddlore Cuddlore",
+        "title": "SIVA VALLI VILAS  Cuddlore",
         "addressLines": [
             "No. 46, Subburaya Chetty Street, Thiruppathiripuliyur, Cuddalore, Tamil Nadu, India"
         ],
@@ -1875,17 +1875,6 @@ const LISTINGS = [
             "lng": 77.562363
         },
         "placeId": "ChIJJzDVTv2hqTsRKupGZAJhRRE"
-    },
-    {
-        "title": "CHAKKARAVARTHI THUHIL MAALIGAI Mettupalayam",
-        "addressLines": [
-            "35, Coimbatore Main Rd, Mahadevapuram, Mettupalayam, Tamil Nadu 641301, India"
-        ],
-        "position": {
-            "lat": 11.301476,
-            "lng": 76.938542
-        },
-        "placeId": "PSFRefECMqFAoSCYtclQGV7qg7ERYhaGS24rtc"
     },
     {
         "title": "KAMINI FASHION JEWELLERY Nagarcoil",
@@ -2526,17 +2515,6 @@ const LISTINGS = [
         "placeId": " ChIJyXmOpQd3AjoRoAyUUC7RXZ4"
     },
     {
-        "title": "Barman Jewellers West Bengal",
-        "addressLines": [
-            "T22, 1/1, Samsul Huda Rd, Park Circus, Ballygunge, Kolkata, West Bengal 700017"
-        ],
-        "position": {
-            "lat": 22.538112,
-            "lng": 88.366333
-        },
-        "placeId": "https://maps.app.goo.gl/Vyayb4Pt4U9AnEjM9"
-    },
-    {
         "title": "R M GOLD West Bengal",
         "addressLines": [
             "44B, MUZAFFAR AHMED STREET, RIPPON STREET, KOLKATA 700016"
@@ -3077,16 +3055,16 @@ const GoogleMapsComponent = () => {
           </div>
           <div className="border border-1 border-black">
             <APILoader
-              apiKey="AIzaSyAHHUJ_8LdeUmB5gEr8jLa84hv3MKYQcdY"
+              apiKey="AIzaSyCLl2XwLcdCro91gX5QQmkzmQgRPwgGIRY"
               solutionChannel="GMP_GCC_storelocator_v2"
 
             />
             <StoreLocator
             class="store-locator"
             featureSet="advanced"
-              mapId="4f33f0e7f6ab915e"
+              mapId="28204a3eb787948a"
               listings={LISTINGS}
-                mapOptions = {{"center":{"lat":11.0,"lng":76},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":16,"zoomControl":true,"maxZoom":17}}          
+                mapOptions = {{"center":{"lat":11.0,"lng":76},"fullscreenControl":true,"mapTypeControl":true,"streetViewControl":true,"zoom":20,"zoomControl":true,"maxZoom":21}}          
             />
           </div>
         </div>
