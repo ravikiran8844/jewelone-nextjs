@@ -14,23 +14,16 @@ import "./NavBar.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import AnnouncmentBar from "../ExperienceCenter/AnnouncmentBar";
+import RenderLogo from "../Logo/RenderLogo";
 
-const Navbar = ({ data }) => {
+
+const Navbar = ({ data  }) => {
+  console.log(usePathname())
+
   const today = new Date();
   const options = { day: "numeric", month: "short", year: "numeric" };
   const formattedDate = today.toLocaleDateString("en-US", options);
   const currentRoute = usePathname();
-
-  // const [price, setPrice] = useState({
-  //   goldPricePerGram: data.acf.todays_gold_price_per_gram,
-  //   goldPricePerSovereign: data.acf.todays_gold_price_per_sovereign,
-  //   silverPricePerGram: data.acf.todays_silver_price_per_gram,
-  //   silverPricePerKilogram: data.acf.todays_gold_price_per_gram,
-  // });
-
-  // console.log(data)
-  // console.log(data.acf.todays_gold_price_per_gram)
-  // console.log(data.acf.todays_silver_price_per_kg)
 
   const handleLinkClick = () => {
     const offcanvas = document.getElementById("offcanvasNavbar");
@@ -55,6 +48,10 @@ const Navbar = ({ data }) => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+
+ 
+
 
   return (
     <header>
@@ -96,7 +93,9 @@ const Navbar = ({ data }) => {
             </Button>
           </div>
 
-          {currentRoute === "/florencia" ? (
+
+          <RenderLogo/>
+          {/* {currentRoute === "/florencia" ? (
             <Link className="navbar-brand" href="/">
               <Image
                 width={265}
@@ -129,14 +128,14 @@ const Navbar = ({ data }) => {
                 priority
               />
             </Link>
-          )}
+          )} */}
 
           <ul className="d-none d-lg-flex align-items-center flex-row gap-4 navbar-nav ms-auto">
-            {/* <li className="nav-item">
+            <li className="nav-item">
                 <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                   Home
                 </Link>
-              </li> */}
+              </li>
 
             {/* <li className="nav-item">
               <Link
@@ -356,11 +355,11 @@ const Navbar = ({ data }) => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <ul className="navbar-nav gap-2 mobile-menu">
-                {/* <li className="nav-item">
+                <li className="nav-item">
                 <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
                   Home
                 </Link>
-              </li> */}
+              </li>
                 {/* <li className="nav-item">
                   <Link
                     href="/zilara"
