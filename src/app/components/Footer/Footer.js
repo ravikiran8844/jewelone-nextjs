@@ -5,6 +5,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import "./Footer.css";
+import FooterLogo from "../Logo/FooterLogo";
 
 
 function SocialLinks(){
@@ -299,14 +300,16 @@ const Footer = () => {
         <div className="container py-4">
           <div className="col-12">
             <div className="text-center">
-              <div className="mb-4">
-                <Image
+              <div className="mb-4 p-2 m-auto bg-white rounded-1" style={{width:"fit-content"}}>
+                {/* <Image
                   className="img-fluid"
                   width="222"
                   height="56"
                   src="/footer-logo.svg"
                   alt="logo"
-                />
+                /> */}
+
+                <FooterLogo/>
               </div>
 
               <div className="footer-section_text text-white">
