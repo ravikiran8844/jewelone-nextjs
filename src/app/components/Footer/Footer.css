@@ -1,11 +1,10 @@
 
 .footer-section {
-    background: #FFF5EC;
-    /* background: #FFF; */
-    color: #6D6D6D;
+  background: #fff;   
+    color: #000;
   }
   .footer-section_text {
-    color: #6D6D6D;
+    color: #000;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -20,7 +19,7 @@
     line-height: 140%; /* 22.4px */
   }
   .footer-section ul li {
-    color: #6D6D6D;
+    color: #000;
     font-size: 12px;
     font-style: normal;
     font-weight: 500;
@@ -84,7 +83,7 @@
   }
   @media (min-width: 992px) {
     .footer-section_text {
-      color: #6D6D6D;
+      color: #000;
         font-size: 14px;
       font-style: normal;
       font-weight: 400;

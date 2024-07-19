@@ -296,11 +296,11 @@ const Footer = () => {
         </div>
       </section>
 
-      <section style={{ background: "#9F212C" }}>
+      <section>
         <div className="container py-4">
           <div className="col-12">
             <div className="text-center">
-              <div className="mb-4 p-2 m-auto bg-white rounded-1" style={{width:"fit-content"}}>
+              <div className="mb-4">
                 {/* <Image
                   className="img-fluid"
                   width="222"
@@ -312,7 +312,7 @@ const Footer = () => {
                 <FooterLogo/>
               </div>
 
-              <div className="footer-section_text text-white">
+              <div className="footer-section_text">
                 &copy; {year} - Jewel One is Trademarked & Registered under
                 Emerald Jewel Industry India Limited.{" "}
               </div>
