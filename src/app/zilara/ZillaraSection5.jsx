@@ -31,132 +31,132 @@ const ZillaraSection5 = () => {
         {
             "id": "KidsCollection-01",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-01.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-01.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-01.webp"
         },
         {
             "id": "KidsCollection-02",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-02.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-02.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-02.webp"
         },
         {
             "id": "KidsCollection-03",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-03.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-03.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-03.webp"
         },
         {
             "id": "KidsCollection-04",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-04.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-04.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-04.webp"
         },
         {
             "id": "KidsCollection-05",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-05.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-05.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-05.webp"
         },
         {
             "id": "KidsCollection-06",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-06.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-06.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-06.webp"
         },
         {
             "id": "KidsCollection-07",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-07.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-07.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-07.webp"
         },
         {
             "id": "KidsCollection-08",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-08.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-08.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-08.webp"
         },
         {
             "id": "KidsCollection-09",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-09.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-09.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-09.webp"
         },
         {
             "id": "KidsCollection-10",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-10.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-10.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-10.webp"
         },
         {
             "id": "KidsCollection-11",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-11.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-11.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-11.webp"
         },
         {
             "id": "KidsCollection-12",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-12.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-12.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-12.webp"
         },
         {
             "id": "KidsCollection-13",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-13.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-13.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-13.webp"
         },
         {
             "id": "KidsCollection-14",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-14.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-14.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-14.webp"
         },
         {
             "id": "KidsCollection-15",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-15.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-15.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-15.webp"
         },
         {
             "id": "KidsCollection-16",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-16.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-16.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-16.webp"
         },
         {
             "id": "KidsCollection-17",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-17.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-17.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-17.webp"
         },
         {
             "id": "KidsCollection-18",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-18.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-18.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-18.webp"
         },
         {
             "id": "KidsCollection-19",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-19.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-19.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-19.webp"
         },
         {
             "id": "KidsCollection-20",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-20.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-20.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-20.webp"
         },
         {
             "id": "KidsCollection-21",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-21.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-21.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-21.webp"
         },
         {
             "id": "KidsCollection-22",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-22.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-22.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-22.webp"
         },
         {
             "id": "KidsCollection-23",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-23.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-23.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-23.webp"
         },
         {
             "id": "KidsCollection-24",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-24.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-24.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-24.webp"
         },
         {
             "id": "KidsCollection-25",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-25.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-25.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-25.webp"
         },
         {
             "id": "KidsCollection-26",
             "desktopImage": "/zillara/Collection/Desktop/KidsCollection/KidsCollection-26.webp",
-            "mobileImage": "/zillara/Collection/Mobile/KidsCollection/KidsCollection-26.webp"
+            "mobileImage": "/zillara/Collection/Mobile/Kidscollection/Kidscollection-26.webp"
         }
     ]
     },
