@@ -6,7 +6,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Image from "next/image";
 
-const CollectionModal = ({ title, link, image, mobileImg, images }) => {
+const CollectionModal = ({ title, image, mobileImg, images }) => {
   const [show, setShow] = useState(false);
 
   const handleShow = () => setShow(true);
