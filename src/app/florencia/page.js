@@ -7,6 +7,7 @@ import FlorenciaSection5 from '../components/Florencia/FlorenciaSection5'
 import FlorenciaSection3New from '../components/Florencia/FlorenciaSection3New'
 import AkshayaTritiyaSection3 from '../components/AkshayaTritiya/AkshayaTritiyaSection3'
 import FlorenciaFooter from '../components/Florencia/FlorenciaFooter'
+import Navbar from '../components/NavBar/NavBar'
 
 export const metadata = {
     title: 'Florencia - JewelOne',
@@ -16,6 +17,7 @@ export const metadata = {
 const page = () => {
   return (
     <main className='florencia-page'>
+      <Navbar logo="florencia"/>
         <FlorenciaSection1/>
         <FlorenciaSection2/>
         {/* <FlorenciaSection3/> */}

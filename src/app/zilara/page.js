@@ -6,6 +6,8 @@ import ZillaraSection5 from './ZillaraSection5'
 import ZillaraSection6 from './ZillaraSection6'
 import ZillaraBanner from './ZillaraBanner'
 import ZillaraPdf from './ZillaraPdf'
+import ZilaraFooter from './ZilaraFooter'
+import Navbar from '../components/NavBar/NavBar'
 
 
 export const metadata = {
@@ -17,6 +19,7 @@ export const metadata = {
 const page = () => {
   return (
     <main className='bg-white zillara-page'>
+      <Navbar logo="zilara"/>
       <ZillaraBanner/>
       {/* <ZillaraPdf/> */}
         {/* <ZillaraSection1/> */}
@@ -24,6 +27,7 @@ const page = () => {
         <ZillaraSection3/>
         <ZillaraSection5/>
         <ZillaraSection6/>
+        <ZilaraFooter/>
     </main>
   )
 }

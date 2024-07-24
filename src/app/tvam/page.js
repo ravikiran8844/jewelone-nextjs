@@ -1,4 +1,5 @@
 import Footer from "../components/Footer/Footer";
+import Navbar from "../components/NavBar/NavBar";
 import BrideGrid from "../components/TVAM/BrideGrid";
 import ImageBanner from "../components/TVAM/ImageBanner";
 import ImageCarousel from "../components/TVAM/ImageCarousel";
@@ -17,6 +18,7 @@ export const metadata = {
 export default function Home() {
   return (
    <main className="tvam">
+    <Navbar/>
     <ImageBanner/>
     <ImageCarousel/>
     <BrideGrid/>

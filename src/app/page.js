@@ -16,6 +16,7 @@ import HomeVideoAutoPlay from './components/Home/HomeVideoAutoPlay'
 import AkshayaTritiyaSection2 from './components/AkshayaTritiya/AkshayaTritiyaSection2'
 import HomeVideoSlider from './components/Home/HomeVideoSlider'
 import Footer from './components/Footer/Footer'
+import Navbar from './components/NavBar/NavBar'
 
 
 export const metadata = {
@@ -27,6 +28,7 @@ export const metadata = {
 export default function Home() {
   return (
    <main>
+    <Navbar/>
     {/* <HomeVideoAutoPlay/> */}
     <MainBanner/>
     {/* <HomeSection1/> */}
