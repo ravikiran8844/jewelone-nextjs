@@ -18,6 +18,26 @@ export const MainBanner = () => {
           interval: 4000,
         }}
       >
+
+<SplideSlide>
+          <picture>
+            <source
+              srcSet="/home/new-banner1.webp"
+              type="image/webp"
+              media="(min-width: 650px)"
+            />
+            <Image
+              className="img-fluid"
+              alt="Image X alt"
+              src="/home/new-banner1-mob.webp"
+              height={1940}
+              width={691}
+              priority="true"
+            />
+          </picture>
+        </SplideSlide>
+
+
           <SplideSlide>
           <picture>
             <source

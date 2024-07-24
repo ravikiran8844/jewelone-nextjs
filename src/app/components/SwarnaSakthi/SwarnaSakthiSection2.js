@@ -87,7 +87,7 @@ const SwarnaSakthiSection2 = () => {
             aria-controls="wedding-jewellery-plan-tab-pane"
             aria-selected="false"
           >
-            Wedding Jewellery Plan
+            Plan 4
           </button>
         </li>
       </ul>

@@ -33,10 +33,19 @@
         font-size: 12px;
         padding: 0px 5px;
        } 
+       .SwarnaSakthi .nav-tabs .nav-link.active{
+        font-size: 16px;
+       }
 }
 .SwarnaSakthi .nav-tabs .nav-link.active{
 color: #F7C676 !important;
 background-color: #A0222C !important;
+}
+
+@media (min-width:768px) {
+    .SwarnaSakthi .nav-tabs .nav-link.active{
+        font-size: 18px;
+    }
 }
 
 .swarna-sakthi-plan-header{
