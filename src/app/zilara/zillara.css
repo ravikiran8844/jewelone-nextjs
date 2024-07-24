@@ -194,3 +194,12 @@
  .modal {
     z-index: 9999 !important;
 }
+
+
+.zillara-footer{
+    background: #E5F3E9;
+}
+
+.zillara-footer .copyright-text{
+    font-size: 14px;
+}

@@ -4,13 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const RenderLogo = () => {
-    const currentRoute = usePathname();
-
-    switch (currentRoute) {
-      case "/florencia":
+const RenderLogo = ({logo}) => {
+    // const currentRoute = usePathname();
+console.log(logo);
+    switch (logo) {
+      case "florencia":
         return (
-          <Link className="navbar-brand" href="/">
+          
             <Image
               width={265}
               height={46}
@@ -19,11 +19,11 @@ const RenderLogo = () => {
               alt="logo"
               priority
             />
-          </Link>
+         
         );
-      case "/zilara":
+      case "zilara":
         return (
-          <Link className="navbar-brand" href="/">
+         
             <Image
               width={222}
               height={56}
@@ -32,7 +32,7 @@ const RenderLogo = () => {
               alt="logo"
               priority
             />
-          </Link>
+         
         );
       default:
         return (

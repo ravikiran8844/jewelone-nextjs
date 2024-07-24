@@ -3060,7 +3060,7 @@ const GoogleMapsComponent = () => {
 
             />
             <StoreLocator
-            class="store-locator"
+            className="store-locator"
             featureSet="advanced"
               mapId="28204a3eb787948a"
               listings={LISTINGS}

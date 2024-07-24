@@ -169,3 +169,7 @@ letter-spacing: 4.868px;
         display: block;
     }
 }
+
+.SwarnaSakthi table th{
+    text-transform: uppercase;
+}

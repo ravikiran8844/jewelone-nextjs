@@ -16,7 +16,7 @@ import { usePathname } from "next/navigation";
 import AnnouncmentBar from "../ExperienceCenter/AnnouncmentBar";
 import RenderLogo from "../Logo/RenderLogo";
 
-const Navbar = ({ data }) => {
+const Navbar = ({ logo }) => {
   console.log(usePathname());
 
   const today = new Date();
@@ -88,7 +88,8 @@ const Navbar = ({ data }) => {
             </Button>
           </div>
 
-          <RenderLogo />
+          <RenderLogo logo={logo} />
+
           {/* {currentRoute === "/florencia" ? (
             <Link className="navbar-brand" href="/">
               <Image
