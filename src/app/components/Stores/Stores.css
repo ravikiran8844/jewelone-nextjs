@@ -109,6 +109,7 @@
 
 .stores-section2 .card{
     height: 100%;
+    overflow: hidden;
 }
 .stores-section2_title{
     color: #282828;
@@ -170,4 +171,9 @@
     font-weight: 500;
     line-height: 138%;
     }
+}
+
+.store-card img{
+    aspect-ratio: 2;
+    object-fit: cover;
 }

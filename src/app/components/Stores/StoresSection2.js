@@ -16,7 +16,7 @@ const stores=[
     "contactPersonName": "Maheshwari / Tamil vendan",
     "mapLink": "https://maps.app.goo.gl/gyS45y3B1PdUAVVr7",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/coimbatore.webp"
   },
   {
     "name": "Experience Center",
@@ -29,7 +29,7 @@ const stores=[
     "contactPersonName": "Karthik",
     "mapLink": "https://maps.app.goo.gl/c4VfKNGKUGvry49T7",
     "storeTiming": "10:00 AM - 8:00 PM",
-    "image":"store1.webp"
+    "image":"stores/coimbatore.webp"
   },
   {
     "name": "Chennai",
@@ -43,7 +43,7 @@ const stores=[
     "contactPersonName": "Ranjith",
     "mapLink": "https://maps.app.goo.gl/TBhsUhjcBpsrVNVj6",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/anna_nagar_chennai.webp"
   },
   {
     "name": "Madurai",
@@ -57,7 +57,7 @@ const stores=[
     "contactPersonName": "Pradeep",
     "mapLink": "https://maps.app.goo.gl/7SpvWFZDYZ9ipVDk6",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/madura.webp"
   },
   {
     "name": "Vellore",
@@ -71,7 +71,7 @@ const stores=[
     "contactPersonName": "Babu",
     "mapLink": "https://maps.app.goo.gl/zaWaCAZJMRBdp3gH9",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/coimbatore.webp"
   },
   {
     "name": "Ramanathapuram",
@@ -85,7 +85,7 @@ const stores=[
     "contactPersonName": "Udhya Kumar",
     "mapLink": "https://maps.app.goo.gl/Pv3b8PEkugvWmepz6",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/ramnad.webp"
   },
   {
     "name": "Salem",
@@ -99,7 +99,7 @@ const stores=[
     "contactPersonName": "Sekar",
     "mapLink": "https://maps.app.goo.gl/UMJNC8q4NGmPastu6",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/salem.webp"
   },
   {
     "name": "Erode",
@@ -113,7 +113,7 @@ const stores=[
     "contactPersonName": "Vignesh / Ram",
     "mapLink": "https://maps.app.goo.gl/mAz75axh5inWhQAY6",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/erode.webp"
   },
   {
     "name": "Pollachi",
@@ -127,7 +127,7 @@ const stores=[
     "contactPersonName": "Jayaprakash",
     "mapLink": "https://maps.app.goo.gl/9nobpHSrFU9gvqs36",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/pollachi.webp"
   },
   {
     "name": "Pondicherry",
@@ -141,7 +141,7 @@ const stores=[
     "contactPersonName": "MohanRajesh",
     "mapLink": "https://maps.app.goo.gl/CAtBihoQqHbUuayX7",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/pondy.webp"
   },
   {
     "name": "Hosur",
@@ -156,7 +156,7 @@ const stores=[
     "mapLink": "https://maps.app.goo.gl/xomB9TqNP8mdDcHC6",
     "storeTiming": "9:45 AM - 8:45 PM",
 
-    "image":"store1.webp"
+    "image":"stores/hosur.webp"
   },
   {
     "name": "Udumalaipettai",
@@ -170,7 +170,7 @@ const stores=[
     "contactPersonName": "Baskar / Ganesh ",
     "mapLink": "https://maps.app.goo.gl/ikJoXkzv918Fv1L66",
     "storeTiming": "9:45 AM - 8:45 PM",
-    "image":"store1.webp"
+    "image":"stores/udu.webp"
 
   }
 ];
@@ -180,7 +180,7 @@ const RenderStores = () => {
     <div className="row">
       {stores.map((store, index) => (
         <div key={index} className="col-12 col-md-6 col-xl-4 mb-4">
-          <div className="card">
+          <div className="card store-card">
             <div>
               <Image
                 className="img-fluid"
@@ -308,7 +308,7 @@ const StoresSection2 = () => {
   const renderStores = () => {
     return  filteredStores.length<1 ? (<RenderStores/>): filteredStores.map((store, index) => (
       <div key={index} className="col-12 col-md-6 col-xl-4 mb-4">
-        <div className="card">
+        <div className="card store-card">
           <div>
             <Image className="img-fluid" width={520} height={190} src={`/${store.image}`} alt="store image" />
           </div>

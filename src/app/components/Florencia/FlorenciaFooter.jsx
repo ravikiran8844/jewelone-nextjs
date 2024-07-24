@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const FlorenciaFooter = () => {
@@ -7,7 +8,7 @@ const FlorenciaFooter = () => {
       <div className="row g-4">
         <div className="col-12 col-lg-3">
           <div className="mt-4 text-center text-lg-start">
-            <img
+            <Image
               width={265}
               height={46}
               className="img-fluid"
@@ -20,8 +21,8 @@ const FlorenciaFooter = () => {
             </div> */}
             <div className="d-flex gap-2 align-items-center justify-content-center  justify-content-lg-start social-links mt-3">
               <div>
-                <a href="https://www.facebook.com/florenciadiamonds?mibextid=LQQJ4d">
-                  <img
+                <a  target='_blank' href="https://www.facebook.com/florenciadiamonds?mibextid=LQQJ4d">
+                  <Image
                     className="img-fluid"
                     width={32}
                     height={32}
@@ -35,7 +36,7 @@ const FlorenciaFooter = () => {
                   target="_blank"
                   href="https://www.instagram.com/florenciadiamonds/"
                 >
-                  <img
+                  <Image
                     className="img-fluid"
                     width={32}
                     height={32}
@@ -102,7 +103,7 @@ const FlorenciaFooter = () => {
         </div>
         <div className="col-12  col-md-6 col-lg-3">
           <div>
-            <img
+            <Image
               width={478}
               height={580}
               className="img-fluid"
