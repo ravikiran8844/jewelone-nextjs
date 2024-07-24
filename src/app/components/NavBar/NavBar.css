@@ -239,12 +239,12 @@ header{
     color: #2d2d2d !important;
   }
 
-  .nav-link.active{
+  /* .nav-link.active{
     color:#000 !important;
     font-weight: 600;
     border-bottom: 3px solid #000;
     width: fit-content;
-  }
+  } */
   
   @media (min-width:300px) and (max-width:992px) {
     .navbar-brand{
@@ -263,16 +263,41 @@ header{
     width: 20px;
   }
 
+
   .navbar-nav .dropdown-menu{
     position: absolute;
     box-shadow: 0 8px 45px 0 hsla(0, 0%, 61%, .25);
     background: #fff;
     border: none;
+    margin-top: 20px;
+    padding: 10px 5px;
+  }
+  .dropdown-item{
+    color: #2D2D2D;
+    font-weight: 500;
+
   }
 
+  .dropdown-toggle::after{
+    vertical-align: unset;
+    border: none;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='10' viewBox='0 0 8 14' fill='none'%3E%3Cpath d='M1 13L7 7L1 1' stroke='%232D2D2D' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  }
+
+
+  .dropdown-toggle.show::after{
+    transform: rotate(90deg);
+}
+  
   .dropdown-item:hover,.dropdown-item:focus, .dropdown-item:focus, .dropdown-item:active{
-    color: #fff;
-    background-color:#9F212C;
+    border-radius: 4px;
+    border: 1px solid rgba(160, 34, 44, 0.50);
+    background: rgba(160, 34, 44, 0.05);
+    color: #A0222C;
+    font-weight: 600;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+
   }
 
   .mobile-menu .dropdown-menu{
@@ -280,8 +305,62 @@ header{
     transform: unset !important;
   }
   .offcanvas{
-    background: #fff;
+    background: #A0222C;
+    color: #FFF;
+  }
+
+  .offcanvas .nav-link{
+    color: #FFF !important;
+
   }
   .dropdown-menu .dropdown-item{
     text-transform: uppercase;
+  }
+
+  .btn-close{
+    opacity: 1;
+    --bs-btn-close-color: #fff !important;
+    --bs-btn-close-bg: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.08057L17.7357 17.8163' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M1 17.7354L17.7357 0.999659' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+  }
+
+  .offcanvas .dropdown-toggle::after {
+    float: right;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8' fill='none'%3E%3Cpath d='M1 0.999999L7 7L13 1' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    /* transform: rotate(90deg); */
+  }
+
+  .offcanvas .dropdown-toggle.show::after{
+     transform: rotate(180deg);
+  }
+
+  .offcanvas .nav-item{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+    padding: 0px 0px 8px 0px;
+  }
+  .mobile-menu .dropdown-menu{
+    background: #A0222C;
+    box-shadow: none;
+    /* border-left: 1px solid rgba(255, 255, 255, 0.30);
+  border-radius: 0px; */
+  }
+  .mobile-menu .dropdown-menu::before{
+    content: "";
+    width: 1px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.30);
+    position: absolute;
+
+  }
+
+  .mobile-menu .dropdown-item{
+    color: #fff;
+    font-weight: 500;
+    color: #FFF;
+
+  }
+
+  .mobile-menu .dropdown-item:hover{
+    color: #fff;
+    font-weight: 500;
+    color: #FFF;
   }

@@ -10,7 +10,8 @@ console.log(logo);
     switch (logo) {
       case "florencia":
         return (
-          
+          <span className="navbar-brand">
+
             <Image
               width={265}
               height={46}
@@ -19,11 +20,11 @@ console.log(logo);
               alt="logo"
               priority
             />
-         
+         </span>
         );
       case "zilara":
         return (
-         
+          <span className="navbar-brand">
             <Image
               width={222}
               height={56}
@@ -32,7 +33,7 @@ console.log(logo);
               alt="logo"
               priority
             />
-         
+         </span>
         );
       default:
         return (
