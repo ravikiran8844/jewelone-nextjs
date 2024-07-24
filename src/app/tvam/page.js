@@ -1,3 +1,4 @@
+import Footer from "../components/Footer/Footer";
 import BrideGrid from "../components/TVAM/BrideGrid";
 import ImageBanner from "../components/TVAM/ImageBanner";
 import ImageCarousel from "../components/TVAM/ImageCarousel";
@@ -21,6 +22,7 @@ export default function Home() {
     <BrideGrid/>
     <VideoSection/>
     <SliderCards/>
+    <Footer/>
    </main>
   )
 }
