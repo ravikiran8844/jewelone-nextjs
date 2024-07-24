@@ -1,0 +1,154 @@
+import React from 'react'
+
+const FlorenciaFooter = () => {
+  return (
+    <footer className='florencia-footer'>
+    <div className="container py-5">
+      <div className="row g-4">
+        <div className="col-12 col-lg-3">
+          <div className="mt-4 text-center text-lg-start">
+            <img
+              width={265}
+              height={46}
+              className="img-fluid"
+              src="/florencia/footer/logo.svg"
+              alt="logo"
+            />
+            {/* <div className="mt-3 fs-6 fw-semibold">
+              Make a statement without saying a{" "}
+              <span className="brittany-font fs-4">word</span>
+            </div> */}
+            <div className="d-flex gap-2 align-items-center justify-content-center  justify-content-lg-start social-links mt-3">
+              <div>
+                <a href="https://www.facebook.com/florenciadiamonds?mibextid=LQQJ4d">
+                  <img
+                    className="img-fluid"
+                    width={32}
+                    height={32}
+                    src="/florencia/footer/facebook.png"
+                    alt="facebook"
+                  />
+                </a>
+              </div>
+              <div>
+                <a
+                  target="_blank"
+                  href="https://www.instagram.com/florenciadiamonds/"
+                >
+                  <img
+                    className="img-fluid"
+                    width={32}
+                    height={32}
+                    src="/florencia/footer/instagram.png"
+                    alt="instagram"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-12 col-md-6">
+          <div className="footer-links mt-4">
+            <div>
+              <div>
+                <div className="secondary-color fw-semibold fs-6">ABOUT</div>
+                <ul className="list-unstyled">
+                  <li className="nav-item">
+                    <a href="#our-story-section" className="nav-link fs-6">
+                      Our Story&nbsp;
+                    </a>
+                  </li>
+                  {/* <li class="nav-item">
+                <a href="" class="nav-link fs-6  ">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a href="" class="nav-link fs-6  ">Lab Grown</a>
+              </li> */}
+                  {/* <li class="nav-item">
+                <a href="" class="nav-link fs-6"
+                  >About Lab Grown Diamonds</a
+                >
+              </li> */}
+                  {/* <li class="nav-item">
+                <a href="" class="nav-link fs-6  ">Visit a Showroom</a>
+              </li> */}
+                </ul>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div className="secondary-color fw-semibold fs-6">SUPPORT</div>
+                <ul className="list-unstyled">
+                  <li className="nav-item">
+                    <a href="tel:+919500978088" className="nav-link fs-6">
+                      9500978088
+                    </a>
+                  </li>
+                  <li className="nav-item">
+                    <a
+                      href="mailto:florencia.rspuram@ejindia.com"
+                      className="nav-link fs-6"
+                    >
+                      florencia.rspuram@ejindia.com
+                    </a>
+                  </li>
+                  {/* <li class="nav-item">
+                <a href="" class="nav-link fs-6">Contact Us</a>
+              </li> */}
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-12  col-md-6 col-lg-3">
+          <div>
+            <img
+              width={478}
+              height={580}
+              className="img-fluid"
+              style={{
+                width: "100%",
+                maxHeight: 200,
+                objectFit: "cover",
+                maxWidth: 350
+              }}
+              src="/florencia/footer/footer-shop-image.webp"
+              alt=""
+            />
+          </div>
+          <div className="mt-3">
+            {/* <div class="mb-1 fs-5 secondary-color fw-bold main-font">
+        VISIT US
+      </div> */}
+            {/* <div class="main-color fs-6 fst-italic" style=" font-family:Libre Baskerville; ">
+        Our stores are open. Find the one near you.
+      </div> */}
+            <div className="mt-2 mb-4">
+              <a
+                target="_blank"
+                href="https://maps.app.goo.gl/immn56dRGYE4LBYi6"
+                className="btn custom-outline-btn px-4 py-2"
+              >
+                VISIT US
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="col-12 copyright-text">
+        <div className="d-flex justify-content-between gap-2 flex-wrap secondary-color">
+          <div style={{fontSize:'14px'}}>
+            © <span id="current-year" /> FLORENCIA. ALL RIGHTS RESERVED
+          </div>
+          {/* <div class="fs-6 d-flex align-items-center gap-2 flex-wrap">
+        <a href="" class="footer-link"> TERMS & CONDITIONS </a>|
+        <a href="" class="footer-link">PRIVACY POLICY</a>
+      </div> */}
+        </div>
+      </div>
+    </div>
+  </footer>
+  )
+}
+
+export default FlorenciaFooter

@@ -37,7 +37,7 @@ export default async function RootLayout({ children }) {
       <body  className={`${inter.variable} ${great_vibes.variable}`}>
         <Navbar/>
         {children}
-        <Footer/>
+        {/* <Footer/> */}
         <BootstrapClient/>
         </body>
     </html>

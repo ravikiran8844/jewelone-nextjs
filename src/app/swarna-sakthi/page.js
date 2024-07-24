@@ -1,6 +1,7 @@
 import React from 'react'
 import SwarnaSakthiSection1 from '../components/SwarnaSakthi/SwarnaSakthiSection1'
 import SwarnaSakthiSection2 from '../components/SwarnaSakthi/SwarnaSakthiSection2'
+import Footer from '../components/Footer/Footer'
 
 
 
@@ -17,6 +18,7 @@ const page = () => {
     <main className='SwarnaSakthi'>
       <SwarnaSakthiSection1/>
       <SwarnaSakthiSection2/>
+      <Footer/>
     </main>
   )
 }

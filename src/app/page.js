@@ -15,6 +15,7 @@ import HomeSection3New from './components/Home/HomeSection3New'
 import HomeVideoAutoPlay from './components/Home/HomeVideoAutoPlay'
 import AkshayaTritiyaSection2 from './components/AkshayaTritiya/AkshayaTritiyaSection2'
 import HomeVideoSlider from './components/Home/HomeVideoSlider'
+import Footer from './components/Footer/Footer'
 
 
 export const metadata = {
@@ -43,6 +44,7 @@ export default function Home() {
     {/* <HomeSection9/> */}
     <InstagramGrid/> 
     {/* <AudioSection/> */}
+    <Footer/>
    </main>
   )
 }

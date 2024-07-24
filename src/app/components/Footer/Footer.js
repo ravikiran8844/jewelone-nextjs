@@ -5,7 +5,6 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import "./Footer.css";
-import FooterLogo from "../Logo/FooterLogo";
 
 
 function SocialLinks(){
@@ -296,23 +295,21 @@ const Footer = () => {
         </div>
       </section>
 
-      <section>
+      <section style={{ background: "#9F212C" }}>
         <div className="container py-4">
           <div className="col-12">
             <div className="text-center">
               <div className="mb-4">
-                {/* <Image
+                <Image
                   className="img-fluid"
                   width="222"
                   height="56"
                   src="/footer-logo.svg"
                   alt="logo"
-                /> */}
-
-                <FooterLogo/>
+                />
               </div>
 
-              <div className="footer-section_text">
+              <div className="footer-section_text text-white">
                 &copy; {year} - Jewel One is Trademarked & Registered under
                 Emerald Jewel Industry India Limited.{" "}
               </div>

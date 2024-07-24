@@ -16,9 +16,8 @@ import { usePathname } from "next/navigation";
 import AnnouncmentBar from "../ExperienceCenter/AnnouncmentBar";
 import RenderLogo from "../Logo/RenderLogo";
 
-
-const Navbar = ({ data  }) => {
-  console.log(usePathname())
+const Navbar = ({ data }) => {
+  console.log(usePathname());
 
   const today = new Date();
   const options = { day: "numeric", month: "short", year: "numeric" };
@@ -48,10 +47,6 @@ const Navbar = ({ data  }) => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-
-
- 
-
 
   return (
     <header>
@@ -93,8 +88,7 @@ const Navbar = ({ data  }) => {
             </Button>
           </div>
 
-
-          <RenderLogo/>
+          <RenderLogo />
           {/* {currentRoute === "/florencia" ? (
             <Link className="navbar-brand" href="/">
               <Image
@@ -132,10 +126,18 @@ const Navbar = ({ data  }) => {
 
           <ul className="d-none d-lg-flex align-items-center flex-row gap-4 navbar-nav ms-auto">
             <li className="nav-item">
-                <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
-                  Home
-                </Link>
-              </li>
+              <Link
+                href="/"
+                className={
+                  currentRoute === "/"
+                    ? "active main-menu-link nav-link"
+                    : "main-menu-link nav-link"
+                }
+                onClick={handleClose}
+              >
+                Home
+              </Link>
+            </li>
 
             {/* <li className="nav-item">
               <Link
@@ -253,11 +255,19 @@ const Navbar = ({ data  }) => {
                 </Link>
               </li> */}
 
-            {/* <li className="nav-item">
-                <Link href="/stores" className={currentRoute === "/stores" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
+            <li className="nav-item">
+              <Link
+                href="/stores"
+                className={
+                  currentRoute === "/stores"
+                    ? "active main-menu-link nav-link"
+                    : "main-menu-link nav-link"
+                }
+                onClick={handleClose}
+              >
                 Stores
-                </Link>
-              </li> */}
+              </Link>
+            </li>
 
             <li className="nav-item">
               <Link
@@ -356,10 +366,18 @@ const Navbar = ({ data  }) => {
             <Offcanvas.Body>
               <ul className="navbar-nav gap-2 mobile-menu">
                 <li className="nav-item">
-                <Link href="/" className={currentRoute === "/" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
-                  Home
-                </Link>
-              </li>
+                  <Link
+                    href="/"
+                    className={
+                      currentRoute === "/"
+                        ? "active main-menu-link nav-link"
+                        : "main-menu-link nav-link"
+                    }
+                    onClick={handleClose}
+                  >
+                    Home
+                  </Link>
+                </li>
                 {/* <li className="nav-item">
                   <Link
                     href="/zilara"
@@ -432,11 +450,21 @@ const Navbar = ({ data  }) => {
                 </Link>
               </li>
 
-              <li className="nav-item">
-                <Link href="/stores" className={currentRoute === "/stores" ? "active main-menu-link nav-link" : "main-menu-link nav-link"} onClick={handleClose}>
-                Stores
-                </Link>
-              </li> */}
+              */}
+
+                <li className="nav-item">
+                  <Link
+                    href="/stores"
+                    className={
+                      currentRoute === "/stores"
+                        ? "active main-menu-link nav-link"
+                        : "main-menu-link nav-link"
+                    }
+                    onClick={handleClose}
+                  >
+                    Stores
+                  </Link>
+                </li>
 
                 <li className="nav-item">
                   <Link
@@ -464,17 +492,29 @@ const Navbar = ({ data  }) => {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <Link className="dropdown-item" href="/zilara" onClick={handleClose}>
+                      <Link
+                        className="dropdown-item"
+                        href="/zilara"
+                        onClick={handleClose}
+                      >
                         Zilara
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="/florencia" onClick={handleClose}>
+                      <Link
+                        className="dropdown-item"
+                        href="/florencia"
+                        onClick={handleClose}
+                      >
                         Florencia
                       </Link>
                     </li>
                     <li>
-                      <Link className="dropdown-item" href="/tvam" onClick={handleClose}>
+                      <Link
+                        className="dropdown-item"
+                        href="/tvam"
+                        onClick={handleClose}
+                      >
                         TVAM 2.0
                       </Link>
                     </li>
