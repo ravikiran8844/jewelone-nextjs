@@ -362,7 +362,15 @@ const Navbar = ({ logo }) => {
 
           <Offcanvas show={show} onHide={handleClose}>
             <Offcanvas.Header closeButton>
-              <Offcanvas.Title>Menu</Offcanvas.Title>
+              <Offcanvas.Title>
+              <Image
+                  className="img-fluid"
+                  width="222"
+                  height="56"
+                  src="/footer-logo.svg"
+                  alt="logo"
+                />
+              </Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
               <ul className="navbar-nav gap-2 mobile-menu">

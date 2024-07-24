@@ -422,7 +422,7 @@ const StoresSection2 = () => {
     <div className="stores-section2 section-padding">
     <div className="container">
       <div className="col-12 mb-5">
-        <div className="stores-section2_title">Jewel One Showrooms
+        <div className="fs-2 text-center fw-semibold">Jewel One Showrooms
 </div>
       </div>
 
