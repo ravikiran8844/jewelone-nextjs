@@ -136,7 +136,7 @@ const Plan4 = () => {
                 <table className="table  table-bordered">
                   <thead>
                     <tr>
-                      <th colSpan={6}>Maturity benefits</th>
+                      <th colSpan={5}>Maturity benefits</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -146,12 +146,10 @@ const Plan4 = () => {
                       <td className="text-black fw-bold">Scenario 2</td>
                       <td className="text-black fw-bold">Scenario 3</td>
                       <td className="text-black fw-bold">Scenario 4</td>
-                      <td className="text-black fw-bold">Scenario 5</td>
                     </tr>
 
                     <tr>
                       <td>Scheme Value</td>
-                      <td>13,00,000</td>
                       <td>13,00,000</td>
                       <td>13,00,000</td>
                       <td>13,00,000</td>
@@ -164,14 +162,12 @@ const Plan4 = () => {
                       <td>01/07/2023</td>
                       <td>01/07/2023</td>
                       <td>01/07/2023</td>
-                      <td>01/07/2023</td>
                     </tr>
 
                     <tr>
                       <td>Closure Date</td>
                       <td>25/05/2024 </td>
                       <td>23/05/2024 </td>
-                      <td>04/10/2023</td>
                       <td>04/10/2023</td>
                       <td>19/09/2023</td>
                     </tr>
@@ -181,7 +177,6 @@ const Plan4 = () => {
                       <td>330</td>
                       <td>328</td>
                       <td>96</td>
-                      <td>96</td>
                       <td>81</td>
                     </tr>
 
@@ -189,7 +184,6 @@ const Plan4 = () => {
                       <td>Months</td>
                       <td>11</td>
                       <td>10</td>
-                      <td>3</td>
                       <td>3</td>
                       <td>2</td>
                     </tr>
@@ -199,7 +193,6 @@ const Plan4 = () => {
                       <td>NO VA</td>
                       <td>10%</td>
                       <td>3%</td>
-                      <td>3%</td>
                       <td>0%</td>
                     </tr>
 
@@ -207,7 +200,6 @@ const Plan4 = () => {
                       <td className="text-red fw-bold">VA Benefit Maximum</td>
                       <td className="text-red fw-bold">NO VA</td>
                       <td className="text-red fw-bold">1,30,000</td>
-                      <td className="text-red fw-bold">39,000</td>
                       <td className="text-red fw-bold">39,000</td>
 
                       <td className="text-red fw-bold">-</td>
