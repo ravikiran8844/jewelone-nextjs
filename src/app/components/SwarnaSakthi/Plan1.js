@@ -163,17 +163,17 @@ const Plan1 = () => {
               <table className="table  table-bordered">
                 <thead>
                   <tr>
-                    <th>Table 1</th>
-                    <th colSpan={4}>Maturity benefits</th>
+                   
+                    <th colSpan={5}>Maturity benefits</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td className="text-black fw-bold">Example</td>
-                    <td className="text-black fw-bold">1</td>
-                    <td className="text-black fw-bold">2</td>
-                    <td className="text-black fw-bold">3</td>
-                    <td className="text-black fw-bold">4</td>
+                    <td className="text-black fw-bold">Scenario 1</td>
+                    <td className="text-black fw-bold">Scenario 2</td>
+                    <td className="text-black fw-bold">Scenario 3</td>
+                    <td className="text-black fw-bold">Scenario 4</td>
                   </tr>
 
                   <tr>
@@ -203,7 +203,7 @@ const Plan1 = () => {
                   <tr>
                     <td>No. of EMAs paid</td>
                     <td>11</td>
-                    <td>6</td>
+                    <td>8</td>
                     <td>6</td>
                     <td>2</td>
                   </tr>
@@ -211,7 +211,7 @@ const Plan1 = () => {
                   <tr>
                     <td>Total Amount paid</td>
                     <td>1,10,000</td>
-                    <td>60,000</td>
+                    <td>80,000</td>
                     <td>60,000</td>
                     <td>20,000</td>
                   </tr>

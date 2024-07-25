@@ -106,27 +106,26 @@ const Plan2 = () => {
               <table className="table  table-bordered">
                 <thead>
                   <tr>
-                    <th>Table 2</th>
-                    <th colSpan={5}>Maturity benefits</th>
+                    <th colSpan={6}>Maturity benefits</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td className="text-black fw-bold">Example</td>
-                    <td className="text-black fw-bold">1</td>
-                    <td className="text-black fw-bold">2</td>
-                    <td className="text-black fw-bold">3</td>
-                    <td className="text-black fw-bold">4</td>
-                    <td className="text-black fw-bold">5</td>
+                    <td className="text-black fw-bold">Scenario 1</td>
+                    <td className="text-black fw-bold">Scenario 2</td>
+                    <td className="text-black fw-bold">Scenario 3</td>
+                    <td className="text-black fw-bold">Scenario 4</td>
+                    <td className="text-black fw-bold">Scenario 5</td>
 
                   </tr>
 
                   <tr>
                     <td>Scheme Value</td>
-                    <td>1,10,000</td>
-                    <td>1,10,000</td>
-                    <td>1,10,000</td>
-                    <td>1,10,000</td>
+                    <td>1,00,000</td>
+                    <td>1,00,000</td>
+                    <td>1,00,000</td>
+                    <td>1,00,000</td>
                     <td>1,10,000</td>
 
                   </tr>
@@ -161,7 +160,7 @@ const Plan2 = () => {
                     <td>Days</td>
                     <td>330</td>
                     <td>328</td>
-                    <td>224</td>
+                    <td>241</td>
                     <td>96</td>
                     <td>81</td>
                   </tr>

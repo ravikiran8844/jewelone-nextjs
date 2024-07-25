@@ -6,9 +6,9 @@ const FaqAccordion = ({faqs}) => {
       <div className="accordion accordion-flush" id="ContactPageFaqs2">
         {faqs.map((faq, index) => (
           <div className="accordion-item" key={index}>
-            <h2 className="accordion-header">
+            <div className="accordion-header">
               <button
-                className="accordion-button collapsed"
+                className="accordion-button collapsed fw-semibold"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target={`#flush-collapse${index}`}
@@ -17,7 +17,7 @@ const FaqAccordion = ({faqs}) => {
               >
                 {faq.question}
               </button>
-            </h2>
+            </div>
             <div
               id={`flush-collapse${index}`}
               className="accordion-collapse collapse"
