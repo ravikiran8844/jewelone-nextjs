@@ -4,6 +4,7 @@ import {
   StoreLocator
 } from "@googlemaps/extended-component-library/react";
 import "./zillara.css";
+import { useEffect } from "react";
 
 const LISTINGS =[
     {
@@ -3045,7 +3046,31 @@ const LISTINGS =[
 ]
 
 const GoogleMapsComponent = () => { 
-
+    useEffect(() => {
+        const applyStylesToShadowDom = () => {
+          const shadowHost = document.querySelector('gmpx-store-locator');
+    
+          if (shadowHost && shadowHost.shadowRoot) {
+            const shadowRoot = shadowHost.shadowRoot;
+    
+            // Use a timeout to ensure elements have time to render
+            setTimeout(() => {
+              const elements = shadowRoot.querySelectorAll(".select-location h2");
+    
+              if (elements.length > 0) {
+                elements.forEach(el => el.style.textAlign = 'start'); // Example style
+              } else {
+                console.error('No elements found inside shadow DOM.');
+              }
+            }, 1000); // Delay to allow rendering
+          } else {
+            console.error('Shadow host or shadow root not found.');
+          }
+        };
+    
+        // Apply styles after component mounts
+        applyStylesToShadowDom();
+      }, []); // Empty dependency array to ensure it runs once
   return (
     <section>
       <div className="container pb-5">
