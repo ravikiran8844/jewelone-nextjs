@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { GoogleMap, LoadScript, Autocomplete } from "@react-google-maps/api";
 import Image from "next/image";
+import '../components/Stores/Stores.css'
 
 const stores = [
   {
