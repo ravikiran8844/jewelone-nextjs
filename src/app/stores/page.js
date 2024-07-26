@@ -3,7 +3,7 @@
 import React from 'react'
 import StoresSection1 from '../components/Stores/StoresSection1'
 import StoresSection2 from '../components/Stores/StoresSection2'
-import { StoreProvider } from '../components/Stores/StoreContext'
+// import { StoreProvider } from '../components/Stores/StoreContext'
 import Footer from '../components/Footer/Footer'
 import Navbar from '../components/NavBar/NavBar'
 import StoreLocator from './StoreLocator'
@@ -17,7 +17,7 @@ export const metadata = {
 
 const page = () => {
   return (
-    <StoreProvider>
+  
     <main>
       <Navbar/>
       {/* <StoresSection1 />
@@ -25,7 +25,6 @@ const page = () => {
       <StoreLocator/>
       <Footer/>
     </main>
-  </StoreProvider>
   )
 }
 

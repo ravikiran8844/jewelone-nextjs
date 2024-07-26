@@ -257,7 +257,7 @@ const Navbar = ({ logo }) => {
               </li> */}
 
             <li className="nav-item">
-              <Link
+              <a
                 href="/stores"
                 className={
                   currentRoute === "/stores"
@@ -267,7 +267,7 @@ const Navbar = ({ logo }) => {
                 onClick={handleClose}
               >
                 Stores
-              </Link>
+              </a>
             </li>
 
             <li className="nav-item">
@@ -462,7 +462,7 @@ const Navbar = ({ logo }) => {
               */}
 
                 <li className="nav-item">
-                  <Link
+                  <a
                     href="/stores"
                     className={
                       currentRoute === "/stores"
@@ -472,7 +472,7 @@ const Navbar = ({ logo }) => {
                     onClick={handleClose}
                   >
                     Stores
-                  </Link>
+                  </a>
                 </li>
 
                 <li className="nav-item">

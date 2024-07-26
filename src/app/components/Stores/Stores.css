@@ -106,7 +106,9 @@
     line-height: 138%;
 }
 
-
+.card.store-card{
+    height: 100%;
+}
 .stores-section2 .card{
     height: 100%;
     overflow: hidden;
