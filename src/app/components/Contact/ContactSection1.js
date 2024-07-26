@@ -13,7 +13,7 @@ const ContactSection1 = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors },
+    formState: { errors },setValue 
   } = useForm();
 
   const onSubmit = (data) => {
@@ -21,6 +21,14 @@ const ContactSection1 = () => {
     console.log(data);
   };
 
+
+
+  const handleMobileChange = (e) => {
+    const value = e.target.value;
+    const onlyDigits = value.replace(/\D/g, '');
+    setValue('mobile', onlyDigits);
+  };
+  
   // const sendMail = (data) => {
   //   setLoading(true);
   //   const apiEndpoint = "/api/wp-contact-form";
@@ -131,10 +139,12 @@ const ContactSection1 = () => {
                 </div>
                 <div>
                   <input
-                    {...register("mobile", { required: true })}
+                    {...register("mobile", { required: true, maxLength: 12 })}
                     className="form-control"
                     placeholder="Mobile Number"
-                    type="number"
+                    maxLength={12}
+                    type="tel"
+                    onChange={handleMobileChange}
                   />
 
                   {errors.mobile?.type === "required" && (
