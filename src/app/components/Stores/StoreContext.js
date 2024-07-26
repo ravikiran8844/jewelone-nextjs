@@ -4,7 +4,8 @@ import React, { createContext, useContext, useState } from 'react';
 const StoreContext = createContext();
 
 export const StoreProvider = ({ children }) => {
-  const [stores, setStores] =useState([
+  const [stores, setStores] =useState(
+    [
     {
       "name": "Coimbatore",
       "address": "No. 284 &, 285, Cross Cut Rd, Gandhipuram, Tamil Nadu 641012",
@@ -16,7 +17,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Maheshwari / Tamil vendan",
       "mapLink": "https://maps.app.goo.gl/gyS45y3B1PdUAVVr7",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/coimbatore.webp"
+      "image":"stores/coimbatore.webp",
+      "placeId": "ChIJA7QLfP9YqDsR_k9amWQXVFQ"
     },
     {
       "name": "Experience Center",
@@ -29,7 +31,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Karthik",
       "mapLink": "https://maps.app.goo.gl/c4VfKNGKUGvry49T7",
       "storeTiming": "10:00 AM - 8:00 PM",
-      "image":"stores/coimbatore.webp"
+      "image":"stores/coimbatore.webp",
+         "placeId": "ChIJweZMNhf3qDsRPv54pRO7yLs"
     },
     {
       "name": "Chennai",
@@ -43,7 +46,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Ranjith",
       "mapLink": "https://maps.app.goo.gl/TBhsUhjcBpsrVNVj6",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/anna_nagar_chennai.webp"
+      "image":"stores/anna_nagar_chennai.webp",
+      "placeId": "ChIJgf34DdNnUjoR18qynFlxQpI"
     },
     {
       "name": "Madurai",
@@ -57,7 +61,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Pradeep",
       "mapLink": "https://maps.app.goo.gl/7SpvWFZDYZ9ipVDk6",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/madura.webp"
+      "image":"stores/madura.webp",
+      "placeId": "ChIJtc1F-4PFADsRitSYwbIA2DI"
     },
     {
       "name": "Vellore",
@@ -71,7 +76,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Babu",
       "mapLink": "https://maps.app.goo.gl/zaWaCAZJMRBdp3gH9",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/coimbatore.webp"
+      "image":"stores/coimbatore.webp",
+      "placeId": "ChIJxZ1aZ904rTsRx0B3_hpnacQ"
     },
     {
       "name": "Ramanathapuram",
@@ -85,7 +91,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Udhya Kumar",
       "mapLink": "https://maps.app.goo.gl/Pv3b8PEkugvWmepz6",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/ramnad.webp"
+      "image":"stores/ramnad.webp",
+      "placeId": "ChIJHahh_6OiATsRVvzI9ZCqjJ0"
     },
     {
       "name": "Salem",
@@ -99,7 +106,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Sekar",
       "mapLink": "https://maps.app.goo.gl/UMJNC8q4NGmPastu6",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/salem.webp"
+      "image":"stores/salem.webp",
+      "placeId": "ChIJs5WKl0VvqTsRUJpTYi5JtIg"
     },
     {
       "name": "Erode",
@@ -113,7 +121,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Vignesh / Ram",
       "mapLink": "https://maps.app.goo.gl/mAz75axh5inWhQAY6",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/erode.webp"
+      "image":"stores/erode.webp",
+      "placeId": "ChIJ9Rj0l0VvqTsRRNwfHfnwFc8"
     },
     {
       "name": "Pollachi",
@@ -127,7 +136,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Jayaprakash",
       "mapLink": "https://maps.app.goo.gl/9nobpHSrFU9gvqs36",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/pollachi.webp"
+      "image":"stores/pollachi.webp",
+      "placeId": "ChIJzZb3e_9YqDsRk0CtorS8Dzc"
     },
     {
       "name": "Pondicherry",
@@ -141,7 +151,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "MohanRajesh",
       "mapLink": "https://maps.app.goo.gl/CAtBihoQqHbUuayX7",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/pondy.webp"
+      "image":"stores/pondy.webp",
+       "placeId": "ChIJLzkGF35hUzoRqKXTednCqYw"
     },
     {
       "name": "Hosur",
@@ -156,7 +167,8 @@ export const StoreProvider = ({ children }) => {
       "mapLink": "https://maps.app.goo.gl/xomB9TqNP8mdDcHC6",
       "storeTiming": "9:45 AM - 8:45 PM",
   
-      "image":"stores/hosur.webp"
+      "image":"stores/hosur.webp",
+       "placeId": "ChIJERzvKM9wrjsRS8Rd0UciRjQ"
     },
     {
       "name": "Udumalaipettai",
@@ -170,7 +182,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "Baskar / Ganesh ",
       "mapLink": "https://maps.app.goo.gl/ikJoXkzv918Fv1L66",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/udu.webp"
+      "image":"stores/udu.webp",
+      "placeId": "ChIJJdShw6nNqTsR8sLfe-aQcWI"
   
     }
   ]);
@@ -312,7 +325,8 @@ export const StoreProvider = ({ children }) => {
       "contactPersonName": "MohanRajesh",
       "mapLink": "https://maps.app.goo.gl/CAtBihoQqHbUuayX7",
       "storeTiming": "9:45 AM - 8:45 PM",
-      "image":"stores/pondy.webp"
+      "image":"stores/pondy.webp",
+       "placeId": "ChIJLzkGF35hUzoRqKXTednCqYw"
     },
     {
       "name": "Hosur",
