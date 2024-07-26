@@ -240,14 +240,7 @@ const StoreLocator = () => {
 
   return (
     <div>
-      <LoadScript
-        googleMapsApiKey="AIzaSyCLl2XwLcdCro91gX5QQmkzmQgRPwgGIRY"
-        libraries={["places"]}
-      >
-        <Autocomplete
-          onLoad={(autocomplete) => setAutocomplete(autocomplete)}
-          onPlaceChanged={handlePlaceChanged}
-        >
+     
           <div className="stores-section1 position-relative">
             <Image
               className="img-fluid"
@@ -269,7 +262,14 @@ const StoreLocator = () => {
                     Find a JewelOne store in your locality, the JewelOne family
                     is growing everyday
                   </div>
-
+                  <LoadScript
+                    googleMapsApiKey="AIzaSyCLl2XwLcdCro91gX5QQmkzmQgRPwgGIRY"
+                    libraries={["places"]}
+                  >
+                    <Autocomplete
+                      onLoad={(autocomplete) => setAutocomplete(autocomplete)}
+                      onPlaceChanged={handlePlaceChanged}
+                    >
                   <div className="input-group">
                     <button className="btn  btn-light" type="button">
                       <svg
@@ -329,12 +329,14 @@ const StoreLocator = () => {
                 Locate Me
               </button> */}
                   </div>
+                  </Autocomplete>
+                  </LoadScript>
+
                 </div>
               </div>
             </div>
           </div>
-        </Autocomplete>
-      </LoadScript>
+        
       <div className="container">
         <div className="col-12 my-5">
           <div className="fs-2 text-center fw-semibold">
