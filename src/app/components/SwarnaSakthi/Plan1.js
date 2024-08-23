@@ -124,7 +124,7 @@ const Plan1 = () => {
                   I. GST & other Levies
                 </div>
                 <div className="plan-terms_text">
-                  GST & other Levies will be charged extra as er government
+                  GST & other Levies will be charged extra as per government
                   norms.
                 </div>
               </div>
