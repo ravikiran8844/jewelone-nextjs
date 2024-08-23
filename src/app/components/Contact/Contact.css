@@ -459,8 +459,8 @@ padding: 20px 0px;
 }
 
 .contact-section1_form-wrapper textarea{
-    min-height: 130px;
-    max-height: 130px;
+    height: 130px;
+    resize: none;
 }
 
 /* Chrome, Safari, Edge, Opera */
