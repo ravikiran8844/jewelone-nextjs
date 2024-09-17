@@ -53,7 +53,7 @@ const Plan4 = () => {
                   <div className="plan-terms_title mb-2">
                     Minimum Advance Amount
                   </div>
-                  <div className="plan-terms_text">Rs.13,00,000/-</div>
+                  <div className="plan-terms_text">Rs.16,50,000/-</div>
                 </div>
 
                 <div className="mb-4">
@@ -85,7 +85,7 @@ const Plan4 = () => {
                   </div>
                   <div className="plan-terms_text">
                     Customer can join in an advance amount & old gold jewellery
-                    worth the value of Rs.13 lakhs.{" "}
+                    worth the value of Rs.16,50,000.{" "}
                   </div>
                 </div>
 
@@ -129,14 +129,14 @@ const Plan4 = () => {
           </div>
         </section>
 
-        <section  className='bg-white'>
+        <section className="bg-white">
           <div className="container py-5">
             <div className="col-12 col-lg-10 m-auto">
               <div className="table-responsive">
                 <table className="table  table-bordered">
                   <thead>
                     <tr>
-                      <th colSpan={5}>Maturity benefits</th>
+                      <th colSpan={6}>Maturity benefits</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -146,18 +146,21 @@ const Plan4 = () => {
                       <td className="text-black fw-bold">Scenario 2</td>
                       <td className="text-black fw-bold">Scenario 3</td>
                       <td className="text-black fw-bold">Scenario 4</td>
+                      <td className="text-black fw-bold">Scenario 5</td>
                     </tr>
 
                     <tr>
                       <td>Scheme Value</td>
-                      <td>13,00,000</td>
-                      <td>13,00,000</td>
-                      <td>13,00,000</td>
-                      <td>13,00,000</td>
+                      <td>16,50,000</td>
+                      <td>16,50,000</td>
+                      <td>16,50,000</td>
+                      <td>16,50,000</td>
+                      <td>16,50,000</td>
                     </tr>
 
                     <tr>
                       <td>Open Date</td>
+                      <td>01/07/2023</td>
                       <td>01/07/2023</td>
                       <td>01/07/2023</td>
                       <td>01/07/2023</td>
@@ -168,6 +171,7 @@ const Plan4 = () => {
                       <td>Closure Date</td>
                       <td>25/05/2024 </td>
                       <td>23/05/2024 </td>
+                      <td>26/02/2024</td>
                       <td>04/10/2023</td>
                       <td>19/09/2023</td>
                     </tr>
@@ -176,6 +180,7 @@ const Plan4 = () => {
                       <td>Days</td>
                       <td>330</td>
                       <td>328</td>
+                      <td>241</td>
                       <td>96</td>
                       <td>81</td>
                     </tr>
@@ -184,6 +189,7 @@ const Plan4 = () => {
                       <td>Months</td>
                       <td>11</td>
                       <td>10</td>
+                      <td>8</td>
                       <td>3</td>
                       <td>2</td>
                     </tr>
@@ -192,6 +198,7 @@ const Plan4 = () => {
                       <td>Benefit (VA)</td>
                       <td>NO VA</td>
                       <td>10%</td>
+                      <td>8%</td>
                       <td>3%</td>
                       <td>0%</td>
                     </tr>
@@ -199,10 +206,10 @@ const Plan4 = () => {
                     <tr>
                       <td className="text-red fw-bold">VA Benefit Maximum</td>
                       <td className="text-red fw-bold">NO VA</td>
-                      <td className="text-red fw-bold">1,30,000</td>
-                      <td className="text-red fw-bold">39,000</td>
-
-                      <td className="text-red fw-bold">-</td>
+                      <td className="text-red fw-bold">1,65,000</td>
+                      <td className="text-red fw-bold">1,32,000</td>
+                      <td className="text-red fw-bold">49,500</td>
+                      <td className="text-red fw-bold">0</td>
                     </tr>
                   </tbody>
                 </table>
@@ -211,22 +218,42 @@ const Plan4 = () => {
           </div>
         </section>
 
-
-        <section className="wedding-jewelry-section" style={{backgroundImage:"url('/swarna-sakthi/bg.webp')",backgroundSize:'cover',backgroundRepeat:'no-repeat'}}>
-          <div  className="container">
-          <div className="row">
+        <section
+          className="wedding-jewelry-section"
+          style={{
+            backgroundImage: "url('/swarna-sakthi/bg.webp')",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="container">
+            <div className="row">
               <div className="col-12 col-md-7 py-5">
                 <div className="display-4 plan4-banner-section__title mb-2">
-                A Golden <br />
-                Future Awaits
+                  A Golden <br />
+                  Future Awaits
                 </div>
-                <div className="fs-3 mb-2  plan4-banner-section__sub-title">Start Your Journey Now!</div>
-                <div className="text-red fs-6 mb-2 fw-medium fst-italic">Non-Redemption on Maturity</div>
-                <div className="mb-4">If the customer does not purchase Jewellery at the end of 330 days from the date of enrollment and grace period of 10 days given by the company from the maturity of scheme, then the total advance amount will be invoiced with an equivalent weight of 22 karat gold coin as per the rate fixed by the customer without any benefit, (For example: a customer has given Rs.1,00,000 in the scheme and a Gold ate is fixed as Rs.4,500 per gram, then the refund will be in the form of 22.220 (approx.) grams of 22k gold coin).</div>
+                <div className="fs-3 mb-2  plan4-banner-section__sub-title">
+                  Start Your Journey Now!
+                </div>
+                <div className="text-red fs-6 mb-2 fw-medium fst-italic">
+                  Non-Redemption on Maturity
+                </div>
+                <div className="mb-4">
+                  If the customer does not purchase Jewellery at the end of 330
+                  days from the date of enrollment and grace period of 10 days
+                  given by the company from the maturity of scheme, then the
+                  total advance amount will be invoiced with an equivalent
+                  weight of 22 karat gold coin as per the rate fixed by the
+                  customer without any benefit, (For example: a customer has
+                  given Rs.1,00,000 in the scheme and a Gold ate is fixed as
+                  Rs.4,500 per gram, then the refund will be in the form of
+                  22.220 (approx.) grams of 22k gold coin).
+                </div>
                 <div>GST will be charged extra as per government norms.</div>
               </div>
               <div className="col-12 col-md-5 pb-5">
-              <Image
+                <Image
                   alt="chain"
                   className="img-fluid"
                   width={400}
@@ -237,7 +264,6 @@ const Plan4 = () => {
             </div>
           </div>
         </section>
-
 
         <section className="container py-5">
           <div className="col-12 mb-4">
@@ -259,22 +285,44 @@ const Plan4 = () => {
                 <li>
                   No Partial Withdrawal from the Advance paid will be allowed.
                 </li>
-                <li>No cash refund will be permitted for the Swarna Sakthi Wedding Jewellery Plan.</li>
-                <li>Customers should produce their identity proof and the bank account details with
-                documentary proof, which is mandatory at the time of enrollment and redemption. The customer should also produce the original receipt during the closure.</li>
+                <li>
+                  No cash refund will be permitted for the Swarna Sakthi Wedding
+                  Jewellery Plan.
+                </li>
+                <li>
+                  Customers should produce their identity proof and the bank
+                  account details with documentary proof, which is mandatory at
+                  the time of enrollment and redemption. The customer should
+                  also produce the original receipt during the closure.
+                </li>
               </ul>
             </div>
 
             <div className="col-12 col-lg-6">
               <ul>
-                <li>Any promotional offers/existing discounts will not be clubbed with Swarna Sakthi redemption value.</li>
-                <li>If the customer buys extra gold over and above the accumulated weight in Swarna sakthi, Actual VA is applicable for the extra weight. They can also avail prevailing offers at the time of purchase for the extra gold.</li>
-                <li>GST will be charged extra as per government norms.</li>
-                <li>Stone charges are as applicable. (Waiver of VA is applicable only on 916 Gold jewellery)
+                <li>
+                  Any promotional offers/existing discounts will not be clubbed
+                  with Swarna Sakthi redemption value.
                 </li>
-                <li>If any assistance is needed in opting for NEFT/RTGS payment, kindly contact your nearest jewel one showroom (or)
-                call Toll free : 1800 1033 916.</li>
-                <li>Any dispute would be subject to Coimbatore jurisdiction only.</li>
+                <li>
+                  If the customer buys extra gold over and above the accumulated
+                  weight in Swarna sakthi, Actual VA is applicable for the extra
+                  weight. They can also avail prevailing offers at the time of
+                  purchase for the extra gold.
+                </li>
+                <li>GST will be charged extra as per government norms.</li>
+                <li>
+                  Stone charges are as applicable. (Waiver of VA is applicable
+                  only on 916 Gold jewellery)
+                </li>
+                <li>
+                  If any assistance is needed in opting for NEFT/RTGS payment,
+                  kindly contact your nearest jewel one showroom (or) call Toll
+                  free : 1800 1033 916.
+                </li>
+                <li>
+                  Any dispute would be subject to Coimbatore jurisdiction only.
+                </li>
               </ul>
             </div>
           </div>
