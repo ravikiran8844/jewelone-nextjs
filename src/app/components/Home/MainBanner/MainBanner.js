@@ -32,7 +32,6 @@ export const MainBanner = () => {
               src="/home/new-banner1-mob.webp"
               height={1940}
               width={691}
-              priority="true"
             />
           </picture>
         </SplideSlide>
@@ -51,7 +50,6 @@ export const MainBanner = () => {
               src="/home/jone-banner1mob.webp"
               height={1940}
               width={691}
-              priority="true"
             />
           </picture>
         </SplideSlide>
@@ -69,12 +67,11 @@ export const MainBanner = () => {
               src="/home-mobile-banner5.webp"
               height={1940}
               width={691}
-              priority="true"
             />
           </picture>
         </SplideSlide>
 
-        <SplideSlide>
+        {/* <SplideSlide>
           <div className="slide-large-video">
             <video
               className="w-100 h-auto object-fit-cover"
@@ -117,7 +114,7 @@ export const MainBanner = () => {
               />
             </video>
           </div>
-        </SplideSlide>
+        </SplideSlide> */}
 
         {/* <SplideSlide>
           <Link href="/tvam">
@@ -129,8 +126,7 @@ export const MainBanner = () => {
               />
               <Image
                 className="img-fluid"
-                priority="true"
-                alt="main banner"
+                  alt="main banner"
                 src="/home-mobile-banner1.webp"
                 height={1940}
                 width={691}
@@ -152,7 +148,6 @@ export const MainBanner = () => {
               src="/home-mobile-banner3.webp"
               height={541}
               width={1519}
-              priority="true"
             />
           </picture>
         </SplideSlide> */}
