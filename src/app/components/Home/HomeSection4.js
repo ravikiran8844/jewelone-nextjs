@@ -8,14 +8,14 @@ const HomeSection4 = () => {
   <div className="col-12 position-relative">
     <picture>
       <source
-        srcSet="/home-section4-img-mobile.webp"
+        srcSet="/home/home-section4-img-mobile.webp"
         type="image/webp"
         media="(max-width: 650px)"
       />
       <Image
         width={1920}
         height={680}
-        src="/home-section4-img.webp"
+        src="/home/home-section4-img.webp"
         alt="swarna sakthi banner"
       />
     </picture>
