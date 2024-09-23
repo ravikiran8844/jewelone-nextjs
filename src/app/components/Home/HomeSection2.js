@@ -26,7 +26,7 @@ const HomeSection2 = () => {
                 <Image
                   width={703}
                   height={408}
-                  className="img-fluid rounded-4 w-100 h-auto"
+                  className="img-fluid rounded-4"
                   src="/home/section2-img1.webp"
                   alt="banner"
                 />

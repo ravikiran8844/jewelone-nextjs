@@ -6,18 +6,19 @@ const HomeSection1 = () => {
     <div className='home-section1'>
           <picture>
             <source
-              srcSet="/home/jone-banner1mob.webp"
+              srcSet="/home/jone-banner1.webp"
               type="image/webp"
-              media="(max-width: 650px)"
+              media="(min-width: 650px)"
             />
             <Image
               className="img-fluid"
-              alt="Image X alt"
-              src="/home/jone-banner1.webp"
+              alt="Home Main Banner"
+              src="/home/jone-banner1mob.webp"
               height={691}
               width={1940}
               priority
               loading='eager'
+              sizes="100vw"
             />
           </picture>
     </div>
