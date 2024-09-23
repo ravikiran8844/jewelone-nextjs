@@ -94,7 +94,7 @@ const Plan4 = () => {
                     Gold rate will be fixed{" "}
                   </div>
                   <div className="plan-terms_text">
-                    Gold Rate will be fixed at the time of enrolment as per the
+                    Gold Rate will be fixed at the time of enrollment as per the
                     prevailing rate of the day. It cannot be changed later under
                     any circumstances.
                   </div>
