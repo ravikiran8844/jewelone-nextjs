@@ -19,21 +19,21 @@ const HomeSection2 = () => {
                 </div>
         </div>
 
-          <div className="row g-4">
-            <div className="col-12 col-lg-5">
+          <div className="row g-3">
+            <div className="col-12 col-lg-6">
           
               
                 <Image
                   width={703}
                   height={408}
-                  className="img-fluid rounded-4"
+                  className="img-fluid rounded-4 w-100 h-100 object-fit-cover"
                   src="/home/section2-img1.webp"
                   alt="banner"
                 />
               
             </div>
 
-            <div className="col-12 col-lg-7">
+            <div className="col-12 col-lg-6">
               <div className="px-lg-5">
                 <div className="home-section2_text mb-3">
                   <span className="item-text-red">Welcome to Jewel One, </span>
