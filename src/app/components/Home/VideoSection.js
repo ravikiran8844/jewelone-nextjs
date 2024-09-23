@@ -166,7 +166,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 m-auto">
                     <div className="mb-4 home-section5_slide-item-text">
                       Sushmita , a bride from Pollachi, shares her happiest
-                      moment of customising her entire bridal jewellery with
+                      moment of customizing her entire bridal jewellery with
                       Jewel One. Join her as she narrates the story of how her
                       dream jewellery became a reality, making her special day
                       even more magical.
