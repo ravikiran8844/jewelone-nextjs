@@ -161,6 +161,7 @@ const VideoSection = () => {
                       poster="sddefault"
                       params="rel=0"
                       title="Sushmita"
+                      webp={true}
                     />
                   </div>
                   <div className="col-12 col-md-6 m-auto">
@@ -191,6 +192,8 @@ const VideoSection = () => {
                       poster="sddefault"
                       params="rel=0"
                       title="Sujatha"
+                      webp={true}
+
                     />
                   </div>
                   <div className="col-12 col-md-6 m-auto">
@@ -221,6 +224,8 @@ const VideoSection = () => {
                       poster="sddefault"
                       params="rel=0"
                       title="Nandini"
+                      webp={true}
+
                     />
                   </div>
                   <div className="col-12 col-md-6 m-auto">
@@ -251,6 +256,8 @@ const VideoSection = () => {
                       poster="sddefault"
                       params="rel=0"
                       title="Srinivasan"
+                      webp={true}
+
                     />
                   </div>
                   <div className="col-12 col-md-6 m-auto">
@@ -280,6 +287,8 @@ const VideoSection = () => {
                       poster="sddefault"
                       params="rel=0"
                       title="Customers"
+                      webp={true}
+
                     />
                   </div>
                   <div className="col-12 col-md-6 m-auto">

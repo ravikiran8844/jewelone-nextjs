@@ -16,6 +16,8 @@ const HomeSection1 = () => {
               src="/home/jone-banner1mob.webp"
               height={1940}
               width={691}
+              priority
+              loading='eager'
             />
           </picture>
     </div>
