@@ -11,8 +11,8 @@ import Navbar from '../components/NavBar/NavBar'
 
 
 export const metadata = {
-  title: 'Zillara - Silver Jewelry by JewelOne',
-  description: 'Discover exquisite silver jewelry by Zillara, a premier brand by JewelOne. Explore our collection of finely crafted silver pieces that blend elegance and style.'
+  title: 'Zilara - Silver Jewelry by JewelOne',
+  description: 'Discover exquisite silver jewelry by Zilara, a premier brand by JewelOne. Explore our collection of finely crafted silver pieces that blend elegance and style.'
 }
 
 
