@@ -50,31 +50,31 @@ export const InstagramGrid = () => {
                   } }>
              
              <SplideSlide>
-              <a target='__blank' href='https://instagram.com/jewelone_in/'>
+              <a target='__blank' href='https://www.instagram.com/p/C_yFGiQyKy-/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D'>
               <Image width={316} height={316} src="/home/home-insta-img1.webp" alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
-              <a target='__blank' href='https://instagram.com/jewelone_in/'>
+              <a target='__blank' href='https://www.instagram.com/p/C9C80WvyvU0/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=1'>
               <Image width={316} height={316} src="/home/home-insta-img2.webp"  alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
-              <a target='__blank' href='https://instagram.com/jewelone_in/'>
+              <a target='__blank' href='https://www.instagram.com/p/C9RU3b0ygjF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D&img_index=1'>
               <Image width={316} height={316} src="/home/home-insta-img3.webp" alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
-              <a target='__blank' href='https://instagram.com/jewelone_in/'>
+              <a target='__blank' href='https://www.instagram.com/p/C7Ew7OsyEo5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D'>
               <Image width={316} height={316} src="/home/home-insta-img4.webp" alt='instagram banner' />
               </a>
 
               </SplideSlide>
               <SplideSlide>
-              <a target='__blank' href='https://instagram.com/jewelone_in/'>
+              <a target='__blank' href='https://www.instagram.com/p/C7OuTWSR8dg/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA%3D%3D'>
               <Image width={316} height={316} src="/home/home-insta-img5.webp" alt='instagram banner' />
               </a>
 
