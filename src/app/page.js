@@ -17,6 +17,7 @@ import AkshayaTritiyaSection2 from './components/AkshayaTritiya/AkshayaTritiyaSe
 import HomeVideoSlider from './components/Home/HomeVideoSlider'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/NavBar/NavBar'
+import HomeSection1 from './components/Home/HomeSection1'
 
 
 export const metadata = {
@@ -30,8 +31,8 @@ export default function Home() {
    <main>
     <Navbar/>
     {/* <HomeVideoAutoPlay/> */}
-    <MainBanner/>
-    {/* <HomeSection1/> */}
+    {/* <MainBanner/> */}
+    <HomeSection1/>
     <HomeSection2/>
     <HomeVideoSlider/>
 

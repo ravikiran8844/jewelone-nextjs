@@ -18,7 +18,7 @@ export const MainBanner = () => {
           interval: 4000,
         }}
       >
-
+{/* 
 <SplideSlide>
           <picture>
             <source
@@ -34,7 +34,7 @@ export const MainBanner = () => {
               width={691}
             />
           </picture>
-        </SplideSlide>
+        </SplideSlide> */}
 
 
           <SplideSlide>
@@ -54,7 +54,7 @@ export const MainBanner = () => {
           </picture>
         </SplideSlide>
 
-        <SplideSlide>
+        {/* <SplideSlide>
           <picture>
             <source
               srcSet="/home-main-banner5.webp"
@@ -69,7 +69,7 @@ export const MainBanner = () => {
               width={691}
             />
           </picture>
-        </SplideSlide>
+        </SplideSlide> */}
 
         {/* <SplideSlide>
           <div className="slide-large-video">
