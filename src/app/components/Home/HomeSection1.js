@@ -14,8 +14,8 @@ const HomeSection1 = () => {
               className="img-fluid"
               alt="Home Main Banner"
               src="/home/jone-banner1mob.webp"
-              height={691}
-              width={1940}
+              height={600}
+              width={800}
               priority
               loading='eager'
               sizes="100vw"
