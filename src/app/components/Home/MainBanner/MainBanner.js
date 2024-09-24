@@ -23,18 +23,19 @@ export const MainBanner = () => {
           <SplideSlide>
           <picture>
             <source
-              srcSet="/home/jone-banner1mob.webp"
+              srcSet="/home/jone-banner1.webp"
               type="image/webp"
-              media="(max-width: 650px)"
-              height={800}
-              width={600} 
+              media="(min-width: 650px)"
+              height={691}
+              width={1920}
             />
             <Image
               className="img-fluid"
               alt="Main Banner Image"
-              src="/home/jone-banner1.webp"
-              height={691}
-              width={1920}
+              src="/home/jone-banner1mob.webp"
+              height={800}
+
+              width={600} 
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
               priority={true}
@@ -48,21 +49,23 @@ export const MainBanner = () => {
         </SplideSlide>
 
         
+        
         <SplideSlide>
           <picture>
             <source
-              srcSet="/home/jone-banner2mob.webp"
+              srcSet="/home/jone-banner2.webp"
               type="image/webp"
-              media="(max-width: 650px)"
-              height={800}
-              width={600} 
+              media="(min-width: 650px)"
+              height={691}
+              width={1920}
             />
             <Image
               className="img-fluid"
               alt="Main Banner Image"
-              src="/home/jone-banner2.webp"
-              height={691}
-              width={1920}
+              src="/home/jone-banner2mob.webp"
+             
+              height={800}
+              width={600} 
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
               priority={true}
