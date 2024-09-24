@@ -18,124 +18,139 @@ export const MainBanner = () => {
           interval: 4000,
         }}
       >
-{/* 
-<SplideSlide>
+
+
+          {/* <SplideSlide>
           <picture>
             <source
-              srcSet="/home/new-banner1.webp"
+              srcSet="/home/jone-banner1mob.webp"
               type="image/webp"
-              media="(min-width: 650px)"
+              media="(max-width: 650px)"
+              height={800}
+              width={600} 
             />
             <Image
               className="img-fluid"
-              alt="Image X alt"
-              src="/home/new-banner1-mob.webp"
-              height={1940}
-              width={691}
-            />
-          </picture>
-        </SplideSlide> */}
-
-
-          <SplideSlide>
-          <picture>
-            <source
-              srcSet="/home/jone-banner1.webp"
-              type="image/webp"
-              media="(min-width: 650px)"
-            />
-            <Image
-              className="img-fluid"
-              alt="Image X alt"
-              src="/home/jone-banner1mob.webp"
-              height={1940}
-              width={691}
+              alt="Main Banner Image"
+              src="/home/jone-banner1.webp"
+              height={691}
+              width={1920}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              priority={true}
+              loading="eager"
+              style={{
+                width: '100%',
+                height: 'auto', // Maintain aspect ratio
+              }}
             />
           </picture>
         </SplideSlide>
 
-        {/* <SplideSlide>
+        
+        <SplideSlide>
           <picture>
             <source
-              srcSet="/home-main-banner5.webp"
+              srcSet="/home/jone-banner2mob.webp"
               type="image/webp"
-              media="(min-width: 650px)"
+              media="(max-width: 650px)"
+              height={800}
+              width={600} 
             />
             <Image
               className="img-fluid"
-              alt="Image X alt"
-              src="/home-mobile-banner5.webp"
-              height={1940}
-              width={691}
+              alt="Main Banner Image"
+              src="/home/jone-banner2.webp"
+              height={691}
+              width={1920}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              priority={true}
+              loading="eager"
+              style={{
+                width: '100%',
+                height: 'auto', // Maintain aspect ratio
+              }}
             />
           </picture>
         </SplideSlide> */}
 
-        {/* <SplideSlide>
-          <div className="slide-large-video">
-            <video
-              className="w-100 h-auto object-fit-cover"
-              autoPlay
-              loop
-              muted
-              // loading="lazy"
-              // preload="none"
-              poster="/home/video-poster-desktop.webp"
-              playsInline
-              // controls
-              height={1940}
-              width={691}
-            >
-              <source
-                src="/home/home-main-banner-video-desktop.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div>
 
-          <div className="slide-small-video">
-            <video
-              className="w-100 h-auto object-fit-cover"
-              autoPlay
-              loop
-              muted
-              // loading="lazy"
-              // preload="none"
-              playsInline
-              poster="/home/video-poster-mobile.webp"
-              // controls
+<SplideSlide>
+        <Image
+              className="img-fluid d-none d-md-block"
+              alt="Main Banner Image"
+              src="/home/jone-banner1.webp"
+              height={691}
+              width={1920}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              priority={true}
+              loading="eager"
+              sizes="100vw"
+
+              style={{
+                width: '100%',
+                height: 'auto', // Maintain aspect ratio
+              }}
+            />
+              <Image
+              className="img-fluid d-block d-md-none"
+              alt="Main Banner Image"
+              src="/home/jone-banner1mob.webp"
               height={800}
               width={600}
-            >
-              <source
-                src="/home/home-main-banner-video-mobile.mp4"
-                type="video/mp4"
-                
-              />
-            </video>
-          </div>
-        </SplideSlide> */}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              priority={true}
+              loading="eager"
+              sizes="100vw"
+              style={{
+                width: '100%',
+                height: 'auto', // Maintain aspect ratio
+              }}
+            />
+        </SplideSlide>
+        
+        <SplideSlide>
+        <Image
+              className="img-fluid d-none d-md-block"
+              alt="Main Banner Image"
+              src="/home/jone-banner2.webp"
+              height={691}
+              width={1920}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              priority={true}
+              loading="eager"
+              sizes="100vw"
 
-        {/* <SplideSlide>
-          <Link href="/tvam">
-            <picture>
-              <source
-                srcSet="/home-main-banner1.webp"
-                type="image/webp"
-                media="(min-width: 650px)"
-              />
+              style={{
+                width: '100%',
+                height: 'auto', // Maintain aspect ratio
+              }}
+            />
               <Image
-                className="img-fluid"
-                  alt="main banner"
-                src="/home-mobile-banner1.webp"
-                height={1940}
-                width={691}
-              />
-            </picture>
-          </Link>
-        </SplideSlide> */}
+              className="img-fluid d-block d-md-none"
+              alt="Main Banner Image"
+              src="/home/jone-banner2mob.webp"
+              height={800}
+              width={600}
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+              priority={true}
+              loading="eager"
+              sizes="100vw"
+              style={{
+                width: '100%',
+                height: 'auto', // Maintain aspect ratio
+              }}
+            />
+        </SplideSlide>
 
-        {/* <SplideSlide>
+        
+
+
           <picture>
             <source
               srcSet="/home-main-banner3.webp"
@@ -150,7 +165,6 @@ export const MainBanner = () => {
               width={1519}
             />
           </picture>
-        </SplideSlide> */}
       </Splide>
     </section>
   );

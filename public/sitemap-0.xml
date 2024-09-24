@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://jewelone.in/florencia/feedback</loc><lastmod>2024-09-24T04:41:37.678Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://jewelone.in/swarna-sakthi</loc><lastmod>2024-09-24T04:41:37.679Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://jewelone.in/florencia</loc><lastmod>2024-09-24T04:41:37.679Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://jewelone.in/tvam</loc><lastmod>2024-09-24T04:41:37.679Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://jewelone.in/contact-us</loc><lastmod>2024-09-24T04:41:37.679Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://jewelone.in/zilara</loc><lastmod>2024-09-24T04:41:37.679Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://jewelone.in</loc><lastmod>2024-09-24T04:41:37.679Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
-<url><loc>https://jewelone.in/stores</loc><lastmod>2024-09-24T04:41:37.679Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://jewelone-nextjs.vercel.app/tvam</loc><lastmod>2024-09-24T06:46:15.122Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://jewelone-nextjs.vercel.app/zilara</loc><lastmod>2024-09-24T06:46:15.123Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://jewelone-nextjs.vercel.app/swarna-sakthi</loc><lastmod>2024-09-24T06:46:15.123Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://jewelone-nextjs.vercel.app</loc><lastmod>2024-09-24T06:46:15.123Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://jewelone-nextjs.vercel.app/florencia</loc><lastmod>2024-09-24T06:46:15.123Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://jewelone-nextjs.vercel.app/contact-us</loc><lastmod>2024-09-24T06:46:15.123Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
+<url><loc>https://jewelone-nextjs.vercel.app/stores</loc><lastmod>2024-09-24T06:46:15.123Z</lastmod><changefreq>daily</changefreq><priority>0.7</priority></url>
 </urlset>
