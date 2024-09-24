@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://jewelone.in
+Host: https://jewelone-nextjs.vercel.app
 
 # Sitemaps
-Sitemap: https://jewelone.in/sitemap.xml
+Sitemap: https://jewelone-nextjs.vercel.app/sitemap.xml

@@ -29,6 +29,7 @@ const HomeSection2 = () => {
                   className="img-fluid rounded-4 w-100 h-100 object-fit-cover"
                   src="/home/section2-img1.webp"
                   alt="banner"
+                  sizes="(max-width: 600px) 100vw, (min-width: 768px) 50vw, 703px"
                 />
               
             </div>

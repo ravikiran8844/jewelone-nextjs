@@ -16,7 +16,8 @@ const HomeGifBanner = () => {
               src="/mobile-gif-banner.gif"
               height={550}
               width={1519 }
-              className='img-fluid'               />
+              className='img-fluid'  
+              unoptimized             />
           </picture>
 </div>
   )
