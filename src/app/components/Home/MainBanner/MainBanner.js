@@ -34,7 +34,6 @@ export const MainBanner = () => {
               alt="Main Banner Image"
               src="/home/jone-banner1mob.webp"
               height={800}
-
               width={600} 
               placeholder="blur"
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
@@ -77,26 +76,6 @@ export const MainBanner = () => {
             />
           </picture>
         </SplideSlide>
-
-
-
-        
-
-
-          <picture>
-            <source
-              srcSet="/home-main-banner3.webp"
-              type="image/webp"
-              media="(min-width: 650px)"
-            />
-            <Image
-            className="img-fluid"
-              alt="Image X alt"
-              src="/home-mobile-banner3.webp"
-              height={541}
-              width={1519}
-            />
-          </picture>
       </Splide>
     </section>
   );
