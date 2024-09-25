@@ -10,31 +10,39 @@ const VideoSection = () => {
   const mainRef = useRef(null);
   const thumbsRef = useRef(null);
 
-  const [thumbnail, setThumbnail] = useState('hqdefault');
+  const [thumbnail, setThumbnail] = useState('mqdefault');
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(min-width: 768px)');
+    // Create media query for each breakpoint
+    const smallScreen = window.matchMedia('(max-width: 649px)');
+    const mediumScreen = window.matchMedia('(min-width: 650px) and (max-width: 991px)');
+    const largeScreen = window.matchMedia('(min-width: 992px)');
 
-    const handleScreenChange = (e) => {
-      if (e.matches) {
-        setThumbnail('sddefault'); // Use sddefault for larger screens
-      } else {
-        setThumbnail('hqdefault'); // Use hqdefault for smaller screens
+    const handleScreenChange = () => {
+      if (largeScreen.matches) {
+        setThumbnail('sddefault'); // Larger screens
+      } else if (mediumScreen.matches) {
+        setThumbnail('mqdefault'); // Medium screens
+      } else if (smallScreen.matches) {
+        setThumbnail('hqdefault'); // Smaller screens
       }
     };
 
-    // Initial check
-    handleScreenChange(mediaQuery);
-    
-    // Add event listener for screen size changes
-    mediaQuery.addEventListener('change', handleScreenChange);
+    // Initial check for all breakpoints
+    handleScreenChange();
 
-    // Clean up event listener on unmount
+    // Add event listeners for each media query
+    smallScreen.addEventListener('change', handleScreenChange);
+    mediumScreen.addEventListener('change', handleScreenChange);
+    largeScreen.addEventListener('change', handleScreenChange);
+
+    // Cleanup event listeners on unmount
     return () => {
-      mediaQuery.removeEventListener('change', handleScreenChange);
+      smallScreen.removeEventListener('change', handleScreenChange);
+      mediumScreen.removeEventListener('change', handleScreenChange);
+      largeScreen.removeEventListener('change', handleScreenChange);
     };
   }, []);
-
 
 
   useEffect(() => {
