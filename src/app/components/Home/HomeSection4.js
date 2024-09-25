@@ -11,12 +11,16 @@ const HomeSection4 = () => {
         srcSet="/home/home-section4-img-mobile.webp"
         type="image/webp"
         media="(max-width: 650px)"
+        width={600}
+        height={800}
       />
       <Image
+      className='img-fluid w-100 h-auto'
         width={1920}
-        height={680}
+        height={786}
         src="/home/home-section4-img.webp"
         alt="swarna sakthi banner"
+        sizes="100vw"
       />
     </picture>
     {/* <div className="home-section4_app-links">
