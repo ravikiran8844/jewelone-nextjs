@@ -3,7 +3,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "./MainBanner.css";
 import Image from "next/image";
-// import Link from "next/link";
 
 export const MainBanner = () => {
   return (
@@ -16,7 +15,7 @@ export const MainBanner = () => {
         }}
       >
         <SplideSlide>
-          <picture>
+          <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
               srcSet="/home/jone-banner1.webp"
               type="image/webp"
@@ -27,24 +26,25 @@ export const MainBanner = () => {
             <source
               srcSet="/home/jone-banner1mob.webp"
               type="image/webp"
-              media="(max-width: 650px)"
+              media="(min-width: 450px)"
               width={600}
               height={800}
             />
             <Image
               className="img-fluid w-100 h-auto"
               alt="Main Banner Image"
-              src="/home/jone-banner1.webp"
-              width={1920}
-              height={691}
+              src="/home/jone-banner1mob-small.webp"
+              width={400}
+              height={533}
               sizes="100vw"
               loading="eager"
+              priority
             />
           </picture>
         </SplideSlide>
 
         <SplideSlide>
-          <picture>
+          <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
               srcSet="/home/jone-banner2.webp"
               type="image/webp"
@@ -55,18 +55,19 @@ export const MainBanner = () => {
             <source
               srcSet="/home/jone-banner2mob.webp"
               type="image/webp"
-              media="(max-width: 650px)"
+              media="(min-width: 450px)"
               width={600}
               height={800}
             />
             <Image
               className="img-fluid w-100 h-auto"
               alt="Main Banner Image"
-              width={1920}
-              height={691}
+              src="/home/jone-banner2mob-small.webp"
+              width={400}
+              height={533}
               sizes="100vw"
-              src="/home/jone-banner2.webp"
               loading="eager"
+              priority
             />
           </picture>
         </SplideSlide>
