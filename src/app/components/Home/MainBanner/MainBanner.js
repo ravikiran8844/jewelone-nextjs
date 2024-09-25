@@ -34,8 +34,8 @@ export const MainBanner = () => {
               className="img-fluid w-100 h-auto"
               alt="Main Banner Image"
               src="/home/jone-banner1mob-small.webp"
-              width={400}
-              height={533}
+              width={450}
+              height={600}
               sizes="100vw"
               loading="eager"
               priority
@@ -63,8 +63,8 @@ export const MainBanner = () => {
               className="img-fluid w-100 h-auto"
               alt="Main Banner Image"
               src="/home/jone-banner2mob-small.webp"
-              width={400}
-              height={533}
+              width={450}
+              height={600}
               sizes="100vw"
               loading="eager"
               priority
