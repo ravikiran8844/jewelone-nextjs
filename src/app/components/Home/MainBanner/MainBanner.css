@@ -1,36 +1,44 @@
-.main-banner-section picture img,.main-banner-section video{
-    max-width: 100%;
-    height:auto;
-    width: 100%;
-    object-fit: cover;
+.main-banner-section picture img,
+.main-banner-section video {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  object-fit: cover;
 }
 
-
-.slide-large-video{
-display: none;
+.slide-large-video {
+  display: none;
 }
-.slide-small-video{
+.slide-small-video {
+  display: block;
+}
+.main-banner-section.home-section1 {
+    aspect-ratio:3/4;
+
+}
+@media (min-width: 650px) {
+
+    .main-banner-section.home-section1{
+        aspect-ratio:1920/691;
+    }
+
+  .slide-large-video {
     display: block;
-}
-
-@media (min-width:650px) {
-    .slide-large-video{
-        display: block;
-        }
-        .slide-small-video{
-            display: none;
-        }
-}
-
-.main-banner-section .splide{
-    max-width: 100%;
-}
-
-.main-banner-section .splide__arrows{
+  }
+  .slide-small-video {
     display: none;
-   }
-   @media (min-width:768px) {
-    .main-banner-section .splide__arrows{
-           display: block;
-          }
-   }
+  }
+}
+
+.main-banner-section .splide {
+  max-width: 100%;
+}
+
+.main-banner-section .splide__arrows {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main-banner-section .splide__arrows {
+    display: block;
+  }
+}

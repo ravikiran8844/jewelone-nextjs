@@ -3,7 +3,6 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "./MainBanner.css";
 import Image from "next/image";
-// import Link from "next/link";
 
 export const MainBanner = () => {
   return (
@@ -16,7 +15,7 @@ export const MainBanner = () => {
         }}
       >
         <SplideSlide>
-          <picture>
+          <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
               srcSet="/home/jone-banner1.webp"
               type="image/webp"
@@ -39,12 +38,13 @@ export const MainBanner = () => {
               height={533}
               sizes="100vw"
               loading="eager"
+              priority
             />
           </picture>
         </SplideSlide>
 
         <SplideSlide>
-          <picture>
+          <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
               srcSet="/home/jone-banner2.webp"
               type="image/webp"
@@ -67,6 +67,7 @@ export const MainBanner = () => {
               height={533}
               sizes="100vw"
               loading="eager"
+              priority
             />
           </picture>
         </SplideSlide>
