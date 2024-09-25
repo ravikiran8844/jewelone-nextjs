@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "./Home.css";
@@ -9,6 +9,33 @@ import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 const VideoSection = () => {
   const mainRef = useRef(null);
   const thumbsRef = useRef(null);
+
+  const [thumbnail, setThumbnail] = useState('hqdefault');
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(min-width: 768px)');
+
+    const handleScreenChange = (e) => {
+      if (e.matches) {
+        setThumbnail('sddefault'); // Use sddefault for larger screens
+      } else {
+        setThumbnail('hqdefault'); // Use hqdefault for smaller screens
+      }
+    };
+
+    // Initial check
+    handleScreenChange(mediaQuery);
+    
+    // Add event listener for screen size changes
+    mediaQuery.addEventListener('change', handleScreenChange);
+
+    // Clean up event listener on unmount
+    return () => {
+      mediaQuery.removeEventListener('change', handleScreenChange);
+    };
+  }, []);
+
+
 
   useEffect(() => {
     if (mainRef.current && thumbsRef.current && thumbsRef.current.splide) {
@@ -158,7 +185,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="8Q4eiTmy0b0"
-                      poster="sddefault"
+                      poster={thumbnail}
                       params="rel=0"
                       title="Sushmita"
                       webp={true}
@@ -189,7 +216,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="TXlGcMOUGp0"
-                      poster="sddefault"
+                      poster={thumbnail}
                       params="rel=0"
                       title="Sujatha"
                       webp={true}
@@ -221,7 +248,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="-UaIoygsBD4"
-                      poster="sddefault"
+                      poster={thumbnail}
                       params="rel=0"
                       title="Nandini"
                       webp={true}
@@ -253,7 +280,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="49wgYi_FUsk"
-                      poster="sddefault"
+                      poster={thumbnail}
                       params="rel=0"
                       title="Srinivasan"
                       webp={true}
@@ -284,7 +311,7 @@ const VideoSection = () => {
                   <div className="col-12 col-md-6 d-flex">
                     <LiteYouTubeEmbed
                       id="NwhLojRAfAM"
-                      poster="sddefault"
+                      poster={thumbnail}
                       params="rel=0"
                       title="Customers"
                       webp={true}
