@@ -69,7 +69,7 @@ const Slide = ({
                 height={40}
                 src="/new.gif"
                 alt="new offer"
-                unoptimized
+                sizes="100vw"
               />
             </div>
           )}

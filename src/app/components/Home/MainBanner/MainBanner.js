@@ -21,19 +21,23 @@ export const MainBanner = () => {
               srcSet="/home/jone-banner1.webp"
               type="image/webp"
               media="(min-width: 650px)"
-      
+              width={1920}
+              height={691}
             />
             <source
               srcSet="/home/jone-banner1mob.webp"
               type="image/webp"
               media="(max-width: 650px)"
-
+              width={600}
+              height={800}
             />
             <Image
-              className="img-fluid"
+              className="img-fluid w-100 h-auto"
               alt="Main Banner Image"
-              srcSet="/home/jone-banner1.webp"
-            
+              src="/home/jone-banner1.webp"
+              width={1920}
+              height={691}
+              sizes="100vw"
               loading="eager"
             />
           </picture>
@@ -45,17 +49,23 @@ export const MainBanner = () => {
               srcSet="/home/jone-banner2.webp"
               type="image/webp"
               media="(min-width: 650px)"
+              width={1920}
+              height={691}
             />
             <source
               srcSet="/home/jone-banner2mob.webp"
               type="image/webp"
               media="(max-width: 650px)"
+              width={600}
+              height={800}
             />
             <Image
-              className="img-fluid"
+              className="img-fluid w-100 h-auto"
               alt="Main Banner Image"
-              srcSet="/home/jone-banner2.webp"
-
+              width={1920}
+              height={691}
+              sizes="100vw"
+              src="/home/jone-banner2.webp"
               loading="eager"
             />
           </picture>
