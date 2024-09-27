@@ -24,7 +24,7 @@ const HomeSection7 = () => {
                     src="/section7-mobile-img.webp"
                     height={635}
                     width={713 }
-                    priority="true" 
+                     
                     className='img-fluid'   />
                 </picture>
             </div>

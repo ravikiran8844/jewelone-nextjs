@@ -34,7 +34,7 @@ const Slide = ({
             src={mobileSrc}
             height={489}
             width={829}
-            priority="true"
+            
           />
         </picture>
       </div>

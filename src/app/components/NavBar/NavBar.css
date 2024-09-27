@@ -246,12 +246,14 @@ header{
     width: fit-content;
   } */
   
+  .navbar-brand img{
+   max-width: 200px;
+  }
   @media (min-width:300px) and (max-width:992px) {
     .navbar-brand{
       flex-grow: 1;
       display: flex;
       justify-content: center;
-      max-height: 46px;
     }
     .nav-trigger-btn{
       position: absolute;

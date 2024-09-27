@@ -484,6 +484,7 @@ left: -21px !important;
 }
 .florencia-footer img {
   border-radius: 10px;
+  max-width: 200px;
 }
 .florencia-footer .nav-link {
   color: #3c1053 !important;
