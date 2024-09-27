@@ -2,14 +2,14 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import Image from "next/image";
 
 export default class SliderCards extends Component {
     render() {
         var settings = {
-            arrows:false,
-            dots: true,
+            dots: false,
+            arrows: false,
             infinite: true,
             speed: 500,
             slidesToShow: 4,
