@@ -1,8 +1,8 @@
 import { Inter, Great_Vibes } from 'next/font/google'
 import './globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer';
+// import Navbar from './components/NavBar/NavBar';
+// import Footer from './components/Footer/Footer';
 import BootstrapClient from './components/BootstrapClient';
 
 

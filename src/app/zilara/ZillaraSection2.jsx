@@ -2,7 +2,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 import Image from "next/image";
 
 const ZillaraSection2 = () => {
@@ -10,9 +10,12 @@ const ZillaraSection2 = () => {
     className: "center",
     centerMode: false,
     centerPadding: "0px",
-    infinite: false,
-    dots: true,
+    infinite: true,
+    dots: false,
     slidesToShow: 5,
+    arrows: false,
+    autoplay: true,
+
     speed: 500,
     responsive: [
       {

@@ -17,7 +17,7 @@ import HomeGifBanner from './components/Home/HomeGifBanner'
 import HomeVideoSlider from './components/Home/HomeVideoSlider'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/NavBar/NavBar'
-import HomeSection1 from './components/Home/HomeSection1'
+// import HomeSection1 from './components/Home/HomeSection1'
 import { MainBanner } from './components/Home/MainBanner/MainBanner'
 
 
