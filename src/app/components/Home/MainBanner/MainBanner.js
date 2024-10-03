@@ -16,6 +16,35 @@ export const MainBanner = () => {
       >
         <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
+          <source
+              srcSet="/home/banner1.webp"
+              type="image/webp"
+              media="(min-width: 650px)"
+              width={1920}
+              height={691}
+            />
+            <source
+              srcSet="/home/banner1-mob.webp"
+              type="image/webp"
+              media="(min-width: 450px)"
+              width={600}
+              height={800}
+            />
+            <Image
+              className="img-fluid w-100 h-auto"
+              alt="Main Banner Image"
+              src="/home/banner1-mob-small.webp"
+              width={450}
+              height={600}
+              sizes="100vw"
+              loading="eager"
+              priority
+            />
+          </picture>
+        </SplideSlide>
+
+        <SplideSlide>
+          <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
               srcSet="/home/jone-banner1.webp"
               type="image/webp"
