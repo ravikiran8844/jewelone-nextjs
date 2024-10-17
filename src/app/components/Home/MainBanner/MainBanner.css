@@ -14,12 +14,11 @@
 }
 .main-banner-section.home-section1 {
     aspect-ratio:3/4;
-
 }
 @media (min-width: 650px) {
 
     .main-banner-section.home-section1{
-        aspect-ratio:1920/691;
+        aspect-ratio:16/9;
     }
 
   .slide-large-video {
