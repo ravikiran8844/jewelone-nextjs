@@ -21,7 +21,7 @@ export const MainBanner = () => {
               type="image/webp"
               media="(min-width: 650px)"
               width={1920}
-              height={691}
+              height={1080}
             />
             <Image
               className="img-fluid w-100 h-auto"
@@ -39,11 +39,11 @@ export const MainBanner = () => {
         <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
-              srcSet="/home/jone-banner1.webp"
+              srcSet="/home/jone-banner2.webp"
               type="image/webp"
               media="(min-width: 650px)"
               width={1920}
-              height={691}
+              height={1080}
             />
    
            <Image
@@ -62,11 +62,11 @@ export const MainBanner = () => {
         <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
-              srcSet="/home/jone-banner2.webp"
+              srcSet="/home/jone-banner3.webp"
               type="image/webp"
               media="(min-width: 650px)"
               width={1920}
-              height={691}
+              height={1080}
             />
        
             <Image
