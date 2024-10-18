@@ -17,7 +17,7 @@ export const MainBanner = () => {
         <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
           <source
-              srcSet="/home/banner1.webp"
+              srcSet="/home/jone-banner1.webp"
               type="image/webp"
               media="(min-width: 650px)"
               width={1920}
