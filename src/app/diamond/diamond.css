@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@400;&display=swap');
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url('/fonts/Helvetica-Neue/HelveticaNeueLight.otf') format('opentype');
+}
+.diamong-page{
+    background: linear-gradient(77deg, #0B1827 3.01%, #20528B 56.11%, #0B1827 114.8%);
+}
+.diamong-page header{
+    width: 100%;
+
+}
+
+@media (min-width: 992px) {
+    .diamong-page .fixed{
+        position: fixed;
+        transition: all ease-in-out .4s;
+        /* max-width: calc(100% - 200px); */
+    }
+    .diamong-page .fixed .navbar{
+        background-color: transparent !important;
+        box-shadow: none !important;
+    }
+    
+    .diamong-page header.fixed .navbar .dropdown-toggle::after {
+        filter: invert(1);
+    }
+    .diamong-page header.fixed nav ul li.nav-item a.nav-link{
+        color: #fff !important;
+    }
+    
+}
+
+
+.diamong-page footer{
+    background: #123256;
+    font-family: "Helvetica Neue";
+
+}
+
+.diamong-page footer .footer-items-title{
+    font-family: Playfair Display;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+
+}
+
+.diamong-page footer .nav-link{
+    color: #FFF;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.DiamondSection3{
+    font-family: "Playfair Display";
+}
+.DiamondSection3__title{
+    color: #67C7FF;
+    font-family: "Helvetica Neue";
+}
+.DiamondSection4{
+    background: #123256;
+}
+.DiamondSection4__title{
+    color: #67C7FF;
+    font-family: "Helvetica Neue";
+}
+.DiamondSection4__caption{
+    font-family: "Playfair Display";
+
+}
+
+
+
+.DiamondSection4 .swiper-slide{
+    height: 100%;
+}
+.DiamondSection4 .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+
+.DiamondSection4 .swiper-slide .center-slide-item{
+    height: 100%;
+    border-radius: 20px;
+}
+.DiamondSection4 .left-arrow{
+    position: absolute;
+    top: 48%;
+    left: -16px;
+    z-index: 1;
+}
+.DiamondSection4 .right-arrow{
+    position: absolute;
+    top: 48%;
+    right: -16px;
+    z-index: 1;
+}
+.DiamondSection4 .swiper-wrapper,.DiamondSection4 .swiper{
+    height: 100%;
+}
+
+
+
+
+.diamond-page_section-title__line-below::after{
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #FFF;
+    border-radius: 10px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 10px);
+}
+
+
+
+.ScrollableSections{
+    background: #123256;
+}
+
+
+.ScrollableSections__title{
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+
+.ScrollableSections h2{
+    font-family: "Playfair Display";
+    font-weight: 700;
+}
+.ScrollableSections h4{
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+}
+.ScrollableSections i{
+    font-family: "Playfair Display";
+    font-weight: 400;
+}
+
+
+.ScrollableSections .grid-container {
+    display: grid;
+    grid-template-columns: 60% 40%; /* Two columns: text in one, video in the other */
+    gap: 20px;
+    height: 100%; /* Full height for the video column */
+    position: relative;
+  }
+  
+  .ScrollableSections .block {
+    height: 100vh; /* Make sure the text blocks are full height */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    color: #fff;
+  }
+  
+  .ScrollableSections  .video-container {
+    position: sticky;
+    top: 20px;
+    height: 100vh; /* Make sure video container covers full height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ScrollableSections video {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+  
