@@ -11,6 +11,12 @@ const ScrollableSections = () => {
     "/diamond/videos/cut.mp4",
     "/diamond/videos/carat.mp4",
   ];
+  const posters = [
+    "/diamond/videos/posters/Color-Square.webp",
+    "/diamond/videos/posters/Clarity-Square.webp",
+    "/diamond/videos/posters/Cut-Square.webp",
+    "/diamond/videos/posters/Carat-Square.webp",
+  ];
 
   const descriptions = [
     {
@@ -94,7 +100,7 @@ const ScrollableSections = () => {
                   <i>{descriptions[index].caption}</i> {descriptions[index].description}
                 </h4>
                 </div>
-                <video src={video} autoPlay muted loop />
+                <video src={video} autoPlay muted loop poster={posters[index]} />
               
               </div>
             ))}
@@ -131,7 +137,7 @@ const ScrollableSections = () => {
             </div>
           </div>
           <div className="video-container">
-            <video src={videos[currentVideo]} autoPlay muted loop />
+            <video src={videos[currentVideo]}  poster={posters[currentVideo]}  autoPlay muted loop />
           </div>
         </div>
       </div>
