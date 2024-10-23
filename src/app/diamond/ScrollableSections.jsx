@@ -112,28 +112,36 @@ const ScrollableSections = () => {
         <div className="grid-container">
           <div>
             <div className="block" ref={(el) => (blockRefs.current[0] = el)}>
+              <div  className="position-sticky" style={{top: '100px'}}>
               <h2>{descriptions[0].title}</h2>
               <h4>
                 <i>{descriptions[0].caption}</i> {descriptions[0].description}
               </h4>
+              </div>
             </div>
             <div className="block" ref={(el) => (blockRefs.current[1] = el)}>
-              <h2>{descriptions[1].title}</h2>
+            <div className="position-sticky" style={{top: '100px'}}>
+            <h2>{descriptions[1].title}</h2>
               <h4>
               <i>{descriptions[1].caption}</i> {descriptions[1].description}
               </h4>
             </div>
+            </div>
             <div className="block" ref={(el) => (blockRefs.current[2] = el)}>
+              <div className="position-sticky" style={{top: '100px'}}>
               <h2>{descriptions[2].title}</h2>
               <h4>
               <i>{descriptions[2].caption}</i> {descriptions[2].description}
               </h4>
+              </div>
             </div>
             <div className="block" ref={(el) => (blockRefs.current[3] = el)}>
-              <h2>{descriptions[3].title}</h2>
+            <div className="position-sticky" style={{top: '100px'}}>
+            <h2>{descriptions[3].title}</h2>
               <h4>
               <i>{descriptions[3].caption}</i> {descriptions[3].description}
               </h4>
+              </div>
             </div>
           </div>
           <div className="video-container">
