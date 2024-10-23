@@ -33,7 +33,67 @@
     
 }
 
+.DiamondSection1_modal-button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 3%;
+    bottom: 0;
+}
+.DiamondSection1_modal-button button, .modal-submit-btn{
+    border-radius: 56px;
+    border: 2px solid #66C5FD !important;
+    background: linear-gradient(90deg, #4F99C4 0%, #67C7FF 47.5%, #3E7799 100%) !important;
+    padding: 6px 20px;
+    font-size: 14px !important;
+    font-family: "Helvetica Neue";
+    font-weight: 600;
+    color: #0A1726 !important;
+    box-shadow: none;
+}
+.DiamondSection1_modal .modal-close-btn{
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0;
+    outline: none;
+}
+.DiamondSection1_modal .modal-content {
+    border-radius: 17.529px;
+    background-image: url('/diamond/modal/bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust this if needed */
+}
 
+.modal-error-message{
+    font-weight: 500;
+    font-size: 14px;
+    color:#fff;
+}
+
+@media (min-width:768px) {
+    .DiamondSection1_modal .modal-grid-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+.DiamondSection1_modal .modal-grid-items .modal-item-input{
+    border-radius: 4.382px;
+    border: 1.096px solid #67C7FF;
+    background: transparent;
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    font-family: "Helvetica Neue";
+    padding: 10px;
+    outline: none;
+}
+.DiamondSection1_modal .modal-grid-items .modal-item-input::placeholder{
+    color: #4275B1;
+    font-family: "Helvetica Neue";
+}
 .diamong-page footer{
     background: #123256;
     font-family: "Helvetica Neue";
