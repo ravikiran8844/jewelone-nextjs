@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
+import CatalogueModal from './CatalogueModal'
 
 const DiamondSection1 = () => {
   return (
-    <div>
+    <div className='position-relative'>
            <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
           <source
               srcSet="/diamond/section1/main-banner.webp"
@@ -23,6 +24,8 @@ const DiamondSection1 = () => {
               priority
             />
           </picture>
+
+      <CatalogueModal/>
     </div>
   )
 }
