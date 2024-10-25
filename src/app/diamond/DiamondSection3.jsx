@@ -21,7 +21,7 @@ const DiamondSection3 = () => {
             </div>
             </div>
         </div>
-        <div className='col-12 col-lg-10 m-auto'>
+        <div className='col-12'>
         <Swiper
         slidesPerView={1}
         spaceBetween={10}

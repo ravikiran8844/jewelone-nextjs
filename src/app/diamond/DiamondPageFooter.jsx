@@ -5,7 +5,7 @@ const DiamondPageFooter = () => {
   return (
     <footer>
       <div className="container py-5 px-4">
-        <div className="row g-5 text-white">
+        <div className="row g-5 text-white pb-5">
           <div className="col-12 col-lg">
            <div className="text-center text-lg-start d-flex flex-column justify-content-center">
            <div className="mb-4">

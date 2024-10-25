@@ -34,19 +34,20 @@
 }
 
 .DiamondSection1_modal-button{
-    position: absolute;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     padding-bottom: 3%;
     bottom: 0;
+    z-index: 10;
 }
 .DiamondSection1_modal-button button, .modal-submit-btn{
     border-radius: 56px;
     border: 2px solid #66C5FD !important;
     background: linear-gradient(90deg, #4F99C4 0%, #67C7FF 47.5%, #3E7799 100%) !important;
-    padding: 6px 20px;
+    padding: 8px 20px;
     font-size: 14px !important;
     font-family: "Helvetica Neue";
     font-weight: 600;
@@ -209,7 +210,7 @@
 
 .ScrollableSections .grid-container {
     display: grid;
-    grid-template-columns: 60% 40%; /* Two columns: text in one, video in the other */
+    grid-template-columns: 1fr 1fr; /* Two columns: text in one, video in the other */
     gap: 20px;
     height: 100%; /* Full height for the video column */
     position: relative;
@@ -217,12 +218,13 @@
   
   .ScrollableSections .block {
     height: 100vh; /* Make sure the text blocks are full height */
-    padding: 20px;
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
     color: #fff;
+    max-width: 600px;
   }
   
   .ScrollableSections  .video-container {
@@ -239,5 +241,7 @@
     width: 100%;
     height: auto;
     border-radius: 20px;
+    max-height: 85vh;
+    object-fit: cover;
 }
   
