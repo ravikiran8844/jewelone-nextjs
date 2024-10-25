@@ -12,6 +12,7 @@ import Image from 'next/image';
 const DiamondSection3 = () => {
   return (
     <div className='container py-5 DiamondSection3'>
+      <div className="col-12 col-lg-11 m-auto">
       <div className='row'>
         <div className='col-12 mb-5'>
           <div className='text-center m-auto' style={{maxWidth: '600px'}}>
@@ -58,6 +59,7 @@ const DiamondSection3 = () => {
         </SwiperSlide>
       </Swiper>
         </div>
+      </div>
       </div>
     </div>
   )
