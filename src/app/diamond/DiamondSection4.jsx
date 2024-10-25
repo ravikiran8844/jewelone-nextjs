@@ -16,6 +16,7 @@ const DiamondSection4 = () => {
   return (
     <div className="DiamondSection4">
       <div className="container py-5">
+        <div className="col-12 col-lg-11 m-auto">
         <div className="row">
           <div className="col-12 mb-4">
             <div className="text-md-center m-auto" style={{ maxWidth: "600px" }}>
@@ -243,6 +244,7 @@ const DiamondSection4 = () => {
 
 
           </div>
+        </div>
         </div>
       </div>
     </div>

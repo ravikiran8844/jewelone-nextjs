@@ -121,7 +121,7 @@
     color: #67C7FF;
     font-family: "Helvetica Neue";
 }
-.DiamondSection4{
+.DiamondSection4,.DiamondSection2{
     background: #123256;
 }
 .DiamondSection4__title{
@@ -245,3 +245,12 @@
     object-fit: cover;
 }
   
+
+
+.DiamondSection5__main-title{
+    font-family: "Helvetica Neue";
+}
+
+.DiamondSection5__sub-title{
+    font-family: "Playfair Display";
+}
