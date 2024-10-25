@@ -38,7 +38,7 @@ const TransparentNavBar = ({ logo, stickyLogo }) => {
     const handleScroll = () => {
       if (window.innerWidth >= 992) {
         // Apply sticky behavior only on larger screens
-        if (window.scrollY > 450) {
+        if (window.scrollY > 1) {
           setIsSticky(true);
         } else {
           setIsSticky(false);

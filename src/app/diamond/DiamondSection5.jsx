@@ -4,10 +4,11 @@ import React from 'react'
 const DiamondSection5 = () => {
   return (
     <div className='container py-5'>
-       <div className='row'>
+      <div className='col-12 col-lg-10 m-auto'>
+      <div className='row'>
        <div className='col-12 col-lg-5 d-flex justify-content-center align-items-center'>
-          <div className='m-auto text-center text-lg-start' style={{maxWidth: '390px'}}>
-          <div className='fs-5 mb-4' style={{color: '#67C7FF'}}>At Jewel One, every Diamond is a
+          <div className='m-auto text-center text-lg-start'>
+          <div className='fs-4 mb-4' style={{color: '#67C7FF'}}>At Jewel One, every Diamond is a
             Masterpiece of Precision and Radiance</div>
             <div className='text-uppercase text-white fs-2 fw-medium'>
             no compromise, <br />
@@ -38,6 +39,7 @@ const DiamondSection5 = () => {
           
         </div>
        </div>
+      </div>
     </div>
   )
 }
