@@ -9,6 +9,13 @@ import DiamondSection4 from './DiamondSection4'
 import DiamondPageFooter from './DiamondPageFooter'
 
 
+
+export const metadata = {
+  title: 'JewelOne - Exquisite Diamond Collection',
+  description: 'Discover the finest diamond jewelry collection at JewelOne. Explore timeless elegance, exceptional craftsmanship, and breathtaking designs. Perfect for every occasion.',
+}
+
+
 const page = () => {
   return (
     <main className='diamong-page'>

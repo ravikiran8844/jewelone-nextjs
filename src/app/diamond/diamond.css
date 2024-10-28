@@ -14,15 +14,19 @@
 }
 
 @media (min-width: 992px) {
-    .diamong-page .fixed{
+    .diamong-page .fixed {
         position: fixed;
-        transition: all ease-in-out .4s;
-        /* max-width: calc(100% - 200px); */
     }
-    .diamong-page .fixed .navbar{
-        background-color: transparent !important;
-        box-shadow: none !important;
+    .diamong-page .navbar {
+        transition: all .2s;
+        background-color: #fff;
+        box-shadow: none;
     }
+    
+    .diamong-page .fixed .navbar {
+        background-color: transparent;
+    }
+    
     
     .diamong-page header.fixed .navbar .dropdown-toggle::after {
         filter: invert(1);
