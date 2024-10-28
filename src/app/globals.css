@@ -133,3 +133,16 @@ width: 100%;
   .splide__track--nav>.splide__list>.splide__slide.is-active{
     border: none !important;
   }
+
+
+  /* .ball{
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#67C7FF;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+  } */

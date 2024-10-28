@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import Navbar from './components/NavBar/NavBar';
 // import Footer from './components/Footer/Footer';
 import BootstrapClient from './components/BootstrapClient';
+// import GsapBall from './components/GsapBall';
 
 
 const inter = Inter({ subsets: ['latin'],  weight: ['400','500'], style: ['normal'],display: 'swap',variable: '--font-inter', }) 
@@ -39,6 +40,7 @@ export default async function RootLayout({ children }) {
         {children}
         {/* <Footer/> */}
         <BootstrapClient/>
+        {/* <GsapBall/> */}
         </body>
     </html>
   )
