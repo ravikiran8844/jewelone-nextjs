@@ -27,7 +27,7 @@ export const MainBanner = () => {
             <Image
               className="img-fluid w-100 h-auto"
               alt="Main Banner Image"
-              src="/home/banner1-mob.webp"
+              src="/home/jone-banner1mob.webp"
               width={600}
               height={800}
               sizes="100vw"
@@ -49,7 +49,7 @@ export const MainBanner = () => {
             <Image
               className="img-fluid w-100 h-auto"
               alt="Secondary Banner Image"
-              src="/home/jone-banner1mob.webp"
+              src="/home/jone-banner2mob.webp"
               width={600}
               height={800}
               sizes="100vw"
@@ -71,7 +71,7 @@ export const MainBanner = () => {
             <Image
               className="img-fluid w-100 h-auto"
               alt="Secondary Banner Image"
-              src="/home/jone-banner2mob.webp"
+              src="/home/jone-banner3mob.webp"
               width={600}
               height={800}
               sizes="100vw"
