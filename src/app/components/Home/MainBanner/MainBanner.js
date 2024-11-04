@@ -12,11 +12,12 @@ export const MainBanner = () => {
           type: "loop",
           autoplay: false,
           interval: 4000,
+          lazyLoad: 'nearby', // Lazy load nearby slides to reduce initial load time
         }}
       >
         <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
-          <source
+            <source
               srcSet="/home/jone-banner1.webp"
               type="image/webp"
               media="(min-width: 650px)"
@@ -30,8 +31,8 @@ export const MainBanner = () => {
               width={600}
               height={800}
               sizes="100vw"
-              loading="eager"
-              priority
+              priority // Ensures this image loads first
+              quality={75} // Reduces image size for faster loading
             />
           </picture>
         </SplideSlide>
@@ -45,16 +46,15 @@ export const MainBanner = () => {
               width={1920}
               height={1080}
             />
-   
-           <Image
+            <Image
               className="img-fluid w-100 h-auto"
-              alt="Main Banner Image"
+              alt="Secondary Banner Image"
               src="/home/jone-banner1mob.webp"
               width={600}
               height={800}
               sizes="100vw"
-              loading="eager"
-              priority
+              loading="lazy"
+              quality={70} // Further reduces image quality for faster loading
             />
           </picture>
         </SplideSlide>
@@ -68,16 +68,15 @@ export const MainBanner = () => {
               width={1920}
               height={1080}
             />
-       
             <Image
               className="img-fluid w-100 h-auto"
-              alt="Main Banner Image"
+              alt="Secondary Banner Image"
               src="/home/jone-banner2mob.webp"
               width={600}
               height={800}
               sizes="100vw"
-              loading="eager"
-              priority
+              loading="lazy"
+              quality={70} // Reduces image quality for faster loading
             />
           </picture>
         </SplideSlide>
