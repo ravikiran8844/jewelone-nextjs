@@ -144,10 +144,17 @@ const FlorenciaFooter = () => {
           <div style={{fontSize:'14px'}}>
             © {year} FLORENCIA. ALL RIGHTS RESERVED
           </div>
-          {/* <div className="fs-6 d-flex align-items-center gap-2 flex-wrap">
-        <a href="" className="footer-link"> TERMS & CONDITIONS </a>|
-        <a href="" className="footer-link">PRIVACY POLICY</a>
-      </div> */}
+          <div>
+            <a
+            className=" text-secondary text-decoration-none"
+              href="/privacy-policy"
+              style={{
+                  fontSize: 12,
+              }}
+            >
+              Privacy Policy | Terms of Use
+            </a>
+          </div>
         </div>
       </div>
     </div>

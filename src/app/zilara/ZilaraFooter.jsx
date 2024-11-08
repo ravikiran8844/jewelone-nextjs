@@ -54,8 +54,20 @@ const ZilaraFooter = () => {
             </div>
         </div>
         <hr className="my-4" />
-        <div className="col-12">
+        <div className="col-12 d-flex justify-content-between flex-wrap gap-3">
             <div className="copyright-text text-center text-md-start">© {year} Zilara Silver Redefined. All Rights Reserved.</div>
+
+            <div>
+            <a
+            className=" text-secondary text-decoration-none"
+              href="/privacy-policy"
+              style={{
+                  fontSize: 12,
+              }}
+            >
+              Privacy Policy | Terms of Use
+            </a>
+          </div>
         </div>
       </div>
     </footer>
