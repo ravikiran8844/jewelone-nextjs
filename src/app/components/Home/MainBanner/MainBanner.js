@@ -15,7 +15,7 @@ export const MainBanner = () => {
           lazyLoad: 'nearby', // Lazy load nearby slides to reduce initial load time
         }}
       >
-        <SplideSlide>
+        {/* <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
               srcSet="/home/jone-banner1.webp"
@@ -35,7 +35,7 @@ export const MainBanner = () => {
               quality={75} // Reduces image size for faster loading
             />
           </picture>
-        </SplideSlide>
+        </SplideSlide> */}
 
         <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
