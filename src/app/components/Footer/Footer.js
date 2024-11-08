@@ -198,7 +198,7 @@ const Footer = () => {
                   <li>
                     <a
                       target="__blank"
-                      href="https://wa.me/message/DVQPGTOCP5MWI1"
+                      href="https://api.whatsapp.com/send?phone=918220017619&text=I%20have%20an%20enquiry%20regarding%20Jewel%20One"
                     >
                       <span className="me-2">
                         <svg
