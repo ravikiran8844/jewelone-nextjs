@@ -15,11 +15,10 @@ export const MainBanner = () => {
           lazyLoad: 'nearby', // Lazy load nearby slides to reduce initial load time
         }}
       >
-        {/* <SplideSlide>
+        <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
-              srcSet="/home/jone-banner1.webp"
-              type="image/webp"
+              srcSet="/home/Antique_Mela.jpg"
               media="(min-width: 650px)"
               width={1920}
               height={1080}
@@ -27,7 +26,7 @@ export const MainBanner = () => {
             <Image
               className="img-fluid w-100 h-auto"
               alt="Main Banner Image"
-              src="/home/jone-banner1mob.webp"
+              src="/home/Antique_Mela_Mob.jpg"
               width={600}
               height={800}
               sizes="100vw"
@@ -35,7 +34,7 @@ export const MainBanner = () => {
               quality={75} // Reduces image size for faster loading
             />
           </picture>
-        </SplideSlide> */}
+        </SplideSlide>
 
         <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
@@ -53,8 +52,7 @@ export const MainBanner = () => {
               width={600}
               height={800}
               sizes="100vw"
-              priority={true}
-              quality={70} // Further reduces image quality for faster loading
+              quality={75} // Reduces image size for faster loading
             />
           </picture>
         </SplideSlide>
@@ -76,7 +74,7 @@ export const MainBanner = () => {
               height={800}
               sizes="100vw"
               loading="lazy"
-              quality={70} // Reduces image quality for faster loading
+              quality={75} // Reduces image size for faster loading
             />
           </picture>
         </SplideSlide>
