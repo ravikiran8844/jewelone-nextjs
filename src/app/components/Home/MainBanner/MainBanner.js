@@ -53,7 +53,7 @@ export const MainBanner = () => {
               width={600}
               height={800}
               sizes="100vw"
-              loading="lazy"
+              priority={true}
               quality={70} // Further reduces image quality for faster loading
             />
           </picture>
