@@ -148,7 +148,7 @@ const VideoSection = () => {
                         className="img-fluid"
                         width={139}
                         height={80}
-                        src="/thumb2.jpg"
+                        src="/thumb2.webp"
                         alt="video thumbnail 2"
                       />
                     </div>
