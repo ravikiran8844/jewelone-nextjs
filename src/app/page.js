@@ -22,8 +22,8 @@ import { MainBanner } from './components/Home/MainBanner/MainBanner'
 
 
 export const metadata = {
-  title: "JewelOne",
-  description: 'JewelOne Home Page',
+  title: "Jewel One | Finest Gold & Diamond Jewellery Store",
+  description: 'Discover Jewel One, your premier destination for gold and diamond jewellery. Explore an extensive collection of over 600,000 exquisite designs in chains, bangles, and more.',
 }
 
 

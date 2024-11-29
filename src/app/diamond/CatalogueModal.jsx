@@ -23,7 +23,7 @@ const CatalogueModal = () => {
   // Send form data to the server
   const sendMail = (data) => {
     setLoading(true);
-    const apiEndpoint = "https://jewelone.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/193/feedback"; // Replace with the correct API
+    const apiEndpoint = "https://jewelonestaging.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/193/feedback"; // Replace with the correct API
 
     const formData = new FormData();
     formData.append("your-name", data.name);
