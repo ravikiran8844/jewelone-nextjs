@@ -7,8 +7,8 @@ import StoreLocator from './StoreLocator'
 
 
 export const metadata = {
-  title: 'Our Stores - JewelOne',
-  description: 'Search For JewelOne Stores in Your Location',
+  title: 'Our Stores - Jewel One | Find a Store Near You',
+  description: 'Locate your nearest Jewel One store by entering your city or pin code. Explore our extensive network of stores and experience exquisite gold and diamond jewellery collections in person. Discover timeless elegance near you!',
 }
 
 

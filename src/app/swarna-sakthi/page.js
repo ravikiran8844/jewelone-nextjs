@@ -8,8 +8,8 @@ import Navbar from '../components/NavBar/NavBar'
 
 
 export const metadata = {
-  title: "Swarna Sakthi - JewelOne",
-  description: 'JewelOne Swarna Sakthi Plans',
+  title: 'Swarna Sakthi Gold Purchase Plan - Jewel One',
+  description: 'Explore Swarna Sakthi, Jewel One’s exclusive gold ornaments purchase plan. Discover flexible options and benefits to invest in gold and fulfill your dreams effortlessly.',
 }
 
 

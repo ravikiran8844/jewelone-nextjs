@@ -10,8 +10,8 @@ import FlorenciaFooter from '../components/Florencia/FlorenciaFooter'
 import Navbar from '../components/NavBar/NavBar'
 
 export const metadata = {
-    title: 'Florencia - JewelOne',
-    description: 'JewelOne - Florencia Page',
+    title: 'Florencia - Exquisite Diamond Jewellery by Jewel One',
+    description: 'Discover Florencia by Jewel One, a premium brand of diamond jewellery offering timeless elegance and unparalleled craftsmanship. Explore stunning diamond collections designed to captivate and inspire, crafted to perfection for every occasion.',
   }
   
 const page = () => {

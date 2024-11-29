@@ -56,7 +56,7 @@ const ContactSection1 = () => {
 
   const sendMail = (data) => {
     setLoading(true);
-    const apiEndpoint = "https://jewelone.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/6/feedback";
+    const apiEndpoint = "https://jewelonestaging.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/6/feedback";
     
     const formData = new FormData();
     formData.append('your-name', data.name);

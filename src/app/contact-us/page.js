@@ -6,13 +6,10 @@ import Footer from '../components/Footer/Footer'
 import Navbar from '../components/NavBar/NavBar'
 
 
-
-
 export const metadata = {
-  title: 'Contact - JewelOne',
-  description: 'JewelOne Contact Page',
+  title: 'Contact Us - Jewel One',
+  description: 'Get in touch with Jewel One for inquiries, support, or feedback. Contact us via phone, email, or visit our corporate office for personalized assistance.',
 }
-
 
 
 const page = () => {
