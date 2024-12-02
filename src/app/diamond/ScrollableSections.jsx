@@ -21,23 +21,26 @@ const ScrollableSections = () => {
   const descriptions = [
     {
       title: "Color",
-      caption:"Brilliant Hue:",
+      caption: "Brilliant Hue:",
       description: "EF-standard diamonds, showcasing exceptional color purity.",
     },
     {
       title: "Clarity",
-      caption:"Crystal Clarity:",
-      description: "Handpicked VVS diamonds for flawless transparency and brilliance.",
+      caption: "Crystal Clarity:",
+      description:
+        "Handpicked VVS diamonds for flawless transparency and brilliance.",
     },
     {
       title: "Cut",
-      caption:"Masterful Shape:",
-      description: "Expertly crafted cuts for perfect symmetry and dazzling light reflection.",
+      caption: "Masterful Shape:",
+      description:
+        "Expertly crafted cuts for perfect symmetry and dazzling light reflection.",
     },
     {
       title: "Carat",
-      caption:"Signature Size:",
-      description: "Thoughtfully selected carat weights, balancing elegance and impact.",
+      caption: "Signature Size:",
+      description:
+        "Thoughtfully selected carat weights, balancing elegance and impact.",
     },
   ];
 
@@ -70,7 +73,10 @@ const ScrollableSections = () => {
       });
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
 
     blockRefs.current.forEach((block) => {
       if (block) observer.observe(block);
@@ -79,82 +85,104 @@ const ScrollableSections = () => {
 
   return (
     <div className="ScrollableSections">
+      <div className="container py-5">
+        <div className="row">
+          <div className="col-12">
+            <div className="text-white fs-1 fw-medium ScrollableSections__title text-center position-relative diamond-page_section-title__line-below">
+              Our Promise of Perfection
+            </div>
+          </div>
 
-          <div className="container py-5">
-            <div className="row">
-              <div className="col-12">
-                <div className="text-white fs-1 fw-medium ScrollableSections__title text-center position-relative diamond-page_section-title__line-below">
-                Our Promise of Perfection
-    
-                </div>
-              </div>
-
-              {isMobile ? (
+          {isMobile ? (
             // Mobile View
             <div className="col-12 mt-5">
-            {videos.map((video, index) => (
-              <div key={index} className="mobile-block mb-5">
-                <div className="text-white mb-3">
-                <h2>{descriptions[index].title}</h2>
-                <h4>
-                  <i>{descriptions[index].caption}</i> {descriptions[index].description}
-                </h4>
+              {videos.map((video, index) => (
+                <div key={index} className="mobile-block mb-5">
+                  <div className="text-white mb-3">
+                    <h2>{descriptions[index].title}</h2>
+                    <h4>
+                      <i>{descriptions[index].caption}</i>{" "}
+                      {descriptions[index].description}
+                    </h4>
+                  </div>
+                  <video
+                    src={video}
+                    autoPlay
+                    muted
+                    loop
+                    poster={posters[index]}
+                  />
                 </div>
-                <video src={video} autoPlay muted loop poster={posters[index]} />
-              
+              ))}
+            </div>
+          ) : (
+            // Desktop View (with scrolling and dynamic video change)
+            <div className="col-12 d-none d-lg-block">
+              <div className="grid-container">
+                <div>
+                  <div
+                    className="block"
+                    ref={(el) => (blockRefs.current[0] = el)}
+                  >
+                    <div className="position-sticky" style={{ top: "100px" }}>
+                      <h2>{descriptions[0].title}</h2>
+                      <h4>
+                        <i>{descriptions[0].caption}</i>{" "}
+                        {descriptions[0].description}
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    className="block"
+                    ref={(el) => (blockRefs.current[1] = el)}
+                  >
+                    <div className="position-sticky" style={{ top: "100px" }}>
+                      <h2>{descriptions[1].title}</h2>
+                      <h4>
+                        <i>{descriptions[1].caption}</i>{" "}
+                        {descriptions[1].description}
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    className="block"
+                    ref={(el) => (blockRefs.current[2] = el)}
+                  >
+                    <div className="position-sticky" style={{ top: "100px" }}>
+                      <h2>{descriptions[2].title}</h2>
+                      <h4>
+                        <i>{descriptions[2].caption}</i>{" "}
+                        {descriptions[2].description}
+                      </h4>
+                    </div>
+                  </div>
+                  <div
+                    className="block"
+                    ref={(el) => (blockRefs.current[3] = el)}
+                  >
+                    <div className="position-sticky" style={{ top: "100px" }}>
+                      <h2>{descriptions[3].title}</h2>
+                      <h4>
+                        <i>{descriptions[3].caption}</i>{" "}
+                        {descriptions[3].description}
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+                <div className="video-container">
+                  <video
+                    src={videos[currentVideo]}
+                    poster={posters[currentVideo]}
+                    autoPlay
+                    muted
+                    loop
+                  />
+                </div>
               </div>
-            ))}
-          </div>
-        
-      ) : (
-        // Desktop View (with scrolling and dynamic video change)
-        <div className="col-12 d-none d-lg-block">
-        <div className="grid-container">
-          <div>
-            <div className="block" ref={(el) => (blockRefs.current[0] = el)}>
-              <div  className="position-sticky" style={{top: '100px'}}>
-              <h2>{descriptions[0].title}</h2>
-              <h4>
-                <i>{descriptions[0].caption}</i> {descriptions[0].description}
-              </h4>
-              </div>
             </div>
-            <div className="block" ref={(el) => (blockRefs.current[1] = el)}>
-            <div className="position-sticky" style={{top: '100px'}}>
-            <h2>{descriptions[1].title}</h2>
-              <h4>
-              <i>{descriptions[1].caption}</i> {descriptions[1].description}
-              </h4>
-            </div>
-            </div>
-            <div className="block" ref={(el) => (blockRefs.current[2] = el)}>
-              <div className="position-sticky" style={{top: '100px'}}>
-              <h2>{descriptions[2].title}</h2>
-              <h4>
-              <i>{descriptions[2].caption}</i> {descriptions[2].description}
-              </h4>
-              </div>
-            </div>
-            <div className="block" ref={(el) => (blockRefs.current[3] = el)}>
-            <div className="position-sticky" style={{top: '100px'}}>
-            <h2>{descriptions[3].title}</h2>
-              <h4>
-              <i>{descriptions[3].caption}</i> {descriptions[3].description}
-              </h4>
-              </div>
-            </div>
-          </div>
-          <div className="video-container">
-            <video src={videos[currentVideo]}  poster={posters[currentVideo]}  autoPlay muted loop />
-          </div>
+          )}
         </div>
       </div>
-      )}
-            </div>
-          </div>
-
-
-     
     </div>
   );
 };

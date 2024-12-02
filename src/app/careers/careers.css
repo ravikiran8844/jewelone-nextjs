@@ -1,0 +1,55 @@
+
+.careers-form form{
+    font-size: 14px !important;
+
+}
+.careers-form form button {
+  border-radius: 6px;
+  background: #f4d86c;
+  color: #000;
+  border: none;
+  text-transform: uppercase;
+}
+
+.careers-form form input {
+  border-radius: 4px;
+  border: 0.905px solid rgba(255, 255, 255, 0.6);
+  background-color: transparent !important;
+  color: #fff !important;
+  font-size: 14px !important;
+  height: 42px;
+}
+
+   
+
+.careers-form form .form-select{
+    height: 42px;
+
+    border-radius: 4px;
+    border: 0.905px solid rgba(255, 255, 255, 0.6);
+    background-color: #9F212C;
+    color: #fff;
+    font-size: 14px;
+    --bs-form-select-bg-img:  url("data:image/svg+xml,%3Csvg width='18' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff' class='size-6'%3E%3Cpath fill-rule='evenodd' d='M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z' clip-rule='evenodd' /%3E%3C/svg%3E%0A");
+   box-shadow: none !important;
+   outline: none !important;
+}
+
+.careers-form form input::placeholder {
+  color: #fff !important;
+  font-size: 14px !important;
+}
+
+.upload-resume-input {
+  border-radius: 3.622px;
+  border: 1.358px dashed rgba(255, 255, 255, 0.4);
+  background: #810d17;
+  color: #fff;
+  width: 100%;
+  height: 42px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px !important;
+}

@@ -258,3 +258,8 @@
 .DiamondSection5__sub-title{
     font-family: "Playfair Display";
 }
+
+.DiamondSection1_modal.show{
+    z-index: 9999;
+    backdrop-filter: brightness(0.5);
+}
