@@ -20,8 +20,16 @@ main.careers-page{
   color: #fff !important;
   font-size: 14px !important;
   height: 42px;
-}
 
+
+}
+.careers-form form input:-webkit-autofill,
+.careers-form form input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+.careers-form form input[data-autocompleted] {
+    background-color: transparent !important;
+}
    
 
 .careers-form form .form-select{
