@@ -12,6 +12,7 @@ const CareerForm = () => {
   const {
     register,
     handleSubmit,
+    clearErrors, // Add this to clear errors
     setValue,
     reset,
     formState: { errors }
@@ -26,31 +27,34 @@ const CareerForm = () => {
     const value = e.target.value;
     const onlyDigits = value.replace(/\D/g, '');
     setValue('mobile', onlyDigits);
-  };
-
-
-  const handleFileChange = (e) => {
-    const file = e.target.files[0];
-    const maxSizeInBytes = 5 * 1024 * 1024; // 5MB in bytes
-  
-    if (file) {
-      if (file.size > maxSizeInBytes) {
-        toast.error('File size exceeds 5MB. Please upload a smaller file.', {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          theme: "colored",
-        });
-        setResumeName(""); // Clear the filename if validation fails
-        return;
-      }
-      setResumeName(file.name); // Update state with the valid file name
+    if (onlyDigits.length >= 10) {
+      clearErrors('mobile'); // Clear error when valid
     }
   };
-  
+
+
+  // const handleFileChange = (e) => {
+  //   const file = e.target.files[0];
+  //   const maxSizeInBytes = 5 * 1024 * 1024;
+
+  //   if (file) {
+  //     if (file.size > maxSizeInBytes) {
+  //       toast.error('File size exceeds 5MB. Please upload a smaller file.', {
+  //         position: "top-right",
+  //         autoClose: 5000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //         theme: "colored",
+  //       });
+  //       setResumeName("");
+  //       return;
+  //     }
+  //     setResumeName(file.name);
+  //   }
+  // };
+
 
   const sendMail = (data) => {
     setLoading(true);
@@ -63,7 +67,7 @@ const CareerForm = () => {
     formData.append('your-city', data.city);
     formData.append('your-position', data.position);
     formData.append('your-resume', data.resume[0]); // Assuming only one file is uploaded
-    formData.append('_wpcf7_unit_tag', 'wpcf7-f6-p7-o1');
+    formData.append('_wpcf7_unit_tag', 'wpcf7-f260-p252-o1');
   
     fetch(apiEndpoint, {
       method: "POST",
@@ -74,6 +78,7 @@ const CareerForm = () => {
         console.log(response);
         setLoading(false);
         reset();
+        setResumeName("");
         toast.success('Form submitted successfully!', {
           position: "top-right",
           autoClose: 5000,
@@ -89,6 +94,7 @@ const CareerForm = () => {
         console.log(err);
         setLoading(false);
         reset();
+        setResumeName("");
         toast.error('Failed to submit form. Please try again later.', {
           position: "top-right",
           autoClose: 5000,
@@ -111,15 +117,15 @@ const CareerForm = () => {
                 <form onSubmit={handleSubmit(onSubmit)} className="d-flex flex-column gap-2">
                 <div>
                   <input
-                  required
-                    {...register("name", { required: true })}
+                    {...register("name", { required: true})}
                     className="form-control"
                     placeholder="Enter your full name"
                     type="text"
+                    required
                   />
                   {errors.name?.type === "required" && (
-                    <div className="text-white contact-required mt-1" role="alert">
-                      Name is Required
+                    <div className="contact-required mt-1" role="alert">
+                      *Name is Required
                     </div>
                   )}
                 </div>
@@ -127,15 +133,14 @@ const CareerForm = () => {
                 <div>
                   <input
                   required
-
                     {...register("email", { required: true })}
                     className="form-control"
                     placeholder="Enter your email"
                     type="email"
                   />
                   {errors.email?.type === "required" && (
-                    <div className="text-white contact-required mt-1" role="alert">
-                      Email is Required
+                    <div className="contact-required mt-1" role="alert">
+                      *Email is Required
                     </div>
                   )}
                 </div>
@@ -143,17 +148,21 @@ const CareerForm = () => {
                 <div>
                   <input
                   required
-
-                    {...register("mobile", { required: true, maxLength: 12 })}
+                    {...register("mobile", { required: true, minLength: 10 })}
                     className="form-control"
                     placeholder="Enter your contact number"
-                    maxLength={12}
+                    maxLength={10}
                     type="tel"
                     onChange={handleMobileChange}
                   />
-                  {errors.mobile?.type === "required" && (
-                    <div className="text-white contact-required mt-1" role="alert">
-                      Mobile No is Required
+                   {errors.mobile?.type === "required" && (
+                    <div className="contact-required mt-1" role="alert">
+                       *Mobile Number is Required
+                    </div>
+                  )}
+                  {errors.mobile?.type === "minLength" && (
+                    <div className="contact-required mt-1" role="alert">
+                      *Enter a Valid 10 Digit Mobile Number
                     </div>
                   )}
                 </div>
@@ -167,8 +176,8 @@ const CareerForm = () => {
                     type="text"
                   />
                   {errors.city?.type === "required" && (
-                    <div className="text-white contact-required mt-1" role="alert">
-                      City is Required
+                    <div className="contact-required mt-1" role="alert">
+                      *City is Required
                     </div>
                   )}
                 </div>
@@ -184,7 +193,6 @@ const CareerForm = () => {
                     className="form-control d-none"
                     type="file"
                     accept="application/pdf,image/jpeg,image/png"
-                    onChange={handleFileChange}
                   />
                   <div>
                   {resumeName && (
@@ -203,15 +211,15 @@ const CareerForm = () => {
                 </div>
 
                 <div>
-                  <select {...register("position", { required: true })} className="form-select" required>
+                  <select required {...register("position", { required: true })} className="form-select">
                     <option value="">Select Position</option>
                     <option value="Sales & Marketing Role (Showroom)">Sales & Marketing Role (Showroom)</option>
                     <option value="Backoffice Role (Office in Coimbatore)">Backoffice Role (Office in Coimbatore)</option>
                     <option value="Other">Other</option>
                   </select>
                   {errors.position?.type === "required" && (
-                    <div className="text-white contact-required mt-1" role="alert">
-                      Position is Required
+                    <div className="contact-required mt-1" role="alert">
+                      *Position is Required
                     </div>
                   )}
                 </div>

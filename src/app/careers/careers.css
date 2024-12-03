@@ -12,6 +12,9 @@ main.careers-page{
   border: none;
   text-transform: uppercase;
 }
+.careers-form form .contact-required{
+  color: #F4D86C;
+}
 
 .careers-form form input {
   border-radius: 4px;
@@ -46,7 +49,7 @@ main.careers-page{
    outline: none !important;
 }
 
-@media (min-width:1200px) {
+@media (min-width:1280px) {
   .careers-form form input,.careers-form form .form-select{
     height: 48px;
   }

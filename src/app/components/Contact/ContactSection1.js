@@ -16,6 +16,8 @@ const ContactSection1 = () => {
   const {
     register,
     handleSubmit,
+    clearErrors, // Add this to clear errors
+
     reset,
     formState: { errors },setValue 
   } = useForm();
@@ -31,6 +33,9 @@ const ContactSection1 = () => {
     const value = e.target.value;
     const onlyDigits = value.replace(/\D/g, '');
     setValue('mobile', onlyDigits);
+    if (onlyDigits.length >= 10) {
+      clearErrors('mobile'); // Clear error when valid
+    }
   };
   
   // const sendMail = (data) => {
@@ -165,10 +170,10 @@ const ContactSection1 = () => {
                 </div>
                 <div>
                   <input
-                    {...register("mobile", { required: true, maxLength: 12 })}
+                    {...register("mobile", { required: true, maxLength: 10, minLength:10 })}
                     className="form-control"
                     placeholder="Mobile Number"
-                    maxLength={12}
+                    maxLength={10}
                     type="tel"
                     onChange={handleMobileChange}
                   />
@@ -176,6 +181,11 @@ const ContactSection1 = () => {
                   {errors.mobile?.type === "required" && (
                     <div className="text-danger contact-required" role="alert">
                       Mobile No is Required
+                    </div>
+                  )}
+                   {errors.mobile?.type === "minLength" && (
+                    <div className="text-danger contact-required" role="alert">
+                      Enter a Valid 10 Digit Mobile Number
                     </div>
                   )}
                 </div>

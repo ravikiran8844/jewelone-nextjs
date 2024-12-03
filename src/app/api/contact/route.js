@@ -2,7 +2,9 @@ import {  NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
-
+export async function GET(request) {
+  return NextResponse.json({message: "Contact API" })
+}
 
 export async function POST(request) {
   const { email, name,mobile, message } = await request.json();
@@ -26,7 +28,7 @@ export async function POST(request) {
 
   const mailOptions = {
     from: process.env.NEXT_PUBLIC_SMTP_USER,
-    to: 'retail.crm@ejindia.com',
+    to: 'ravikiran@brightbridgeinfotech.com,ravi.kiran8844@gmail.com',
     replyTo: email,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
     subject: `New Message from ${name} (${email})`,
