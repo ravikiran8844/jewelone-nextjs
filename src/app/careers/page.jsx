@@ -21,7 +21,7 @@ const page = () => {
       <main className="careers-page">
         <CareersPageSection1/>
         <CareersPageSection2/>
-        <CareersPageSection3/>
+        {/* <CareersPageSection3/> */}
       </main>
       <ToastContainer/>
       <Footer />
