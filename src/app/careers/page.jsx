@@ -1,7 +1,11 @@
 import React from "react";
 import Navbar from "../components/NavBar/NavBar";
 import Footer from "../components/Footer/Footer";
-import CareerForm from "./CareerForm";
+import CareersPageSection2 from "./CareersPageSection2";
+import CareersPageSection1 from "./CareersPageSection1";
+import './careers.css'
+import { ToastContainer } from "react-toastify";
+
 
 export const metadata = {
     title: "Careers at Jewel One | Join Our Team of Jewellery Experts",
@@ -14,8 +18,10 @@ const page = () => {
     <div>
       <Navbar />
       <main>
-        <CareerForm/>
+        <CareersPageSection1/>
+        <CareersPageSection2/>
       </main>
+      <ToastContainer/>
       <Footer />
     </div>
   );

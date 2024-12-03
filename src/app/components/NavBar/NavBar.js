@@ -269,6 +269,19 @@ const Navbar = ({ logo }) => {
                 Stores
               </a>
             </li>
+            <li className="nav-item">
+              <a
+                href="/careers"
+                className={
+                  currentRoute === "/careers"
+                    ? "active main-menu-link nav-link"
+                    : "main-menu-link nav-link"
+                }
+                onClick={handleClose}
+              >
+                Careers
+              </a>
+            </li>
 
             <li className="nav-item">
               <Link
@@ -472,6 +485,20 @@ const Navbar = ({ logo }) => {
                     onClick={handleClose}
                   >
                     Stores
+                  </a>
+                </li>
+
+                <li className="nav-item">
+                  <a
+                    href="/careers"
+                    className={
+                      currentRoute === "/careers"
+                        ? "active main-menu-link nav-link"
+                        : "main-menu-link nav-link"
+                    }
+                    onClick={handleClose}
+                  >
+                    Careers
                   </a>
                 </li>
 

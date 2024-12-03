@@ -3,7 +3,11 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import "./Contact.css";
 import Image from "next/image";
-import { Toast } from "react-bootstrap";
+// import { Toast } from "react-bootstrap";
+
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const ContactSection1 = () => {
   const [loading, setLoading] = useState(false);
@@ -74,15 +78,37 @@ const ContactSection1 = () => {
         console.log(response);
         setLoading(false);
         reset();
-        setToastMessage("Form submitted successfully!");
-        setShowToast(true);
+        // setToastMessage("Form submitted successfully!");
+        // setShowToast(true);
+
+        toast.success('Form submitted successfully!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+          
       })
       .catch((err) => {
         console.log(err);
         setLoading(false);
         reset();
-        setToastMessage("Failed to submit form. Please try again later.");
-        setShowToast(true);
+        // setToastMessage("Failed to submit form. Please try again later.");
+        // setShowToast(true);
+        toast.error('Failed to submit form. Please try again later.', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
       });
   };
 
@@ -237,7 +263,7 @@ const ContactSection1 = () => {
         </div>
 
         {/* React Bootstrap Toast */}
-        <Toast
+        {/* <Toast
           show={showToast}
           onClose={() => setShowToast(false)}
           delay={5000}
@@ -254,7 +280,7 @@ const ContactSection1 = () => {
             <strong className="me-auto">Contact Form</strong>
           </Toast.Header>
           <Toast.Body>{toastMessage}</Toast.Body>
-        </Toast>
+        </Toast> */}
       </div>
     </div>
   );
