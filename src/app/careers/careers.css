@@ -19,10 +19,11 @@ main.careers-page{
   background-color: transparent !important;
   color: #fff !important;
   font-size: 14px !important;
-  height: 42px;
+  height: 32px;
 
 
 }
+
 .careers-form form input:-webkit-autofill,
 .careers-form form input:-webkit-autofill:focus {
     transition: background-color 600000s 0s, color 600000s 0s;
@@ -33,7 +34,7 @@ main.careers-page{
    
 
 .careers-form form .form-select{
-    height: 42px;
+    height: 32px;
 
     border-radius: 4px;
     border: 0.905px solid rgba(255, 255, 255, 0.6);
@@ -43,6 +44,12 @@ main.careers-page{
     --bs-form-select-bg-img:  url("data:image/svg+xml,%3Csvg width='18' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fff' class='size-6'%3E%3Cpath fill-rule='evenodd' d='M12.53 16.28a.75.75 0 0 1-1.06 0l-7.5-7.5a.75.75 0 0 1 1.06-1.06L12 14.69l6.97-6.97a.75.75 0 1 1 1.06 1.06l-7.5 7.5Z' clip-rule='evenodd' /%3E%3C/svg%3E%0A");
    box-shadow: none !important;
    outline: none !important;
+}
+
+@media (min-width:1200px) {
+  .careers-form form input,.careers-form form .form-select{
+    height: 48px;
+  }
 }
 
 .careers-form form input::placeholder {
