@@ -38,54 +38,18 @@ const ContactSection1 = () => {
     }
   };
   
-  // const sendMail = (data) => {
-  //   setLoading(true);
-  //   const apiEndpoint = "/api/wp-contact-form";
-  //   fetch(apiEndpoint, {
-  //     method: "POST",
-  //     body: JSON.stringify(data),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((response) => {
-  //       console.log(response);
-  //       setLoading(false);
-  //       reset();
-  //       setToastMessage("Form submitted successfully!");
-  //       setShowToast(true);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //       setLoading(false);
-  //       reset();
-  //       setToastMessage("Failed to submit form. Please try again later.");
-  //       setShowToast(true);
-  //     });
-  // };
-
-
   const sendMail = (data) => {
     setLoading(true);
-    const apiEndpoint = "https://jewelonestaging.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/6/feedback";
-    
-    const formData = new FormData();
-    formData.append('your-name', data.name);
-    formData.append('your-email', data.email);
-    formData.append('your-mobile', data.mobile);
-    formData.append('your-message', data.message);
-    formData.append('_wpcf7_unit_tag', 'wpcf7-f6-p7-o1');
-  
+    const apiEndpoint = "/api/contact";
     fetch(apiEndpoint, {
       method: "POST",
-      body: formData,
+      body: JSON.stringify(data),
     })
       .then((res) => res.json())
       .then((response) => {
         console.log(response);
         setLoading(false);
         reset();
-        // setToastMessage("Form submitted successfully!");
-        // setShowToast(true);
-
         toast.success('Form submitted successfully!', {
           position: "top-right",
           autoClose: 5000,
@@ -96,15 +60,12 @@ const ContactSection1 = () => {
           progress: undefined,
           theme: "colored",
           });
-          
       })
       .catch((err) => {
         console.log(err);
         setLoading(false);
         reset();
-        // setToastMessage("Failed to submit form. Please try again later.");
-        // setShowToast(true);
-        toast.error('Failed to submit form. Please try again later.', {
+        toast.error('Failed to submit form. Please try again later', {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -116,6 +77,61 @@ const ContactSection1 = () => {
           });
       });
   };
+
+
+  // const sendMail = (data) => {
+  //   setLoading(true);
+  //   const apiEndpoint = "https://jewelonestaging.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/6/feedback";
+    
+  //   const formData = new FormData();
+  //   formData.append('your-name', data.name);
+  //   formData.append('your-email', data.email);
+  //   formData.append('your-mobile', data.mobile);
+  //   formData.append('your-message', data.message);
+  //   formData.append('_wpcf7_unit_tag', 'wpcf7-f6-p7-o1');
+  
+  //   fetch(apiEndpoint, {
+  //     method: "POST",
+  //     body: formData,
+  //   })
+  //     .then((res) => res.json())
+  //     .then((response) => {
+  //       console.log(response);
+  //       setLoading(false);
+  //       reset();
+  //       // setToastMessage("Form submitted successfully!");
+  //       // setShowToast(true);
+
+  //       toast.success('Form submitted successfully!', {
+  //         position: "top-right",
+  //         autoClose: 5000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //         progress: undefined,
+  //         theme: "colored",
+  //         });
+          
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //       setLoading(false);
+  //       reset();
+  //       // setToastMessage("Failed to submit form. Please try again later.");
+  //       // setShowToast(true);
+  //       toast.error('Failed to submit form. Please try again later.', {
+  //         position: "top-right",
+  //         autoClose: 5000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //         progress: undefined,
+  //         theme: "colored",
+  //         });
+  //     });
+  // };
 
   
   

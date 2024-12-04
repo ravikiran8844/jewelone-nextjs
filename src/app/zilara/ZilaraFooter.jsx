@@ -65,7 +65,16 @@ const ZilaraFooter = () => {
                   fontSize: 12,
               }}
             >
-              Privacy Policy | Terms of Use
+              Privacy Policy |
+            </a>
+            <a
+            className=" text-secondary text-decoration-none"
+              href="/terms-and-conditions"
+              style={{
+                  fontSize: 12,
+              }}
+            >
+              {" "} Terms of Use
             </a>
           </div>
         </div>

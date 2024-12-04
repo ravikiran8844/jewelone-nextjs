@@ -33,53 +33,29 @@ const CareerForm = () => {
   };
 
 
-  // const handleFileChange = (e) => {
-  //   const file = e.target.files[0];
-  //   const maxSizeInBytes = 5 * 1024 * 1024;
-
-  //   if (file) {
-  //     if (file.size > maxSizeInBytes) {
-  //       toast.error('File size exceeds 5MB. Please upload a smaller file.', {
-  //         position: "top-right",
-  //         autoClose: 5000,
-  //         hideProgressBar: false,
-  //         closeOnClick: true,
-  //         pauseOnHover: true,
-  //         draggable: true,
-  //         theme: "colored",
-  //       });
-  //       setResumeName("");
-  //       return;
-  //     }
-  //     setResumeName(file.name);
-  //   }
-  // };
-
-
   const sendMail = (data) => {
     setLoading(true);
-    const apiEndpoint = "https://jewelonestaging.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/260/feedback";
+    const apiEndpoint = "/api/careers";
     
+    // Create FormData object
     const formData = new FormData();
-    formData.append('your-name', data.name);
-    formData.append('your-email', data.email);
-    formData.append('your-mobile', data.mobile);
-    formData.append('your-city', data.city);
-    formData.append('your-position', data.position);
-    formData.append('your-resume', data.resume[0]); // Assuming only one file is uploaded
-    formData.append('_wpcf7_unit_tag', 'wpcf7-f260-p252-o1');
-  
+    formData.append("name", data.name);
+    formData.append("email", data.email);
+    formData.append("mobile", data.mobile);
+    formData.append("position", data.position);
+    formData.append("city", data.city);
+    formData.append("resume", data.resume[0]); // Attach the file (first file in array)
+
     fetch(apiEndpoint, {
       method: "POST",
-      body: formData,
+      body: formData, // Send FormData
     })
       .then((res) => res.json())
       .then((response) => {
         console.log(response);
         setLoading(false);
         reset();
-        setResumeName("");
-        toast.success('Form submitted successfully!', {
+        toast.success("Form submitted successfully!", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -88,14 +64,13 @@ const CareerForm = () => {
           draggable: true,
           progress: undefined,
           theme: "colored",
-          });
+        });
       })
       .catch((err) => {
         console.log(err);
         setLoading(false);
         reset();
-        setResumeName("");
-        toast.error('Failed to submit form. Please try again later.', {
+        toast.error("Failed to submit form. Please try again later.", {
           position: "top-right",
           autoClose: 5000,
           hideProgressBar: false,
@@ -104,9 +79,10 @@ const CareerForm = () => {
           draggable: true,
           progress: undefined,
           theme: "colored",
-          });
+        });
       });
   };
+
 
   return (
        <div>
@@ -189,6 +165,7 @@ const CareerForm = () => {
                     <label htmlFor="resume" className="upload-resume-input">Browse</label>
                   </div>
                   <input id="resume"
+                  
                     {...register("resume", { required: false })}
                     className="form-control d-none"
                     type="file"
