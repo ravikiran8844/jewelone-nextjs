@@ -5,8 +5,8 @@ import "../privacy-policy/privacy-policy.css";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Privacy Policy - JewelOne",
-  description: "JewelOne Privacy Policy",
+  title: "Terms and Conditions - JewelOne",
+  description: "JewelOne Terms and Conditions",
 };
 
 const page = () => {

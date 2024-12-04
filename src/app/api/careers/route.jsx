@@ -34,7 +34,7 @@ export async function POST(request) {
 
   const mailOptions = {
     from: process.env.NEXT_PUBLIC_SMTP_USER,
-    to: 'ravikiran@brightbridgeinfotech.com,vivinrajkumar.r@ejinida.com,hiring@ejindia.com,vivin.emerald@gmail.com,vasanth.t@ejindia.com',
+    to: 'ravikiran@brightbridgeinfotech.com,vivinrajkumar.r@ejindia.com,hiring@ejindia.com,vivin.emerald@gmail.com,vasanth.t@ejindia.com,e21663@ejindia.com',
     replyTo: email,
     subject: `New Job Application from ${name} (${email})`,
     html: `
