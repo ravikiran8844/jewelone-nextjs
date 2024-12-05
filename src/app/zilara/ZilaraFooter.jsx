@@ -58,7 +58,7 @@ const ZilaraFooter = () => {
             <div className="copyright-text text-center text-md-start">© {year} Zilara Silver Redefined. All Rights Reserved.</div>
 
             <div>
-            <a
+            <Link
             className=" text-secondary text-decoration-none"
               href="/privacy-policy"
               style={{
@@ -66,8 +66,8 @@ const ZilaraFooter = () => {
               }}
             >
               Privacy Policy |
-            </a>
-            <a
+            </Link>
+            <Link
             className=" text-secondary text-decoration-none"
               href="/terms-and-conditions"
               style={{
@@ -75,17 +75,17 @@ const ZilaraFooter = () => {
               }}
             >
               Terms of Use |
-            </a>
-            <a
+            </Link>
+            <Link
             className=" text-secondary text-decoration-none"
-              href="/certifications"
+              href="/our-certifications-policies"
               style={{
                   fontSize: 12,
               }}
             >
               {" "} Our Certifications & Policies 
 
-            </a>
+            </Link>
           </div>
         </div>
       </div>
