@@ -8,7 +8,7 @@ import Certificates from './Certificates'
 
 
 export const metadata = {
-  title: "Certifications | JewelOne",
+  title: "Certifications & Policies | JewelOne",
   description: 'Discover the assurance of authenticity with Jewel One’s certified jewelry. Explore our certifications for gold, diamonds, and precious gems, ensuring quality and trust in every piece.',
 }
 

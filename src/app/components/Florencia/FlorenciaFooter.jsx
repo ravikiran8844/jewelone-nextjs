@@ -161,7 +161,16 @@ const FlorenciaFooter = () => {
                   fontSize: 12,
               }}
             >
-              {" "} Terms of Use
+              {" "} Terms of Use |
+            </a>
+            <a
+            className=" text-secondary text-decoration-none"
+              href="/certifications"
+              style={{
+                  fontSize: 12,
+              }}
+            >
+              {" "} Our Certifications & Policies
             </a>
           </div>
         </div>

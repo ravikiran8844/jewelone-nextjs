@@ -6,6 +6,11 @@
     left:-32px;
 }
 
+.cerifications .tab-content .card{
+    border-radius: 43.865px;
+border: 1px solid #CDCDCD;
+}
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .cerifications .hide-scrollbar::-webkit-scrollbar {
