@@ -9,8 +9,8 @@ import './tvam.css'
 
 
 export const metadata = {
-    title: 'TVAM | New Bridal Collection | Jewel One',
-    description: 'TVAM is the new bridal collection from Jewel One. Embrace your timeless beauty with Jewel One TVAM collection where modern elegance meets classic charm, making you the trendsetting bride.',
+    title: 'TVAM | New Bridal Collection | JewelOne',
+    description: 'TVAM is the new bridal collection from JewelOne. Embrace your timeless beauty with JewelOne TVAM collection where modern elegance meets classic charm, making you the trendsetting bride.',
   }
   
 

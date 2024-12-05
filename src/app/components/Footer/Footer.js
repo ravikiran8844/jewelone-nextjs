@@ -317,7 +317,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-12">
-            <div className="d-flex justify-content-center gap-2">
+            <div className="d-flex flex-wrap justify-content-center gap-1">
             <a
               href="/privacy-policy"
               style={{
@@ -328,7 +328,7 @@ const Footer = () => {
                 fontSize: 12,
               }}
             >
-              Privacy Policy &nbsp; {"|"}
+              Privacy Policy |
             </a>
             <a
               href="/terms-and-conditions"
@@ -340,7 +340,19 @@ const Footer = () => {
                 fontSize: 12,
               }}
             >
-             Terms of Use
+            {" "} Terms of Use |
+            </a>
+            <a
+              href="/certifications"
+              style={{
+                color: "#fff",
+                display: "flex",
+                justifyContent: "center",
+                marginTop: 20,
+                fontSize: 12,
+              }}
+            >
+            {" "} Our Certifications & Policies 
             </a>
             </div>
           </div>
