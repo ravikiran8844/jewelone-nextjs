@@ -318,7 +318,7 @@ const Footer = () => {
           </div>
           <div className="col-12">
             <div className="d-flex flex-wrap justify-content-center gap-1">
-            <a
+            <Link
               href="/privacy-policy"
               style={{
                 color: "#fff",
@@ -329,8 +329,8 @@ const Footer = () => {
               }}
             >
               Privacy Policy |
-            </a>
-            <a
+            </Link>
+            <Link
               href="/terms-and-conditions"
               style={{
                 color: "#fff",
@@ -341,9 +341,9 @@ const Footer = () => {
               }}
             >
             {" "} Terms of Use |
-            </a>
-            <a
-              href="/certifications"
+            </Link>
+            <Link
+              href="/our-certifications-policies"
               style={{
                 color: "#fff",
                 display: "flex",
@@ -353,7 +353,7 @@ const Footer = () => {
               }}
             >
             {" "} Our Certifications & Policies 
-            </a>
+            </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link';
 import React from 'react'
 
 const FlorenciaFooter = () => {
@@ -145,7 +146,7 @@ const FlorenciaFooter = () => {
             © {year} FLORENCIA. ALL RIGHTS RESERVED
           </div>
           <div>
-            <a
+            <Link
             className=" text-secondary text-decoration-none"
               href="/privacy-policy"
               style={{
@@ -153,8 +154,8 @@ const FlorenciaFooter = () => {
               }}
             >
               Privacy Policy |
-            </a>
-            <a
+            </Link>
+            <Link
             className=" text-secondary text-decoration-none"
               href="/terms-and-conditions"
               style={{
@@ -162,16 +163,16 @@ const FlorenciaFooter = () => {
               }}
             >
               {" "} Terms of Use |
-            </a>
-            <a
+            </Link>
+            <Link
             className=" text-secondary text-decoration-none"
-              href="/certifications"
+              href="/our-certifications-policies"
               style={{
                   fontSize: 12,
               }}
             >
               {" "} Our Certifications & Policies
-            </a>
+            </Link>
           </div>
         </div>
       </div>
