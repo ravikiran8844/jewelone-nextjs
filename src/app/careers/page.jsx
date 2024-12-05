@@ -9,8 +9,8 @@ import CareersPageSection3 from "./CareersPageSection3";
 
 
 export const metadata = {
-    title: "Careers at Jewel One | Join Our Team of Jewellery Experts",
-    description: 'Explore exciting career opportunities at Jewel One, a leading name in the jewellery industry. Join our dynamic team and contribute to creating timeless masterpieces. Discover roles in sales, marketing, back office, and more. Shape your future with us!',
+    title: "Careers at JewelOne | Join Our Team of Jewellery Experts",
+    description: 'Explore exciting career opportunities at JewelOne, a leading name in the jewellery industry. Join our dynamic team and contribute to creating timeless masterpieces. Discover roles in sales, marketing, back office, and more. Shape your future with us!',
   }
   
 

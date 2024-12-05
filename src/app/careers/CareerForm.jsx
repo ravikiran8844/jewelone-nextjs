@@ -169,6 +169,7 @@ const CareerForm = () => {
                     {...register("resume", { required: false })}
                     className="form-control d-none"
                     type="file"
+
                     accept="application/pdf,image/jpeg,image/png"
                   />
                   <div>
