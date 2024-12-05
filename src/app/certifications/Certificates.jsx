@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import Image from "next/image";
 
 const data = [
   {
@@ -47,7 +48,11 @@ const data = [
     images: [
       {
         id: 1,
-        image: "/certifications/rjc-policy/rjc-policy-1.webp",
+        image: "/certifications/grievance-policy/grievance-policy-1.webp",
+      },
+      {
+        id: 2,
+        image: "/certifications/grievance-policy/grievance-policy-2.webp",
       },
     ],
   },
@@ -57,7 +62,7 @@ const data = [
     images: [
       {
         id: 1,
-        image: "/certifications/rjc-policy/rjc-policy-1.webp",
+        image: "/certifications/anti-discrimation-policy/anti-discrimation-policy-1.webp",
       },
     ],
   },
@@ -67,7 +72,39 @@ const data = [
     images: [
       {
         id: 1,
-        image: "/certifications/rjc-policy/rjc-policy-1.webp",
+        image: "/certifications/violence-and-harassment-policy/violence-and-harassment-policy-1.webp",
+      },
+      {
+        id: 2,
+        image: "/certifications/violence-and-harassment-policy/violence-and-harassment-policy-2.webp",
+      },
+      {
+        id: 3,
+        image: "/certifications/violence-and-harassment-policy/violence-and-harassment-policy-3.webp",
+      },
+      {
+        id: 4,
+        image: "/certifications/violence-and-harassment-policy/violence-and-harassment-policy-4.webp",
+      },
+      {
+        id: 5,
+        image: "/certifications/violence-and-harassment-policy/violence-and-harassment-policy-5.webp",
+      },
+      {
+        id: 6,
+        image: "/certifications/violence-and-harassment-policy/violence-and-harassment-policy-6.webp",
+      },
+      {
+        id: 7,
+        image: "/certifications/violence-and-harassment-policy/violence-and-harassment-policy-7.webp",
+      },
+      {
+        id: 8,
+        image: "/certifications/violence-and-harassment-policy/violence-and-harassment-policy-8.webp",
+      },
+      {
+        id: 9,
+        image: "/certifications/violence-and-harassment-policy/violence-and-harassment-policy-9.webp",
       },
     ],
   },
@@ -77,7 +114,7 @@ const data = [
     images: [
       {
         id: 1,
-        image: "/certifications/rjc-policy/rjc-policy-1.webp",
+        image: "/certifications/child-labour-policy/child-labour-policy-1.webp",
       },
     ],
   },
@@ -87,7 +124,7 @@ const data = [
     images: [
       {
         id: 1,
-        image: "/certifications/rjc-policy/rjc-policy-1.webp",
+        image: "/certifications/employment-at-will-policy/employment-at-will-policy-1.webp",
       },
     ],
   },
@@ -97,7 +134,15 @@ const data = [
     images: [
       {
         id: 1,
-        image: "/certifications/rjc-policy/rjc-policy-1.webp",
+        image: "/certifications/whistle-blower-policy/whistle-blower-policy-1.webp",
+      },
+      {
+        id: 2,
+        image: "/certifications/whistle-blower-policy/whistle-blower-policy-2.webp",
+      },
+      {
+        id: 3,
+        image: "/certifications/whistle-blower-policy/whistle-blower-policy-3.webp",
       },
     ],
   },
@@ -107,19 +152,47 @@ const data = [
     images: [
       {
         id: 1,
-        image: "/certifications/rjc-policy/rjc-policy-1.webp",
+        image: "/certifications/nrc-policy/nrc-policy-1.webp",
+      },
+      {
+        id: 2,
+        image: "/certifications/nrc-policy/nrc-policy-2.webp",
+      },
+      {
+        id: 3,
+        image: "/certifications/nrc-policy/nrc-policy-3.webp",
+      },
+      {
+        id: 4,
+        image: "/certifications/nrc-policy/nrc-policy-4.webp",
       },
     ],
   },
   {
     id: 10,
     name: "ML Policy",
-    images: [
-      {
-        id: 1,
-        image: "/certifications/rjc-policy/rjc-policy-1.webp",
-      },
-    ],
+    images:[
+      { id: 1, image: "/certifications/ml-policy/ml-policy (1).webp" },
+      { id: 2, image: "/certifications/ml-policy/ml-policy (2).webp" },
+      { id: 3, image: "/certifications/ml-policy/ml-policy (3).webp" },
+      { id: 4, image: "/certifications/ml-policy/ml-policy (4).webp" },
+      { id: 5, image: "/certifications/ml-policy/ml-policy (5).webp" },
+      { id: 6, image: "/certifications/ml-policy/ml-policy (6).webp" },
+      { id: 7, image: "/certifications/ml-policy/ml-policy (7).webp" },
+      { id: 8, image: "/certifications/ml-policy/ml-policy (8).webp" },
+      { id: 9, image: "/certifications/ml-policy/ml-policy (9).webp" },
+      { id: 10, image: "/certifications/ml-policy/ml-policy (10).webp" },
+      { id: 11, image: "/certifications/ml-policy/ml-policy (11).webp" },
+      { id: 12, image: "/certifications/ml-policy/ml-policy (12).webp" },
+      { id: 13, image: "/certifications/ml-policy/ml-policy (13).webp" },
+      { id: 14, image: "/certifications/ml-policy/ml-policy (14).webp" },
+      { id: 15, image: "/certifications/ml-policy/ml-policy (15).webp" },
+      { id: 16, image: "/certifications/ml-policy/ml-policy (16).webp" },
+      { id: 17, image: "/certifications/ml-policy/ml-policy (17).webp" },
+      { id: 18, image: "/certifications/ml-policy/ml-policy (18).webp" },
+      { id: 19, image: "/certifications/ml-policy/ml-policy (19).webp" },
+    ]
+    
   },
 ];
 
@@ -184,7 +257,7 @@ const Certificates = () => {
                    >
                    {item.images.map((img) => (
                      <SplideSlide key={img.id} className="m-auto">
-                     <img src={img.image}
+                     <Image width={596} height={842} src={img.image}
                             alt={item.name}
                             className="img-fluid"
                             />
