@@ -124,7 +124,7 @@ const Plan3 = () => {
 
                 <div>
                     <div className="text-red mb-3">Non-Redemption on Maturity</div>
-                    <div className="plan-terms_text">If the customer does not purchase Jewellery at the end of 330 days from the date of enrollment and grace period of 10 days given by the company from the maturity of scheme, then the total advance amount will be invoiced with an equivalent weight of 22 karat gold coin as per the rate fixed by the customer without any benefit, (For example: a customer has given Rs.1,00,000 in the scheme and a Gold ate is fixed as Rs.4,500 per gram, then the refund will be in the form of 22.220 (approx.) grams of 22k gold coin).</div>
+                    <div className="plan-terms_text">If the customer does not purchase Jewellery at the end of 330 days from the date of enrollment and grace period of 10 days given by the company from the maturity of scheme, then the total advance amount will be invoiced with an equivalent weight of 22 karat gold coin as per the rate fixed by the customer without any benefit, (For example: a customer has given Rs.1,00,000 in the scheme and a Gold Rate is fixed as Rs.4,500 per gram, then the refund will be in the form of 22.220 (approx.) grams of 22k gold coin).</div>
 
                 </div>
 
