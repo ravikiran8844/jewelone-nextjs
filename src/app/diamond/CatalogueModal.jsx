@@ -20,21 +20,13 @@ const CatalogueModal = () => {
     setValue("whatsapp", onlyDigits);
   };
 
-  // Send form data to the server
+
   const sendMail = (data) => {
     setLoading(true);
-    const apiEndpoint = "https://jewelonestaging.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/193/feedback"; // Replace with the correct API
-
-    const formData = new FormData();
-    formData.append("your-name", data.name);
-    formData.append("your-whatsapp", data.whatsapp);
-    formData.append("your-email", data.email);
-    formData.append("your-city", data.city);
-    formData.append('_wpcf7_unit_tag', 'wpcf7-f193-p194-o1');
-
+    const apiEndpoint = "/api/diamond";
     fetch(apiEndpoint, {
       method: "POST",
-      body: formData,
+      body: JSON.stringify(data),
     })
       .then((res) => res.json())
       .then((response) => {
@@ -43,30 +35,79 @@ const CatalogueModal = () => {
         reset();
         toast.success('Form submitted successfully!', {
           position: "top-right",
-          autoClose: 8000,
+          autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "light",
+          theme: "colored",
           });
       })
       .catch((err) => {
-        console.error(err);
+        console.log(err);
         setLoading(false);
-        toast.error('Failed to submit form. Please try again.', {
+        reset();
+        toast.error('Failed to submit form. Please try again later', {
           position: "top-right",
-          autoClose: 8000,
+          autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
           pauseOnHover: true,
           draggable: true,
           progress: undefined,
-          theme: "light",
+          theme: "colored",
           });
       });
   };
+
+  // Send form data to the server
+  // const sendMail = (data) => {
+  //   setLoading(true);
+  //   const apiEndpoint = "https://jewelonestaging.brightbridge.co/wp-json/contact-form-7/v1/contact-forms/193/feedback"; // Replace with the correct API
+
+  //   const formData = new FormData();
+  //   formData.append("your-name", data.name);
+  //   formData.append("your-whatsapp", data.whatsapp);
+  //   formData.append("your-email", data.email);
+  //   formData.append("your-city", data.city);
+  //   formData.append('_wpcf7_unit_tag', 'wpcf7-f193-p194-o1');
+
+  //   fetch(apiEndpoint, {
+  //     method: "POST",
+  //     body: formData,
+  //   })
+  //     .then((res) => res.json())
+  //     .then((response) => {
+  //       console.log(response);
+  //       setLoading(false);
+  //       reset();
+  //       toast.success('Form submitted successfully!', {
+  //         position: "top-right",
+  //         autoClose: 8000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //         progress: undefined,
+  //         theme: "light",
+  //         });
+  //     })
+  //     .catch((err) => {
+  //       console.error(err);
+  //       setLoading(false);
+  //       toast.error('Failed to submit form. Please try again.', {
+  //         position: "top-right",
+  //         autoClose: 8000,
+  //         hideProgressBar: false,
+  //         closeOnClick: true,
+  //         pauseOnHover: true,
+  //         draggable: true,
+  //         progress: undefined,
+  //         theme: "light",
+  //         });
+  //     });
+  // };
 
   return (
     <div>
@@ -170,11 +211,23 @@ const CatalogueModal = () => {
                           placeholder="Whatsapp Number"
                           type="text"
                           maxLength={10}
-                          {...register("whatsapp", { required: true })}
+                          {...register("whatsapp", { required: true, maxLength: 10, minLength:10 })}
                           onChange={handleWhatsAppChange}
                           className="modal-item-input"
                         />
-                        {errors.whatsapp && <span className="modal-error-message">WhatsApp number is required</span>}
+
+
+                        {errors.whatsapp?.type === "required" && (
+                    <div className="modal-error-message" role="alert">
+                      WhatsApp No is Required
+                    </div>
+                  )}
+                   {errors.whatsapp?.type === "minLength" && (
+                    <div className="modal-error-message" role="alert">
+                      Enter a Valid 10 Digit Number
+                    </div>
+                  )}
+
                       </div>
                       <div>
                         <input
@@ -184,6 +237,10 @@ const CatalogueModal = () => {
                           className="modal-item-input"
                         />
                         {errors.email && <span className="modal-error-message">Email is required</span>}
+
+                       
+
+
                       </div>
                       <div>
                         <input

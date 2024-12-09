@@ -246,7 +246,7 @@ const Plan4 = () => {
                   total advance amount will be invoiced with an equivalent
                   weight of 22 karat gold coin as per the rate fixed by the
                   customer without any benefit, (For example: a customer has
-                  given Rs.1,00,000 in the scheme and a Gold ate is fixed as
+                  given Rs.1,00,000 in the scheme and a Gold Rate is fixed as
                   Rs.4,500 per gram, then the refund will be in the form of
                   22.220 (approx.) grams of 22k gold coin).
                 </div>
