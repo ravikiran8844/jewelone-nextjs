@@ -15,6 +15,7 @@
   "dependencies": {
     "@googlemaps/extended-component-library": "^0.6.11",
     "@lite-embed/react": "^1.0.4",
+    "@next/third-parties": "^15.0.4",
     "@react-google-maps/api": "^2.19.3",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
