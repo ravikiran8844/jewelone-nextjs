@@ -1,8 +1,39 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import ProductCard from "./ProductCard";
 import Link from "next/link";
 
 const CollectionGrid = () => {
+  const totalProducts = 100; // Total number of product cards
+  const productsPerPage = 30; // Products per page
+  const totalPages = Math.ceil(totalProducts / productsPerPage); // Calculate total pages
+
+  const [currentPage, setCurrentPage] = useState(1); // Track current page
+  const [isLoading, setIsLoading] = useState(false); // Track loading state
+
+  // Generate product cards
+  const products = Array.from({ length: totalProducts }, (_, index) => (
+    <ProductCard key={index} title={`Product ${index + 1}`} slug={`/product/${index + 1}`} />
+  ));
+
+  // Get products for the current page
+  const startIndex = (currentPage - 1) * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+  const currentProducts = products.slice(startIndex, endIndex);
+
+  // Handle page change
+  const handlePageChange = (page) => {
+    if (page !== currentPage) {
+      setIsLoading(true); // Show loader
+      setTimeout(() => {
+        setCurrentPage(page); // Update current page
+        setIsLoading(false); // Hide loader
+        window.scrollTo({ top: 0, behavior: "smooth" }); // Scroll to top
+      }, 500); // Simulate loading delay (adjust if needed)
+    }
+  };
+
   return (
     <section className="container py-5 collection-section">
       <div className="row">
@@ -10,7 +41,9 @@ const CollectionGrid = () => {
           <div>
             <ul className="d-flex gap-2 align-items-center list-unstyled breadcrumbs">
               <li>
-                <Link href="/" className="text-black text-decoration-none">Home</Link>
+                <Link href="/" className="text-black text-decoration-none">
+                  Home
+                </Link>
               </li>
               <li>
                 <svg
@@ -31,7 +64,7 @@ const CollectionGrid = () => {
           </div>
         </div>
         <div className="col-12">
-          <div className="fs-5 fw-medium">Total 1908 Results Found</div>
+          <div className="fs-5 fw-medium">Total {totalProducts} Results Found</div>
         </div>
 
         <div className="py-1 col-12">
@@ -39,20 +72,38 @@ const CollectionGrid = () => {
         </div>
 
         <div className="col-12">
-          <div className="product-items">
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-            <ProductCard />
-          </div>
+          {isLoading ? (
+            <div className="text-center py-5">
+              <div className="spinner-border text-red" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          ) : (
+            <div className="product-items">
+              {currentProducts}
+            </div>
+          )}
+        </div>
+
+        {/* Pagination Controls */}
+        <div className="col-12 d-flex justify-content-center mt-5">
+          <nav>
+            <ul className="pagination">
+              {Array.from({ length: totalPages }, (_, index) => (
+                <li
+                  key={index}
+                  className={`page-item ${
+                    currentPage === index + 1 ? "active" : ""
+                  }`}
+                  onClick={() => handlePageChange(index + 1)}
+                >
+                  <a className="page-link" href="#!">
+                    {index + 1}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
