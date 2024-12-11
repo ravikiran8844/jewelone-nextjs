@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
@@ -15,7 +15,7 @@
   "dependencies": {
     "@googlemaps/extended-component-library": "^0.6.11",
     "@lite-embed/react": "^1.0.4",
-    "@next/third-parties": "^15.0.4",
+    "@next/third-parties": "15.1.0",
     "@react-google-maps/api": "^2.19.3",
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
@@ -26,12 +26,12 @@
     "googleapis": "^137.1.0",
     "gsap": "^3.12.5",
     "lite-youtube-embed": "^0.3.0",
-    "next": "^14.2.13",
+    "next": "15.1.0",
     "next-sitemap": "^4.2.3",
     "nodemailer": "^6.9.7",
-    "react": "^18.3.1",
+    "react": "19.0.0",
     "react-bootstrap": "^2.9.1",
-    "react-dom": "^18.3.1",
+    "react-dom": "19.0.0",
     "react-hook-form": "^7.49.2",
     "react-lite-youtube-embed": "^2.4.0",
     "react-player": "^2.16.0",
@@ -45,6 +45,6 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.3"
+    "eslint-config-next": "15.1.0"
   }
 }
