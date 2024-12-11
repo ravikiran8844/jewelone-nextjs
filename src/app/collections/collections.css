@@ -38,3 +38,18 @@ text-transform: uppercase;
 .collection-section .breadcrumbs{
     font-size: 12px;
 }
+
+
+.page-item a{
+    color: #a0222c !important;
+    box-shadow: none !important;
+
+}
+.page-item.active a{
+    background: linear-gradient(90deg, #a0222c 0%, #c79144 100%) !important;
+    border: none;
+    color: #fff !important;
+    box-shadow: none !important;
+}
+
+

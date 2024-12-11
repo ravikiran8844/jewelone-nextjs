@@ -1,22 +1,27 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const ProductCard = () => {
+const ProductCard = (params) => {
   return (
     <div className="product-item">
       <div className="card border-0 rounded-4 overflow-hidden">
         <div>
-          <Image
+         <Link href={params.slug}>
+         <Image
             className="img-fluid"
             src="/collections/product.webp"
             width={533}
             height={403}
             alt="product"
           />
+         </Link>
         </div>
         <div className="card-body p-3 d-flex flex-column gap-1">
           <div className="fw-medium">
-            Product No : <span>IMCSHS1172-03+04</span>
+            <Link  href={params.slug} className="text-decoration-none text-black">
+            Product No : <span>{params.title}</span>
+            </Link>
           </div>
           <div className="fw-semibold text-red">Gold Jewel Set</div>
 
