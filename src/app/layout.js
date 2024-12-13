@@ -7,6 +7,8 @@ import BootstrapClient from "./components/BootstrapClient";
 // import GsapBall from './components/GsapBall';
 // import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from "@next/third-parties/google";
+// import Script from "next/script";
+import { Partytown } from "@builder.io/partytown/react";
 import Script from "next/script";
 
 const inter = Inter({
@@ -41,16 +43,16 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} ${great_vibes.variable}`}>
         {/* <Navbar/> */}
         {children}
         {/* <Footer/> */}
         <BootstrapClient />
         {/* <GsapBall/> */}
-        <Script
-        id="google-tag-manager"
-        strategy="worker"
+        <Partytown debug={true} forward={["dataLayer.push"]} />
+        <script
+        type="text/partytown"
         dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -61,6 +63,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       />
       </body>
       {/* <GoogleTagManager gtmId="GTM-KRZSB3WW" /> */}
+
+     
     </html>
   );
 }
