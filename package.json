@@ -13,6 +13,7 @@
     "deploy:prod": "next build && pm2 startOrRestart ecosystem.config.js --env prod"
   },
   "dependencies": {
+    "@builder.io/partytown": "^0.10.2",
     "@googlemaps/extended-component-library": "^0.6.11",
     "@lite-embed/react": "^1.0.4",
     "@next/third-parties": "15.1.0",
