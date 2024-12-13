@@ -17,7 +17,7 @@ import AnnouncmentBar from "../ExperienceCenter/AnnouncmentBar";
 import RenderLogo from "../Logo/RenderLogo";
 
 const Navbar = ({ logo }) => {
-  console.log(usePathname());
+  // console.log(usePathname());
 
   const today = new Date();
   const options = { day: "numeric", month: "short", year: "numeric" };
