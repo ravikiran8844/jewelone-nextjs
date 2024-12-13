@@ -7,9 +7,7 @@ import BootstrapClient from "./components/BootstrapClient";
 // import GsapBall from './components/GsapBall';
 // import { GoogleAnalytics } from '@next/third-parties/google'
 import { GoogleTagManager } from "@next/third-parties/google";
-// import Script from "next/script";
-import { Partytown } from "@builder.io/partytown/react";
-import Script from "next/script";
+
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,17 +28,6 @@ export const metadata = {
   description: "JewelOne Website",
 };
 
-// async function getData() {
-//   const res = await fetch('http://emerald-jewel-career.brightbridge.co/wp-json/acf/v3/options/option');
-
-//   if (!res.ok) {
-//     // This will activate the closest `error.js` Error Boundary
-//     throw new Error('Failed to fetch data')
-//   }
-
-//   return res.json()
-// }
-
 export default async function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -50,21 +37,8 @@ export default async function RootLayout({ children }) {
         {/* <Footer/> */}
         <BootstrapClient />
         {/* <GsapBall/> */}
-        <Partytown debug={true} forward={["dataLayer.push"]} />
-        <script
-        type="text/partytown"
-        dangerouslySetInnerHTML={{
-          __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KRZSB3WW');`,
-        }}
-      />
+        <GoogleTagManager gtmId="GTM-KRZSB3WW" />
       </body>
-      {/* <GoogleTagManager gtmId="GTM-KRZSB3WW" /> */}
-
-     
     </html>
   );
 }
