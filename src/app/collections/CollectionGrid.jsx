@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const CollectionGrid = () => {
   const totalProducts = 100; // Total number of product cards
-  const productsPerPage = 30; // Products per page
+  const productsPerPage = 36; // Products per page
   const totalPages = Math.ceil(totalProducts / productsPerPage); // Calculate total pages
 
   const [currentPage, setCurrentPage] = useState(1); // Track current page
