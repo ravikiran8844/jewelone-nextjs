@@ -17,18 +17,18 @@
 .brittany-font {
   font-family: "Brittany Signature";
 }
-
+.container{
+  margin: auto;
+}
 body{
   background: #F8F8FB !important;
   font-family: var(--font-inter);
   font-display: swap;
-  /* max-width: 1920px; */
-  margin: auto;
+  max-width: 1640px;
+  margin: auto !important;
   overflow-x: hidden;
 }
-.container{
-  margin: auto;
-}
+
 .navbar>.container{
   flex-wrap: nowrap !important;
 }
