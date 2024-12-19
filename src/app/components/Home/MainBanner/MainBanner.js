@@ -15,26 +15,27 @@ export const MainBanner = () => {
           lazyLoad: 'nearby', // Lazy load nearby slides to reduce initial load time
         }}
       >
-        {/* <SplideSlide>
+   <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
             <source
-              srcSet="/home/Antique_Mela.jpg"
+              srcSet="/home/jone-banner1.webp"
+              type="image/webp"
               media="(min-width: 650px)"
               width={1920}
               height={1080}
             />
             <Image
               className="img-fluid w-100 h-auto"
-              alt="Main Banner Image"
-              src="/home/Antique_Mela_Mob.jpg"
+              alt="Secondary Banner Image"
+              src="/home/jone-banner1mob.webp"
               width={600}
               height={800}
               sizes="100vw"
-              priority // Ensures this image loads first
+              priority
               quality={75} // Reduces image size for faster loading
             />
           </picture>
-        </SplideSlide> */}
+        </SplideSlide>
 
         <SplideSlide>
           <picture style={{ display: 'block', width: '100%', height: 'auto' }}>
