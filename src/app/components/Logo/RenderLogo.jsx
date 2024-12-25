@@ -13,8 +13,8 @@ const RenderLogo = ({logo}) => {
           <span className="navbar-brand">
 
             <Image
-              width={265}
-              height={46}
+              width={200}
+              height={42}
               className="img-fluid"
               src="/florencia/logo.svg"
               alt="logo"
