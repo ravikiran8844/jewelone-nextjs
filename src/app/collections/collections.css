@@ -109,16 +109,17 @@
 
 .collection-filter-btn{
   border-radius: 43.5px;
-  background: linear-gradient(0deg, #F8F8F8 0%, #F8F8F8 100%), #FFF;
+  background: linear-gradient(0deg, #F8F8F8 0%, #F8F8F8 100%), #FFF !important;
   border: none;
   padding: 5px 16px;
   display: flex;
   gap: 5px;
+  color: #000 !important;
 }
 
 .collection-filter-btn:hover{
   border-radius: 43.5px;
-border: 1px solid #A0222C;
-background: rgba(160, 34, 44, 0.05);
-color: #A0222C;
+border: 1px solid #A0222C !important;
+background: rgba(160, 34, 44, 0.05) !important;
+color: #A0222C !important;
 }

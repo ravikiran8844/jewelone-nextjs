@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import "./product.css";
 import ProductMedia from "./ProductMedia";
+import GetEstimate from "@/app/components/GetEstimate";
 const page = (params) => {
   return (
     <div>
@@ -107,7 +108,7 @@ const page = (params) => {
                 </div>
 
                 <div className="mt-3">
-                  <button className="btn">
+                  {/* <button className="btn">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width={18}
@@ -123,7 +124,8 @@ const page = (params) => {
                       />
                     </svg>
                     Get full estimate
-                  </button>
+                  </button> */}
+                  <GetEstimate/>
                 </div>
               </div>
             </div>
