@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: "Brittany Signature";
   src: url(/fonts/BrittanySignature.ttf);
@@ -7,21 +5,21 @@
   font-display: swap;
 }
 @font-face {
-  font-family: 'Optima LT Regular';
+  font-family: "Optima LT Regular";
   src: url("/fonts/Optima LT Regular.ttf");
   font-display: swap;
 }
-.optima-font{
-  font-family: 'Optima LT Regular';
+.optima-font {
+  font-family: "Optima LT Regular";
 }
 .brittany-font {
   font-family: "Brittany Signature";
 }
-.container{
+.container {
   margin: auto;
 }
-body{
-  background: #F8F8FB !important;
+body {
+  background: #f8f8fb !important;
   font-family: var(--font-inter);
   font-display: swap;
   max-width: 1640px;
@@ -29,85 +27,73 @@ body{
   overflow-x: hidden;
 }
 
-.navbar>.container{
+.navbar > .container {
   flex-wrap: nowrap !important;
 }
 
-.section-padding{
+.section-padding {
   padding: 40px 0;
 }
-@media (min-width:768px) {
-  .section-padding{
+@media (min-width: 768px) {
+  .section-padding {
     padding: 60px 0;
   }
 }
 
-@media (min-width:1020px) {
-  .section-padding{
+@media (min-width: 1020px) {
+  .section-padding {
     padding: 80px 0;
   }
 }
 
-
-@media (min-width: 1400px)
-{
-  .container{
+@media (min-width: 1400px) {
+  .container {
     max-width: calc(100% - 100px);
   }
 }
-main{
+main {
   min-height: 90vh;
 }
-.form-control:focus{
-box-shadow: none !important;
-border: 1px solid #E8E8E8;
-
+.form-control:focus {
+  box-shadow: none !important;
+  border: 1px solid #e8e8e8;
 }
-picture img{
+picture img {
   max-width: 100%;
   width: 100%;
   height: auto;
 }
 
-.bg-red{
-  background: #9F212C !important;
+.bg-red {
+  background: #9f212c !important;
 }
-.text-red{
-  color: #A0222C !important;
+.text-red {
+  color: #a0222c !important;
 }
 
-
-
-
-.text-black{
+.text-black {
   color: #000 !important;
 }
 
-.text-gold{
-  color: #C0832B !important;
+.text-gold {
+  color: #c0832b !important;
 }
 
-.text-white{
-  color: #FFF !important;
+.text-white {
+  color: #fff !important;
 }
 
-
-
-.z-index-9999{
+.z-index-9999 {
   z-index: 9999;
 }
 .slick-slide img {
-width: 100%;
+  width: 100%;
 }
 
-
-
-.contact-required{
+.contact-required {
   font-size: 12px;
   padding-left: 5px;
 }
-
-
 
 /* .loader {
   width: 48px;
@@ -129,13 +115,11 @@ width: 100%;
   }
   }  */
 
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: none !important;
+}
 
-  .splide__track--nav>.splide__list>.splide__slide.is-active{
-    border: none !important;
-  }
-
-
-  /* .ball{
+/* .ball{
     width: 20px;
     height: 20px;
     position: fixed;
@@ -146,3 +130,39 @@ width: 100%;
     pointer-events: none;
     z-index: 9999;
   } */
+
+.getEstimateModal .modal-content {
+  border-radius: 30px;
+  background: #f3f3f3;
+}
+.getEstimateModal .modal-content label {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6D6D6D;
+}
+
+.getEstimateModal input,
+.getEstimateModal select {
+  border-radius: 4px;
+  border: 1.544px solid #cecece;
+  background-color: #f3f3f3 !important;
+  color: #6D6D6D;
+  height:36px;
+}
+.getEstimateModal input:focus,
+.getEstimateModal select:focus {
+  border-color: #9f212c;
+  box-shadow: none;
+  background-color: #f3f3f3 !important;
+}
+
+.getEstimateModal .submit-button {
+  border-radius: 8px;
+  height: 46px;
+  background: linear-gradient(90deg, #a0222c 0%, #c79144 100%);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  color: #fff !important;
+}

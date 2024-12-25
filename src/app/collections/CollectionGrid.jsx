@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import ProductCard from "./ProductCard";
 import Link from "next/link";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 const CollectionGrid = () => {
   const totalProducts = 100; // Total number of product cards
@@ -11,6 +13,8 @@ const CollectionGrid = () => {
 
   const [currentPage, setCurrentPage] = useState(1); // Track current page
   const [isLoading, setIsLoading] = useState(false); // Track loading state
+  const [isSmallScreen, setIsSmallScreen] = useState();
+  const [show, setShow] = useState(false);
 
   // Generate product cards
   const products = Array.from({ length: totalProducts }, (_, index) => (
@@ -38,6 +42,21 @@ const CollectionGrid = () => {
       }, 500); // Simulate loading delay (adjust if needed)
     }
   };
+
+  // const handleFilterClick = () => {
+  //   const isSmallScreen = window.innerWidth <768; 
+  //   if (isSmallScreen) {
+  //     setIsSmallScreen(true);
+  //   } else {
+  //     setIsSmallScreen(false);
+  //     setShow(true);
+  //   }
+  // };
+
+  const handleClose = () => setShow(false);
+
+
+
 
   return (
     <section className="container py-5 collection-section">
@@ -74,8 +93,13 @@ const CollectionGrid = () => {
           </div>
 
           <div className="collection-filter-btn_wrapper ms-auto">
-            <button className="collection-filter-btn">
-              <svg
+            {/* Filter Button */}
+            
+
+
+            <div>
+         <Button onClick={() => setShow(true)} className="collection-filter-btn">
+         <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -90,10 +114,56 @@ const CollectionGrid = () => {
                   d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
                 />
               </svg>
-              <span className="fw-semibold">
-              Filters
-              </span>
-            </button>
+              <span className="fw-semibold">Filters</span>
+      </Button>
+
+
+      <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        className="modal-md"
+        centered
+        style={{ zIndex: "9999", backdropFilter: "brightness(0.5)" }}
+        aria-labelledby="example-custom-modal-styling-title"
+      >
+      
+        <Modal.Body>
+        <Button
+            className="bg-transparent text-black border-0 position-absolute top-0 end-0"
+            onClick={handleClose}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width={24}
+              height={24}
+            >
+              <path
+                fillRule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </Button>
+
+          <p>
+            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
+            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
+            ipsam atque a dolores quisquam quisquam adipisci possimus
+            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
+            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
+            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
+            deleniti rem!
+          </p>
+        </Modal.Body>
+      </Modal>
+      </div>
+
+
+
+
+
           </div>
         </div>
 

@@ -26,10 +26,7 @@ const page = () => {
         <Navbar/>
         <main>
             <CollectionBanner/>
-
             <CollectionGrid/>
-        
-        
         </main>
         <Footer/>
     </div>
