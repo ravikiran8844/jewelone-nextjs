@@ -3,6 +3,7 @@ import Navbar from "@/app/components/NavBar/NavBar";
 import Image from "next/image";
 import React from "react";
 import "./product.css";
+import ProductMedia from "./ProductMedia";
 const page = (params) => {
   return (
     <div>
@@ -12,15 +13,7 @@ const page = (params) => {
           <div className="col-12 col-lg-10 m-auto">
             <div className="row g-4">
               <div className="col-12 col-lg-6">
-                <div className="product-page__featured-img">
-                  <Image
-                    className="img-fluid"
-                    alt="product image"
-                    src="/collections/product-img.webp"
-                    width={600}
-                    height={600}
-                  />
-                </div>
+               <ProductMedia/>
               </div>
               <div className="col-12 col-lg-6">
                 <div className="product-page__title mb-1">IMCSHS1172-03</div>

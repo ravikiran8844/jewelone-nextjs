@@ -14,7 +14,12 @@ const CollectionGrid = () => {
 
   // Generate product cards
   const products = Array.from({ length: totalProducts }, (_, index) => (
-    <ProductCard key={index} title={`Product ${index + 1}`} slug={`/product/${index + 1}`} />
+    <ProductCard
+      key={index}
+      id={index}
+      title={`Product ${index + 1}`}
+      slug={`/product/${index + 1}`}
+    />
   ));
 
   // Get products for the current page
@@ -37,34 +42,59 @@ const CollectionGrid = () => {
   return (
     <section className="container py-5 collection-section">
       <div className="row">
-        <div className="col-12">
+        <div className="col-12 d-flex justify-content-between flex-wrap gap-2 align-items-center">
           <div>
-            <ul className="d-flex gap-2 align-items-center list-unstyled breadcrumbs">
-              <li>
-                <Link href="/" className="text-black text-decoration-none">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  height={10}
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </li>
-              <li className="text-red">Collection</li>
-            </ul>
+            <div>
+              <ul className="d-flex gap-2 align-items-center list-unstyled breadcrumbs">
+                <li>
+                  <Link href="/" className="text-black text-decoration-none">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    height={10}
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </li>
+                <li className="text-red fw-semibold">Our Collections</li>
+              </ul>
+            </div>
+            <div className="fs-5 fw-medium">
+              Total {totalProducts} Results Found
+            </div>
           </div>
-        </div>
-        <div className="col-12">
-          <div className="fs-5 fw-medium">Total {totalProducts} Results Found</div>
+
+          <div className="collection-filter-btn_wrapper ms-auto">
+            <button className="collection-filter-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                width={24}
+                height={24}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75"
+                />
+              </svg>
+              <span className="fw-semibold">
+              Filters
+              </span>
+            </button>
+          </div>
         </div>
 
         <div className="py-1 col-12">
@@ -79,9 +109,7 @@ const CollectionGrid = () => {
               </div>
             </div>
           ) : (
-            <div className="product-items">
-              {currentProducts}
-            </div>
+            <div className="product-items">{currentProducts}</div>
           )}
         </div>
 

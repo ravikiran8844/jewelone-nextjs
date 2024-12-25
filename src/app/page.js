@@ -1,9 +1,7 @@
 import { InstagramGrid } from './components/InstagramGrid/InstagramGrid'
-// import { MainBanner } from './components/Home/MainBanner/MainBanner'
 import HomeSection2 from './components/Home/HomeSection2'
 import HomeSection4 from './components/Home/HomeSection4'
 import HomeSection3 from './components/Home/HomeSection3'
-// import AudioSection from './components/Audio/Audio'
 import VideoSection from './components/Home/VideoSection'
 // import HomeSection1 from './components/Home/HomeSection1'
 // import HomeSection7 from './components/Home/HomeSection7'
@@ -13,7 +11,6 @@ import VideoSection from './components/Home/VideoSection'
 import HomeGifBanner from './components/Home/HomeGifBanner'
 // import HomeSection3New from './components/Home/HomeSection3New'
 // import HomeVideoAutoPlay from './components/Home/HomeVideoAutoPlay'
-// import AkshayaTritiyaSection2 from './components/AkshayaTritiya/AkshayaTritiyaSection2'
 import HomeVideoSlider from './components/Home/HomeVideoSlider'
 import Footer from './components/Footer/Footer'
 import Navbar from './components/NavBar/NavBar'
@@ -47,7 +44,6 @@ export default function Home() {
     {/* <HomeSection8/> */}
     {/* <HomeSection9/> */}
     <InstagramGrid/> 
-    {/* <AudioSection/> */}
     <Footer/>
    </main>
   )
