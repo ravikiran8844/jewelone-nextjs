@@ -3,6 +3,7 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import ProductMedia from "../product/[id]/ProductMedia";
+import { BsWhatsapp } from "react-icons/bs";
 
 const GetEstimate = () => {
   const [show, setShow] = useState(false);
@@ -72,7 +73,8 @@ const GetEstimate = () => {
 
   return (
     <div>
-      <Button onClick={handleShow}>Get full estimate</Button>
+      <Button onClick={handleShow}><BsWhatsapp />
+      Get full estimate</Button>
 
       <Modal
         show={show}

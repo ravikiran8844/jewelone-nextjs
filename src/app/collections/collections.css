@@ -24,6 +24,9 @@
   align-items: center;
   border: none;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -37,7 +40,7 @@
     font-size: 12px;
   }
   .product-item button.btn {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 

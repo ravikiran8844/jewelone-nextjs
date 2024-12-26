@@ -55,16 +55,16 @@ const ProductCard = (params) => {
             </SplideSlide>
           </Splide>
         </div>
-        <div className="card-body px-2 py-3 px-md-3 d-flex flex-column gap-1">
+        <div className="card-body px-2 py-3 px-md-3 d-flex flex-column gap-2">
           <div className="fw-medium">
             <Link
               href={params.slug}
               className="text-decoration-none text-black"
             >
-              Product No : <span>IMCSHS1172-{params.id}</span>
+             <span>IMCSHS1172-{params.id}</span>
             </Link>
           </div>
-          <div className="fw-semibold text-red">Gold Jewel Set</div>
+          <div className="fw-semibold text-red">Product {params.id + 1}</div>
 
           <div className="d-flex flex-column flex-sm-row gap-2">
             <div className="product-card-border">
