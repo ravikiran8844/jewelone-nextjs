@@ -43,7 +43,10 @@
     font-size: 14px;
   }
 }
-
+.product-item .splide__slide,.product-item .splide__slide img{
+  aspect-ratio: 1;
+  object-fit: cover;
+}
 @media (min-width: 992px) {
   .product-items {
     grid-template-columns: repeat(4, 1fr);

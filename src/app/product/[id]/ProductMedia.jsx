@@ -15,7 +15,7 @@ const ProductMedia = () => {
       }}
     >
       <SplideSlide>
-        <div>
+        <div className="d-flex justify-content-center">
           <Image
             className="img-fluid"
             alt="product image"
@@ -26,7 +26,7 @@ const ProductMedia = () => {
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div>
+        <div className="d-flex justify-content-center">
           <Image
             className="img-fluid"
             alt="product image"
@@ -37,7 +37,7 @@ const ProductMedia = () => {
         </div>
       </SplideSlide>
       <SplideSlide>
-        <div>
+        <div className="d-flex justify-content-center">
           <Image
             className="img-fluid"
             alt="product image"

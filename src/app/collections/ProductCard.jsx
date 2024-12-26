@@ -25,8 +25,8 @@ const ProductCard = (params) => {
                 <Image
                   className="img-fluid"
                   src="/collections/product.webp"
-                  width={533}
-                  height={403}
+                  width={400}
+                  height={400}
                   alt="product"
                 />
               </Link>
@@ -36,8 +36,8 @@ const ProductCard = (params) => {
                 <Image
                   className="img-fluid"
                   src="/collections/product.webp"
-                  width={533}
-                  height={403}
+                  width={400}
+                  height={400}
                   alt="product"
                 />
               </Link>
@@ -47,8 +47,8 @@ const ProductCard = (params) => {
                 <Image
                   className="img-fluid"
                   src="/collections/product.webp"
-                  width={533}
-                  height={403}
+                  width={400}
+                  height={400}
                   alt="product"
                 />
               </Link>
@@ -121,7 +121,7 @@ const ProductCard = (params) => {
           </div>
 
           <div>
-            <GetEstimate random={random} />
+            <GetEstimate random={random} productID={params.id+1} />
           </div>
         </div>
       </div>
