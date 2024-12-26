@@ -138,7 +138,7 @@ picture img {
 .getEstimateModal .modal-content label {
   font-size: 14px;
   font-weight: 400;
-  color: #6D6D6D;
+  color: #6d6d6d;
 }
 
 .getEstimateModal input,
@@ -146,8 +146,8 @@ picture img {
   border-radius: 4px;
   border: 1.544px solid #cecece;
   background-color: #f3f3f3 !important;
-  color: #6D6D6D;
-  height:36px;
+  color: #6d6d6d;
+  height: 36px;
 }
 .getEstimateModal input:focus,
 .getEstimateModal select:focus {
@@ -165,4 +165,43 @@ picture img {
   text-transform: uppercase;
   border: none;
   color: #fff !important;
+}
+.filter-modal .modal-content {
+  min-height: 250px;
+}
+
+.filter-modal .nav.nav-pills {
+  border-radius: 10px 0px 0px 10px;
+  background: #eaeaea;
+}
+
+
+
+.filter-modal .nav-pills .nav-link{
+  color: #2D2D2D;
+  font-size: 14px;
+  padding: 0;
+}
+
+.filter-modal .nav-pills .nav-link.active {
+  color: #a0222c !important;
+  background: #eaeaea;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+.filter-modal label{
+  width: 100%;
+  cursor: pointer;
+  color: #2D2D2D;
+  font-size: 14px;
+
+}
+.filter-modal input[type="radio"] {
+  accent-color: #a0222c;
+}
+
+.filter-modal label span{
+  color: #A5A5A5;
+
 }
