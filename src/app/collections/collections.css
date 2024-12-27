@@ -12,7 +12,7 @@
     }
 }
 .product-item {
-  font-size: 11px;
+  font-size: 13px;
 }
 .product-item button.btn {
   border-radius: 3.871px;
@@ -36,10 +36,13 @@
     row-gap: 30px;
     grid-template-columns: repeat(3, 1fr);
   }
-  .product-item {
-    font-size: 12px;
-  }
+
   .product-item button.btn {
+    font-size: 14px;
+  }
+}
+@media (min-width: 992px){
+  .product-item {
     font-size: 14px;
   }
 }
@@ -80,7 +83,7 @@
   bottom: 0;
 }
 .product-item .splide__arrow--next{
-  left: 36px;
+  left: 38px;
   top: unset;
   bottom: 0;
 }
