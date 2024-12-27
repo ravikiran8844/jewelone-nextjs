@@ -6,9 +6,9 @@ import "./product.css";
 import ProductMedia from "./ProductMedia";
 import GetEstimate from "@/app/components/GetEstimate";
 import { ToastContainer } from "react-toastify";
-import { useParams } from 'next/navigation'
 
-const page =  () => {
+const page = async ({params}) => {
+  const id = await params.id
   return (
     <div>
       <Navbar />
