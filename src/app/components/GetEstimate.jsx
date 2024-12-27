@@ -4,9 +4,13 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import ProductMedia from "../product/[id]/ProductMedia";
 import { BsWhatsapp } from "react-icons/bs";
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const GetEstimate = () => {
+const GetEstimate = (params) => {
   const [show, setShow] = useState(false);
+  const [loading, setLoading] = useState(false);
+
   const [formData, setFormData] = useState({
     fullName: "",
     city: "",
@@ -66,9 +70,50 @@ const GetEstimate = () => {
 
     // Log form data
     console.log("Form Submitted:", formData);
-
+    sendMail(formData);
     // Close the modal after submission
     handleClose();
+  };
+
+
+  const sendMail = (data) => {
+    setLoading(true);
+    const apiEndpoint = "/api/get-estimate";
+    fetch(apiEndpoint, {
+      method: "POST",
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((response) => {
+        console.log(response);
+        setLoading(false);
+
+        toast.success('Form submitted successfully!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+      })
+      .catch((err) => {
+        console.log(err);
+        setLoading(false);
+        reset();
+        toast.error('Failed to submit form. Please try again later', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "colored",
+          });
+      });
   };
 
   return (
@@ -200,6 +245,7 @@ const GetEstimate = () => {
           </div>
         </Modal.Body>
       </Modal>
+      
     </div>
   );
 };

@@ -5,10 +5,7 @@ import ProductCard from "./ProductCard";
 import Link from "next/link";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-
-import Col from "react-bootstrap/Col";
 import Nav from "react-bootstrap/Nav";
-import Row from "react-bootstrap/Row";
 import Tab from "react-bootstrap/Tab";
 
 const CollectionGrid = () => {
@@ -127,7 +124,7 @@ const CollectionGrid = () => {
                 centered
                 style={{ zIndex: "9999", backdropFilter: "brightness(0.5)" }}
               >
-                <Modal.Body className="py-5">
+                <Modal.Body className="p-0">
                   <Button
                     className="bg-transparent text-black border-0 position-absolute top-0 end-0 p-1"
                     onClick={handleClose}
@@ -150,9 +147,9 @@ const CollectionGrid = () => {
                   <Tab.Container
                     defaultActiveKey="first"
                   >
-                    <div style={{display:'grid',gridTemplateColumns:'30% 70%',gap:'10px'}}>
+                    <div style={{display:'grid',gridTemplateColumns:'120px auto',gap:'10px'}}>
                       <div>
-                        <Nav variant="pills" className="flex-column gap-2 p-2">
+                        <Nav variant="pills" className="flex-column gap-2 p-2 py-5">
                           <Nav.Item>
                             <Nav.Link eventKey="first">Jewellery Type</Nav.Link>
                           </Nav.Item>
@@ -165,7 +162,7 @@ const CollectionGrid = () => {
                         </Nav>
                       </div>
                       <div>
-                        <Tab.Content>
+                        <Tab.Content className="pe-2 pt-5">
                           <Tab.Pane eventKey="first">
                             <ul className="list-unstyled d-flex flex-column gap-2">
                               <li className="d-flex justify-content-between align-items-center">

@@ -5,14 +5,17 @@ import React from "react";
 import "./product.css";
 import ProductMedia from "./ProductMedia";
 import GetEstimate from "@/app/components/GetEstimate";
-const page = (params) => {
+import { ToastContainer } from "react-toastify";
+
+const page = async ({params}) => {
+  const id = await params.id
   return (
     <div>
       <Navbar />
       <main className="product-page">
         <section className="container py-5">
           <div className="col-12 col-lg-10 m-auto">
-            <div className="row g-4">
+            <div className="row g-4 g-lg-5">
               <div className="col-12 col-lg-6">
                <ProductMedia/>
               </div>
@@ -125,7 +128,7 @@ const page = (params) => {
                     </svg>
                     Get full estimate
                   </button> */}
-                  <GetEstimate/>
+                  <GetEstimate  productID="1" />
                 </div>
               </div>
             </div>
@@ -133,6 +136,7 @@ const page = (params) => {
         </section>
       </main>
       <Footer />
+      <ToastContainer />
     </div>
   );
 };
