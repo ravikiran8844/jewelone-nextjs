@@ -71,10 +71,10 @@ const ProductCard = (params) => {
               <div className="fw-medium text-black">Weight</div>
 
               <div>
-                Net weight : <span>25.5 g</span>
+                Net wt: <span>25.5 g</span>
               </div>
               <div>
-                Gross weight : <span>2.390 g</span>
+                Gross wt: <span>2.390 g</span>
               </div>
             </div>
             <div>
