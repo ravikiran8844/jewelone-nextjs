@@ -8,8 +8,7 @@ import GetEstimate from "@/app/components/GetEstimate";
 import { ToastContainer } from "react-toastify";
 import { useParams } from 'next/navigation'
 
-const page = async ({params}) => {
-  const id  = await params.id;
+const page =  () => {
   return (
     <div>
       <Navbar />
@@ -129,7 +128,7 @@ const page = async ({params}) => {
                     </svg>
                     Get full estimate
                   </button> */}
-                  <GetEstimate  productID={id} />
+                  <GetEstimate  productID="1" />
                 </div>
               </div>
             </div>
