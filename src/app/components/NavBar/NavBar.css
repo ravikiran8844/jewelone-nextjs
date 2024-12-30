@@ -307,10 +307,7 @@ header{
     position: relative !important;
     transform: unset !important;
   }
-  .offcanvas{
-    background: #A0222C;
-    color: #FFF;
-  }
+ 
 
   .offcanvas .nav-link{
     color: #FFF !important;

@@ -373,7 +373,7 @@ const Navbar = ({ logo }) => {
             </div>
           </ul> */}
 
-          <Offcanvas show={show} onHide={handleClose}>
+          <Offcanvas show={show} onHide={handleClose} className="bg-red text-white">
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>
               <Image
