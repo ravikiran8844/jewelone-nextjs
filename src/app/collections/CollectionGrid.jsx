@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
+import Offcanvas from "react-bootstrap/Offcanvas";
 
 const CollectionGrid = () => {
   const totalProducts = 100; // Total number of product cards
@@ -16,7 +17,11 @@ const CollectionGrid = () => {
   const [currentPage, setCurrentPage] = useState(1); // Track current page
   const [isLoading, setIsLoading] = useState(false); // Track loading state
   const [isSmallScreen, setIsSmallScreen] = useState();
-  const [show, setShow] = useState(false);
+  const [showLgFilter, setShowLgFilter] = useState(false);
+  const [showSmFilter, setShowSmFilter] = useState(false);
+
+  const handleSmFilterClose = () => setShowSmFilter(false);
+  const handleSmFilterShow = () => setShowSmFilter(true);
 
   // Generate product cards
   const products = Array.from({ length: totalProducts }, (_, index) => (
@@ -45,17 +50,7 @@ const CollectionGrid = () => {
     }
   };
 
-  // const handleFilterClick = () => {
-  //   const isSmallScreen = window.innerWidth <768;
-  //   if (isSmallScreen) {
-  //     setIsSmallScreen(true);
-  //   } else {
-  //     setIsSmallScreen(false);
-  //     setShow(true);
-  //   }
-  // };
-
-  const handleClose = () => setShow(false);
+  const handleLgFilterClose = () => setShowLgFilter(false);
 
   return (
     <section className="container py-5 collection-section">
@@ -93,10 +88,202 @@ const CollectionGrid = () => {
 
           <div className="collection-filter-btn_wrapper ms-auto">
             {/* Filter Button */}
-
-            <div>
+            <div className="collection-filter__small-devices d-block d-lg-none">
               <Button
-                onClick={() => setShow(true)}
+                className="collection-filter-btn"
+                onClick={handleSmFilterShow}
+              >
+                Filter
+              </Button>
+
+              <Offcanvas
+                show={showSmFilter}
+                onHide={handleSmFilterClose}
+                className="collection-filter__small-devices-offcanvas"
+              >
+                <Offcanvas.Body>
+                  <Tab.Container defaultActiveKey="sm-jewellery-type">
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "110px auto",
+                        gap: "10px",
+                      }}
+                    >
+                      <div>
+                        <Nav className="flex-column gap-2 p-2 py-3 filter-items_Wrapper">
+                          <Nav.Item>
+                            <Nav.Link eventKey="sm-jewellery-type">
+                              Jewellery Type
+                            </Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="sm-is-customizable">
+                              Customizable
+                            </Nav.Link>
+                          </Nav.Item>
+                          <Nav.Item>
+                            <Nav.Link eventKey="sm-availability">
+                              Availability
+                            </Nav.Link>
+                          </Nav.Item>
+                        </Nav>
+                      </div>
+                      <div>
+                        <Tab.Content>
+                          {/* Jewellery Type Tab */}
+                          <Tab.Pane eventKey="sm-jewellery-type">
+                            <ul className="list-unstyled d-flex flex-column gap-2">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="sm-jewellery-diamond">
+                                  Diamond Jewellery <span>(302)</span>
+                                </label>
+                                <div>
+                                  <input
+                                    id="sm-jewellery-diamond"
+                                    className="form-check mb-0"
+                                    style={{ height: "14px", width: "14px" }}
+                                    type="radio"
+                                    name="sm-jewellery-category"
+                                    value="diamond"
+                                  />
+                                </div>
+                              </li>
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="sm-jewellery-gold">
+                                  Gold Jewellery <span>(54)</span>
+                                </label>
+                                <div>
+                                  <input
+                                    id="sm-jewellery-gold"
+                                    className="form-check mb-0"
+                                    style={{ height: "14px", width: "14px" }}
+                                    type="radio"
+                                    name="sm-jewellery-category"
+                                    value="gold"
+                                  />
+                                </div>
+                              </li>
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="sm-jewellery-gemstone">
+                                  Jewellery with Gemstones <span>(31)</span>
+                                </label>
+                                <div>
+                                  <input
+                                    id="sm-jewellery-gemstone"
+                                    className="form-check mb-0"
+                                    style={{ height: "14px", width: "14px" }}
+                                    type="radio"
+                                    name="sm-jewellery-category"
+                                    value="gemstone"
+                                  />
+                                </div>
+                              </li>
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="sm-jewellery-silver">
+                                  Silver Jewellery <span>(67)</span>
+                                </label>
+                                <div>
+                                  <input
+                                    id="sm-jewellery-silver"
+                                    className="form-check mb-0"
+                                    style={{ height: "14px", width: "14px" }}
+                                    type="radio"
+                                    name="sm-jewellery-category"
+                                    value="silver"
+                                  />
+                                </div>
+                              </li>
+                            </ul>
+                          </Tab.Pane>
+
+                          {/* Customizable Tab */}
+                          <Tab.Pane eventKey="sm-is-customizable">
+                            <ul className="list-unstyled d-flex flex-column gap-2">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="sm-customizable-true">
+                                  Yes <span>(302)</span>
+                                </label>
+                                <div>
+                                  <input
+                                    id="sm-customizable-true"
+                                    className="form-check mb-0"
+                                    style={{ height: "14px", width: "14px" }}
+                                    type="radio"
+                                    name="sm-is-customizable"
+                                    value="true"
+                                  />
+                                </div>
+                              </li>
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="sm-customizable-false">
+                                  No <span>(32)</span>
+                                </label>
+                                <div>
+                                  <input
+                                    id="sm-customizable-false"
+                                    className="form-check mb-0"
+                                    style={{ height: "14px", width: "14px" }}
+                                    type="radio"
+                                    name="sm-is-customizable"
+                                    value="false"
+                                  />
+                                </div>
+                              </li>
+                            </ul>
+                          </Tab.Pane>
+
+                          {/* Availability Tab */}
+                          <Tab.Pane eventKey="sm-availability">
+                            <ul className="list-unstyled d-flex flex-column gap-2">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="sm-availability-instock">
+                                  Instock <span>(302)</span>
+                                </label>
+                                <div>
+                                  <input
+                                    id="sm-availability-instock"
+                                    className="form-check mb-0"
+                                    style={{ height: "14px", width: "14px" }}
+                                    type="radio"
+                                    name="sm-availability-status"
+                                    value="instock"
+                                  />
+                                </div>
+                              </li>
+                            </ul>
+                          </Tab.Pane>
+                        </Tab.Content>
+                      </div>
+                    </div>
+                  </Tab.Container>
+
+                  <div className="m-auto">
+                    <div className="filter-close-btn_wrapper">
+                      <button className="filter-close-btn btn px-4" onClick={handleSmFilterClose}>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="currentColor"
+                          width={16}
+                        >
+                          <path
+                            fillRule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm-1.72 6.97a.75.75 0 1 0-1.06 1.06L10.94 12l-1.72 1.72a.75.75 0 1 0 1.06 1.06L12 13.06l1.72 1.72a.75.75 0 1 0 1.06-1.06L13.06 12l1.72-1.72a.75.75 0 1 0-1.06-1.06L12 10.94l-1.72-1.72Z"
+                            clipRule="evenodd"
+                          />
+                        </svg>
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </Offcanvas.Body>
+              </Offcanvas>
+            </div>
+
+            <div className="collection-filter__large-devices d-none d-lg-block">
+              <Button
+                onClick={() => setShowLgFilter(true)}
                 className="collection-filter-btn"
               >
                 <svg
@@ -118,8 +305,8 @@ const CollectionGrid = () => {
               </Button>
 
               <Modal
-                show={show}
-                onHide={() => setShow(false)}
+                show={showLgFilter}
+                onHide={() => setShowLgFilter(false)}
                 className="filter-modal"
                 centered
                 style={{ zIndex: "9999", backdropFilter: "brightness(0.5)" }}
@@ -127,7 +314,7 @@ const CollectionGrid = () => {
                 <Modal.Body className="p-0">
                   <Button
                     className="bg-transparent text-black border-0 position-absolute top-0 end-0 p-1"
-                    onClick={handleClose}
+                    onClick={handleLgFilterClose}
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -144,141 +331,158 @@ const CollectionGrid = () => {
                     </svg>
                   </Button>
 
-                  <Tab.Container
-                    defaultActiveKey="first"
-                  >
-                    <div style={{display:'grid',gridTemplateColumns:'120px auto',gap:'10px'}}>
+                  <Tab.Container defaultActiveKey="lg-jewellery-type">
+                    <div
+                      style={{
+                        display: "grid",
+                        gridTemplateColumns: "120px auto",
+                        gap: "10px",
+                      }}
+                    >
                       <div>
-                        <Nav variant="pills" className="flex-column gap-2 p-2 py-5">
+                        <Nav
+                          variant="pills"
+                          className="flex-column gap-2 p-2 py-5"
+                        >
                           <Nav.Item>
-                            <Nav.Link eventKey="first">Jewellery Type</Nav.Link>
+                            <Nav.Link eventKey="lg-jewellery-type">
+                              Jewellery Type
+                            </Nav.Link>
                           </Nav.Item>
                           <Nav.Item>
-                            <Nav.Link eventKey="second">Customizable</Nav.Link>
+                            <Nav.Link eventKey="lg-is-customizable">
+                              Customizable
+                            </Nav.Link>
                           </Nav.Item>
                           <Nav.Item>
-                            <Nav.Link eventKey="third">Availability</Nav.Link>
+                            <Nav.Link eventKey="lg-availability">
+                              Availability
+                            </Nav.Link>
                           </Nav.Item>
                         </Nav>
                       </div>
                       <div>
                         <Tab.Content className="pe-2 pt-5">
-                          <Tab.Pane eventKey="first">
+                          {/* Jewellery Type Tab */}
+                          <Tab.Pane eventKey="lg-jewellery-type">
                             <ul className="list-unstyled d-flex flex-column gap-2">
-                              <li className="d-flex justify-content-between align-items-center">
-                                <label htmlFor="diamond-jewellery">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="lg-jewellery-diamond">
                                   Diamond Jewellery <span>(302)</span>
                                 </label>
                                 <div>
                                   <input
-                                  id="diamond-jewellery"
+                                    id="lg-jewellery-diamond"
                                     className="form-check mb-0"
-                                    style={{ height: "16px", width: "16px" }}
+                                    style={{ height: "14px", width: "14px" }}
                                     type="radio"
-                                    name="jewellery-type"
-                                    value="diamond-jewellery"
+                                    name="lg-jewellery-category"
+                                    value="diamond"
                                   />
                                 </div>
                               </li>
-                              <li className="d-flex justify-content-between align-items-center">
-                                <label htmlFor="gold-jewellery">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="lg-jewellery-gold">
                                   Gold Jewellery <span>(54)</span>
                                 </label>
                                 <div>
                                   <input
-                                    id="gold-jewellery"
+                                    id="lg-jewellery-gold"
                                     className="form-check mb-0"
-                                    style={{ height: "16px", width: "16px" }}
+                                    style={{ height: "14px", width: "14px" }}
                                     type="radio"
-                                    name="jewellery-type"
-                                    value="gold-jewellery"
+                                    name="lg-jewellery-category"
+                                    value="gold"
                                   />
                                 </div>
                               </li>
-                              <li className="d-flex justify-content-between align-items-center">
-                                <label htmlFor="jewellery-with-gemstones">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="lg-jewellery-gemstone">
                                   Jewellery with Gemstones <span>(31)</span>
                                 </label>
                                 <div>
                                   <input
+                                    id="lg-jewellery-gemstone"
                                     className="form-check mb-0"
-                                    style={{ height: "16px", width: "16px" }}
+                                    style={{ height: "14px", width: "14px" }}
                                     type="radio"
-                                    name="jewellery-type"
-                                    value="jewellery-with-gemstones"
-                                    id="jewellery-with-gemstones"
+                                    name="lg-jewellery-category"
+                                    value="gemstone"
                                   />
                                 </div>
                               </li>
-                              <li className="d-flex justify-content-between align-items-center">
-                                <label htmlFor="silver-jewellery">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="lg-jewellery-silver">
                                   Silver Jewellery <span>(67)</span>
                                 </label>
                                 <div>
                                   <input
-                                  id="silver-jewellery"
+                                    id="lg-jewellery-silver"
                                     className="form-check mb-0"
-                                    style={{ height: "16px", width: "16px" }}
+                                    style={{ height: "14px", width: "14px" }}
                                     type="radio"
-                                    name="jewellery-type"
-                                    value="silver-jewellery"
+                                    name="lg-jewellery-category"
+                                    value="silver"
                                   />
                                 </div>
                               </li>
                             </ul>
                           </Tab.Pane>
-                          <Tab.Pane eventKey="second">
-                          <ul className="list-unstyled d-flex flex-column gap-2">
-                              <li className="d-flex justify-content-between align-items-center">
-                                <label htmlFor="customizable-yes">
+
+                          {/* Customizable Tab */}
+                          <Tab.Pane eventKey="lg-is-customizable">
+                            <ul className="list-unstyled d-flex flex-column gap-2">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="lg-customizable-true">
                                   Yes <span>(302)</span>
                                 </label>
                                 <div>
                                   <input
-                                  id="customizable-yes"
+                                    id="lg-customizable-true"
                                     className="form-check mb-0"
-                                    style={{ height: "16px", width: "16px" }}
+                                    style={{ height: "14px", width: "14px" }}
                                     type="radio"
-                                    name="customizable"
-                                    value="customizable-yes"
+                                    name="lg-is-customizable"
+                                    value="true"
                                   />
                                 </div>
                               </li>
-                              <li className="d-flex justify-content-between align-items-center">
-                                <label htmlFor="customizable-no">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="lg-customizable-false">
                                   No <span>(32)</span>
                                 </label>
                                 <div>
                                   <input
-                                  id="customizable-no"
+                                    id="lg-customizable-false"
                                     className="form-check mb-0"
-                                    style={{ height: "16px", width: "16px" }}
+                                    style={{ height: "14px", width: "14px" }}
                                     type="radio"
-                                    name="customizable"
-                                    value="customizable-no"
+                                    name="lg-is-customizable"
+                                    value="false"
                                   />
                                 </div>
                               </li>
                             </ul>
                           </Tab.Pane>
-                          <Tab.Pane eventKey="third">
-                          <ul className="list-unstyled d-flex flex-column gap-2">
-                              <li className="d-flex justify-content-between align-items-center">
-                                <label htmlFor="available-yes">
+
+                          {/* Availability Tab */}
+                          <Tab.Pane eventKey="lg-availability">
+                            <ul className="list-unstyled d-flex flex-column gap-2">
+                              <li className="d-flex justify-content-between align-items-center gap-1">
+                                <label htmlFor="lg-availability-instock">
                                   Instock <span>(302)</span>
                                 </label>
                                 <div>
                                   <input
-                                  id="available-yes"
+                                    id="lg-availability-instock"
                                     className="form-check mb-0"
-                                    style={{ height: "16px", width: "16px" }}
+                                    style={{ height: "14px", width: "14px" }}
                                     type="radio"
-                                    name="available"
-                                    value="available-yes"
+                                    name="lg-availability-status"
+                                    value="instock"
                                   />
                                 </div>
                               </li>
-                            
                             </ul>
                           </Tab.Pane>
                         </Tab.Content>

@@ -8,7 +8,7 @@ import GetEstimate from "@/app/components/GetEstimate";
 import { ToastContainer } from "react-toastify";
 
 const page = async ({params}) => {
-  const id = await params.id
+  const id = (await params).id
   return (
     <div>
       <Navbar />
