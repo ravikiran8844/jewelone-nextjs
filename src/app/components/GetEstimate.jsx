@@ -165,6 +165,7 @@ const GetEstimate = (params) => {
                   name="fullName"
                   value={formData.fullName}
                   onChange={handleInputChange}
+                  placeholder="Enter your full name"
                 />
                 {errors.fullName && (
                   <small className="text-danger">{errors.fullName}</small>
@@ -180,6 +181,7 @@ const GetEstimate = (params) => {
                   type="text"
                   name="city"
                   value={formData.city}
+                  placeholder="Enter your city"
                   onChange={handleInputChange}
                 />
                 {errors.city && (

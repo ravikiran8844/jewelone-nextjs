@@ -14,39 +14,19 @@ const ProductMedia = () => {
         lazyLoad: "nearby", // Lazy load nearby slides to reduce initial load time
       }}
     >
-      <SplideSlide>
-        <div className="d-flex justify-content-center">
-          <Image
-            className="img-fluid"
-            alt="product image"
-            src="/collections/product-img.webp"
-            width={600}
-            height={600}
-          />
-        </div>
-      </SplideSlide>
-      <SplideSlide>
-        <div className="d-flex justify-content-center">
-          <Image
-            className="img-fluid"
-            alt="product image"
-            src="/collections/product-img.webp"
-            width={600}
-            height={600}
-          />
-        </div>
-      </SplideSlide>
-      <SplideSlide>
-        <div className="d-flex justify-content-center">
-          <Image
-            className="img-fluid"
-            alt="product image"
-            src="/collections/product-img.webp"
-            width={600}
-            height={600}
-          />
-        </div>
-      </SplideSlide>
+      {[1, 2, 3, 5, 6, 7, 8, 9].map((item) => (
+        <SplideSlide key={item}>
+          <div className="d-flex justify-content-center">
+            <Image 
+              className="img-fluid rounded-5"
+              alt="product image"
+              src={`/collections/products/1/thumbs/${item}.webp`}
+              width={600}
+              height={600}
+            />
+          </div>
+        </SplideSlide>
+      ))}
     </Splide>
   );
 };

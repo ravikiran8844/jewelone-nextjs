@@ -20,39 +20,20 @@ const ProductCard = (params) => {
               lazyLoad: "nearby", // Lazy load nearby slides to reduce initial load time
             }}
           >
-            <SplideSlide>
+            {[1, 2, 3,5,6,7,8,9].map((item) => (
+              <SplideSlide key={item}>
               <Link href={params.slug}>
                 <Image
                   className="img-fluid"
-                  src="/collections/product.webp"
+                  src={`/collections/products/1/thumbs/${item}.webp`}
                   width={400}
                   height={400}
                   alt="product"
                 />
               </Link>
             </SplideSlide>
-            <SplideSlide>
-              <Link href={params.slug}>
-                <Image
-                  className="img-fluid"
-                  src="/collections/product.webp"
-                  width={400}
-                  height={400}
-                  alt="product"
-                />
-              </Link>
-            </SplideSlide>
-            <SplideSlide>
-              <Link href={params.slug}>
-                <Image
-                  className="img-fluid"
-                  src="/collections/product.webp"
-                  width={400}
-                  height={400}
-                  alt="product"
-                />
-              </Link>
-            </SplideSlide>
+            ))}
+          
           </Splide>
         </div>
         <div className="card-body px-2 py-3 px-md-3 d-flex flex-column gap-2">
