@@ -20,7 +20,7 @@ const ProductMedia = ({ product }) => {
             <Image 
               className="img-fluid rounded-5"
               alt={`product image ${item}`}
-              src={`/collections/products/1/thumbs/${item}.webp`}
+              src={`/collections/products/${product.id}/Thumbnail/${item}.jpg`}
               width={600}
               height={600}
             />
