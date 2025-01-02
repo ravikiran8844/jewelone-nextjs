@@ -6,9 +6,12 @@ import "./product.css";
 import ProductMedia from "./ProductMedia";
 import GetEstimate from "@/app/components/GetEstimate";
 import { ToastContainer } from "react-toastify";
+import { productsData } from "@/lib/data/products";
+
 
 const page = async ({params}) => {
   const id = (await params).id
+  const product = productsData.find(item => item.id == id)
   return (
     <div>
       <Navbar />
@@ -17,10 +20,10 @@ const page = async ({params}) => {
           <div className="col-12 col-lg-10 m-auto">
             <div className="row g-4 g-lg-5">
               <div className="col-12 col-lg-6">
-               <ProductMedia/>
+               <ProductMedia product={product}/>
               </div>
               <div className="col-12 col-lg-6">
-                <div className="product-page__title mb-1">IMCSHS1172-03</div>
+                <div className="product-page__title mb-1">IMCSHS1172-{product.id}</div>
 
                 <div className="text-red product-page__sub-title">
                   Gold Jewel Set
@@ -28,7 +31,7 @@ const page = async ({params}) => {
 
                 <hr />
 
-                <div className="product-page__sub-title">Purity: 22k</div>
+                <div className="product-page__sub-title">Purity: {product.purity}</div>
 
                 <div>
                   <div className="card mt-3">
@@ -58,11 +61,11 @@ const page = async ({params}) => {
                           <tbody>
                             <tr>
                               <td>Net weight</td>
-                              <td>25.5 g</td>
+                              <td>{product.netWeight}</td>
                             </tr>
                             <tr>
                               <td>Gross Weight</td>
-                              <td>1.381 g</td>
+                              <td>{product.grossWeight}</td>
                             </tr>
                           </tbody>
                         </table>
@@ -83,6 +86,9 @@ const page = async ({params}) => {
                         <input
                           type="checkbox"
                           name="customisable"
+                          readOnly
+                          checked={product.customization==="Yes"}
+
                           style={{
                             width: "15px",
                             height: "15px",
@@ -98,6 +104,9 @@ const page = async ({params}) => {
                         <input
                           type="checkbox"
                           name="customisable"
+                          readOnly
+                          checked={product.customization==="No"}
+
                           style={{
                             width: "15px",
                             height: "15px",
@@ -128,7 +137,7 @@ const page = async ({params}) => {
                     </svg>
                     Get full estimate
                   </button> */}
-                  <GetEstimate  productID="1" />
+                  <GetEstimate product={product}  productID={product.id} />
                 </div>
               </div>
             </div>

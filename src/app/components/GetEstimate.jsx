@@ -7,7 +7,7 @@ import { BsWhatsapp } from "react-icons/bs";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const GetEstimate = (params) => {
+const GetEstimate = ({product}) => {
   const [show, setShow] = useState(false);
   const [loading, setLoading] = useState(false);
 
@@ -150,7 +150,7 @@ const GetEstimate = (params) => {
 
           <div className="row">
             <div className="col-12 col-lg-6 d-none d-lg-block m-auto">
-              <ProductMedia/>
+              <ProductMedia  product={product}/>
             </div>
             <div className="col-12 col-lg-6">
             <form onSubmit={handleFormSubmit}>

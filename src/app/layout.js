@@ -6,7 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import BootstrapClient from "./components/BootstrapClient";
 // import GsapBall from './components/GsapBall';
 // import { GoogleAnalytics } from '@next/third-parties/google'
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
+import TagManager from "./components/TagManager";
 
 
 const inter = Inter({
@@ -30,14 +31,15 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className={`${inter.variable} ${great_vibes.variable}`}>
         {/* <Navbar/> */}
         {children}
         {/* <Footer/> */}
         <BootstrapClient />
         {/* <GsapBall/> */}
-        <GoogleTagManager gtmId="GTM-KRZSB3WW" />
+        {/* <GoogleTagManager gtmId="GTM-KRZSB3WW" /> */}
+        <TagManager/>
       </body>
     </html>
   );
