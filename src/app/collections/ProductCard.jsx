@@ -6,7 +6,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import GetEstimate from "../components/GetEstimate";
 
-const ProductCard = (params) => {
+const ProductCard = ({product}) => {
   const random = Math.random().toString(36).substring(7);
   return (
     <div className="product-item">
@@ -20,9 +20,9 @@ const ProductCard = (params) => {
               lazyLoad: "nearby", // Lazy load nearby slides to reduce initial load time
             }}
           >
-            {[1, 2, 3,5,6,7,8,9].map((item) => (
+            {Array.from({ length: product.imagesCount }, (_, index) => index + 1).map((item) => (
               <SplideSlide key={item}>
-              <Link href={params.slug}>
+              <Link href={product.slug}>
                 <Image
                   className="img-fluid"
                   src={`/collections/products/1/thumbs/${item}.webp`}
@@ -39,23 +39,23 @@ const ProductCard = (params) => {
         <div className="card-body px-2 py-3 px-md-3 d-flex flex-column gap-2">
           <div className="fw-medium">
             <Link
-              href={params.slug}
+              href={product.slug}
               className="text-decoration-none text-black"
             >
-             <span>IMCSHS1172-{params.id}</span>
+             <span>IMCSHS1172-{product.id}</span>
             </Link>
           </div>
-          <div className="fw-semibold text-red">Product {params.id + 1}</div>
+          <div className="fw-semibold text-red">Product {product.id}</div>
 
           <div className="d-flex flex-column flex-sm-row gap-2">
             <div className="product-card-border">
               <div className="fw-medium text-black">Weight</div>
 
               <div>
-                Net wt: <span>25.5 g</span>
+                Net wt: <span>{product.netWeight}</span>
               </div>
               <div>
-                Gross wt: <span>2.390 g</span>
+                Gross wt: <span>{product.grossWeight}</span>
               </div>
             </div>
             <div>
@@ -74,10 +74,14 @@ const ProductCard = (params) => {
                   <input
                     type="checkbox"
                     name="customisable"
+                    readOnly
+
+                    checked={product.customization==="Yes"}
                     style={{
                       width: "15px",
                       height: "15px",
                       accentColor: "#40D06C",
+                      
                     }}
                   />
                   Yes
@@ -88,6 +92,8 @@ const ProductCard = (params) => {
                 <label className="d-flex gap-1 align-items-center">
                   <input
                     type="checkbox"
+                    checked={product.customization==="No"}
+                    readOnly
                     name="customisable"
                     style={{
                       width: "15px",
@@ -102,7 +108,7 @@ const ProductCard = (params) => {
           </div>
 
           <div>
-            <GetEstimate random={random} productID={params.id+1} />
+            <GetEstimate random={random} productID={product.id} />
           </div>
         </div>
       </div>

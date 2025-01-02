@@ -8,30 +8,35 @@ import Modal from "react-bootstrap/Modal";
 import Nav from "react-bootstrap/Nav";
 import Tab from "react-bootstrap/Tab";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import { productsData } from "@/lib/data/products";
 
 const CollectionGrid = () => {
-  const totalProducts = 100; // Total number of product cards
+  const totalProducts = productsData.length; // Total number of product cards
   const productsPerPage = 36; // Products per page
   const totalPages = Math.ceil(totalProducts / productsPerPage); // Calculate total pages
 
   const [currentPage, setCurrentPage] = useState(1); // Track current page
   const [isLoading, setIsLoading] = useState(false); // Track loading state
-  const [isSmallScreen, setIsSmallScreen] = useState();
   const [showLgFilter, setShowLgFilter] = useState(false);
   const [showSmFilter, setShowSmFilter] = useState(false);
 
   const handleSmFilterClose = () => setShowSmFilter(false);
   const handleSmFilterShow = () => setShowSmFilter(true);
 
+  console.log(productsData,"products");
+
   // Generate product cards
-  const products = Array.from({ length: totalProducts }, (_, index) => (
+  const products = productsData.map((product) => (
     <ProductCard
-      key={index}
-      id={index}
-      title={`Product ${index + 1}`}
-      slug={`/product/${index + 1}`}
+      product={product}
+      key={product.id}
+      id={product.id}
+      title={`Product ${product.id}`}
+      slug={`/product/${product.id}`}
     />
-  ));
+  ))
+    
+
 
   // Get products for the current page
   const startIndex = (currentPage - 1) * productsPerPage;
