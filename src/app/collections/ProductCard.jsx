@@ -25,7 +25,7 @@ const ProductCard = ({product}) => {
               <Link href={product.slug}>
                 <Image
                   className="img-fluid"
-                  src={`/collections/products/1/thumbs/${item}.webp`}
+                  src={`/collections/products/${product.id}/Thumbnail/${item}.jpg`}
                   width={400}
                   height={400}
                   alt="product"
