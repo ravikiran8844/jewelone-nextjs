@@ -108,7 +108,7 @@ const ProductCard = ({product}) => {
           </div>
 
           <div>
-            <GetEstimate random={random} productID={product.id} />
+            <GetEstimate random={random} productID={product.id} product={product} />
           </div>
         </div>
       </div>
