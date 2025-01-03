@@ -6,7 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import BootstrapClient from "./components/BootstrapClient";
 // import GsapBall from './components/GsapBall';
 // import { GoogleAnalytics } from '@next/third-parties/google'
-import { GoogleTagManager } from "@next/third-parties/google";
+// import { GoogleTagManager } from "@next/third-parties/google";
 
 
 const inter = Inter({
@@ -37,7 +37,7 @@ export default async function RootLayout({ children }) {
         {/* <Footer/> */}
         <BootstrapClient />
         {/* <GsapBall/> */}
-        <GoogleTagManager gtmId="GTM-KRZSB3WW" />
+        {/* <GoogleTagManager gtmId="GTM-KRZSB3WW" /> */}
       </body>
     </html>
   );
