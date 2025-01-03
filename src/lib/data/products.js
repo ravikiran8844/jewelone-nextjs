@@ -1,5 +1,5 @@
 
-const products = [
+export const productsData = [
     {
         id: "1-12-24",
         title: "Product 1",
@@ -231,4 +231,3 @@ const products = [
 ];
 
 
-export const productsData = JSON.stringify(products);
