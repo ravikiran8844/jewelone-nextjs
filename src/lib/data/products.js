@@ -229,3 +229,5 @@ export const productsData = [
         purity: "22K",
     },
 ];
+
+
