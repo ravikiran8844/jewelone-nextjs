@@ -8,8 +8,8 @@ const stores = [
   {
     name: "Coimbatore",
     address: "No. 284 &, 285, Cross Cut Rd, Gandhipuram, Tamil Nadu 641012",
-    reviews: 497,
-    rating: 4,
+    reviews: 862,
+    rating: 4.4,
     pincode: "641012",
     city: "Coimbatore",
     phone: 8220017613,
@@ -23,8 +23,8 @@ const stores = [
     name: "Experience Center",
     address:
       "SF. NO. 460, 461/1 Kathirnaickenpalayam Road, Post, Thoppampatti, Coimbatore, Tamil Nadu 641017",
-    reviews: 91,
-    rating: 4.6,
+    reviews: 437,
+    rating: 4.8,
     pincode: "641017",
     city: "Coimbatore",
     phone: 9566419111,
@@ -38,8 +38,8 @@ const stores = [
     name: "Chennai",
     address:
       "JewelOne, Near Thirumangalam Metro station, 233-235, 2nd Ave, L Block, Anna Nagar West, Chennai, Tamil Nadu 600040",
-    reviews: 159,
-    rating: 4.2,
+    reviews: 358,
+    rating: 4.5,
     pincode: "600040",
     city: "Chennai",
 
@@ -54,8 +54,8 @@ const stores = [
     name: "Madurai",
     address:
       "123, Netaji Rd, opposite Modern Restaurant, Madurai Main, Madurai, Tamil Nadu 625001",
-    reviews: 190,
-    rating: 4.1,
+    reviews: 379,
+    rating: 4.5,
     pincode: "625001",
     city: "Madurai",
 
@@ -70,8 +70,8 @@ const stores = [
     name: "Vellore",
     address:
       "18/1, Anna Salai, opp. Voorhees College, Vasanthapuram, Kosapet, Vellore, Tamil Nadu 632001",
-    reviews: 152,
-    rating: 4.1,
+    reviews: 442,
+    rating: 4.6,
     pincode: "632001",
     city: "Vellore",
 
@@ -85,8 +85,8 @@ const stores = [
   {
     name: "Ramanathapuram",
     address: "65 Swamy Vivekanda, Salai St, Ramanathapuram, Tamil Nadu 623501",
-    reviews: 88,
-    rating: 4.3,
+    reviews: 238,
+    rating: 4.6,
     pincode: "623501",
     city: "Ramanathapuram",
 
@@ -101,8 +101,8 @@ const stores = [
     name: "Salem",
     address:
       "1/2, Omalur Main Rd, Arthanari Nagar, Swarnapuri, Salem, Tamil Nadu 636016",
-    reviews: 192,
-    rating: 4.1,
+    reviews: 617,
+    rating: 4.6,
     pincode: "636016",
     city: "Salem",
 
@@ -116,8 +116,8 @@ const stores = [
   {
     name: "Erode",
     address: "85, RKV Rd, Marapalam, Erode, Tamil Nadu 638001",
-    reviews: 154,
-    rating: 4.1,
+    reviews: 346,
+    rating: 4.5,
     pincode: "638001",
     city: "Erode",
 
@@ -132,8 +132,8 @@ const stores = [
     name: "Pollachi",
     address:
       "Narasus Coffee Opp, 34, Bazaar St, Puliampatti, Pollachi, Tamil Nadu 642001",
-    reviews: 218,
-    rating: 3.8,
+    reviews: 410,
+    rating: 4.3,
     pincode: "642001",
     city: "Pollachi",
 
@@ -148,8 +148,8 @@ const stores = [
     name: "Pondicherry",
     address:
       "88, Kamaraj Salai, Near Jayaram Hotel, Kamaraj Nagar, Puducherry, 605011",
-    reviews: 192,
-    rating: 4.1,
+    reviews: 398,
+    rating: 4.4,
     pincode: "605011",
     city: "Pondicherry",
 
@@ -164,8 +164,8 @@ const stores = [
     name: "Hosur",
     address:
       "NO.8, OPP HOSUR BUS STAND, NEAR FLOWER MARKET, Hosur, Tamil Nadu 635109",
-    reviews: 186,
-    rating: 4,
+    reviews: 510,
+    rating: 4.5,
     pincode: "635109",
     city: "Hosur",
 
@@ -180,11 +180,10 @@ const stores = [
   {
     name: "Udumalaipettai",
     address: "24, Dhali Rd, Udumalaipettai, Tamil Nadu 641126",
-    reviews: 211,
-    rating: 4,
+    reviews: 558,
+    rating: 4.5,
     pincode: "641126",
     city: "Udumalaipettai",
-
     phone: 9944501010,
     contactPersonName: "Baskar / Ganesh ",
     mapLink: "https://maps.app.goo.gl/ikJoXkzv918Fv1L66",
@@ -192,6 +191,22 @@ const stores = [
     image: "stores/udu.webp",
     placeId: "ChIJJdShw6nNqTsR8sLfe-aQcWI",
   },
+  {
+    name: "Trichy",
+    address: "J.S Tower, No: 5/5 A, Karur Bypass Rd, Annamalai Nagar, Tiruchirappalli, Tamil Nadu 620018",
+    reviews: 4,
+    rating: 4,
+    pincode: "620018",
+    city: "Trichy",
+    phone: 7019355705,
+    contactPersonName: "Arun",
+    mapLink: "https://maps.app.goo.gl/Ptxyhj7Q9q9QBjuP9",
+    storeTiming: "9:45 AM - 8:45 PM",
+    image: "stores/trichy.webp",
+    placeId: "ChIJW_eiLFT1qjsRlSyykx-rAv4",
+
+  },
+  
 ];
 
 const StoreLocator = () => {
@@ -469,8 +484,8 @@ const StoreLocator = () => {
                     </div>
                     <div className="stores-section2_card-text mb-2">
                       Phone-{" "}
-                      <span className="stores-section2_card-yellow-text">
-                        {store.phone}
+                      <span>
+                        <a  className="stores-section2_card-yellow-text text-decoration-none" href={`tel:${store.phone}`}> {store.phone}</a>
                       </span>
                     </div>
                     <div className="stores-section2_card-red-text-light mb-2">

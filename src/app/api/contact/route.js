@@ -28,7 +28,7 @@ export async function POST(request) {
 
   const mailOptions = {
     from: process.env.NEXT_PUBLIC_SMTP_USER,
-    to: 'ravikiran@brightbridgeinfotech.com,vivinrajkumar.r@ejindia.com,gavya.emerald@gmail.com,subhasri@brightbridgeinfotech.com,vivin.emerald@gmail.com,zilara.marketing@ejindia.com',
+    to: 'ravikiran@brightbridgeinfotech.com,vivinrajkumar.r@ejindia.com,gavya.emerald@gmail.com,subhasri@brightbridgeinfotech.com,vivin.emerald@gmail.com,zilara.marketing@ejindia.com,retail.crm@ejindia.com',
     replyTo: email,
     // cc: email, (uncomment this line if you want to send a copy to the sender)
     subject: `New Message from ${name} (${email})`,

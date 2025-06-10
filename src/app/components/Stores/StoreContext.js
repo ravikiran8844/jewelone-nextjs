@@ -357,7 +357,23 @@ export const StoreProvider = ({ children }) => {
       "storeTiming": "9:45 AM - 8:45 PM",
       "image":"stores/udu.webp"
   
-    }
+    },
+    {
+      "name": "Trichy",
+      "address": "J.S Tower, No: 5/5 A, Karur Bypass Rd, Annamalai Nagar, Tiruchirappalli, Tamil Nadu 620018",
+      "reviews": 4,
+      "rating": 4,
+      "pincode": "620018",
+      "city":"Trichy",
+  
+      "phone": 7019355705,
+      "contactPersonName": "Baskar / Ganesh ",
+      "mapLink": "https://maps.app.goo.gl/Ptxyhj7Q9q9QBjuP9",
+      "storeTiming": "9:45 AM - 8:45 PM",
+      "image":"stores/udu.webp"
+  
+    },
+   
   ]);
 
   const updateFilteredStores = (searchTerm) => {
