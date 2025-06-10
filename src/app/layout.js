@@ -6,8 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import BootstrapClient from "./components/BootstrapClient";
 // import GsapBall from './components/GsapBall';
 // import { GoogleAnalytics } from '@next/third-parties/google'
-// import { GoogleTagManager } from "@next/third-parties/google";
-import Script from 'next/script'
+import { GoogleTagManager } from "@next/third-parties/google";
+// import Script from 'next/script'
 
 
 const inter = Inter({
@@ -38,8 +38,8 @@ export default async function RootLayout({ children }) {
         {/* <Footer/> */}
         <BootstrapClient />
         {/* <GsapBall/> */}
-        {/* <GoogleTagManager gtmId="GTM-KRZSB3WW" /> */}
-        <Script
+        <GoogleTagManager gtmId="GTM-KRZSB3WW" />
+        {/* <Script
         id="google-tag-manager"
         src={`https://www.googletagmanager.com/gtag/js?id=GTM-KRZSB3WW`}
         strategy='afterInteractive'
@@ -50,7 +50,7 @@ export default async function RootLayout({ children }) {
           gtag('js', new Date());
           gtag('config', 'GTM-KRZSB3WW');
         `}
-      </Script>
+      </Script> */}
       </body>
     </html>
   );

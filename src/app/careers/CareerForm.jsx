@@ -9,6 +9,17 @@ const CareerForm = () => {
   const [loading, setLoading] = useState(false);
   const [resumeName, setResumeName] = useState(""); // State to store the uploaded file name
 
+
+  const shortenFileName = (name, maxLength = 18) => {
+    if (name.length <= maxLength) return name;
+  
+    const ext = name.substring(name.lastIndexOf('.')); // file extension
+    const prefix = name.substring(0, 12);              // first 12 characters
+    const suffix = name.substring(name.length - 8);     // last 8 characters
+    return `${prefix}...${suffix}`;
+  };
+  
+
   const {
     register,
     handleSubmit,
@@ -170,11 +181,19 @@ const CareerForm = () => {
                     className="form-control d-none"
                     type="file"
 
+                    onChange={(e) => {
+                      if (e.target.files.length > 0) {
+                        const fullName = e.target.files[0].name;
+                        setResumeName(shortenFileName(fullName));
+                      } else {
+                        setResumeName("");
+                      }
+                    }}
                     accept="application/pdf,image/jpeg,image/png"
                   />
                   <div>
                   {resumeName && (
-                  <div className="mt-1 text-white">
+                  <div className="mt-1 text-white" style={{maxWidth: '300px'}}>
                     Selected File: <strong>{resumeName}</strong>
                   </div>
                 )}
